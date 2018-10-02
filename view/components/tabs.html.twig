@@ -1,0 +1,17 @@
+<div class="spark-tabs">
+	<ul class="spark-tabs-headings">
+		{% for item in layout.tab_items %}
+			<li class="spark-tabs-heading-item" data-index="{{ loop.index }}">
+				<h3>{{ item.heading }}</h3>
+				{{ item.tab_image.url }}
+			</li>
+		{% endfor %}
+	</ul>
+	<ul class="spark-tabs-content">
+		{% for item in layout.tab_items %}
+			<li class="spark-tabs-content-item" data-index="{{ loop.index }}">
+				{{ item.content }}
+			</li>
+		{% endfor %}
+	</ul>
+</div>

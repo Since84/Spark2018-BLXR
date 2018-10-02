@@ -1,0 +1,170 @@
+/*
+	Typography
+	All typographic settings
+*/	
+
+// Import Fonts
+
+// Variables
+/// Font Size
+//// Large
+$heading1_size: 47px;
+$heading1_lineheight: 55px;
+
+$heading2_size: 40px;
+$heading2_lineheight: 48px;
+$heading3_size: 34px;
+$heading3_lineheight: 46px;
+$heading4_size: 20px;
+$heading4_lineheight: 28px;
+$heading5_size: 11px;
+$heading5_lineheight: 18px;
+$heading6_size: 12px;
+$heading6_lineheight: 22px;
+$body_size: 14px;
+$body_lineheight: 22px;
+
+//// Small
+$heading1_size_small: 36px;
+$heading1_lineheight_small: 38px;
+
+$heading2_size_small: 32px;
+$heading2_lineheight_small: 36px;
+
+$heading3_size_small: 30px;
+$heading3_lineheight_small: 32px;
+
+$heading4_size_small: 20px;
+$heading4_lineheight_small: 27px;
+
+$heading5_size_small: 11px;
+$heading5_lineheight_small: 18px;
+
+$body_lineheight_small: 30px;
+
+/// Font Family
+$heading_family: "Lato", sans-serif;
+$body_family: "Lato", sans-serif;
+
+// Body
+body {
+	color: $primary3;
+	font-family: $body_family;
+	font-size: $body_size;
+	font-weight: 300;
+	line-height: $body_lineheight;
+}
+
+// Headings
+h1,h2,h3,h4,h5,h6 {
+	font-family: $heading_family;
+}
+h1 {
+	font-size: $heading1_size;
+	font-weight: 300;
+	line-height: $heading1_lineheight;
+}
+h2 {
+	font-size: $heading2_size;
+	font-weight: 300;
+	line-height: $heading2_lineheight;
+}
+h3 {
+	color: $primary3;
+	font-size: $heading3_size;
+	line-height: $heading3_lineheight;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+h4 {
+	color: $primary3;
+	font-size: $heading4_size;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: $heading4_lineheight;
+}
+h5 {
+	color: $primary3;
+	font-size: $heading5_size;
+	font-weight: 800;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+h6 {
+	font-size: $heading6_size;
+	line-height: $heading6_lineheight;
+	font-weight: 400;
+}
+
+p.large {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+a {
+	color: $primary2;
+	transition: color .25s linear;
+
+	&:hover {
+		color: darken($primary2, 20%);
+	}
+}
+
+strong, b {
+	font-weight: 500;
+}
+
+em {
+	font-weight: 400;
+	font-style: italic;
+}
+
+.secondary-link {
+	color: $primary1;
+	display: inline-block;	
+	font-weight: 500;
+	margin-top: base(2);
+	text-decoration: none;
+	text-transform: uppercase;
+	&:after{
+		content: "\2192";
+		display: inline-block;
+		margin-left: base(1);
+	}
+}
+
+@include breakpoint($small){
+	
+	h1 {
+		font-size: $heading1_size_small;
+		font-weight: 300;
+		line-height: $heading1_lineheight_small;
+	}
+	h2 {
+		font-size: $heading2_size_small;
+		line-height: $heading2_lineheight_small;
+	}
+
+	h4 {
+		font-size: $heading4_size_small;
+		line-height: $heading4_lineheight_small;
+	}
+	h5 {
+		font-size: $heading5_size_small;
+		line-height: $heading5_lineheight_small;
+		font-weight: 800;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+	}
+	strong {
+		
+		font-weight: 500;
+	}
+	
+}
+
+.spark-content {
+	h1,h2,h3,h4,h5,h6, ul, ol, p:not(:last-of-type) {
+		margin-bottom: base(2);
+	}
+}

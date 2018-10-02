@@ -1,0 +1,23 @@
+<section class="spark-jobs spark-content-card">
+    <div class="spark-container">
+		{% for position in layout.jobs %}
+			<div class="spark-content-card-content-item">
+			    <span class="background"></span>
+			    <div class="tab-image">
+			    	{% set image = TimberImage(position.image) %}
+			        <img class="spark-image" 
+						 alt="{{ image.alt_text }}" 
+						 src="{{ image.src }}" 
+						 width="{{ image.width }}" 
+						 height="{{ image.height }}"
+					 />
+			    </div>
+			    <div class="tab-content">
+			        <h3>{{ position.post_title }}</h3>
+			        <p>{{ position.location }} | {{ position.position_type }}</p>
+			        <a class="secondary-link" href="{{ position.link }}">Learn More</a>
+			    </div>
+			</div> 
+		{% endfor %}
+	</div>
+</section>

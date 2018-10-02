@@ -1,0 +1,33 @@
+<section class="spark-accordion">
+	<div class="spark-container">
+		{% for collection in layout.accordion_group %}
+			<h5>{{ collection.heading }}</h5>
+			<div class="accordion-items spark-container">
+				{% for item in collection.accordion %}
+					<div class="accordion-item">
+						<p><strong>{{ item.heading }}</strong></p>
+						<div class="spark-content">{{ item.content }}</div>
+						</div>
+					</div>
+
+					</div>
+				{% endfor %}
+			</div>
+		{% endfor %}
+		<ul class="spark-tabs-headings">
+			{% for item in layout.tab_items %}
+				<li class="spark-tabs-heading-item" data-index="{{ loop.index }}">
+					<h3>{{ item.heading }}</h3>
+					{{ item.tab_image.url }}
+				</li>
+			{% endfor %}
+		</ul>
+		<ul class="spark-tabs-content">
+			{% for item in layout.tab_items %}
+				<li class="spark-tabs-content-item" data-index="{{ loop.index }}">
+					{{ item.content }}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

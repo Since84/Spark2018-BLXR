@@ -1,0 +1,97 @@
+// Requirements
+// ============
+
+// @import "susy";
+@import "breakpoint";
+
+$columns: 12;
+$grid-base: 8px;
+$container-width: 1300px;
+$small : max-width 736px;
+$medium : min-width 736px and max-width $container-width;
+$medium-up : min-width 736px;
+$large-up : min-width $container-width;
+
+$column-width : 100% / $columns;
+$gutter-width : base(2);
+
+// $susy: (
+//   columns: 12,
+//   gutters: 1/2,
+//   gutter-position: inside,
+//   container-width: $container-width
+// );
+
+@mixin span($span) {
+  @include gutter();
+  flex: 1 1 calc(#{$column-width * $span });
+  max-width: calc(#{$column-width * $span });
+}
+
+@function span($span) {
+	@return #{$column-width * $span};
+}
+
+@mixin gutter($n:1){
+	padding-right: base($n);
+	padding-left: base($n);
+}
+
+@function gutter($n:1){
+	@return base($n) * 2;
+}
+
+@mixin push($span) {
+	margin-left: ( $column-width ) * $span;
+}
+
+@function base($n:1){
+	@return $n * $grid-base;
+}
+
+@mixin container(){
+	@include gutter(2);
+	width: $container-width;
+	max-width: 100%;
+	display: flex;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.spark-container {
+	@include container();
+	margin: auto;
+}
+
+@include breakpoint($medium-up){
+	.mobile-only {
+		display: none;
+	}
+}
+
+section {
+	// overflow: hidden;
+
+	.spark-container {
+		&:after {
+		    content: "";
+		    display: block;
+		    clear: both;
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	$lastInRow : ceil(12/$i);
+	.span-#{$i} {
+		@include span($i);
+		@include gutter();
+		&:nth-child(#{$lastInRow}n){
+			margin-right: 0;
+		}
+	}
+}
+

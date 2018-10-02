@@ -1,0 +1,20 @@
+{# 
+	Footer With Text and Socials
+
+	socials(array): collection of social media icons
+		link(string): url for social account
+		name(string): network name
+
+	content(string): html string of content
+#}
+<footer class="spark-footer knockout">
+	<div class="spark-footer-socials">
+		{% for account in social %}
+			<a {% if account.social_site_url|length %} href="{{ account.social_site_url }}"{% endif %} 
+			class="{{ account.social_site_name }} fab fa-{{ account.social_site_name }}" target="blank"></a>
+		{% endfor %}
+	</div>
+	<div class="spark-footer-text spark-container">
+		{{ content }}
+	</div>
+</footer>

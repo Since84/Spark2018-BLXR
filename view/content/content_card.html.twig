@@ -1,0 +1,14 @@
+<section class="spark-content-card">
+    <div class="spark-container">
+        <div class="spark-content-card-content-item">
+            <span class="background" style="background-image: url({{ layout.background_image.url }})"></span>
+            <div class="tab-image">
+                {% include "/view/content/image.html.twig" with layout.image %}
+            </div>
+            <div class="tab-content">
+                <h4>{{ layout.heading }}</h4>
+                {{ layout.content }}
+            </div>
+        </div> 
+    </div>
+</section>

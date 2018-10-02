@@ -1,0 +1,41 @@
+/*
+	Colors
+	Site Color Pallette
+*/	
+
+// Variables
+$primary1: #244492;
+$primary2: #1e7cbe;
+$primary3: #2a293f;
+$primary4: #7f7f84;
+$primary5: #c9c9c9;
+$primary6: #ebebeb;
+$primary7: #ffffff;
+
+$secondary1: #f2f2f2;
+
+
+$cta_color: $primary3;
+$link_color: $primary2;
+
+.knockout, .knockout * {
+	color: white;
+}
+
+@mixin intense-gradient {
+	background: linear-gradient(to right, $primary1, $primary2);
+	transition: all .45s
+}
+
+@mixin intense-gradient-reverse {
+	background: linear-gradient(to bottom right, $primary2, $primary1);
+}
+
+@mixin subtle-gradient {
+	background: linear-gradient(to right, $primary2, #2164AB);
+	transition: all .45s
+}
+
+@mixin subtle-gradient-reverse {
+	background: linear-gradient(to bottom right, #2164AB, $primary2);
+}

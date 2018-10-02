@@ -1,0 +1,117 @@
+/*
+	UI
+	All UI element styles
+*/	
+
+// Forms
+input[type="email"], input[type="text"], input[type="tel"]{
+    @extend body;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $primary1;
+    font-family: $body_family; 
+    font-size: 16px;
+    margin-bottom: base(2);
+    outline: none;
+    padding: base();
+    width: 100%;
+}
+
+// Links & Buttons
+.cta-button {
+	@extend h5;
+	background: white;
+	border-radius: 30px;
+	color: $primary3;
+	cursor: pointer;	
+	display: inline-block;
+	line-height: 1.3;
+	padding: 10px base(4);
+	text-align: center;
+	text-decoration: none;
+	transition:all .5s ease-in-out;
+
+	&:hover {
+		background: $primary1;
+		color: white;
+	}
+}
+
+.cta-button-dark {
+	@extend .cta-button;
+	@include subtle-gradient;
+	color: $primary6;
+
+	&:hover {
+		@include subtle-gradient-reverse;
+	}
+}
+
+.nav-item {
+	font-size: $heading5_size;
+	color: $primary3;
+	letter-spacing: 3px;
+	font-weight: 400;
+	padding: base(4) base();
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .25s linear;
+	white-space: nowrap;
+
+	&:hover {
+		p {
+			font-weight: 800;		
+		}
+	}
+	span:not(.fab) {
+		font-family: $heading-family;
+	}
+
+	@include breakpoint($small) {
+		font-size: 14px; 
+	}
+}
+
+.mobile-menu-button {
+	display: block;
+	height: 15px;
+	position: relative;
+	width: 30px;
+	transition:transform .75s linear;
+
+	&:before, &:after {
+		border-radius: 2px;
+		content: "";
+		background: $primary1;
+		display: block;
+		height: 2px;
+		position: absolute;
+		transform: rotate(0deg);
+		width: 100%;
+		transition: top .25s ease-in .25s, bottom .25s ease-in .25s, transform .25s ease-in 0s;
+		
+	}
+
+	&:before {
+		top: 0%;
+	}
+
+	&:after {
+		bottom: 0%;
+	}
+
+	&.open {
+		transform: rotate(360deg);
+		&:before, &:after {
+			transition: top .25s ease-in, bottom .25s ease-in, transform .25s ease-in .25s;
+		}
+		&:before {
+			top: 45%;
+			transform: rotate(45deg);
+		}
+		&:after {
+			bottom: 45%;
+			transform: rotate(-45deg);
+		}
+	}
+}

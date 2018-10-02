@@ -1,0 +1,25 @@
+{#
+	Icon Grid
+	Grid of Icons...
+
+	heading(string): Heading text for the section
+	per_row(int): accepts 1-4
+	collection(array): Collection of Icons
+		image(object): Image Data
+#}
+{% set span = 12/3 %}
+<section class="spark-icon-grid {{ layout.template }}">
+	<div class="spark-container">
+		<div class="column">
+			{% if layout.heading_size == "small" %}
+				<h5>{{ layout.heading }}</h5>
+			{% else %}
+				<h2>{{ layout.heading }}</h2>
+			{% endif %}
+			{% include 	'view/components/grid.html.twig' 
+			   with {'item_template': 'view/content/linked_image.html.twig',
+		   			'span': span }
+			%}
+		</div>
+	</div>
+</section>
