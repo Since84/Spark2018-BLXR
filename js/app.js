@@ -77,6 +77,14 @@
 			toggleMenu() 
 		});
 
+		$('.video-container').click(function(e){
+			var $video = $(e.currentTarget).find('iframe.video');
+			var videoSrc = $video.attr('data-src');
+
+			$video.attr('src', videoSrc);
+			$(this).addClass('video-active') 
+		})
+
 		$(document).mouseup(function(e){
 			var container = $(".spark-modal.open");
 

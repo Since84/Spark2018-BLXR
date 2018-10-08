@@ -4,15 +4,15 @@
 */	
 
 // Variables
-$primary1: #244492;
-$primary2: #1e7cbe;
-$primary3: #2a293f;
-$primary4: #7f7f84;
-$primary5: #c9c9c9;
-$primary6: #ebebeb;
+$primary1: #1A1A33;
+$primary2: #234092;
+$primary3: #2085C7;
+$primary4: #1D7CC5;
+$primary5: #DFE0E4;
+$primary6: #F4F5F9;
 $primary7: #ffffff;
 
-$secondary1: #f2f2f2;
+$secondary1: #0D0D2A ;
 
 
 $cta_color: $primary3;
@@ -32,8 +32,18 @@ $link_color: $primary2;
 }
 
 @mixin subtle-gradient {
-	background: linear-gradient(to right, $primary2, #2164AB);
+	background: linear-gradient(to right, $primary2, $primary3);
 	transition: all .45s
+}
+
+@mixin subtle-gradient-tb {
+	background: linear-gradient(to top, $primary2, $primary3);
+	transition: all .45s;
+}
+
+@mixin subtle-gradient-tb-reverse {
+	background: linear-gradient(to bottom, $primary2, $primary3);
+	transition: all .45s;
 }
 
 @mixin subtle-gradient-reverse {

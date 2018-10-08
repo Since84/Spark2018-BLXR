@@ -1,0 +1,60 @@
+.spark-nav-basic {
+	background: $primary1;
+	color: white;
+
+	.spark-nav-basic-container .spark-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.spark-site-logo {
+		align-items: center;
+		display: inline-flex;
+
+		img {
+			width: base(18);
+		}
+	}
+
+	.spark-nav-basic-menu {
+	    align-items: center;
+	    display: flex;
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			a {
+				color: $primary6;
+				display: block;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 300;
+				padding: base(3) base(2);
+			}
+
+			&:hover {
+				background: $secondary1;
+				a {
+					font-weight: 700;
+					margin-top: 4px;
+					padding: (base(3) - 4px) base(2) ;
+				}
+				&:after {
+					@include subtle-gradient;
+					content: "";
+					bottom: 0;
+					display: block;
+					height: 3px;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.spark-nav-basic-menu-sub-nav {
+		display: none;
+	}
+
+	.mobile-menu-button {
+		display: none;
+	}
+}

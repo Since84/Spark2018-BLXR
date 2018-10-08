@@ -1,0 +1,100 @@
+.spark-vimeo-hero {
+	background: $primary1;
+	overflow: hidden;
+	padding: base(12) 0;
+	position: relative;
+
+	.spark-container {
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+
+		@include breakpoint($small){
+			flex-wrap: wrap;
+		}
+	}
+
+	.spark-content {
+		@include span(12);
+
+		@include breakpoint($small) {
+			margin-bottom: base(3); 
+		}
+
+		@include breakpoint($medium-up) {
+			@include span(3);
+		}
+
+		h1, p {
+			margin-bottom: base(3);
+		}
+	}
+
+	.video-container {
+		position: relative;
+		@include span(12);
+
+		@include breakpoint($medium-up) {
+			@include push(1);
+			@include span(8);
+		}
+
+		&:after{
+			background-image: url(style/image/play-button/inactive.png);
+			background-size: cover;
+		    bottom: 0;
+			content: "";
+			display: block;
+			height: 100px;
+		    left: 0;
+			margin: auto;
+			position: absolute;
+		    right: 0;
+		    top: 0;
+			width: 100px;
+		}
+
+		&:hover:after{
+			background-image: url(style/image/play-button/active.png);
+		}
+
+		&.video-active {
+			background-image: none !important;
+			&:after {
+				content: none;
+			}	
+		}
+
+		.video {
+			max-width: 100%;
+		}
+	}
+
+	.overlay {
+		top: 50%;
+	    height: 100%;
+	    left: 19%;
+	    position: absolute;
+	    transform: rotate(42deg);
+	    transition: all .45s;
+	    width: 200%;
+		@include subtle-gradient-tb;
+
+		@include breakpoint($medium-up){
+			width: 190%;
+			height: 200%;
+			top: 60%;
+			left: -20%;
+			transform: rotate(-29deg);
+		}
+		
+		@include breakpoint($large-up){
+			width: 150%;
+			height: 151%;
+			top: 60%;
+			left: -12%;
+			z-index: 0;
+			transform: rotate(-26.5deg);
+		}
+	}
+}

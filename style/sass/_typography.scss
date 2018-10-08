@@ -8,21 +8,21 @@
 // Variables
 /// Font Size
 //// Large
-$heading1_size: 47px;
-$heading1_lineheight: 55px;
+$heading1_size: 30px;
+$heading1_lineheight: 37px;
 
-$heading2_size: 40px;
-$heading2_lineheight: 48px;
-$heading3_size: 34px;
-$heading3_lineheight: 46px;
-$heading4_size: 20px;
-$heading4_lineheight: 28px;
-$heading5_size: 11px;
-$heading5_lineheight: 18px;
+$heading2_size: 24px;
+$heading2_lineheight: 24px;
+$heading3_size: 16px;
+$heading3_lineheight: 19px;
+$heading4_size: 14px;
+$heading4_lineheight: 15px;
+$heading5_size: 12px;
+$heading5_lineheight: 15px;
 $heading6_size: 12px;
 $heading6_lineheight: 22px;
 $body_size: 14px;
-$body_lineheight: 22px;
+$body_lineheight: 24px;
 
 //// Small
 $heading1_size_small: 36px;
@@ -43,8 +43,8 @@ $heading5_lineheight_small: 18px;
 $body_lineheight_small: 30px;
 
 /// Font Family
-$heading_family: "Lato", sans-serif;
-$body_family: "Lato", sans-serif;
+$heading_family: "montserrat", sans-serif;
+$body_family: "montserrat", sans-serif;
 
 // Body
 body {
@@ -111,7 +111,7 @@ a {
 }
 
 strong, b {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 em {
@@ -122,7 +122,7 @@ em {
 .secondary-link {
 	color: $primary1;
 	display: inline-block;	
-	font-weight: 500;
+	font-weight: 600;
 	margin-top: base(2);
 	text-decoration: none;
 	text-transform: uppercase;
@@ -158,7 +158,7 @@ em {
 	}
 	strong {
 		
-		font-weight: 500;
+		font-weight: 600;
 	}
 	
 }

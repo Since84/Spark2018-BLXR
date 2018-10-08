@@ -22,6 +22,10 @@ $gutter-width : base(2);
 //   container-width: $container-width
 // );
 
+@function base($count) {
+	@return #{$grid-base * count};
+}
+
 @mixin span($span) {
   @include gutter();
   flex: 1 1 calc(#{$column-width * $span });
