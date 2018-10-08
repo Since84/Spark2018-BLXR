@@ -39,6 +39,20 @@
 			toggle($(e.currentTarget).parents(".accordion-item"));
 		})
 
+
+		$('.accordion-tab-heading').click(function(e){
+			var $elem = $(e.currentTarget);
+			var index = $elem.attr('data-index');
+			if( !$elem.hasClass('active-tab') ){
+				$elem.siblings('.active-tab').removeClass('active-tab');
+				$('.active-content').removeClass('active-content');
+
+				$('.accordion-tab-heading[data-index='+index+']').addClass('active-tab');
+				$('.accordion-tab[data-index='+index+']').addClass('active-content');
+
+			}
+		})
+
 		function openMenu(){
 			open($('.mobile-menu-button, .spark-nav-basic-menu'));
 		}
@@ -51,6 +65,10 @@
 			toggle($('.mobile-menu-button, .spark-nav-basic-menu'));
 
 		}
+
+		$('.contact-modal-trigger').click(function(){
+			$('.spark-contact-modal').addClass('active');
+		})
 
 
 		$('.trigger-youtube-modal').on('click', function(e){
@@ -83,6 +101,12 @@
 
 			$video.attr('src', videoSrc);
 			$(this).addClass('video-active') 
+		})
+
+		$('.spark-profile').each(function(){
+			var name = $(this).attr('id');
+			var scrollClass = "#" + name + " .perfect-scrollbar";
+			var ps = new PerfectScrollbar(scrollClass);
 		})
 
 		$(document).mouseup(function(e){

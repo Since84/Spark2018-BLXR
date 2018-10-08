@@ -12,9 +12,10 @@
 	padding: base(2) base(3);
 	text-decoration: none;
 	text-transform: uppercase;
+	color: $primary7;
 
 	&:hover {
 		@include subtle-gradient-tb-reverse;
-		color: $primary7;
+		color: $primary6;
 	}
 }

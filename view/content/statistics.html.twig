@@ -1,0 +1,29 @@
+{#
+
+{ ["acf_fc_layout"]=> &string(10) "statistics" ["heading"]=> &string(36) "The Scalability Bottleneck: Revealed" ["content"]=> &string(302) "
+The source of the scalability problem lies underneath the blockchain – at layer 0 – where blockchains propagate blocks. The P2P network used by blockchains to propagate blocks limits the blocks’ size and frequency – preventing scalability.
+
+" [""]=> &array(3) { [0]=> array(3) { ["statistic"]=> string(23) "backlogged-transactions" ["subheading"]=> string(28) "# of Backlogged Transactions" ["text"]=> string(78) "An explanation of what each of these means and how it fits into the narative. " } [1]=> array(3) { ["statistic"]=> string(24) "average-transaction-cost" ["subheading"]=> string(24) "Average Transaction Cost" ["text"]=> string(78) "An explanation of what each of these means and how it fits into the narative. " } [2]=> array(3) { ["statistic"]=> string(12) "uncle-blocks" ["subheading"]=> string(17) "# of Uncle Blocks" ["text"]=> string(78) "An explanation of what each of these means and how it fits into the narative. " } } }
+
+#}
+
+<section class="spark-blxr-statistics">
+	<div class="spark-container">
+		<h3 class="spark-blxr-statistics-heading">{{ layout.heading }}</h3>
+	</div>
+	<div class="spark-container">
+		<div class="spark-blxr-statistics-content">{{ layout.content }}</div>
+	</div>
+	<div class="spark-container">
+		<ul class="spark-blxr-statistic-list">
+			{% for stat in layout.statistics %}
+				<li class="statistic-block">
+					<span class="statistic-value">##</span>
+					<h4 class="statistic-subheading">{{ stat.subheading }}</h4>
+					<p class="statistic-text">{{ stat.text }}</p>
+				</li>
+			{% endfor %}
+
+		</ul>
+	</div>
+</section>

@@ -1,0 +1,15 @@
+<section class="spark-vertical-stack">
+	<div class="spark-container">
+		<ul class="spark-vertical-stack-list">
+			{% for item in layout.tab_items %}
+			<li class="spark-vertical-stack-list-item">
+				<img src="{{ item.tab_image.url }}"/>
+				<div class="spark-vertical-stack-list-item-content">
+					<h3>{{ item.heading }}</h3>
+					<p>{{ item.content }}</p>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

@@ -12,7 +12,8 @@ $primary5: #DFE0E4;
 $primary6: #F4F5F9;
 $primary7: #ffffff;
 
-$secondary1: #0D0D2A ;
+$secondary1: #0D0D2A;
+$secondary2: #DFE0E4;
 
 
 $cta_color: $primary3;
@@ -38,6 +39,11 @@ $link_color: $primary2;
 
 @mixin subtle-gradient-tb {
 	background: linear-gradient(to top, $primary2, $primary3);
+	transition: all .45s;
+}
+
+@mixin gray-gradient-tb {
+	background: linear-gradient(to bottom, $primary6, $secondary2);
 	transition: all .45s;
 }
 

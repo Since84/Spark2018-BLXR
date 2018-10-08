@@ -1,6 +1,11 @@
 <section class="spark-accordion">
 	<div class="spark-container">
 		{% for collection in layout.accordion_group %}
+			<div class="collection-heading">{{ collection.heading }}</div>
+		{% endfor %}
+	</div>
+	<div class="spark-container">
+		{% for collection in layout.accordion_group %}
 			<h5>{{ collection.heading }}</h5>
 			<div class="accordion-items spark-container">
 				{% for item in collection.accordion %}

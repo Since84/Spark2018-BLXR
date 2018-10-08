@@ -31,6 +31,7 @@
 	}
 
 	.video-container {
+		cursor: pointer;
 		position: relative;
 		@include span(12);
 
@@ -78,14 +79,15 @@
 	    transform: rotate(42deg);
 	    transition: all .45s;
 	    width: 200%;
+
 		@include subtle-gradient-tb;
 
 		@include breakpoint($medium-up){
-			width: 190%;
-			height: 200%;
-			top: 60%;
-			left: -20%;
-			transform: rotate(-29deg);
+		    width: 175.4vw;
+		    height: 112vw;
+		    top: 29.9vw;
+		    left: -20.1vw;
+		    transform: rotate(-26.8deg);
 		}
 		
 		@include breakpoint($large-up){

@@ -6,7 +6,7 @@
 
 $columns: 12;
 $grid-base: 8px;
-$container-width: 1300px;
+$container-width: 940px;
 $small : max-width 736px;
 $medium : min-width 736px and max-width $container-width;
 $medium-up : min-width 736px;
@@ -58,6 +58,7 @@ $gutter-width : base(2);
 	width: $container-width;
 	max-width: 100%;
 	display: flex;
+	justify-content: center;
 }
 
 * {

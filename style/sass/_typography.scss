@@ -14,7 +14,7 @@ $heading1_lineheight: 37px;
 $heading2_size: 24px;
 $heading2_lineheight: 24px;
 $heading3_size: 16px;
-$heading3_lineheight: 19px;
+$heading3_lineheight: 24px;
 $heading4_size: 14px;
 $heading4_lineheight: 15px;
 $heading5_size: 12px;
@@ -48,7 +48,7 @@ $body_family: "montserrat", sans-serif;
 
 // Body
 body {
-	color: $primary3;
+	color: $primary1;
 	font-family: $body_family;
 	font-size: $body_size;
 	font-weight: 300;
@@ -66,25 +66,24 @@ h1 {
 }
 h2 {
 	font-size: $heading2_size;
-	font-weight: 300;
+	font-weight: 600;
 	line-height: $heading2_lineheight;
 }
 h3 {
-	color: $primary3;
+	color: $primary1;
 	font-size: $heading3_size;
 	line-height: $heading3_lineheight;
-	font-weight: 400;
-	text-transform: uppercase;
+	font-weight: 600;
 }
 h4 {
-	color: $primary3;
+	color: $primary1;
 	font-size: $heading4_size;
-	font-weight: 300;
+	font-weight: 600;
 	letter-spacing: 1px;
 	line-height: $heading4_lineheight;
 }
 h5 {
-	color: $primary3;
+	color: $primary1;
 	font-size: $heading5_size;
 	font-weight: 800;
 	letter-spacing: 4px;
@@ -131,6 +130,10 @@ em {
 		display: inline-block;
 		margin-left: base(1);
 	}
+}
+
+.statistic-value {
+	font-size: 64px;
 }
 
 @include breakpoint($small){

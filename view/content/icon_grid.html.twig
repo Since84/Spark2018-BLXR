@@ -12,9 +12,9 @@
 	<div class="spark-container">
 		<div class="column">
 			{% if layout.heading_size == "small" %}
-				<h5>{{ layout.heading }}</h5>
+				<h3 class="icon-grid-heading">{{ layout.heading }}</h3>
 			{% else %}
-				<h2>{{ layout.heading }}</h2>
+				<h2 class="icon-grid-heading">{{ layout.heading }}</h2>
 			{% endif %}
 			{% include 	'view/components/grid.html.twig' 
 			   with {'item_template': 'view/content/linked_image.html.twig',

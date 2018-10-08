@@ -1,22 +1,21 @@
 <section class="spark-accordion">
-	<div class="spark-container">
+	<div class="spark-container accordion-tabs">
 		{% for collection in layout.accordion_group %}
-		<div class="column">
-			<div class="heading-column">
-				<h4>{{ collection.heading }}</h4>
+			<div class="collection-heading accordion-tab-heading {% if loop.index == 1 %}active-tab{% endif %}" data-index="{{ loop.index }}">{{ collection.heading }}</div>
+		{% endfor %}
+	</div>
+	<div>
+		{% for collection in layout.accordion_group %}
+			<div class="accordion-items spark-container accordion-tab{% if loop.index == 1 %} active-content{% endif %}" data-index="{{ loop.index }}">
+				{% for item in collection.accordion %}
+					<div class="accordion-item">
+						<p class="accordion-trigger"><strong>
+							{{ item.heading }}
+						</strong></p>
+						<div class="spark-content">{{ item.content }}</div>
+					</div>
+				{% endfor %}
 			</div>
-			<div class="content-column">
-				<ul class="accordion-items">
-					{% for item in collection.accordion %}
-						<li class="accordion-item">
-							<p class="large accordion-trigger">{{ item.heading }}</p>
-							<div class="spark-content">{{ item.content }}
-							</div>
-						</li>
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
 		{% endfor %}
 	</div>
 </section>

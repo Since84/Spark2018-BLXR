@@ -7,14 +7,28 @@
 
 	content(string): html string of content
 #}
-<footer class="spark-footer knockout">
-	<div class="spark-footer-socials">
-		{% for account in social %}
-			<a {% if account.social_site_url|length %} href="{{ account.social_site_url }}"{% endif %} 
-			class="{{ account.social_site_name }} fab fa-{{ account.social_site_name }}" target="blank"></a>
-		{% endfor %}
+<footer class="spark-footer">
+	<div class="footer-menu">
+		{% include '/view/nav/footer.html.twig' with { 'menu' : menu } %}
 	</div>
-	<div class="spark-footer-text spark-container">
-		{{ content }}
+	<div class="spark-footer-text">
+		<div class="spark-container">
+			<div class="spark-footer-copy">
+				{{ content }}
+			</div>
+			<div class="spark-footer-socials">
+				{% for account in social %}
+					<a {% if account.social_site_url|length %} href="{{ account.social_site_url }}"{% endif %} 
+					class="{{ account.social_site_name }} fab fa-{{ account.social_site_name }}" target="blank"></a>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </footer>
+<div class="spark-contact-modal">
+	<div class="contact-left">
+		<h2 class="contact-heading">Contact Us</h2>
+		<div class="social-icons"></div>
+	</div>
+	{{ contact_form }}
+</div>

@@ -67,35 +67,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 63, style/sass/_grids.scss */
+/* line 64, style/sass/_grids.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 68, style/sass/_grids.scss */
+/* line 69, style/sass/_grids.scss */
 .spark-container {
   padding-right: 16px;
   padding-left: 16px;
-  width: 1300px;
+  width: 940px;
   max-width: 100%;
   display: flex;
+  justify-content: center;
   margin: auto;
 }
 
 @media (min-width: 736px) {
-  /* line 74, style/sass/_grids.scss */
+  /* line 75, style/sass/_grids.scss */
   .mobile-only {
     display: none;
   }
 }
-/* line 83, style/sass/_grids.scss */
+/* line 84, style/sass/_grids.scss */
 section .spark-container:after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-1 {
   padding-right: 8px;
   padding-left: 8px;
@@ -104,12 +105,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-1:nth-child(12n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-2 {
   padding-right: 8px;
   padding-left: 8px;
@@ -118,12 +119,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-2:nth-child(6n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-3 {
   padding-right: 8px;
   padding-left: 8px;
@@ -132,12 +133,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-3:nth-child(4n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-4 {
   padding-right: 8px;
   padding-left: 8px;
@@ -146,12 +147,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-4:nth-child(3n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-5 {
   padding-right: 8px;
   padding-left: 8px;
@@ -160,12 +161,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-5:nth-child(3n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-6 {
   padding-right: 8px;
   padding-left: 8px;
@@ -174,12 +175,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-6:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-7 {
   padding-right: 8px;
   padding-left: 8px;
@@ -188,12 +189,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-7:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-8 {
   padding-right: 8px;
   padding-left: 8px;
@@ -202,12 +203,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-8:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-9 {
   padding-right: 8px;
   padding-left: 8px;
@@ -216,12 +217,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-9:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-10 {
   padding-right: 8px;
   padding-left: 8px;
@@ -230,12 +231,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-10:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-11 {
   padding-right: 8px;
   padding-left: 8px;
@@ -244,12 +245,12 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-11:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 93, style/sass/_grids.scss */
+/* line 94, style/sass/_grids.scss */
 .span-12 {
   padding-right: 8px;
   padding-left: 8px;
@@ -258,7 +259,7 @@ section .spark-container:after {
   padding-right: 8px;
   padding-left: 8px;
 }
-/* line 96, style/sass/_grids.scss */
+/* line 97, style/sass/_grids.scss */
 .span-12:nth-child(1n) {
   margin-right: 0;
 }
@@ -267,8 +268,8 @@ section .spark-container:after {
 	Colors
 	Site Color Pallette
 */
-/* line 21, style/sass/_colors.scss */
-.knockout, .knockout * {
+/* line 22, style/sass/_colors.scss */
+.knockout, .spark-content-with-image.left .spark-content, .spark-team-grid.advisors h2, .spark-footer, .knockout *, .spark-content-with-image.left .spark-content *, .spark-team-grid.advisors h2 *, .spark-footer * {
   color: white;
 }
 
@@ -278,7 +279,7 @@ section .spark-container:after {
 */
 /* line 50, style/sass/_typography.scss */
 body {
-  color: #2085C7;
+  color: #1A1A33;
   font-family: "montserrat", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -300,72 +301,71 @@ h1 {
 /* line 67, style/sass/_typography.scss */
 h2 {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 24px;
 }
 
 /* line 72, style/sass/_typography.scss */
 h3 {
-  color: #2085C7;
+  color: #1A1A33;
   font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 600;
 }
 
-/* line 79, style/sass/_typography.scss */
+/* line 78, style/sass/_typography.scss */
 h4 {
-  color: #2085C7;
+  color: #1A1A33;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1px;
   line-height: 15px;
 }
 
-/* line 86, style/sass/_typography.scss */
+/* line 85, style/sass/_typography.scss */
 h5 {
-  color: #2085C7;
+  color: #1A1A33;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
-/* line 93, style/sass/_typography.scss */
+/* line 92, style/sass/_typography.scss */
 h6 {
   font-size: 12px;
   line-height: 22px;
   font-weight: 400;
 }
 
-/* line 99, style/sass/_typography.scss */
+/* line 98, style/sass/_typography.scss */
 p.large {
   font-size: 24px;
   line-height: 32px;
 }
 
-/* line 104, style/sass/_typography.scss */
+/* line 103, style/sass/_typography.scss */
 a {
   color: #234092;
   transition: color .25s linear;
 }
-/* line 108, style/sass/_typography.scss */
+/* line 107, style/sass/_typography.scss */
 a:hover {
   color: #0f1c40;
 }
 
-/* line 113, style/sass/_typography.scss */
+/* line 112, style/sass/_typography.scss */
 strong, b {
   font-weight: 600;
 }
 
-/* line 117, style/sass/_typography.scss */
+/* line 116, style/sass/_typography.scss */
 em {
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 122, style/sass/_typography.scss */
+/* line 121, style/sass/_typography.scss */
 .secondary-link {
   color: #1A1A33;
   display: inline-block;
@@ -374,34 +374,39 @@ em {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 129, style/sass/_typography.scss */
+/* line 128, style/sass/_typography.scss */
 .secondary-link:after {
   content: "\2192";
   display: inline-block;
   margin-left: 8px;
 }
 
+/* line 135, style/sass/_typography.scss */
+.statistic-value {
+  font-size: 64px;
+}
+
 @media (max-width: 736px) {
-  /* line 138, style/sass/_typography.scss */
+  /* line 141, style/sass/_typography.scss */
   h1 {
     font-size: 36px;
     font-weight: 300;
     line-height: 38px;
   }
 
-  /* line 143, style/sass/_typography.scss */
+  /* line 146, style/sass/_typography.scss */
   h2 {
     font-size: 32px;
     line-height: 36px;
   }
 
-  /* line 148, style/sass/_typography.scss */
+  /* line 151, style/sass/_typography.scss */
   h4 {
     font-size: 20px;
     line-height: 27px;
   }
 
-  /* line 152, style/sass/_typography.scss */
+  /* line 155, style/sass/_typography.scss */
   h5 {
     font-size: 11px;
     line-height: 18px;
@@ -410,12 +415,12 @@ em {
     text-transform: uppercase;
   }
 
-  /* line 159, style/sass/_typography.scss */
+  /* line 162, style/sass/_typography.scss */
   strong {
     font-weight: 600;
   }
 }
-/* line 167, style/sass/_typography.scss */
+/* line 170, style/sass/_typography.scss */
 .spark-content h1, .spark-content h2, .spark-content h3, .spark-content h4, .spark-content h5, .spark-content h6, .spark-content ul, .spark-content ol, .spark-content p:not(:last-of-type) {
   margin-bottom: 16px;
 }
@@ -425,7 +430,7 @@ em {
 	All UI element styles
 */
 /* line 7, style/sass/_ui.scss */
-.cta-button {
+.cta-button, .spark-accordion .accordion-tabs .collection-heading {
   background: linear-gradient(to top, #234092, #2085c7);
   transition: all .45s;
   border-radius: 4px;
@@ -434,12 +439,13 @@ em {
   padding: 16px 24px;
   text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
 }
-/* line 16, style/sass/_ui.scss */
-.cta-button:hover {
+/* line 17, style/sass/_ui.scss */
+.cta-button:hover, .spark-accordion .accordion-tabs .collection-heading:hover {
   background: linear-gradient(to bottom, #234092, #2085c7);
   transition: all .45s;
-  color: #ffffff;
+  color: #F4F5F9;
 }
 
 /* line 1, style/sass/_nav.scss */
@@ -556,6 +562,7 @@ em {
 }
 /* line 33, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container {
+  cursor: pointer;
   position: relative;
   padding-right: 8px;
   padding-left: 8px;
@@ -572,7 +579,7 @@ em {
     max-width: calc(66.66667%);
   }
 }
-/* line 42, style/sass/_hero.scss */
+/* line 43, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:after {
   background-image: url(style/image/play-button/inactive.png);
   background-size: cover;
@@ -587,23 +594,23 @@ em {
   top: 0;
   width: 100px;
 }
-/* line 57, style/sass/_hero.scss */
+/* line 58, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
-/* line 61, style/sass/_hero.scss */
+/* line 62, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active {
   background-image: none !important;
 }
-/* line 63, style/sass/_hero.scss */
+/* line 64, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active:after {
   content: none;
 }
-/* line 68, style/sass/_hero.scss */
+/* line 69, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container .video {
   max-width: 100%;
 }
-/* line 73, style/sass/_hero.scss */
+/* line 74, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   top: 50%;
   height: 100%;
@@ -616,17 +623,17 @@ em {
   transition: all .45s;
 }
 @media (min-width: 736px) {
-  /* line 73, style/sass/_hero.scss */
+  /* line 74, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
-    width: 190%;
-    height: 200%;
-    top: 60%;
-    left: -20%;
-    transform: rotate(-29deg);
+    width: 175.4vw;
+    height: 112vw;
+    top: 29.9vw;
+    left: -20.1vw;
+    transform: rotate(-26.8deg);
   }
 }
-@media (min-width: 1300px) {
-  /* line 73, style/sass/_hero.scss */
+@media (min-width: 940px) {
+  /* line 74, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
     height: 151%;
@@ -635,4 +642,678 @@ em {
     z-index: 0;
     transform: rotate(-26.5deg);
   }
+}
+
+/* line 1, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics {
+  padding: 56px 0;
+}
+/* line 3, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics .spark-blxr-statistics-heading {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(83.33333%);
+  max-width: calc(83.33333%);
+  margin-bottom: 24px;
+  text-align: center;
+}
+@media (min-width: 736px) {
+  /* line 3, style/sass/_blxr-statistics.scss */
+  .spark-blxr-statistics .spark-blxr-statistics-heading {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(66.66667%);
+    max-width: calc(66.66667%);
+  }
+}
+/* line 13, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics .spark-blxr-statistics-content {
+  margin-bottom: 24px;
+}
+/* line 17, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics .spark-blxr-statistic-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 736px) {
+  /* line 17, style/sass/_blxr-statistics.scss */
+  .spark-blxr-statistics .spark-blxr-statistic-list {
+    flex-direction: row;
+  }
+}
+/* line 26, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics .spark-blxr-statistic-list .statistic-block {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 736px) {
+  /* line 26, style/sass/_blxr-statistics.scss */
+  .spark-blxr-statistics .spark-blxr-statistic-list .statistic-block {
+    margin-bottom: 24px;
+  }
+}
+/* line 35, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics .spark-blxr-statistic-list .statistic-block .statistic-value {
+  color: #2085C7;
+  line-height: 1em;
+  margin-bottom: 24px;
+  text-align: center;
+}
+/* line 41, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics .spark-blxr-statistic-list .statistic-block .statistic-subheading {
+  color: #2085C7;
+  margin-bottom: 16px;
+  text-align: center;
+  height: 2.2em;
+}
+/* line 47, style/sass/_blxr-statistics.scss */
+.spark-blxr-statistics .spark-blxr-statistic-list .statistic-block .statistic-text {
+  padding: 0 8px;
+}
+
+/* line 1, style/sass/_content-block.scss */
+.spark-content-block {
+  padding: 64px 0;
+}
+/* line 4, style/sass/_content-block.scss */
+.spark-content-block.center .spark-content {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(83.33333%);
+  max-width: calc(83.33333%);
+}
+
+/* line 1, style/sass/_content-with-image.scss */
+.spark-content-with-image {
+  background: #1A1A33;
+  position: relative;
+}
+@media (min-width: 736px) {
+  /* line 8, style/sass/_content-with-image.scss */
+  .spark-content-with-image.left:before {
+    background: linear-gradient(to top, #234092, #2085c7);
+    transition: all .45s;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 45%;
+  }
+}
+/* line 18, style/sass/_content-with-image.scss */
+.spark-content-with-image.left .spark-content {
+  order: 1;
+  padding: 32px 80px 32px 0;
+  padding-right: 80px;
+}
+@media (max-width: 736px) {
+  /* line 18, style/sass/_content-with-image.scss */
+  .spark-content-with-image.left .spark-content {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(100%);
+    max-width: calc(100%);
+    flex: 0;
+  }
+}
+/* line 30, style/sass/_content-with-image.scss */
+.spark-content-with-image.left img {
+  margin: 32px 0 32px 32px;
+  order: 2;
+}
+@media (max-width: 736px) {
+  /* line 30, style/sass/_content-with-image.scss */
+  .spark-content-with-image.left img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* line 41, style/sass/_content-with-image.scss */
+.spark-content-with-image .spark-container {
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+@media (max-width: 736px) {
+  /* line 41, style/sass/_content-with-image.scss */
+  .spark-content-with-image .spark-container {
+    flex-direction: column;
+  }
+}
+
+/* line 1, style/sass/_vertical-stack.scss */
+.spark-vertical-stack {
+  padding: 64px 0;
+}
+@media (min-width: 736px) {
+  /* line 3, style/sass/_vertical-stack.scss */
+  .spark-vertical-stack .spark-vertical-stack-list {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(66.66667%);
+    max-width: calc(66.66667%);
+  }
+}
+/* line 9, style/sass/_vertical-stack.scss */
+.spark-vertical-stack .spark-vertical-stack-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+/* line 14, style/sass/_vertical-stack.scss */
+.spark-vertical-stack .spark-vertical-stack-list-item:not(:last-child) {
+  margin-bottom: 48px;
+}
+/* line 18, style/sass/_vertical-stack.scss */
+.spark-vertical-stack .spark-vertical-stack-list-item img {
+  flex: 0;
+  margin-right: 24px;
+}
+
+/* line 1, style/sass/_icon-grid.scss */
+.spark-icon-grid {
+  background: linear-gradient(to bottom, #f4f5f9, #dfe0e4);
+  transition: all .45s;
+  padding: 48px 0;
+}
+/* line 5, style/sass/_icon-grid.scss */
+.spark-icon-grid .column {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+}
+/* line 9, style/sass/_icon-grid.scss */
+.spark-icon-grid .icon-grid-heading {
+  margin-bottom: 48px;
+  text-align: center;
+}
+/* line 14, style/sass/_icon-grid.scss */
+.spark-icon-grid .spark-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 18, style/sass/_icon-grid.scss */
+.spark-icon-grid .spark-grid .spark-grid-item {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(50%);
+  max-width: calc(50%);
+  text-align: center;
+  margin-bottom: 48px;
+}
+@media (min-width: 736px) {
+  /* line 18, style/sass/_icon-grid.scss */
+  .spark-icon-grid .spark-grid .spark-grid-item {
+    flex-basis: 20%;
+  }
+}
+
+/* line 1, style/sass/_team-grid.scss */
+.spark-team-grid {
+  background: #F4F5F9;
+  padding: 80px 0;
+}
+/* line 5, style/sass/_team-grid.scss */
+.spark-team-grid .spark-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 9, style/sass/_team-grid.scss */
+.spark-team-grid .spark-grid .spark-grid-item {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(25%);
+  max-width: calc(25%);
+  margin-bottom: 48px;
+}
+/* line 15, style/sass/_team-grid.scss */
+.spark-team-grid.advisors {
+  background: linear-gradient(to top, #234092, #2085c7);
+  transition: all .45s;
+}
+/* line 17, style/sass/_team-grid.scss */
+.spark-team-grid.advisors h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* line 26, style/sass/_team-grid.scss */
+.spark-team-grid.advisors h2:before, .spark-team-grid.advisors h2:after {
+  content: "";
+  height: 1px;
+  width: 24px;
+  display: block;
+  background: #ffffff;
+  margin: 0 24px;
+}
+
+/* line 38, style/sass/_team-grid.scss */
+.spark-profile {
+  background: #ffffff;
+  box-shadow: 4px 4px 1px #DFE0E4;
+}
+/* line 41, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px 16px;
+}
+/* line 46, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview .spark-profile-image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 24px;
+}
+/* line 55, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+/* line 61, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview .spark-profile-position {
+  line-height: 1.3;
+  height: 2em;
+  text-align: center;
+}
+/* line 67, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview .spark-info-text {
+  height: 80px;
+  overflow: hidden;
+  margin-top: 16px;
+  position: relative;
+  padding-right: 9.6px;
+}
+/* line 74, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview .spark-info-text .ps__rail-y {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto !important;
+  width: 8px;
+  background-color: #F4F5F9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* line 84, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview .spark-info-text .ps__rail-y .ps__thumb-y {
+  border-radius: 5px;
+  background-color: #DFE0E4;
+  right: 1px !important;
+}
+/* line 91, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview .spark-info-text .ps__rail-y:hover .ps__thumb-y {
+  width: 8px;
+}
+
+/* line 1, style/sass/_faq-accordion.scss */
+.spark-accordion {
+  background: #F4F5F9;
+  padding: 64px;
+}
+/* line 5, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-tabs {
+  margin-bottom: 32px;
+}
+/* line 7, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-tabs .collection-heading {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(25%);
+  max-width: calc(25%);
+  text-align: center;
+  margin: 0 8px;
+  box-shadow: 2px 2px 2px #DFE0E4;
+  cursor: pointer;
+}
+/* line 15, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-tabs .collection-heading:not(.active-tab) {
+  background: linear-gradient(to bottom, #f4f5f9, #dfe0e4);
+  transition: all .45s;
+  color: #1A1A33;
+  font-weight: 400;
+}
+/* line 23, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-items {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DFE0E4;
+  border-radius: 5px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px #DFE0E4;
+}
+/* line 33, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-items:not(.active-content) {
+  display: none;
+}
+/* line 37, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  background-color: #ffffff;
+  border-bottom: 1px solid #DFE0E4;
+  flex: 0;
+  padding: 16px 32px 16px 64px;
+  position: relative;
+}
+/* line 45, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item .accordion-trigger {
+  cursor: pointer;
+  padding: 16px 0;
+}
+/* line 48, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item .accordion-trigger:before {
+  background: url("style/image/icon/plus.svg");
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 40px;
+  position: absolute;
+  top: 40px;
+  width: 10px;
+}
+/* line 61, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item .spark-content {
+  position: relative;
+  margin-left: 24px;
+  padding-left: 16px;
+}
+/* line 65, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item .spark-content:before {
+  background-color: #1D7CC5;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 1px;
+  left: 0;
+  top: 0;
+}
+/* line 79, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item:not(.open) .spark-content {
+  display: none;
+}
+/* line 85, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item.open .accordion-trigger:before {
+  transform: rotate(45deg);
+}
+/* line 88, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-item.open .spark-content {
+  margin-bottom: 16px;
+}
+
+/* line 1, style/sass/_page.scss */
+.page-intro {
+  padding: 64px 0;
+}
+/* line 4, style/sass/_page.scss */
+.page-intro h2 {
+  margin-bottom: 16px;
+}
+/* line 8, style/sass/_page.scss */
+.page-intro .page-content {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(66.66667%);
+  max-width: calc(66.66667%);
+}
+
+/* line 1, style/sass/_footer.scss */
+.spark-footer {
+  background-color: #1A1A33;
+  padding: 32px 0 0;
+}
+/* line 6, style/sass/_footer.scss */
+.spark-footer .spark-container {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* line 11, style/sass/_footer.scss */
+.spark-footer .spark-footer-text {
+  background: linear-gradient(to right, #234092, #2085c7);
+  transition: all 0.45s;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+/* line 17, style/sass/_footer.scss */
+.spark-footer .spark-footer-text .spark-container {
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 23, style/sass/_footer.scss */
+.spark-footer .spark-footer-copy {
+  display: flex;
+  flex-direction: row;
+}
+/* line 29, style/sass/_footer.scss */
+.spark-footer .spark-footer-socials a {
+  border-radius: 50%;
+  background-color: #1A1A33;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 24px;
+}
+/* line 36, style/sass/_footer.scss */
+.spark-footer .spark-footer-socials a:not(:last-child) {
+  margin-right: 16px;
+}
+/* line 40, style/sass/_footer.scss */
+.spark-footer .spark-footer-socials a:hover {
+  color: #F4F5F9;
+}
+/* line 46, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-menu {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+@media (min-width: 736px) {
+  /* line 46, style/sass/_footer.scss */
+  .spark-footer .spark-nav-footer-menu {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(66.66667%);
+    max-width: calc(66.66667%);
+    flex-direction: row;
+  }
+}
+/* line 57, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-menu li {
+  margin-right: 24px;
+}
+@media (max-width: 736px) {
+  /* line 62, style/sass/_footer.scss */
+  .spark-footer .spark-nav-footer-menu > li {
+    margin-bottom: 24px;
+  }
+}
+/* line 68, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* line 73, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-menu a:hover {
+  color: #DFE0E4;
+}
+/* line 78, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-menu > li > a {
+  font-weight: 600;
+}
+/* line 82, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-menu .menu-item-has-children > a {
+  pointer-events: none;
+}
+/* line 86, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-subscribe {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  margin-bottom: 40px;
+}
+@media (min-width: 736px) {
+  /* line 86, style/sass/_footer.scss */
+  .spark-footer .spark-nav-footer-subscribe {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(33.33333%);
+    max-width: calc(33.33333%);
+  }
+}
+/* line 94, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-subscribe h3 {
+  text-transform: uppercase;
+}
+
+/* line 1, style/sass/_contact-modal.scss */
+.spark-contact-modal {
+  background: white;
+  bottom: 0;
+  box-shadow: 1px 1px 5px #DFE0E4;
+  display: flex;
+  height: 455px;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 620px;
+  z-index: 1000;
+}
+/* line 15, style/sass/_contact-modal.scss */
+.spark-contact-modal:not(.active) {
+  display: none;
+}
+/* line 19, style/sass/_contact-modal.scss */
+.spark-contact-modal .contact-left {
+  width: 202px;
+  background: url("style/image/graphics/contact-background.jpg");
+  margin-right: 32px;
+  position: relative;
+}
+/* line 25, style/sass/_contact-modal.scss */
+.spark-contact-modal .contact-left .contact-heading {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 96px;
+  left: -32px;
+  color: #ffffff;
+}
+/* line 34, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 {
+  padding: 24px;
+}
+/* line 37, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 input[type="text"], .spark-contact-modal .wpcf7 input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #DFE0E4;
+  margin-bottom: 8px;
+  padding: 8px 0;
+  width: 100%;
+  font-family: "montserrat", sans-serif;
+  color: #1A1A33;
+}
+/* line 48, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 textarea {
+  border: none;
+  border-bottom: 1px solid #DFE0E4;
+  margin-bottom: 24px;
+  padding: 16px 0;
+  width: 100%;
+  height: 120px;
+}
+/* line 57, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 .wpcf7-list-item {
+  margin: 0;
+  font-weight: 600;
+  position: relative;
+  margin-top: 16px;
+}
+/* line 63, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label {
+  padding-left: 32px;
+  display: block;
+}
+/* line 66, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label:before {
+  background: #DFE0E4;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 5;
+}
+/* line 79, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label:after {
+  content: "this is the other content";
+  font-weight: 400;
+  display: block;
+}
+/* line 87, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"] {
+  height: 20px;
+  left: 0px;
+  margin: 0;
+  opacity: .01;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  z-index: 999;
+}
+/* line 98, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label {
+  position: relative;
+}
+/* line 100, style/sass/_contact-modal.scss */
+.spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label:before {
+  border: 4px solid #2085C7;
+}
+/* line 107, style/sass/_contact-modal.scss */
+.spark-contact-modal .form-container {
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #DFE0E4;
+  padding: 0 24px;
+  margin-top: 16px;
+}
+/* line 114, style/sass/_contact-modal.scss */
+.spark-contact-modal .form-radios {
+  margin-bottom: 16px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+/* line 120, style/sass/_contact-modal.scss */
+.spark-contact-modal .cta-button, .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact-modal .collection-heading {
+  display: block;
+  margin: auto;
+  padding: 10px 24px;
 }
