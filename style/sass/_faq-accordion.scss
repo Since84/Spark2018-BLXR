@@ -1,0 +1,93 @@
+.spark-accordion {
+	background: $primary6;
+	padding: base(8);
+
+	.accordion-tabs {
+		margin-bottom: base(4);
+		.collection-heading {
+			@extend .cta-button;
+			@include span(3);
+			text-align: center;
+			margin: 0 base();
+			box-shadow: 2px 2px 2px $primary5;
+			cursor: pointer;
+
+			&:not(.active-tab) {
+				@include gray-gradient-tb;
+				color: $primary1;
+				font-weight: 400;
+			}
+		}
+	}	
+
+	.accordion-items {
+		@include span(12);
+		display: flex;
+		flex-direction: column;
+		border: 1px solid $secondary2;
+		border-radius: 5px;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0px 0px 4px $secondary2;
+
+		&:not(.active-content){
+			display: none;
+		}
+	}
+	.accordion-item {
+		@include span(12);
+		background-color: $primary7; 
+		border-bottom: 1px solid $secondary2;
+		flex: 0;
+		padding: base(2) base(4) base(2) base(8);
+		position: relative;
+
+		.accordion-trigger {
+			cursor: pointer;
+			padding: base(2) 0;
+			&:before {
+				background: url("style/image/icon/plus.svg");
+				background-size: cover;
+				content: "";
+				display: block;
+				height: 10px;
+				left: base(5);
+				position: absolute;	
+				top: base(5);
+				width: 10px;
+			}
+		}
+
+		.spark-content {
+			position: relative;
+			margin-left: base(3);
+			padding-left: base(2);
+			&:before {
+				background-color: $primary4;
+				content: "";
+				height: 100%;
+				position: absolute;
+				width: 1px;
+				left: 0;
+				top: 0;
+			}
+		}
+
+
+
+		&:not(.open) {
+			.spark-content {
+				display: none;
+			}
+		}
+
+		&.open {
+			.accordion-trigger:before {
+				transform: rotate(45deg);
+			}
+			.spark-content {
+				margin-bottom: base(2);
+			}
+		}
+	}
+}

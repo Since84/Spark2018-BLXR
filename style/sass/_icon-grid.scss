@@ -1,0 +1,28 @@
+.spark-icon-grid {
+	@include gray-gradient-tb;
+	padding: base(6) 0;
+
+	.column {
+		@include span(12);
+	}
+
+	.icon-grid-heading {
+		margin-bottom: base(6);
+		text-align: center;
+	}
+
+	.spark-grid {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.spark-grid-item {
+			@include span(6);
+			text-align: center;
+			margin-bottom: base(6);
+
+			@include breakpoint($medium-up){
+				flex-basis: 20%;
+			}
+		}
+	}
+}

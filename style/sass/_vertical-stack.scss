@@ -1,0 +1,23 @@
+.spark-vertical-stack {
+	padding: base(8) 0;
+	.spark-vertical-stack-list {
+		@include breakpoint($medium-up){
+			@include span(8);
+		}
+	}
+
+	.spark-vertical-stack-list-item{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+
+		&:not(:last-child){
+			margin-bottom: base(6);
+		}
+
+		img {
+			flex: 0;
+			margin-right: base(3);
+		}
+	}
+}

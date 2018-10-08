@@ -1,0 +1,8 @@
+.spark-content-block {
+	padding: base(8) 0;
+	&.center {
+		.spark-content {
+			@include span(10);
+		}
+	}
+}

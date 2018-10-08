@@ -1,0 +1,98 @@
+.spark-footer {
+	@extend .knockout;
+	background-color: $primary1;
+	padding: base(4) 0 0;
+
+	.spark-container {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.spark-footer-text {
+		@include subtle-gradient;
+		display: flex;
+		justify-content: space-between;
+		padding: base(3) 0;
+
+		.spark-container {
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	.spark-footer-copy {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.spark-footer-socials {
+		a {
+			border-radius: 50%;
+			background-color: $primary1;
+			text-decoration: none;
+			padding: base(1.5);
+			font-size: base(3);
+
+			&:not(:last-child){
+				margin-right: base(2);
+			}
+
+			&:hover {
+				color: $primary6;
+			}
+		}
+	}
+
+	.spark-nav-footer-menu {
+		@include span(12);
+		display: flex;
+		flex-direction: column;
+		margin-bottom: base(2);
+
+		@include breakpoint($medium-up){
+			@include span(8);
+			flex-direction: row;
+		}
+
+		li {
+			margin-right: base(3);
+		}
+
+		@include breakpoint($small){
+			& > li {
+				margin-bottom: base(3);
+			}
+		}
+
+
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 12px;
+
+			&:hover {
+				color: $secondary2;
+			}
+		}
+
+		> li > a {
+			font-weight: 600;
+		}
+
+		.menu-item-has-children > a {
+			pointer-events: none;
+		}
+	}
+	.spark-nav-footer-subscribe {
+		@include span(12);
+		margin-bottom: base(5);
+
+		@include breakpoint($medium-up){
+			@include span(4);
+		}
+
+		h3 {
+			text-transform: uppercase;
+		}
+	}
+}

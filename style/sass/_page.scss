@@ -1,0 +1,11 @@
+.page-intro {
+	padding: base(8) 0;
+
+	h2 {
+		margin-bottom: base(2);
+	}
+	
+	.page-content {
+		@include span(8);
+	}
+}

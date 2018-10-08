@@ -1,0 +1,50 @@
+.spark-content-with-image {
+	background: $primary1;
+	position: relative;
+
+
+	&.left {
+		@include breakpoint($medium-up){
+			&:before {
+				@include subtle-gradient-tb;
+				content: "";
+				display: block;
+				height: 100%;
+				position: absolute;
+				width: 45%;
+			}
+		}
+
+		.spark-content {
+			@extend .knockout;
+
+			@include breakpoint($small) {
+				@include span(12);
+				flex: 0;
+			}
+
+			order: 1;
+			padding: base(4) base(10) base(4) 0;
+			padding-right: base(10);
+		}
+		img {
+			margin: base(4) 0 base(4) base(4);
+			order: 2;
+
+			@include breakpoint($small) {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.spark-container {
+		align-items: center; 
+		position: relative;
+		z-index: 100;
+
+		@include breakpoint($small){
+			flex-direction: column;
+		}
+	}
+}

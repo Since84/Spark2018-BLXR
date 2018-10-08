@@ -1,0 +1,52 @@
+.spark-blxr-statistics {
+	padding: base(7) 0;
+	.spark-blxr-statistics-heading {
+		@include span(10);
+		margin-bottom: base(3);
+		text-align: center;
+
+		@include breakpoint($medium-up) {
+			@include span(8);
+		}
+	}
+
+	.spark-blxr-statistics-content {
+		margin-bottom: base(3);
+	}
+
+	.spark-blxr-statistic-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include breakpoint($medium-up){
+			flex-direction: row;
+		}
+
+		.statistic-block {
+			display: flex;
+			flex-direction: column;
+
+			@include breakpoint($small){
+				margin-bottom: base(3);
+			}
+
+
+			.statistic-value { 
+				color: $primary3;
+				line-height: 1em;
+				margin-bottom: base(3); 
+				text-align: center;
+			}
+			.statistic-subheading { 
+				color: $primary3;
+				margin-bottom: base(2); 
+				text-align: center;
+				height: 2.2em;
+			}
+			.statistic-text {
+				padding: 0 base();
+			}
+		}
+	}
+}
