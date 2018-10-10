@@ -109,6 +109,18 @@
 			var ps = new PerfectScrollbar(scrollClass);
 		})
 
+		// Fixed Nav 
+
+		$(window).scroll(function(){
+			var scrollPosition = $(window).scrollTop();
+
+			if ( scrollPosition > 10 ) {
+				$('.spark-nav-basic').addClass('nav-scrolled');
+			} else {
+				$('.spark-nav-basic').removeClass('nav-scrolled');
+			}
+		});
+
 		$(document).mouseup(function(e){
 			var container = $(".spark-modal.open");
 

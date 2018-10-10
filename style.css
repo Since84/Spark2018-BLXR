@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .spark-container {
   padding-right: 16px;
   padding-left: 16px;
-  width: 940px;
+  width: 1200px;
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -450,34 +450,46 @@ em {
 
 /* line 1, style/sass/_nav.scss */
 .spark-nav-basic {
-  background: #1A1A33;
+  background-color: transparent;
   color: white;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  transition: all .25s linear;
 }
-/* line 5, style/sass/_nav.scss */
+/* line 12, style/sass/_nav.scss */
+.spark-nav-basic.nav-scrolled {
+  background-color: #1A1A33;
+  box-shadow: 2px 2px 2px #0D0D2A;
+}
+/* line 17, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-container .spark-container {
   display: flex;
   justify-content: space-between;
 }
-/* line 10, style/sass/_nav.scss */
+/* line 22, style/sass/_nav.scss */
 .spark-nav-basic .spark-site-logo {
   align-items: center;
   display: inline-flex;
 }
-/* line 14, style/sass/_nav.scss */
+/* line 26, style/sass/_nav.scss */
 .spark-nav-basic .spark-site-logo img {
   width: 144px;
 }
-/* line 19, style/sass/_nav.scss */
+/* line 31, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu {
   align-items: center;
   display: flex;
 }
-/* line 22, style/sass/_nav.scss */
+/* line 34, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu li {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 25, style/sass/_nav.scss */
+/* line 37, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu li a {
   color: #F4F5F9;
   display: block;
@@ -486,17 +498,17 @@ em {
   font-weight: 300;
   padding: 24px 16px;
 }
-/* line 34, style/sass/_nav.scss */
+/* line 46, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu li:hover {
   background: #0D0D2A;
 }
-/* line 36, style/sass/_nav.scss */
+/* line 48, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu li:hover a {
   font-weight: 700;
   margin-top: 4px;
   padding: 20px 16px;
 }
-/* line 41, style/sass/_nav.scss */
+/* line 53, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu li:hover:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -506,11 +518,11 @@ em {
   height: 3px;
   width: 100%;
 }
-/* line 53, style/sass/_nav.scss */
+/* line 65, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu-sub-nav {
   display: none;
 }
-/* line 57, style/sass/_nav.scss */
+/* line 69, style/sass/_nav.scss */
 .spark-nav-basic .mobile-menu-button {
   display: none;
 }
@@ -632,7 +644,7 @@ em {
     transform: rotate(-26.8deg);
   }
 }
-@media (min-width: 940px) {
+@media (min-width: 1200px) {
   /* line 74, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
