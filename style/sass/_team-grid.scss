@@ -12,27 +12,23 @@
 		}
 	}
 
-	&.advisors {
-		@include subtle-gradient-tb;
-		h2 {
-			@extend .knockout;
-			text-align: center;
-			margin-bottom: base(5);
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
+	h2 {
+		text-align: center;
+		margin-bottom: base(5);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
-			&:before, &:after {
-				content: "";
-				height: 1px;
-				width: base(3);
-				display: block;
-				background: $primary7;
-				margin: 0 base(3);
-			}
+		&:before, &:after {
+			content: "";
+			height: 1px;
+			width: base(3);
+			display: block;
+			background: $primary7;
+			margin: 0 base(3);
 		}
-	} 
+	}
 }
 
 .spark-profile {

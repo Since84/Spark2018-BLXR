@@ -1,7 +1,7 @@
 .spark-contact-modal {
 	background: white;
     bottom: 0;
-	box-shadow: 1px 1px 5px $primary5;
+	box-shadow: 1px 5px 20px rgba($primary1,.5);
 	display: flex;
 	height: 455px;
     left: 0;
@@ -28,6 +28,36 @@
 			top: base(12);
 			left: base(-4);
 			color: $primary7;
+		}
+		.social-icons {
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			position: absolute;
+			text-align: center;
+
+			a{
+				color: white;
+				text-decoration: none;
+				font-size: 22px;
+				margin: 0 base();
+			}
+		}
+	}
+
+	.contact-right {
+	}
+
+	.close {
+		cursor: pointer;
+		position: absolute;
+		right: base(2);
+		top: base(2);
+		width: 30px;
+		svg {
+			height: auto;
+			width: 100%;
 		}
 	}
 
@@ -121,7 +151,6 @@
 		display: block;
 		margin: auto;
 		padding: 10px base(3);
-
 	}
 
 }

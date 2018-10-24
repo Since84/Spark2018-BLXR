@@ -25,10 +25,20 @@
 		</div>
 	</div>
 </footer>
-<div class="spark-contact-modal">
+<div class="spark-contact-modal spark-modal">
 	<div class="contact-left">
 		<h2 class="contact-heading">Contact Us</h2>
-		<div class="social-icons"></div>
+		<div class="social-icons">
+			{% for account in social %}
+				<a {% if account.social_site_url|length %} href="{{ account.social_site_url }}"{% endif %} 
+				class="{{ account.social_site_name }} fab fa-{{ account.social_site_name }}" target="blank"></a>
+			{% endfor %}
+		</div>
 	</div>
-	{{ contact_form }}
+	<div class="contact-right">
+		<span class="close spark-modal-close">
+			{% include "style/image/icon/x_button.svg" %}
+		</span>
+		{{ contact_form }}
+	</div>
 </div>

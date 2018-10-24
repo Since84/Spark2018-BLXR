@@ -1,16 +1,30 @@
 .spark-accordion {
 	background: $primary6;
-	padding: base(8);
+	padding: base(2);
+	
+	@include breakpoint($medium-up){
+		padding: base(8);
+	}
 
 	.accordion-tabs {
+		flex-wrap: wrap;
 		margin-bottom: base(4);
+		padding: 0;
 		.collection-heading {
 			@extend .cta-button;
-			@include span(3);
+			@include span(12);
 			text-align: center;
 			margin: 0 base();
 			box-shadow: 2px 2px 2px $primary5;
 			cursor: pointer;
+
+			@include breakpoint($small){
+				margin: base() 0;
+			}	
+
+			@include breakpoint($medium-up){
+				@include span(3);
+			}
 
 			&:not(.active-tab) {
 				@include gray-gradient-tb;
@@ -59,9 +73,13 @@
 		}
 
 		.spark-content {
-			position: relative;
-			margin-left: base(3);
 			padding-left: base(2);
+			position: relative;
+			margin-left: -18px;
+
+			@include breakpoint($medium-up){
+				margin-left: base(3);
+			}
 			&:before {
 				background-color: $primary4;
 				content: "";

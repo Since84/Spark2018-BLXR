@@ -1,5 +1,9 @@
+section.nav {
+	height: 72px;
+}
+
 .spark-nav-basic {
-	background-color: transparent;
+	background-color: $primary1;
 	color: white;
 	left: 0;
 	margin: auto;
@@ -10,7 +14,6 @@
 	transition: all .25s linear;
 
 	&.nav-scrolled {
-		background-color: $primary1;
 		box-shadow: 2px 2px 2px $secondary1;
 	}
 

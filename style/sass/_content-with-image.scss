@@ -2,6 +2,10 @@
 	background: $primary1;
 	position: relative;
 
+	.spark-container {
+		justify-content: left;
+	}
+
 
 	&.left {
 		@include breakpoint($medium-up){
@@ -11,7 +15,7 @@
 				display: block;
 				height: 100%;
 				position: absolute;
-				width: 45%;
+				width: 38%;
 			}
 		}
 
@@ -23,6 +27,7 @@
 				flex: 0;
 			}
 
+			@include span(5);
 			order: 1;
 			padding: base(4) base(10) base(4) 0;
 			padding-right: base(10);

@@ -12,7 +12,7 @@
 		@include subtle-gradient;
 		display: flex;
 		justify-content: space-between;
-		padding: base(3) 0;
+		padding: base(2) 0;
 
 		.spark-container {
 			align-items: center;
@@ -94,5 +94,20 @@
 		h3 {
 			text-transform: uppercase;
 		}
+	}
+	.ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, 
+	.ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text, 
+	.ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a{
+		@extend .knockout;
+		font-family: $body_family;
+	}
+	.ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label {
+		@extend h3;
+		color: white;
+		font-size: 14px;
+	}
+	.ctct-form-embed.form_1 .ctct-form-defaults {
+		background: none;
+		padding: base(4) 0;
 	}
 }

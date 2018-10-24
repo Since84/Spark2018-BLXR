@@ -7,7 +7,7 @@
 		}
 
 		function close($elem){
-			$elem.removeClass('open');
+			$elem.removeClass('open').removeClass('active');
 		}
 
 		function toggle($elem){
