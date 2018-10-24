@@ -21,16 +21,25 @@
 
 		.spark-content {
 			@extend .knockout;
+			order: 1;
+			padding: base(4) base(10) base(4) 0;
 
 			@include breakpoint($small) {
 				@include span(12);
 				flex: 0;
+				padding-right: base(18);
 			}
 
-			@include span(5);
-			order: 1;
-			padding: base(4) base(10) base(4) 0;
-			padding-right: base(10);
+			@include breakpoint($medium-up) {
+				@include span(5);
+				padding-right: base(8);
+				margin-right: base(4);
+			}
+
+			@include breakpoint($large-up) {
+				@include span(5);
+				padding-right: base(18);
+			}
 		}
 		img {
 			margin: base(4) 0 base(4) base(4);
