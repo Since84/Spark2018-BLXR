@@ -43,12 +43,12 @@ section.nav {
 	.spark-nav-basic-menu {
 
 		@include breakpoint(max-width 1020px){
-			align-items: center;
+			align-items: flex-start;
 			background-color: $primary7;
 			display: none;
 			flex-direction: column;
 			height: 100vh;
-			justify-content: center;
+			justify-content: flex-start;
 			left: 0;
 			overflow: scroll;
 			position: fixed;
@@ -62,13 +62,15 @@ section.nav {
 			}
 
 			li {
+				width: 100%;
 				a {
 					color: $primary1;
 					text-decoration: none;
 					font-size: 18px;
-					font-weight: bold;
-					padding: base(2) 0;
+					padding: base(2) base(2);
 					display: block;
+					border-bottom: 1px solid $primary5;
+					width: 100%;
 				}
 			}
 
