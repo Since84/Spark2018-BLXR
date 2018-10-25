@@ -18,8 +18,10 @@ section.nav {
 	}
 
 	.spark-nav-basic-container .spark-container {
+		align-items: center;
 		display: flex;
 		justify-content: space-between;
+
 		&:after {
 			content: none;
 		}
@@ -29,40 +31,107 @@ section.nav {
 		align-items: center;
 		display: inline-flex;
 
+		a{
+			padding: 17px 0;
+		}
+
 		img {
 			width: base(18);
 		}
 	}
 
 	.spark-nav-basic-menu {
-	    align-items: center;
-	    display: flex;
-		li {
-			display: inline-block;
-			vertical-align: middle;
-			a {
-				color: $primary6;
-				display: block;
-				text-decoration: none;
-				text-transform: uppercase;
-				font-weight: 300;
-				padding: base(3) base(2);
+
+		@include breakpoint(max-width 1020px){
+			align-items: center;
+			background-color: $primary7;
+			display: none;
+			flex-direction: column;
+			height: 100vh;
+			justify-content: center;
+			left: 0;
+			overflow: scroll;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 100;
+			padding: base(5) 0;
+
+			&.open {
+				display: flex;
 			}
 
-			&:hover {
-				background: $secondary1;
+			li {
 				a {
-					font-weight: 700;
-					margin-top: 4px;
-					padding: (base(3) - 4px) base(2) ;
-				}
-				&:after {
-					@include subtle-gradient;
-					content: "";
-					bottom: 0;
+					color: $primary1;
+					text-decoration: none;
+					font-size: 18px;
+					font-weight: bold;
+					padding: base(2) 0;
 					display: block;
-					height: 3px;
+				}
+			}
+
+			.spark-close-button {
+				height: 30px;
+				position: fixed;
+				right: 20px;
+				top: 20px;
+				width: 30px;
+
+				&:before, &:after {
+					background: $primary1;
+					bottom: 0;
+					content: "";
+					display: block;
+					height: 2px;
+					margin: auto;
+					position: absolute;
+					top: 0;
 					width: 100%;
+				}
+
+				&:before {
+					transform: rotate(45deg);
+				}
+
+				&:after {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+		@include breakpoint (min-width 1020px){
+
+		    align-items: center;
+		    display: flex;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				a {
+					color: $primary6;
+					display: block;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: 300;
+					padding: base(3) base(2);
+				}
+
+				&:hover {
+					background: $secondary1;
+					a {
+						font-weight: 700;
+						margin-top: 4px;
+						padding: (base(3) - 4px) base(2) ;
+					}
+					&:after {
+						@include subtle-gradient;
+						content: "";
+						bottom: 0;
+						display: block;
+						height: 3px;
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -70,6 +139,40 @@ section.nav {
 
 	.spark-nav-basic-menu-sub-nav {
 		display: none;
+	}
+
+	.spark-menu-button {
+		display: inline-block;
+		height: 20px;
+		width: 25px;
+		position: relative;
+
+		@include breakpoint(min-width 1020px) {
+			display: none;
+		}
+
+		.button-bar, &:before, &:after {
+			background: white;
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 2px;
+			margin: auto;
+			margin-right: 10px;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		&:before {
+			top: 0;
+			bottom: auto;
+		}
+
+		&:after {
+			bottom: 0;
+			top: auto;
+		}
 	}
 
 	.mobile-menu-button {

@@ -90,10 +90,14 @@
 		    }
 		});
 
-		$('.mobile-menu-button').click(function(){ 
+		$('.mobile-menu-button, .spark-menu-button').click(function(){ 
 			// Open Menu
 			toggleMenu() 
 		});
+
+		$('.spark-close-button').click(function(){
+			toggleMenu()
+		})
 
 		$('.video-container').click(function(e){
 			var $video = $(e.currentTarget).find('iframe.video');

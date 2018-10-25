@@ -476,66 +476,168 @@ section.nav {
 }
 /* line 20, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-container .spark-container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
-/* line 23, style/sass/_nav.scss */
+/* line 25, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-container .spark-container:after {
   content: none;
 }
-/* line 28, style/sass/_nav.scss */
+/* line 30, style/sass/_nav.scss */
 .spark-nav-basic .spark-site-logo {
   align-items: center;
   display: inline-flex;
 }
-/* line 32, style/sass/_nav.scss */
+/* line 34, style/sass/_nav.scss */
+.spark-nav-basic .spark-site-logo a {
+  padding: 17px 0;
+}
+/* line 38, style/sass/_nav.scss */
 .spark-nav-basic .spark-site-logo img {
   width: 144px;
 }
-/* line 37, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu {
-  align-items: center;
-  display: flex;
+@media (max-width: 1020px) {
+  /* line 43, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu {
+    align-items: center;
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 40px 0;
+  }
+  /* line 60, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu.open {
+    display: flex;
+  }
+  /* line 65, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu li a {
+    color: #1A1A33;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 0;
+    display: block;
+  }
+  /* line 75, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu .spark-close-button {
+    height: 30px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+  }
+  /* line 82, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu .spark-close-button:before, .spark-nav-basic .spark-nav-basic-menu .spark-close-button:after {
+    background: #1A1A33;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  /* line 94, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu .spark-close-button:before {
+    transform: rotate(45deg);
+  }
+  /* line 98, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu .spark-close-button:after {
+    transform: rotate(-45deg);
+  }
 }
-/* line 40, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu li {
-  display: inline-block;
-  vertical-align: middle;
+@media (min-width: 1020px) {
+  /* line 43, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu {
+    align-items: center;
+    display: flex;
+  }
+  /* line 108, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 111, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu li a {
+    color: #F4F5F9;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 24px 16px;
+  }
+  /* line 120, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu li:hover {
+    background: #0D0D2A;
+  }
+  /* line 122, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu li:hover a {
+    font-weight: 700;
+    margin-top: 4px;
+    padding: 20px 16px;
+  }
+  /* line 127, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu li:hover:after {
+    background: linear-gradient(to right, #234092, #2085c7);
+    transition: all 0.45s;
+    content: "";
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 100%;
+  }
 }
-/* line 43, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu li a {
-  color: #F4F5F9;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 300;
-  padding: 24px 16px;
-}
-/* line 52, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu li:hover {
-  background: #0D0D2A;
-}
-/* line 54, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu li:hover a {
-  font-weight: 700;
-  margin-top: 4px;
-  padding: 20px 16px;
-}
-/* line 59, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu li:hover:after {
-  background: linear-gradient(to right, #234092, #2085c7);
-  transition: all 0.45s;
-  content: "";
-  bottom: 0;
-  display: block;
-  height: 3px;
-  width: 100%;
-}
-/* line 71, style/sass/_nav.scss */
+/* line 140, style/sass/_nav.scss */
 .spark-nav-basic .spark-nav-basic-menu-sub-nav {
   display: none;
 }
-/* line 75, style/sass/_nav.scss */
+/* line 144, style/sass/_nav.scss */
+.spark-nav-basic .spark-menu-button {
+  display: inline-block;
+  height: 20px;
+  width: 25px;
+  position: relative;
+}
+@media (min-width: 1020px) {
+  /* line 144, style/sass/_nav.scss */
+  .spark-nav-basic .spark-menu-button {
+    display: none;
+  }
+}
+/* line 154, style/sass/_nav.scss */
+.spark-nav-basic .spark-menu-button .button-bar, .spark-nav-basic .spark-menu-button:before, .spark-nav-basic .spark-menu-button:after {
+  background: white;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: auto;
+  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 167, style/sass/_nav.scss */
+.spark-nav-basic .spark-menu-button:before {
+  top: 0;
+  bottom: auto;
+}
+/* line 172, style/sass/_nav.scss */
+.spark-nav-basic .spark-menu-button:after {
+  bottom: 0;
+  top: auto;
+}
+/* line 178, style/sass/_nav.scss */
 .spark-nav-basic .mobile-menu-button {
   display: none;
 }
