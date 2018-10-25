@@ -642,6 +642,11 @@ section.nav {
   display: none;
 }
 
+/* line 183, style/sass/_nav.scss */
+.menu-open {
+  overflow: hidden;
+}
+
 /* line 1, style/sass/_hero.scss */
 .spark-vimeo-hero {
   background: #1A1A33;
