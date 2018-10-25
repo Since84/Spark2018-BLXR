@@ -23,7 +23,7 @@
 			}	
 
 			@include breakpoint($medium-up){
-				@include span(3);
+				@include span(2.5);
 			}
 
 			&:not(.active-tab) {

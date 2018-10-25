@@ -20,6 +20,9 @@ section.nav {
 	.spark-nav-basic-container .spark-container {
 		display: flex;
 		justify-content: space-between;
+		&:after {
+			content: none;
+		}
 	}
 
 	.spark-site-logo {
