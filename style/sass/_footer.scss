@@ -95,6 +95,23 @@
 			text-transform: uppercase;
 		}
 	}
+
+	.ctct-form-custom {
+		align-items: center;
+		display: flex;
+		.ctct-form-element {
+			border-radius: 0;
+			border:none;
+		}
+		.ctct-form-field {
+			flex: 1;
+		}
+
+		button.ctct-form-button {
+		    flex-basis: 95px;
+		    padding: 14px !important;
+		}
+	}
 	.ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, 
 	.ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text, 
 	.ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a{

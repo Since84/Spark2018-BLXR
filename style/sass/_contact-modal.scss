@@ -1,156 +1,170 @@
-.spark-contact-modal {
-	background: white;
-    bottom: 0;
-	box-shadow: 1px 5px 20px rgba($primary1,.5);
-	display: flex;
-	height: 455px;
-    left: 0;
-    margin: auto;
-	position: fixed;
-    right: 0;
-	top: 0;
-	width: 620px;
-	z-index: 1000;
-
-	&:not(.active) {
-		display: none;
-	}
-
-	.contact-left {
-		width: 202px;
-		background: url('style/image/graphics/contact-background.jpg');
-		margin-right: base(4);
-		position: relative;
-
-		.contact-heading {
-			position: absolute;
-			transform: rotate(-90deg);
-			top: base(12);
-			left: base(-4);
-			color: $primary7;
-		}
-		.social-icons {
-			bottom: 20px;
-			left: 0;
-			right: 0;
-			margin: auto;
-			position: absolute;
-			text-align: center;
-
-			a{
-				color: white;
-				text-decoration: none;
-				font-size: 22px;
-				margin: 0 base();
-			}
-		}
-	}
-
-	.contact-right {
-	}
-
-	.close {
-		cursor: pointer;
-		position: absolute;
-		right: base(2);
-		top: base(2);
-		width: 30px;
-		svg {
-			height: auto;
-			width: 100%;
-		}
-	}
-
-	.wpcf7 {
-		padding: base(3);
-		input {
-			&[type="text"], &[type="email"] {
-				border: none;
-				border-bottom: 1px solid $primary5;
-				margin-bottom: base();
-				padding: base() 0;
-				width: 100%;
-				font-family: $body_family;
-				color: $primary1;
-			}
-		}
-
-		textarea {
-			border:none;
-			border-bottom: 1px solid $primary5;
-			margin-bottom: base(3);
-			padding: base(2) 0;
-			width: 100%;
-			height: 120px;
-		}
-
-		.wpcf7-list-item {
-			margin: 0;
-			font-weight: 600;
-			position: relative;
-			margin-top: base(2);
-
-			.wpcf7-list-item-label{
-				padding-left: base(4);
-				display: block;
-				&:before {
-					background: $secondary2;
-					border: 4px solid transparent;
-					border-radius: 50%;
-					content: "";
-					display: inline-block;
-					vertical-align: middle;
-					width: 10px;
-					height: 10px;
-					position: absolute;
-					left: 0;
-					top: 5;
-				}
-				&:after {
-					content: "this is the other content";
-					font-weight: 400;
-					display: block;
-				}
-			}
-			
-
-			input[type="radio"] {
-				height: 20px;
-				left: 0px;
-				margin: 0;
-				opacity: .01;
-				padding: 10px;
-				position: absolute;
-				top: 5px;
-				width: 20px;
-				z-index: 999;
-			}
-			input[type="radio"]:checked ~ .wpcf7-list-item-label {
-				position: relative;
-				&:before {
-					border: 4px solid $primary3;
-				}
-			}
-		}
-	}
-
-	.form-container {
-		border-radius: 5px;
-		box-shadow: 0px 0px 8px $secondary2;
-		padding: 0 base(3);
-		margin-top: base(2); 
-	}
-
-	.form-radios {
-		margin-bottom: base(2);
-		font-size: 11px;
-		line-height: 1.4;
-	}
-
-	.cta-button {
+.spark-contact-modal-container{
+	&:before {
+		content: "";
+		position: fixed;
 		display: block;
-		margin: auto;
-		padding: 10px base(3);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,.7);
+
 	}
 
+	&.active .spark-contact-modal {
+		background: white;
+	    bottom: 0;
+		box-shadow: 1px 5px 20px rgba($primary1,.5);
+		display: flex;
+		height: 455px;
+	    left: 0;
+	    margin: auto;
+		position: fixed;
+	    right: 0;
+		top: 0;
+		width: 620px;
+		z-index: 1000;
+
+		&:not(.active) {
+			display: none;
+		}
+
+		.contact-left {
+			width: 202px;
+			background: url('style/image/graphics/contact-background.jpg');
+			margin-right: base(4);
+			position: relative;
+
+			.contact-heading {
+				position: absolute;
+				transform: rotate(-90deg);
+				top: base(12);
+				left: base(-4);
+				color: $primary7;
+			}
+			.social-icons {
+				bottom: 20px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				position: absolute;
+				text-align: center;
+
+				a{
+					color: white;
+					text-decoration: none;
+					font-size: 22px;
+					margin: 0 base();
+				}
+			}
+		}
+
+		.contact-right {
+		}
+
+		.close {
+			cursor: pointer;
+			position: absolute;
+			right: base(2);
+			top: base(2);
+			width: 30px;
+			svg {
+				height: auto;
+				width: 100%;
+			}
+		}
+
+		.wpcf7 {
+			padding: base(3);
+			input {
+				&[type="text"], &[type="email"] {
+					border: none;
+					border-bottom: 1px solid $primary5;
+					margin-bottom: base();
+					padding: base() 0;
+					width: 100%;
+					font-family: $body_family;
+					color: $primary1;
+				}
+			}
+
+			textarea {
+				border:none;
+				border-bottom: 1px solid $primary5;
+				margin-bottom: base(3);
+				padding: base(2) 0;
+				width: 100%;
+				height: 120px;
+			}
+
+			.wpcf7-list-item {
+				margin: 0;
+				font-weight: 600;
+				position: relative;
+				margin-top: base(2);
+
+				.wpcf7-list-item-label{
+					padding-left: base(4);
+					display: block;
+					&:before {
+						background: $secondary2;
+						border: 4px solid transparent;
+						border-radius: 50%;
+						content: "";
+						display: inline-block;
+						vertical-align: middle;
+						width: 10px;
+						height: 10px;
+						position: absolute;
+						left: 0;
+						top: 5;
+					}
+					&:after {
+						content: "this is the other content";
+						font-weight: 400;
+						display: block;
+					}
+				}
+				
+
+				input[type="radio"] {
+					height: 20px;
+					left: 0px;
+					margin: 0;
+					opacity: .01;
+					padding: 10px;
+					position: absolute;
+					top: 5px;
+					width: 20px;
+					z-index: 999;
+				}
+				input[type="radio"]:checked ~ .wpcf7-list-item-label {
+					position: relative;
+					&:before {
+						border: 4px solid $primary3;
+					}
+				}
+			}
+		}
+
+		.form-container {
+			border-radius: 5px;
+			box-shadow: 0px 0px 8px $secondary2;
+			padding: 0 base(3);
+			margin-top: base(2); 
+		}
+
+		.form-radios {
+			margin-bottom: base(2);
+			font-size: 11px;
+			line-height: 1.4;
+		}
+
+		.cta-button {
+			display: block;
+			margin: auto;
+			padding: 10px base(3);
+		}
+
+	}
 }

@@ -67,7 +67,7 @@
 		}
 
 		$('.contact-modal-trigger').click(function(){
-			$('.spark-contact-modal').addClass('active');
+			$('.spark-contact-modal-container').addClass('active');
 		})
 
 
