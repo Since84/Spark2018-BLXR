@@ -1496,7 +1496,12 @@ section.nav {
 }
 
 /* line 2, style/sass/_contact-modal.scss */
-.spark-contact-modal-container:before {
+.spark-contact-modal-container.active {
+  z-index: 1001;
+  position: relative;
+}
+/* line 5, style/sass/_contact-modal.scss */
+.spark-contact-modal-container.active:before {
   content: "";
   position: fixed;
   display: block;
@@ -1504,9 +1509,9 @@ section.nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
 }
-/* line 14, style/sass/_contact-modal.scss */
+/* line 15, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal {
   background: white;
   bottom: 0;
@@ -1521,18 +1526,14 @@ section.nav {
   width: 620px;
   z-index: 1000;
 }
-/* line 28, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal:not(.active) {
-  display: none;
-}
-/* line 32, style/sass/_contact-modal.scss */
+/* line 29, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .contact-left {
   width: 202px;
   background: url("style/image/graphics/contact-background.jpg");
   margin-right: 32px;
   position: relative;
 }
-/* line 38, style/sass/_contact-modal.scss */
+/* line 35, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-heading {
   position: absolute;
   transform: rotate(-90deg);
@@ -1540,7 +1541,7 @@ section.nav {
   left: -32px;
   color: #ffffff;
 }
-/* line 45, style/sass/_contact-modal.scss */
+/* line 42, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .contact-left .social-icons {
   bottom: 20px;
   left: 0;
@@ -1549,14 +1550,14 @@ section.nav {
   position: absolute;
   text-align: center;
 }
-/* line 53, style/sass/_contact-modal.scss */
+/* line 50, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .contact-left .social-icons a {
   color: white;
   text-decoration: none;
   font-size: 22px;
   margin: 0 8px;
 }
-/* line 65, style/sass/_contact-modal.scss */
+/* line 62, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .close {
   cursor: pointer;
   position: absolute;
@@ -1564,16 +1565,16 @@ section.nav {
   top: 16px;
   width: 30px;
 }
-/* line 71, style/sass/_contact-modal.scss */
+/* line 68, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .close svg {
   height: auto;
   width: 100%;
 }
-/* line 77, style/sass/_contact-modal.scss */
+/* line 74, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 {
   padding: 24px;
 }
-/* line 80, style/sass/_contact-modal.scss */
+/* line 77, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 input[type="text"], .spark-contact-modal-container.active .spark-contact-modal .wpcf7 input[type="email"] {
   border: none;
   border-bottom: 1px solid #DFE0E4;
@@ -1583,7 +1584,7 @@ section.nav {
   font-family: "montserrat", sans-serif;
   color: #1A1A33;
 }
-/* line 91, style/sass/_contact-modal.scss */
+/* line 88, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 textarea {
   border: none;
   border-bottom: 1px solid #DFE0E4;
@@ -1592,19 +1593,19 @@ section.nav {
   width: 100%;
   height: 120px;
 }
-/* line 100, style/sass/_contact-modal.scss */
+/* line 97, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item {
   margin: 0;
   font-weight: 600;
   position: relative;
   margin-top: 16px;
 }
-/* line 106, style/sass/_contact-modal.scss */
+/* line 103, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label {
   padding-left: 32px;
   display: block;
 }
-/* line 109, style/sass/_contact-modal.scss */
+/* line 106, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label:before {
   background: #DFE0E4;
   border: 4px solid transparent;
@@ -1618,13 +1619,13 @@ section.nav {
   left: 0;
   top: 5;
 }
-/* line 122, style/sass/_contact-modal.scss */
+/* line 119, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label:after {
   content: "this is the other content";
   font-weight: 400;
   display: block;
 }
-/* line 130, style/sass/_contact-modal.scss */
+/* line 127, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"] {
   height: 20px;
   left: 0px;
@@ -1636,30 +1637,34 @@ section.nav {
   width: 20px;
   z-index: 999;
 }
-/* line 141, style/sass/_contact-modal.scss */
+/* line 138, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label {
   position: relative;
 }
-/* line 143, style/sass/_contact-modal.scss */
+/* line 140, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label:before {
   border: 4px solid #2085C7;
 }
-/* line 150, style/sass/_contact-modal.scss */
+/* line 147, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .form-container {
   border-radius: 5px;
   box-shadow: 0px 0px 8px #DFE0E4;
   padding: 0 24px;
   margin-top: 16px;
 }
-/* line 157, style/sass/_contact-modal.scss */
+/* line 154, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .form-radios {
   margin-bottom: 16px;
   font-size: 11px;
   line-height: 1.4;
 }
-/* line 163, style/sass/_contact-modal.scss */
+/* line 160, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .cta-button, .spark-contact-modal-container.active .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact-modal-container.active .spark-contact-modal .collection-heading {
   display: block;
   margin: auto;
   padding: 10px 24px;
+}
+/* line 169, style/sass/_contact-modal.scss */
+.spark-contact-modal-container:not(.active) {
+  display: none;
 }
