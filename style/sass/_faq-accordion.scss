@@ -12,7 +12,7 @@
 		padding: 0;
 		.collection-heading {
 			@extend .cta-button;
-			@include span(12);
+			@include span(3);
 			text-align: center;
 			margin: 0 base();
 			box-shadow: 2px 2px 2px $primary5;
@@ -53,8 +53,12 @@
 		background-color: $primary7; 
 		border-bottom: 1px solid $secondary2;
 		flex: 0;
-		padding: base(2) base(4) base(2) base(8);
+		padding: base(2) base(4) base(2) base(5);
 		position: relative;
+
+		@include breakpoint($medium-up){
+			padding: base(2) base(4) base(2) base(8);
+		}
 
 		.accordion-trigger {
 			cursor: pointer;
@@ -65,7 +69,7 @@
 				content: "";
 				display: block;
 				height: 10px;
-				left: base(5);
+				left: base(2.5);
 				position: absolute;	
 				top: base(5);
 				width: 10px;

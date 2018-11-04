@@ -12,7 +12,6 @@
 
 		function toggle($elem){
 			$elem.toggleClass('open')
-			$('body').toggleClass('menu-open');
 		}
 
 		function openModal($elem){
@@ -63,7 +62,7 @@
 
 		function toggleMenu(){
 			toggle($('.mobile-menu-button, .spark-nav-basic-menu'));
-
+			$('body').toggleClass('menu-open');
 		}
 
 		$('.contact-modal-trigger').click(function(){

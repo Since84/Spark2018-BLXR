@@ -17,20 +17,29 @@
 		    bottom: 0;
 			box-shadow: 1px 5px 20px rgba($primary1,.5);
 			display: flex;
-			height: 455px;
+			height: 100%;
 		    left: 0;
 		    margin: auto;
 			position: fixed;
 		    right: 0;
 			top: 0;
-			width: 620px;
+			width: 100%;
 			z-index: 1000;
+
+			@include breakpoint($medium-up){
+				height: 455px;
+				width: 620px;
+			}
 
 			.contact-left {
 				width: 202px;
 				background: url('style/image/graphics/contact-background.jpg');
 				margin-right: base(4);
 				position: relative;
+
+				@include breakpoint($small){
+					display: none;
+				}
 
 				.contact-heading {
 					position: absolute;
@@ -52,11 +61,18 @@
 						text-decoration: none;
 						font-size: 22px;
 						margin: 0 base();
+
+						&:not(.reddit):not(.twitter):not(.medium) {
+							display: none;
+						}
 					}
 				}
 			}
 
 			.contact-right {
+				@include breakpoint($small){
+					padding-top: base(8);
+				}
 			}
 
 			.close {
@@ -106,7 +122,6 @@
 						&:before {
 							background: $secondary2;
 							border: 4px solid transparent;
-							border-radius: 50%;
 							content: "";
 							display: inline-block;
 							vertical-align: middle;
@@ -124,7 +139,7 @@
 					}
 					
 
-					input[type="radio"] {
+					input[type="checkbox"] {
 						height: 20px;
 						left: 0px;
 						margin: 0;
@@ -135,7 +150,7 @@
 						width: 20px;
 						z-index: 999;
 					}
-					input[type="radio"]:checked ~ .wpcf7-list-item-label {
+					input[type="checkbox"]:checked ~ .wpcf7-list-item-label {
 						position: relative;
 						&:before {
 							border: 4px solid $primary3;

@@ -8,11 +8,10 @@
 
 		.spark-grid-item {
 			@include span(12);
-			margin-bottom: base(8); 
+			margin-bottom: base(6); 
 
 			@include breakpoint($medium-up) {
 				@include span(3);
-				margin-bottom: base(6);
 			}
 		}
 	}

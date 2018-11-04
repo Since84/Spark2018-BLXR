@@ -27,7 +27,6 @@
 			@include breakpoint($small) {
 				@include span(12);
 				flex: 0;
-				padding-right: base(18);
 			}
 
 			@include breakpoint($medium-up) {
