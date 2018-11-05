@@ -133,5 +133,12 @@
 		        closeModal(container);
 		    }
 		})
+
+		$('.trigger-youtube-modal').on('click', function(e){
+			var id = $(e.currentTarget).parents(".youtube-item").data('id');
+			var $modal = $('.youtube-modal');
+			$modal.find('iframe').removeAttr('src').attr('src', 'https://www.youtube.com/embed/'+ id +'?autoplay=1');
+			$modal.addClass('open');
+		})
 	})
 })(jQuery);

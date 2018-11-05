@@ -453,6 +453,41 @@ em {
   color: #F4F5F9;
 }
 
+/* line 24, style/sass/_ui.scss */
+.youtube-modal:not(.open) {
+  display: none;
+}
+/* line 28, style/sass/_ui.scss */
+.youtube-modal.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 36, style/sass/_ui.scss */
+.youtube-modal.open .youtube-frame {
+  background: white;
+  bottom: 0;
+  box-shadow: 1px 5px 20px rgba(26, 26, 51, 0.5);
+  display: flex;
+  height: 360px;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 560px;
+  z-index: 1000;
+}
+/* line 50, style/sass/_ui.scss */
+.youtube-modal.open .youtube-frame svg {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}
+
 /* line 1, style/sass/_nav.scss */
 section.nav {
   height: 72px;
@@ -1821,12 +1856,7 @@ section.nav {
   padding-left: 8px;
   flex: 1 1 calc(100%);
   max-width: calc(100%);
-}
-@media (max-width: 736px) {
-  /* line 16, style/sass/_positions.scss */
-  .spark-position-list .spark-position-preview-container {
-    margin-bottom: 32px;
-  }
+  margin-bottom: 32px;
 }
 @media (min-width: 736px) {
   /* line 16, style/sass/_positions.scss */
@@ -1841,13 +1871,25 @@ section.nav {
 .spark-position-list .spark-position-preview {
   box-shadow: 4px 4px 1px #DFE0E4;
   background: #ffffff;
-  padding-top: 24px;
 }
-/* line 33, style/sass/_positions.scss */
+/* line 32, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview h3, .spark-position-list .spark-position-preview .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-position-list .spark-position-preview .ctct-form-label, .spark-position-list .spark-position-preview p {
   padding: 0 24px;
 }
-/* line 37, style/sass/_positions.scss */
+/* line 36, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview h3, .spark-position-list .spark-position-preview .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-position-list .spark-position-preview .ctct-form-label {
+  padding-top: 24px;
+}
+/* line 40, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview p {
+  padding-bottom: 24px;
+}
+/* line 44, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview p + a.spark-position-link {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 49, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link {
   padding: 16px 0;
   display: block;
@@ -1856,7 +1898,7 @@ section.nav {
   text-align: center;
   text-decoration: none;
 }
-/* line 44, style/sass/_positions.scss */
+/* line 56, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:before {
   content: "";
   top: 0;
@@ -1868,11 +1910,11 @@ section.nav {
   right: 0;
   margin: auto;
 }
-/* line 56, style/sass/_positions.scss */
+/* line 68, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link span {
   transition: color .12s linear .25s;
 }
-/* line 60, style/sass/_positions.scss */
+/* line 72, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -1885,13 +1927,41 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 73, style/sass/_positions.scss */
+/* line 85, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:hover span {
   color: white;
   z-index: 1;
   position: relative;
 }
-/* line 79, style/sass/_positions.scss */
+/* line 91, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:hover:after {
   height: 100%;
+}
+/* line 97, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .video-thumb {
+  position: relative;
+  cursor: pointer;
+}
+/* line 101, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .video-thumb img {
+  width: 100%;
+}
+/* line 104, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .video-thumb:after {
+  background-image: url(style/image/play-button/inactive.png);
+  background-size: cover;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+/* line 119, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .video-thumb:hover:after {
+  background-image: url(style/image/play-button/active.png);
 }

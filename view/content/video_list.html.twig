@@ -1,0 +1,22 @@
+<section class="spark-position-list">
+	<div class="spark-container">
+		<h3 class="section-heading">{{ layout.heading }}</h3>
+		{% for post in layout.videos %}
+			<div class="spark-position-preview-container">
+				<div class="spark-position-preview youtube-item" data-id="{{ post.youtube_id }}">
+					<div class="video-thumb trigger-youtube-modal">
+						<img src="https://img.youtube.com/vi/{{ post.youtube_id }}/maxresdefault.jpg"/>
+					</div>
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.description }}</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="youtube-modal">
+		<div class="youtube-frame">
+			{% include 'style/image/icon/x_button.svg' %}
+			<iframe width="560" height="360" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</section>

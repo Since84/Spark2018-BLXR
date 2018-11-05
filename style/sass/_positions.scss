@@ -15,9 +15,9 @@
 	
 	.spark-position-preview-container {
 		@include span(12);
+		margin-bottom: base(4);
 
 		@include breakpoint($small){
-			margin-bottom: base(4);
 		}
 		
 		@include breakpoint($medium-up){
@@ -28,10 +28,22 @@
 	.spark-position-preview {
 		box-shadow: 4px 4px 1px $secondary2;
 		background: $primary7;
-		padding-top: base(3);
 
 		h3,p {
 			padding: 0 base(3);
+		}
+
+		h3 {
+			padding-top: base(3);
+		}
+
+		p {
+			padding-bottom: base(3);
+		}
+
+		p + a.spark-position-link {
+			margin-top: 0;
+			padding-top: 0;
 		}
 
 		.spark-position-link {
@@ -79,6 +91,33 @@
 				&:after{
 					height: 100%;
 				}
+			}
+		}
+
+		.video-thumb {
+			position: relative;
+			cursor: pointer;
+
+			img {
+				width: 100%;
+			}
+			&:after {
+			  background-image: url(style/image/play-button/inactive.png);
+			  background-size: cover;
+			  bottom: 0;
+			  content: "";
+			  display: block;
+			  height: 100px;
+			  left: 0;
+			  margin: auto;
+			  position: absolute;
+			  right: 0;
+			  top: 0;
+			  width: 100px;
+			}
+
+			&:hover:after {
+			    background-image: url(style/image/play-button/active.png);
 			}
 		}
 	}
