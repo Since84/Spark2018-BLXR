@@ -135,4 +135,31 @@
 	.ctct-form-success * {
 	    color: white !important;
 	}
+
+	.ctct-form-label {
+		display: none !important;
+	}
+
+	div.ctct-form-field {
+		margin-bottom: 0 !important;
+
+	}
+
+	.ctct-form-footer {
+		display: none;
+	}
+
+	.ctct-form-defaults {
+		padding: 0 !important;
+	}
+
+	.ctct-form-button {
+		font-family: $body_family;
+		text-transform: uppercase !important;
+		font-size: 12px !important;
+	}
+
+	.ctct-form-element {
+		height: 42px !important;
+	}
 }

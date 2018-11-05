@@ -1634,6 +1634,32 @@ section.nav {
 .spark-footer .ctct-form-success * {
   color: white !important;
 }
+/* line 139, style/sass/_footer.scss */
+.spark-footer .ctct-form-label {
+  display: none !important;
+}
+/* line 143, style/sass/_footer.scss */
+.spark-footer div.ctct-form-field {
+  margin-bottom: 0 !important;
+}
+/* line 148, style/sass/_footer.scss */
+.spark-footer .ctct-form-footer {
+  display: none;
+}
+/* line 152, style/sass/_footer.scss */
+.spark-footer .ctct-form-defaults {
+  padding: 0 !important;
+}
+/* line 156, style/sass/_footer.scss */
+.spark-footer .ctct-form-button {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+}
+/* line 162, style/sass/_footer.scss */
+.spark-footer .ctct-form-element {
+  height: 42px !important;
+}
 
 /* line 2, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active {
