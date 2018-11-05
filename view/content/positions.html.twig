@@ -1,0 +1,14 @@
+<section class="spark-position-list">
+	<div class="spark-container">
+		<h3 class="section-heading">Available Positions</h3>
+		{% for position in layout.posts %}
+			<div class="spark-position-preview-container">
+				<div class="spark-position-preview">
+					<h3>{{ position.name }}</h3>
+					<p>{{ position.location }}</p>
+					<a class="spark-position-link" href="{{ position.link }}"><span>See Position</span></a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>

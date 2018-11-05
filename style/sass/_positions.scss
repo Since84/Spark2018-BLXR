@@ -1,0 +1,85 @@
+.spark-position-list {
+	background: $primary6;
+	padding: base(10) 0;
+
+	.spark-container {
+		flex-wrap: wrap;
+		justify-content: center;
+		.section-heading {
+			@include span(12);
+			text-align: center;
+			margin-bottom: base(4);
+		}
+	}
+
+	
+	.spark-position-preview-container {
+		@include span(12);
+
+		@include breakpoint($small){
+			margin-bottom: base(4);
+		}
+		
+		@include breakpoint($medium-up){
+			@include span(4);
+		}
+	}
+	
+	.spark-position-preview {
+		box-shadow: 4px 4px 1px $secondary2;
+		background: $primary7;
+		padding-top: base(3);
+
+		h3,p {
+			padding: 0 base(3);
+		}
+
+		.spark-position-link {
+			padding: base(2) 0;
+			display: block;
+			margin-top: base(2);
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			&:before {
+				content: "";
+				top: 0;
+				position: absolute;
+				border-top: 1px solid $primary6;
+				width: calc(100% - #{base(4)});
+				height: 0;
+				left: 0;
+				right: 0; 
+				margin: auto 
+			}
+
+			span {
+				transition: color .12s linear .25s;
+			}
+
+			&:after {
+				@include subtle-gradient;
+				bottom: 0;
+				content: "";
+				height: 3px;
+				left: 0;
+				position: absolute;
+				transition: color .25s linear .25s, height .5s linear;
+				width: 100%;
+				z-index: 0;
+			}
+
+			&:hover {
+				span {
+					color: white;
+					z-index: 1;
+					position: relative;
+				}
+
+				&:after{
+					height: 100%;
+				}
+			}
+		}
+	}
+}

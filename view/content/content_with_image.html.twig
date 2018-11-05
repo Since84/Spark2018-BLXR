@@ -12,11 +12,15 @@
 			.content: html content object
 			.background-image: image object
 #}
-<section class="spark-content-with-image {{ layout.content_position }}">
+<section class="spark-content-with-image {{ layout.template|lower }} {{ layout.content_position }}">
+	{% if layout.template == null or layout.template  == "default" %}
 	<div class="spark-container">
 		<img src="{{layout.image.url}}"/>
 		<div class="spark-content">
 			{{ layout.content }}
 		</div>
 	</div>
+	{% else %}
+		{% include 'view/content/' ~ layout.template ~ '-content-with-image.html.twig' %}
+	{% endif %}
 </section>

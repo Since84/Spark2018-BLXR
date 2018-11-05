@@ -42,6 +42,10 @@ $link_color: $primary2;
 	transition: all .45s;
 }
 
+@mixin gray-gradient {
+	background: linear-gradient(to right, $primary6, $secondary2);
+	transition: all .45s;
+}
 @mixin gray-gradient-tb {
 	background: linear-gradient(to bottom, $primary6, $secondary2);
 	transition: all .45s;

@@ -269,9 +269,9 @@ section .spark-container:after {
 	Site Color Pallette
 */
 /* line 22, style/sass/_colors.scss */
-.knockout, .spark-content-with-image.left .spark-content, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
+.knockout, .spark-content-with-image.default.left .spark-content, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text,
-.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.left .spark-content *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
+.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.default.left .spark-content *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a * {
   color: white;
@@ -882,16 +882,19 @@ section.nav {
 
 /* line 1, style/sass/_content-with-image.scss */
 .spark-content-with-image {
-  background: #1A1A33;
   position: relative;
 }
-/* line 5, style/sass/_content-with-image.scss */
-.spark-content-with-image .spark-container {
+/* line 4, style/sass/_content-with-image.scss */
+.spark-content-with-image.default {
+  background: #1A1A33;
+}
+/* line 6, style/sass/_content-with-image.scss */
+.spark-content-with-image.default .spark-container {
   justify-content: left;
 }
 @media (min-width: 736px) {
-  /* line 12, style/sass/_content-with-image.scss */
-  .spark-content-with-image.left:before {
+  /* line 13, style/sass/_content-with-image.scss */
+  .spark-content-with-image.default.left:before {
     background: linear-gradient(to top, #234092, #2085c7);
     transition: all .45s;
     content: "";
@@ -901,14 +904,14 @@ section.nav {
     width: 38%;
   }
 }
-/* line 22, style/sass/_content-with-image.scss */
-.spark-content-with-image.left .spark-content {
+/* line 23, style/sass/_content-with-image.scss */
+.spark-content-with-image.default.left .spark-content {
   order: 1;
   padding: 32px 80px 32px 0;
 }
 @media (max-width: 736px) {
-  /* line 22, style/sass/_content-with-image.scss */
-  .spark-content-with-image.left .spark-content {
+  /* line 23, style/sass/_content-with-image.scss */
+  .spark-content-with-image.default.left .spark-content {
     padding-right: 8px;
     padding-left: 8px;
     flex: 1 1 calc(100%);
@@ -917,8 +920,8 @@ section.nav {
   }
 }
 @media (min-width: 736px) {
-  /* line 22, style/sass/_content-with-image.scss */
-  .spark-content-with-image.left .spark-content {
+  /* line 23, style/sass/_content-with-image.scss */
+  .spark-content-with-image.default.left .spark-content {
     padding-right: 8px;
     padding-left: 8px;
     flex: 1 1 calc(41.66667%);
@@ -928,8 +931,8 @@ section.nav {
   }
 }
 @media (min-width: 1200px) {
-  /* line 22, style/sass/_content-with-image.scss */
-  .spark-content-with-image.left .spark-content {
+  /* line 23, style/sass/_content-with-image.scss */
+  .spark-content-with-image.default.left .spark-content {
     padding-right: 8px;
     padding-left: 8px;
     flex: 1 1 calc(41.66667%);
@@ -937,29 +940,117 @@ section.nav {
     padding-right: 144px;
   }
 }
-/* line 43, style/sass/_content-with-image.scss */
-.spark-content-with-image.left img {
+/* line 44, style/sass/_content-with-image.scss */
+.spark-content-with-image.default.left img {
   margin: 32px 0 32px 32px;
   order: 2;
 }
 @media (max-width: 736px) {
-  /* line 43, style/sass/_content-with-image.scss */
-  .spark-content-with-image.left img {
+  /* line 44, style/sass/_content-with-image.scss */
+  .spark-content-with-image.default.left img {
     max-width: 100%;
     height: auto;
   }
 }
-/* line 54, style/sass/_content-with-image.scss */
-.spark-content-with-image .spark-container {
+/* line 55, style/sass/_content-with-image.scss */
+.spark-content-with-image.default .spark-container {
   align-items: center;
   position: relative;
   z-index: 100;
 }
 @media (max-width: 736px) {
-  /* line 54, style/sass/_content-with-image.scss */
-  .spark-content-with-image .spark-container {
+  /* line 55, style/sass/_content-with-image.scss */
+  .spark-content-with-image.default .spark-container {
     flex-direction: column;
   }
+}
+/* line 66, style/sass/_content-with-image.scss */
+.spark-content-with-image.staggered {
+  padding: 64px 0;
+}
+/* line 69, style/sass/_content-with-image.scss */
+.spark-content-with-image.staggered .spark-container {
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 75, style/sass/_content-with-image.scss */
+.spark-content-with-image.staggered .spark-image-container {
+  position: relative;
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+}
+@media (min-width: 736px) {
+  /* line 75, style/sass/_content-with-image.scss */
+  .spark-content-with-image.staggered .spark-image-container {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+    transform: translateX(40px);
+    margin-bottom: 32px;
+  }
+  /* line 83, style/sass/_content-with-image.scss */
+  .spark-content-with-image.staggered .spark-image-container:before {
+    background: linear-gradient(to right, #234092, #2085c7);
+    transition: all 0.45s;
+    content: "";
+    height: 234px;
+    position: absolute;
+    width: 234px;
+    bottom: -20px;
+    left: -16px;
+    z-index: -1;
+  }
+}
+/* line 95, style/sass/_content-with-image.scss */
+.spark-content-with-image.staggered .spark-image-container img {
+  width: 100%;
+  display: block;
+}
+/* line 101, style/sass/_content-with-image.scss */
+.spark-content-with-image.staggered .spark-content {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  margin-top: 32px;
+}
+@media (min-width: 736px) {
+  /* line 101, style/sass/_content-with-image.scss */
+  .spark-content-with-image.staggered .spark-content {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+    margin-top: 144px;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 110, style/sass/_content-with-image.scss */
+  .spark-content-with-image.staggered .spark-content:after {
+    background: linear-gradient(to right, #f4f5f9, #dfe0e4);
+    transition: all .45s;
+    background: #F4F5F9;
+    top: -24px;
+    content: "";
+    height: 234px;
+    position: absolute;
+    right: -16px;
+    width: 234px;
+    z-index: -1;
+  }
+}
+/* line 123, style/sass/_content-with-image.scss */
+.spark-content-with-image.staggered .spark-content .spark-content-container {
+  background: #1A1A33;
+  padding: 48px 24px 48px 32px;
+}
+/* line 128, style/sass/_content-with-image.scss */
+.spark-content-with-image.staggered .spark-content h3, .spark-content-with-image.staggered .spark-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-content-with-image.staggered .spark-content .ctct-form-label, .spark-content-with-image.staggered .spark-content p, .spark-content-with-image.staggered .spark-content a {
+  color: #ffffff;
 }
 
 /* line 1, style/sass/_vertical-stack.scss */
@@ -1703,4 +1794,104 @@ section.nav {
 /* line 184, style/sass/_contact-modal.scss */
 .spark-contact-modal-container:not(.active) {
   display: none;
+}
+
+/* line 1, style/sass/_positions.scss */
+.spark-position-list {
+  background: #F4F5F9;
+  padding: 80px 0;
+}
+/* line 5, style/sass/_positions.scss */
+.spark-position-list .spark-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 8, style/sass/_positions.scss */
+.spark-position-list .spark-container .section-heading {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  text-align: center;
+  margin-bottom: 32px;
+}
+/* line 16, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview-container {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+}
+@media (max-width: 736px) {
+  /* line 16, style/sass/_positions.scss */
+  .spark-position-list .spark-position-preview-container {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 736px) {
+  /* line 16, style/sass/_positions.scss */
+  .spark-position-list .spark-position-preview-container {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(33.33333%);
+    max-width: calc(33.33333%);
+  }
+}
+/* line 28, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview {
+  box-shadow: 4px 4px 1px #DFE0E4;
+  background: #ffffff;
+  padding-top: 24px;
+}
+/* line 33, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview h3, .spark-position-list .spark-position-preview .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-position-list .spark-position-preview .ctct-form-label, .spark-position-list .spark-position-preview p {
+  padding: 0 24px;
+}
+/* line 37, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .spark-position-link {
+  padding: 16px 0;
+  display: block;
+  margin-top: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 44, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .spark-position-link:before {
+  content: "";
+  top: 0;
+  position: absolute;
+  border-top: 1px solid #F4F5F9;
+  width: calc(100% - 32px);
+  height: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 56, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .spark-position-link span {
+  transition: color .12s linear .25s;
+}
+/* line 60, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .spark-position-link:after {
+  background: linear-gradient(to right, #234092, #2085c7);
+  transition: all 0.45s;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: color .25s linear .25s, height .5s linear;
+  width: 100%;
+  z-index: 0;
+}
+/* line 73, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .spark-position-link:hover span {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+/* line 79, style/sass/_positions.scss */
+.spark-position-list .spark-position-preview .spark-position-link:hover:after {
+  height: 100%;
 }
