@@ -1887,9 +1887,8 @@ section.nav {
 /* line 44, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview p + a.spark-position-link {
   margin-top: 0;
-  padding-top: 0;
 }
-/* line 49, style/sass/_positions.scss */
+/* line 48, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link {
   padding: 16px 0;
   display: block;
@@ -1898,7 +1897,7 @@ section.nav {
   text-align: center;
   text-decoration: none;
 }
-/* line 56, style/sass/_positions.scss */
+/* line 55, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:before {
   content: "";
   top: 0;
@@ -1910,11 +1909,11 @@ section.nav {
   right: 0;
   margin: auto;
 }
-/* line 68, style/sass/_positions.scss */
+/* line 67, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link span {
   transition: color .12s linear .25s;
 }
-/* line 72, style/sass/_positions.scss */
+/* line 71, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -1927,26 +1926,26 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 85, style/sass/_positions.scss */
+/* line 84, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:hover span {
   color: white;
   z-index: 1;
   position: relative;
 }
-/* line 91, style/sass/_positions.scss */
+/* line 90, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:hover:after {
   height: 100%;
 }
-/* line 97, style/sass/_positions.scss */
+/* line 96, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb {
   position: relative;
   cursor: pointer;
 }
-/* line 101, style/sass/_positions.scss */
+/* line 100, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb img {
   width: 100%;
 }
-/* line 104, style/sass/_positions.scss */
+/* line 103, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb:after {
   background-image: url(style/image/play-button/inactive.png);
   background-size: cover;
@@ -1961,7 +1960,7 @@ section.nav {
   top: 0;
   width: 100px;
 }
-/* line 119, style/sass/_positions.scss */
+/* line 118, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
