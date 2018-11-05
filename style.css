@@ -1990,3 +1990,9 @@ section.nav {
 .spark-position-list .spark-position-preview .video-thumb:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
+
+/* line 2, style/sass/_iframe.scss */
+.spark-iframe iframe {
+  box-shadow: 4px 4px 1px #DFE0E4;
+  margin-bottom: 40px;
+}
