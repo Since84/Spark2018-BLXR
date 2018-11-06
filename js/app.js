@@ -7,6 +7,7 @@
 		}
 
 		function close($elem){
+			console.log($elem);
 			$elem.removeClass('open').removeClass('active');
 		}
 
@@ -67,6 +68,7 @@
 
 		$('.contact-modal-trigger').click(function(){
 			$('.spark-contact-modal-container').addClass('active');
+			$('body').addClass('spark-modal-open');
 		})
 
 
@@ -139,6 +141,13 @@
 			var $modal = $('.youtube-modal');
 			$modal.find('iframe').removeAttr('src').attr('src', 'https://www.youtube.com/embed/'+ id +'?autoplay=1');
 			$modal.addClass('open');
+		})
+
+
+		$('.spark-contact-modal-container.active').on('click', function(e){
+			if( !$(e.target).hasClass("spark-contact-modal") || jQuery(e.target).parents('.spark-contact-modal').length == 0 ) {
+				closeModal($('.spark-contact-modal-container.active'));
+			}
 		})
 	})
 })(jQuery);
