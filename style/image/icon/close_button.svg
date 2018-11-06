@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="close-button" width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>x button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#1E7CBE" offset="0%"></stop>
+            <stop stop-color="#2164AB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Video-On-Click" transform="translate(-1220.000000, -275.000000)">
+            <g id="x-button" transform="translate(1220.000000, 275.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="27" cy="27" r="27"></circle>
+                <path d="M16.6801948,16.5 L37.8933983,37.7132034" id="Line-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M16.6801948,16.5 L37.8933983,37.7132034" id="Line-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" transform="translate(27.286797, 27.106602) scale(-1, 1) translate(-27.286797, -27.106602) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
