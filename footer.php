@@ -1,6 +1,6 @@
 <?php
 
-$footerContext = array();
+$footerContext = Timber::get_context();
 $footerContext['social'] = get_field('social_accounts', 'option');
 $footerContext['content'] = get_field('footer_text', 'option');
 $footerContext['menu'] = new Timber\Menu('footer-nav');

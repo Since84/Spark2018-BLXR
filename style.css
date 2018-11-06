@@ -1755,7 +1755,7 @@ section.nav {
   width: 30px;
 }
 /* line 84, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .close svg {
+.spark-contact-modal-container.active .spark-contact-modal .close img {
   height: auto;
   width: 100%;
 }
