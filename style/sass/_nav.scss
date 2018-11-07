@@ -107,7 +107,7 @@ section.nav {
 
 		    align-items: center;
 		    display: flex;
-			li {
+			> li.menu-item {
 				display: inline-block;
 				position: relative;
 				vertical-align: middle;
@@ -163,7 +163,55 @@ section.nav {
 	}
 
 	.spark-nav-basic-menu-sub-nav {
-		display: none;
+		@include breakpoint($medium-up){
+			display: none;
+		}
+
+		li {
+			a {
+				white-space: nowrap;
+				display: flex;
+				align-items: center;
+
+				.fab {
+					margin-right: 10px;
+					&:before {
+						font-size: base(3);
+					}
+				}
+
+				@include breakpoint($small){
+					margin-left: base();
+				}
+			}
+		}
+	}
+
+	.menu-item:hover .spark-nav-basic-menu-sub-nav{
+
+		@include breakpoint($medium-up){
+			display: flex;
+			position: absolute;
+
+			.sub-nav-container {
+				background-color: white;
+				color: $primary1;
+			}
+
+			li {
+				background-color: white;
+				width: 250px;
+
+				a {
+					color: $primary1;
+					padding: base(2);
+
+					&:hover, &:hover .fab:before {
+						color: $primary3;
+					}
+				}
+			}
+		}
 	}
 
 	.spark-menu-button {

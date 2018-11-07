@@ -603,13 +603,13 @@ section.nav {
     display: flex;
   }
   /* line 110, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu li {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item {
     display: inline-block;
     position: relative;
     vertical-align: middle;
   }
   /* line 115, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu li:before {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item:before {
     background: linear-gradient(to right, #234092, #2085c7);
     transition: all 0.45s;
     content: "";
@@ -621,7 +621,7 @@ section.nav {
     width: 100%;
   }
   /* line 126, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu li:after {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item:after {
     background: linear-gradient(to right, #234092, #2085c7);
     transition: all 0.45s;
     content: "";
@@ -633,7 +633,7 @@ section.nav {
     position: absolute;
   }
   /* line 137, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu li a {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item a {
     color: #F4F5F9;
     display: block;
     text-decoration: none;
@@ -643,24 +643,72 @@ section.nav {
     position: relative;
   }
   /* line 148, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu li.current_page_item, .spark-nav-basic .spark-nav-basic-menu li:hover {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item.current_page_item, .spark-nav-basic .spark-nav-basic-menu > li.menu-item:hover {
     background: #0D0D2A;
   }
   /* line 150, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu li.current_page_item:after, .spark-nav-basic .spark-nav-basic-menu li:hover:after {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item.current_page_item:after, .spark-nav-basic .spark-nav-basic-menu > li.menu-item:hover:after {
     height: 3px;
     transition-delay: 0s;
   }
   /* line 157, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu li:hover:before {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item:hover:before {
     height: 100%;
   }
 }
-/* line 165, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu-sub-nav {
-  display: none;
+@media (min-width: 736px) {
+  /* line 165, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu-sub-nav {
+    display: none;
+  }
 }
-/* line 169, style/sass/_nav.scss */
+/* line 171, style/sass/_nav.scss */
+.spark-nav-basic .spark-nav-basic-menu-sub-nav li a {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+/* line 176, style/sass/_nav.scss */
+.spark-nav-basic .spark-nav-basic-menu-sub-nav li a .fab {
+  margin-right: 10px;
+}
+/* line 178, style/sass/_nav.scss */
+.spark-nav-basic .spark-nav-basic-menu-sub-nav li a .fab:before {
+  font-size: 24px;
+}
+@media (max-width: 736px) {
+  /* line 171, style/sass/_nav.scss */
+  .spark-nav-basic .spark-nav-basic-menu-sub-nav li a {
+    margin-left: 8px;
+  }
+}
+@media (min-width: 736px) {
+  /* line 190, style/sass/_nav.scss */
+  .spark-nav-basic .menu-item:hover .spark-nav-basic-menu-sub-nav {
+    display: flex;
+    position: absolute;
+  }
+  /* line 196, style/sass/_nav.scss */
+  .spark-nav-basic .menu-item:hover .spark-nav-basic-menu-sub-nav .sub-nav-container {
+    background-color: white;
+    color: #1A1A33;
+  }
+  /* line 201, style/sass/_nav.scss */
+  .spark-nav-basic .menu-item:hover .spark-nav-basic-menu-sub-nav li {
+    background-color: white;
+    width: 250px;
+  }
+  /* line 205, style/sass/_nav.scss */
+  .spark-nav-basic .menu-item:hover .spark-nav-basic-menu-sub-nav li a {
+    color: #1A1A33;
+    padding: 16px;
+  }
+  /* line 209, style/sass/_nav.scss */
+  .spark-nav-basic .menu-item:hover .spark-nav-basic-menu-sub-nav li a:hover, .spark-nav-basic .menu-item:hover .spark-nav-basic-menu-sub-nav li a:hover .fab:before {
+    color: #2085C7;
+  }
+}
+/* line 217, style/sass/_nav.scss */
 .spark-nav-basic .spark-menu-button {
   display: inline-block;
   height: 20px;
@@ -668,12 +716,12 @@ section.nav {
   position: relative;
 }
 @media (min-width: 1020px) {
-  /* line 169, style/sass/_nav.scss */
+  /* line 217, style/sass/_nav.scss */
   .spark-nav-basic .spark-menu-button {
     display: none;
   }
 }
-/* line 179, style/sass/_nav.scss */
+/* line 227, style/sass/_nav.scss */
 .spark-nav-basic .spark-menu-button .button-bar, .spark-nav-basic .spark-menu-button:before, .spark-nav-basic .spark-menu-button:after {
   background: white;
   bottom: 0;
@@ -686,22 +734,22 @@ section.nav {
   top: 0;
   width: 100%;
 }
-/* line 192, style/sass/_nav.scss */
+/* line 240, style/sass/_nav.scss */
 .spark-nav-basic .spark-menu-button:before {
   top: 0;
   bottom: auto;
 }
-/* line 197, style/sass/_nav.scss */
+/* line 245, style/sass/_nav.scss */
 .spark-nav-basic .spark-menu-button:after {
   bottom: 0;
   top: auto;
 }
-/* line 203, style/sass/_nav.scss */
+/* line 251, style/sass/_nav.scss */
 .spark-nav-basic .mobile-menu-button {
   display: none;
 }
 
-/* line 208, style/sass/_nav.scss */
+/* line 256, style/sass/_nav.scss */
 .menu-open {
   overflow: hidden;
 }
