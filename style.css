@@ -663,22 +663,22 @@ section.nav {
   }
 }
 /* line 171, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu-sub-nav li a {
+.spark-nav-basic .spark-nav-basic-menu-sub-nav li.menu-item a {
   white-space: nowrap;
   display: flex;
   align-items: center;
 }
 /* line 176, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu-sub-nav li a .fab {
+.spark-nav-basic .spark-nav-basic-menu-sub-nav li.menu-item a .fab {
   margin-right: 10px;
 }
 /* line 178, style/sass/_nav.scss */
-.spark-nav-basic .spark-nav-basic-menu-sub-nav li a .fab:before {
+.spark-nav-basic .spark-nav-basic-menu-sub-nav li.menu-item a .fab:before {
   font-size: 24px;
 }
 @media (max-width: 736px) {
   /* line 171, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu-sub-nav li a {
+  .spark-nav-basic .spark-nav-basic-menu-sub-nav li.menu-item a {
     margin-left: 8px;
   }
 }
