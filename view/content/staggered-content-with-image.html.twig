@@ -1,8 +1,8 @@
 <div class="spark-container">
 	{% if layout.gallery %}
 		<div class="spark-image-container cycle-slideshow">
-			{% for image in layout.gallery %}
-				<img src="{{image.url}}"/>
+			{% for slide in layout.gallery %}
+				<img src="{{slide.image.url}}"/>
 			{% endfor %}
 			<div class="cycle-pager"></div>
 		</div>
