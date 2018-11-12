@@ -2137,7 +2137,7 @@ section.nav {
 /* line 1, style/sass/_iframe.scss */
 .spark-iframe {
   background: #F4F5F9;
-  padding: 16px;
+  padding: 80px 16px;
 }
 /* line 4, style/sass/_iframe.scss */
 .spark-iframe iframe {
