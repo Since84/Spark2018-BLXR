@@ -144,6 +144,17 @@
 							display: block;
 						}
 					}
+
+					&.first {
+						.wpcf7-list-item-label:after {
+							content: "social@bloxroute.com";
+						}
+					}
+					&.last {
+						.wpcf7-list-item-label:after {
+							content: "investorrelations@bloxroute.com";
+						}
+					}
 					
 
 					input[type="checkbox"] {
