@@ -20,6 +20,7 @@
 
 			@include breakpoint($small){
 				margin: base() 0;
+				@include span(6);
 			}	
 
 			@include breakpoint($medium-up){
@@ -27,9 +28,13 @@
 			}
 
 			&:not(.active-tab) {
-				@include gray-gradient-tb;
+				background: #E9EBF0;
 				color: $primary1;
 				font-weight: 400;
+
+				&:hover {
+					background: $primary5;
+				}
 			}
 		}
 	}	

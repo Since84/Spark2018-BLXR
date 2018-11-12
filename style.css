@@ -1444,6 +1444,10 @@ section.nav {
   /* line 13, style/sass/_faq-accordion.scss */
   .spark-accordion .accordion-tabs .collection-heading {
     margin: 8px 0;
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
   }
 }
 @media (min-width: 815px) {
@@ -1455,14 +1459,17 @@ section.nav {
     max-width: calc(20.83333%);
   }
 }
-/* line 29, style/sass/_faq-accordion.scss */
+/* line 30, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-tabs .collection-heading:not(.active-tab) {
-  background: linear-gradient(to bottom, #f4f5f9, #dfe0e4);
-  transition: all .45s;
+  background: #E9EBF0;
   color: #1A1A33;
   font-weight: 400;
 }
-/* line 37, style/sass/_faq-accordion.scss */
+/* line 35, style/sass/_faq-accordion.scss */
+.spark-accordion .accordion-tabs .collection-heading:not(.active-tab):hover {
+  background: #DFE0E4;
+}
+/* line 42, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-items {
   padding-right: 8px;
   padding-left: 8px;
@@ -1476,11 +1483,11 @@ section.nav {
   overflow: hidden;
   box-shadow: 0px 0px 4px #DFE0E4;
 }
-/* line 47, style/sass/_faq-accordion.scss */
+/* line 52, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-items:not(.active-content) {
   display: none;
 }
-/* line 51, style/sass/_faq-accordion.scss */
+/* line 56, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item {
   padding-right: 8px;
   padding-left: 8px;
@@ -1493,17 +1500,17 @@ section.nav {
   position: relative;
 }
 @media (min-width: 815px) {
-  /* line 51, style/sass/_faq-accordion.scss */
+  /* line 56, style/sass/_faq-accordion.scss */
   .spark-accordion .accordion-item {
     padding: 16px 32px 16px 64px;
   }
 }
-/* line 63, style/sass/_faq-accordion.scss */
+/* line 68, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .accordion-trigger {
   cursor: pointer;
   padding: 16px 0;
 }
-/* line 66, style/sass/_faq-accordion.scss */
+/* line 71, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .accordion-trigger:before {
   background: url("style/image/icon/plus.svg");
   background-size: cover;
@@ -1515,19 +1522,19 @@ section.nav {
   top: 40px;
   width: 10px;
 }
-/* line 79, style/sass/_faq-accordion.scss */
+/* line 84, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .spark-content {
   padding-left: 16px;
   position: relative;
   margin-left: -18px;
 }
 @media (min-width: 815px) {
-  /* line 79, style/sass/_faq-accordion.scss */
+  /* line 84, style/sass/_faq-accordion.scss */
   .spark-accordion .accordion-item .spark-content {
     margin-left: 24px;
   }
 }
-/* line 87, style/sass/_faq-accordion.scss */
+/* line 92, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .spark-content:before {
   background-color: #1D7CC5;
   content: "";
@@ -1537,15 +1544,15 @@ section.nav {
   left: 0;
   top: 0;
 }
-/* line 101, style/sass/_faq-accordion.scss */
+/* line 106, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item:not(.open) .spark-content {
   display: none;
 }
-/* line 107, style/sass/_faq-accordion.scss */
+/* line 112, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item.open .accordion-trigger:before {
   transform: rotate(45deg);
 }
-/* line 110, style/sass/_faq-accordion.scss */
+/* line 115, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item.open .spark-content {
   margin-bottom: 16px;
 }
