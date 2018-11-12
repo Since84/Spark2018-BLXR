@@ -143,6 +143,10 @@
 			$modal.addClass('open');
 		})
 
+		$('.menu-item-has-children').on('click', function(){
+			$(this).toggleClass('open');
+		})
+
 
 		$('.spark-contact-modal-container.active').on('click', function(e){
 			if( !$(e.target).hasClass("spark-contact-modal") || jQuery(e.target).parents('.spark-contact-modal').length == 0 ) {
