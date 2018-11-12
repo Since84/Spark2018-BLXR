@@ -1,7 +1,16 @@
 <div class="spark-container">
-	<div class="spark-image-container">
-		<img src="{{layout.image.url}}"/>
-	</div>
+	{% if layout.gallery %}
+		<div class="spark-image-container cycle-slideshow">
+			{% for image in layout.gallery %}
+				<img src="{{image.url}}"/>
+			{% endfor %}
+			<div class="cycle-pager"></div>
+		</div>
+	{% elseif layout.image %}
+		<div class="spark-image-container">
+			<img src="{{layout.image.url}}"/>
+		</div>
+	{% endif %}
 	<div class="spark-content">
 		<div class="spark-content-container">
 			{{ layout.content }}

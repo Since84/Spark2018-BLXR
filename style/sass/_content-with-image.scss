@@ -101,6 +101,25 @@
 				width: 100%;
 				display: block;
 			}
+
+			.cycle-pager {
+			    bottom: 0;
+			    display: block;
+			    left: 0;
+			    margin: auto;
+			    position: absolute;
+			    right: 0;
+			    text-align: center;
+			    z-index: 1000;
+				span {
+					font-size: 100px;
+					color: $primary6;
+
+					&.cycle-pager-active {
+						color: $primary3;
+					}
+				}
+			}
 		}
 
 		.spark-content {
