@@ -17,12 +17,18 @@
 		.spark-container {
 			align-items: center;
 			justify-content: space-between;
+
 		}
 	}
 
 	.spark-footer-copy {
 		display: flex;
 		flex-direction: row;
+		@include breakpoint($small){
+			@include span(12);
+			flex-direction: column; 
+			margin-bottom: base(3);
+		}
 	}
 
 	.spark-footer-socials {
@@ -40,6 +46,10 @@
 			&:hover {
 				color: $primary6;
 			}
+		}
+
+		@include breakpoint($small) {
+			@include span(12);
 		}
 	}
 
@@ -115,8 +125,8 @@
 		}
 
 		button.ctct-form-button {
-		    flex-basis: 95px;
-		    padding: 14px !important;
+		    flex-basis: 120px;
+		    padding: 16px !important;
 		}
 	}
 	.ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, 
@@ -161,12 +171,28 @@
 	}
 
 	.ctct-form-button {
-		font-family: $body_family;
-		text-transform: uppercase !important;
+		background: linear-gradient(to top, $primary2, $primary3) !important;
+		transition: all .45s !important;
+		border-radius: 0 4px 4px 0 !important;
+		display: inline-block !important; 
 		font-size: 12px !important;
+		font-weight: 600 !important;
+		padding: base(2) base(3) !important;
+		text-decoration: none !important;
+		text-transform: uppercase !important;
+		color: $primary7 !important;
+		border: none !important;
+
+		&:hover {
+			background: linear-gradient(to bottom, $primary2, $primary3) !important;
+			transition: all .45s !important;
+			color: $primary6 !important;
+		}
 	}
 
 	.ctct-form-element {
-		height: 42px !important;
+		height: 44px !important;
+		border-radius: 4px 0 0 4px !important;
+		border: none !important;
 	}
 }

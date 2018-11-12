@@ -9,6 +9,10 @@
 
 
 		&.left {
+			@include breakpoint($small){
+				flex-wrap: wrap;
+			}
+
 			@include breakpoint($medium-up){
 				&:before {
 					@include subtle-gradient-tb;
@@ -43,6 +47,7 @@
 			}
 			img {
 				margin: base(4) 0 base(4) base(4);
+				max-width: 100%;
 				order: 2;
 
 				@include breakpoint($small) {
@@ -129,6 +134,17 @@
 				color: $primary7;
 			}
 
+		}
+	}
+
+	@include breakpoint($small) {
+		.spark-container {
+			flex-wrap: wrap;
+			img {
+				max-width: 100%;
+				height: auto;
+				margin-bottom: base(5);
+			}
 		}
 	}
 }
