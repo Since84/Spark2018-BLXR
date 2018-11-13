@@ -121,3 +121,22 @@
 		}
 	}
 }
+
+article.job-listing {
+	padding-top: base(10);
+	padding-bottom: base(10);
+
+	hgroup {
+		margin-bottom: base(4);
+	}
+
+	.post-content {
+		h1,h2,h3,h4,h5,p,ul,ol {
+			margin-bottom: base(2);
+		}
+
+		ul {
+			list-style: disc inside;
+		}
+	}
+}

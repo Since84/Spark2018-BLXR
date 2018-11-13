@@ -2168,6 +2168,24 @@ section.nav {
   background-image: url(style/image/play-button/active.png);
 }
 
+/* line 125, style/sass/_positions.scss */
+article.job-listing {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 129, style/sass/_positions.scss */
+article.job-listing hgroup {
+  margin-bottom: 32px;
+}
+/* line 134, style/sass/_positions.scss */
+article.job-listing .post-content h1, article.job-listing .post-content h2, article.job-listing .post-content h3, article.job-listing .post-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing .post-content .ctct-form-label, article.job-listing .post-content h4, article.job-listing .post-content h5, article.job-listing .post-content p, article.job-listing .post-content ul, article.job-listing .post-content ol {
+  margin-bottom: 16px;
+}
+/* line 138, style/sass/_positions.scss */
+article.job-listing .post-content ul {
+  list-style: disc inside;
+}
+
 /* line 1, style/sass/_iframe.scss */
 .spark-iframe {
   background: #F4F5F9;
