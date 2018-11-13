@@ -141,7 +141,7 @@ section.nav {
 				vertical-align: middle;
 
 				&:before {
-					background-color: $secondary1;
+					background-color: #323049;
 					bottom: 0;
 					content: "";
 					display: block;
@@ -153,7 +153,7 @@ section.nav {
 				}
 
 				&:after {
-					@include subtle-gradient;
+					background: $primary3;
 					content: "";
 					bottom: 0;
 					display: block;
@@ -182,7 +182,7 @@ section.nav {
 					}
 				}
 
-				&:hover{
+				&.current_page_item, &:hover{
 					&:before {
 						height: 100%;
 					}

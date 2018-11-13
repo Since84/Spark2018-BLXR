@@ -637,7 +637,7 @@ section.nav {
   }
   /* line 143, style/sass/_nav.scss */
   .spark-nav-basic .spark-nav-basic-menu > li.menu-item:before {
-    background-color: #0D0D2A;
+    background-color: #323049;
     bottom: 0;
     content: "";
     display: block;
@@ -649,8 +649,7 @@ section.nav {
   }
   /* line 155, style/sass/_nav.scss */
   .spark-nav-basic .spark-nav-basic-menu > li.menu-item:after {
-    background: linear-gradient(to right, #234092, #2085c7);
-    transition: all 0.45s;
+    background: #2085C7;
     content: "";
     bottom: 0;
     display: block;
@@ -675,7 +674,7 @@ section.nav {
     transition-delay: 0s;
   }
   /* line 186, style/sass/_nav.scss */
-  .spark-nav-basic .spark-nav-basic-menu > li.menu-item:hover:before {
+  .spark-nav-basic .spark-nav-basic-menu > li.menu-item.current_page_item:before, .spark-nav-basic .spark-nav-basic-menu > li.menu-item:hover:before {
     height: 100%;
   }
 }
@@ -1611,7 +1610,7 @@ section.nav {
   transition: all 0.45s;
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 8px 0;
 }
 /* line 17, style/sass/_footer.scss */
 .spark-footer .spark-footer-text .spark-container {
@@ -1640,7 +1639,7 @@ section.nav {
   background-color: #1A1A33;
   text-decoration: none;
   padding: 12px;
-  font-size: 24px;
+  font-size: 20px;
 }
 /* line 42, style/sass/_footer.scss */
 .spark-footer .spark-footer-socials a:not(:last-child) {
