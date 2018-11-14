@@ -530,7 +530,7 @@ section.nav {
 }
 /* line 38, style/sass/_nav.scss */
 .spark-nav-basic .spark-site-logo img {
-  width: 144px;
+  width: 120px;
 }
 @media (max-width: 1020px) {
   /* line 43, style/sass/_nav.scss */
