@@ -1312,7 +1312,7 @@ section.nav {
   padding-bottom: 20px;
 }
 /* line 43, style/sass/_team-grid.scss */
-.spark-team-grid.advisors .spark-profile-image {
+.spark-team-grid.advisors .spark-profile .spark-profile-preview .spark-profile-image {
   width: 200px;
   height: 200px;
 }
