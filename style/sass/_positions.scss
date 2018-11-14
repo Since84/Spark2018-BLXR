@@ -26,7 +26,8 @@
 	}
 	
 	.spark-position-preview {
-		box-shadow: 4px 4px 1px $secondary2;
+		border-radius: 2px;
+		box-shadow: 2px 2px 8px $secondary2;
 		background: $primary7;
 
 		h3,p {
