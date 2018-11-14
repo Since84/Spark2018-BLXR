@@ -72,6 +72,7 @@
 	}
 
 	.overlay {
+		@include subtle-gradient-tb;
 		top: 50%;
 	    height: 160%;
 	    left: 19%;
@@ -79,7 +80,6 @@
 	    transform: rotate(42deg);
 	    width: 200%; 
 
-		@include subtle-gradient-tb;
 
 		@include breakpoint($medium-up){
 		    width: 175.4vw;

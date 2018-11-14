@@ -39,7 +39,7 @@ $link_color: $primary2;
 
 @mixin subtle-gradient-tb {
 	background: linear-gradient(to top, $primary2, $primary3);
-	transition: all .45s;
+	// transition: all .45s;
 }
 
 @mixin gray-gradient {

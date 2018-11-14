@@ -437,7 +437,6 @@ em {
 /* line 7, style/sass/_ui.scss */
 .cta-button, .spark-accordion .accordion-tabs .collection-heading {
   background: linear-gradient(to top, #234092, #2085c7);
-  transition: all .45s;
   border-radius: 4px;
   display: inline-block;
   font-weight: 600;
@@ -873,14 +872,13 @@ section.nav {
 }
 /* line 74, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
+  background: linear-gradient(to top, #234092, #2085c7);
   top: 50%;
   height: 160%;
   left: 19%;
   position: absolute;
   transform: rotate(42deg);
   width: 200%;
-  background: linear-gradient(to top, #234092, #2085c7);
-  transition: all .45s;
 }
 @media (min-width: 815px) {
   /* line 74, style/sass/_hero.scss */
@@ -1006,7 +1004,6 @@ section.nav {
   /* line 17, style/sass/_content-with-image.scss */
   .spark-content-with-image.default.left:before {
     background: linear-gradient(to top, #234092, #2085c7);
-    transition: all .45s;
     content: "";
     display: block;
     height: 100%;
