@@ -36,8 +36,8 @@
 			border-radius: 50%;
 			background-color: $primary1;
 			text-decoration: none;
-			padding: base(1.5);
-			font-size: 20px;
+			padding: base();
+		    font-size: 18px;
 
 			&:not(:last-child){
 				margin-right: base(2);

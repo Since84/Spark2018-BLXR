@@ -1634,8 +1634,8 @@ section.nav {
   border-radius: 50%;
   background-color: #1A1A33;
   text-decoration: none;
-  padding: 12px;
-  font-size: 20px;
+  padding: 8px;
+  font-size: 18px;
 }
 /* line 42, style/sass/_footer.scss */
 .spark-footer .spark-footer-socials a:not(:last-child) {
