@@ -874,11 +874,10 @@ section.nav {
 /* line 74, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   top: 50%;
-  height: 100%;
+  height: 160%;
   left: 19%;
   position: absolute;
   transform: rotate(42deg);
-  transition: all .45s;
   width: 200%;
   background: linear-gradient(to top, #234092, #2085c7);
   transition: all .45s;
