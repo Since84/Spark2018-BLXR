@@ -447,8 +447,7 @@ em {
 }
 /* line 17, style/sass/_ui.scss */
 .cta-button:hover, .spark-accordion .accordion-tabs .collection-heading:hover {
-  background: linear-gradient(to bottom, #234092, #2085c7);
-  transition: all .45s;
+  background: #234898;
   color: #F4F5F9;
 }
 
@@ -1706,17 +1705,21 @@ section.nav {
 }
 /* line 84, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu a:hover {
-  color: #DFE0E4;
+  color: #2085C7;
 }
-/* line 89, style/sass/_footer.scss */
+/* line 86, style/sass/_footer.scss */
+.spark-footer .spark-nav-footer-menu a:hover p {
+  color: #2085C7;
+}
+/* line 92, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu > li > a {
   font-weight: 600;
 }
-/* line 93, style/sass/_footer.scss */
+/* line 96, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu .menu-item-has-children > a {
   pointer-events: none;
 }
-/* line 97, style/sass/_footer.scss */
+/* line 100, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-subscribe {
   padding-right: 8px;
   padding-left: 8px;
@@ -1725,7 +1728,7 @@ section.nav {
   margin-bottom: 40px;
 }
 @media (min-width: 815px) {
-  /* line 97, style/sass/_footer.scss */
+  /* line 100, style/sass/_footer.scss */
   .spark-footer .spark-nav-footer-subscribe {
     padding-right: 8px;
     padding-left: 8px;
@@ -1733,77 +1736,77 @@ section.nav {
     max-width: calc(33.33333%);
   }
 }
-/* line 105, style/sass/_footer.scss */
+/* line 108, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-subscribe h3, .spark-footer .spark-nav-footer-subscribe .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-nav-footer-subscribe .ctct-form-label, .spark-footer .spark-nav-footer-subscribe p {
   font-size: 12px;
   line-height: 1.3;
 }
-/* line 110, style/sass/_footer.scss */
+/* line 113, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-subscribe h3, .spark-footer .spark-nav-footer-subscribe .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-nav-footer-subscribe .ctct-form-label {
   text-transform: uppercase;
   line-height: 1.6;
   margin-bottom: 8px;
 }
-/* line 117, style/sass/_footer.scss */
+/* line 120, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom {
   align-items: center;
   display: flex;
 }
-/* line 120, style/sass/_footer.scss */
+/* line 123, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom .ctct-form-element {
   border-radius: 0;
   border: none;
 }
-/* line 124, style/sass/_footer.scss */
+/* line 127, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom .ctct-form-field {
   flex: 1;
 }
-/* line 128, style/sass/_footer.scss */
+/* line 131, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom button.ctct-form-button {
   flex-basis: 120px;
   padding: 16px !important;
 }
-/* line 133, style/sass/_footer.scss */
+/* line 136, style/sass/_footer.scss */
 .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a {
   font-family: "montserrat", sans-serif;
 }
-/* line 139, style/sass/_footer.scss */
+/* line 142, style/sass/_footer.scss */
 .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label {
   color: white;
   font-size: 14px;
 }
-/* line 144, style/sass/_footer.scss */
+/* line 147, style/sass/_footer.scss */
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults {
   background: none;
   padding: 32px 0;
 }
-/* line 149, style/sass/_footer.scss */
+/* line 152, style/sass/_footer.scss */
 .spark-footer .ctct-gdpr-text {
   display: none;
 }
-/* line 153, style/sass/_footer.scss */
+/* line 156, style/sass/_footer.scss */
 .spark-footer .ctct-form-success * {
   color: white !important;
 }
-/* line 157, style/sass/_footer.scss */
+/* line 160, style/sass/_footer.scss */
 .spark-footer .ctct-form-label {
   display: none !important;
 }
-/* line 161, style/sass/_footer.scss */
+/* line 164, style/sass/_footer.scss */
 .spark-footer div.ctct-form-field {
   margin-bottom: 0 !important;
 }
-/* line 166, style/sass/_footer.scss */
+/* line 169, style/sass/_footer.scss */
 .spark-footer .ctct-form-footer {
   display: none;
 }
-/* line 170, style/sass/_footer.scss */
+/* line 173, style/sass/_footer.scss */
 .spark-footer .ctct-form-defaults {
   padding: 0 !important;
 }
-/* line 174, style/sass/_footer.scss */
+/* line 177, style/sass/_footer.scss */
 .spark-footer .ctct-form-button {
   background: linear-gradient(to top, #234092, #2085c7) !important;
   transition: all .45s !important;
@@ -1817,13 +1820,13 @@ section.nav {
   color: #ffffff !important;
   border: none !important;
 }
-/* line 187, style/sass/_footer.scss */
+/* line 190, style/sass/_footer.scss */
 .spark-footer .ctct-form-button:hover {
   background: linear-gradient(to bottom, #234092, #2085c7) !important;
   transition: all .45s !important;
   color: #F4F5F9 !important;
 }
-/* line 194, style/sass/_footer.scss */
+/* line 197, style/sass/_footer.scss */
 .spark-footer .ctct-form-element {
   height: 44px !important;
   border-radius: 4px 0 0 4px !important;

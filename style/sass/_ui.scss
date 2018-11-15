@@ -15,7 +15,7 @@
 	color: $primary7;
 
 	&:hover {
-		@include subtle-gradient-tb-reverse;
+		background: #234898;
 		color: $primary6;
 	}
 }

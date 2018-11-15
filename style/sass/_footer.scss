@@ -82,7 +82,10 @@
 			font-size: 12px;
 
 			&:hover {
-				color: $secondary2;
+				color: $primary3;
+				p {
+					color: $primary3;
+				}
 			}
 		}
 
