@@ -28,6 +28,8 @@
 
 		$('.spark-modal-close').click(function(e){
 			closeModal($(e.currentTarget).parents('.spark-modal'));
+			var $modal = $('.youtube-modal.open');
+			$modal.removeClass('open').find('iframe').removeAttr('src')
 		})
 
 		$('.spark-modal-trigger').click(function(e){
@@ -80,13 +82,13 @@
 		})
 
 		$('.youtube-modal svg').on('click', function(){
-			var $modal = $('.youtube-modal');
+			var $modal = $('.youtube-modal.open');
 			$modal.removeClass('open').find('iframe').removeAttr('src')
 		})
 
 		$('body').keyup(function(e){
 		    if(e.which == 27){
-		        var $modal = $('.youtube-modal');
+		        var $modal = $('.youtube-modal.open');
 				$modal.removeClass('open').find('iframe').removeAttr('src')
 		    }
 		});

@@ -452,10 +452,20 @@ em {
 }
 
 /* line 24, style/sass/_ui.scss */
+.youtube-modal .spark-modal-close {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 33, style/sass/_ui.scss */
 .youtube-modal:not(.open) {
   display: none;
 }
-/* line 28, style/sass/_ui.scss */
+/* line 37, style/sass/_ui.scss */
 .youtube-modal.open {
   position: fixed;
   top: 0;
@@ -464,7 +474,7 @@ em {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 36, style/sass/_ui.scss */
+/* line 45, style/sass/_ui.scss */
 .youtube-modal.open .youtube-frame {
   background: white;
   bottom: 0;
@@ -479,7 +489,7 @@ em {
   width: 560px;
   z-index: 1000;
 }
-/* line 50, style/sass/_ui.scss */
+/* line 59, style/sass/_ui.scss */
 .youtube-modal.open .youtube-frame svg {
   position: absolute;
   top: -40px;
