@@ -83,7 +83,7 @@
 
 			@include breakpoint($medium-up){
 				@include span(6);
-				transform: translateX(#{base(5)});
+				transform: translateX(#{base(8)});
 				margin-bottom: base(4);
 				&:before {
 					@include subtle-gradient;
@@ -131,6 +131,7 @@
 				margin-top: base(18);
 				position: relative;
 				z-index: 10;
+				transform: translateX(base(-5));
 				&:after {
 					@include gray-gradient;
 					background: $primary6;

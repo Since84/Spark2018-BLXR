@@ -7,6 +7,7 @@
 	}
 
 	.accordion-tabs {
+		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: base(4);
 		padding: 0;
@@ -19,8 +20,9 @@
 			cursor: pointer;
 
 			@include breakpoint($small){
-				margin: base() 0;
-				@include span(6);
+				padding: base(2) base();
+				margin: base();
+				@include span(5);
 			}	
 
 			@include breakpoint($medium-up){

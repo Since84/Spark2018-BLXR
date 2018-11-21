@@ -36,6 +36,11 @@
 
 	&.advisors {
 
+		.spark-profile {
+			background: none;
+			box-shadow: none;
+		}
+
 		.spark-profile-position {
 			padding-bottom: 20px;
 		}
