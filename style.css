@@ -492,8 +492,8 @@ em {
 /* line 59, style/sass/_ui.scss */
 .youtube-modal.open .youtube-frame svg {
   position: absolute;
-  top: -40px;
-  right: -40px;
+  top: -60px;
+  right: -60px;
 }
 
 /* line 1, style/sass/_nav.scss */
