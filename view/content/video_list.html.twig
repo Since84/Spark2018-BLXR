@@ -19,4 +19,11 @@
 			<iframe width="560" height="360" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
+	{% if layout.see_more_link %}
+	<div class="spark-container see-more">
+		<span>
+			<a href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}</a>
+		</span>
+	</div>
+	{% endif %}
 </section>

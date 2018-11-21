@@ -39,6 +39,7 @@
 		}
 
 		p {
+			height: 5em;
 			padding-bottom: base(3);
 		}
 
@@ -118,6 +119,21 @@
 
 			&:hover:after {
 			    background-image: url(style/image/play-button/active.png);
+			}
+		}
+	}
+
+	.see-more {
+		justify-content: flex-end;
+
+		span {
+			display: inline-block;
+			a {
+				text-align: right;
+				&:after {
+					margin-right: 2em;
+					content: " >";
+				}
 			}
 		}
 	}
