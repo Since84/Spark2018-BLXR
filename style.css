@@ -435,7 +435,7 @@ em {
 	All UI element styles
 */
 /* line 7, style/sass/_ui.scss */
-.cta-button, .spark-accordion .accordion-tabs .collection-heading {
+.cta-button, .gray-cta-button, .spark-accordion .accordion-tabs .collection-heading {
   background: linear-gradient(to top, #234092, #2085c7);
   border-radius: 4px;
   display: inline-block;
@@ -446,12 +446,23 @@ em {
   color: #ffffff;
 }
 /* line 17, style/sass/_ui.scss */
-.cta-button:hover, .spark-accordion .accordion-tabs .collection-heading:hover {
+.cta-button:hover, .gray-cta-button:hover, .spark-accordion .accordion-tabs .collection-heading:hover {
   background: #234898;
   color: #F4F5F9;
 }
 
-/* line 24, style/sass/_ui.scss */
+/* line 23, style/sass/_ui.scss */
+.gray-cta-button {
+  background: #E9EBF0;
+  color: #1A1A33;
+  font-weight: 400;
+}
+/* line 29, style/sass/_ui.scss */
+.gray-cta-button:hover {
+  background: #DFE0E4;
+}
+
+/* line 35, style/sass/_ui.scss */
 .youtube-modal .spark-modal-close {
   display: block;
   position: absolute;
@@ -461,11 +472,11 @@ em {
   right: 0;
   margin: auto;
 }
-/* line 33, style/sass/_ui.scss */
+/* line 44, style/sass/_ui.scss */
 .youtube-modal:not(.open) {
   display: none;
 }
-/* line 37, style/sass/_ui.scss */
+/* line 48, style/sass/_ui.scss */
 .youtube-modal.open {
   position: fixed;
   top: 0;
@@ -474,7 +485,7 @@ em {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 45, style/sass/_ui.scss */
+/* line 56, style/sass/_ui.scss */
 .youtube-modal.open .youtube-frame {
   background: white;
   bottom: 0;
@@ -489,7 +500,7 @@ em {
   width: 560px;
   z-index: 1000;
 }
-/* line 59, style/sass/_ui.scss */
+/* line 70, style/sass/_ui.scss */
 .youtube-modal.open .youtube-frame svg {
   position: absolute;
   top: -60px;
@@ -2047,7 +2058,7 @@ section.nav {
   line-height: 1.4;
 }
 /* line 193, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .cta-button, .spark-contact-modal-container.active .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact-modal-container.active .spark-contact-modal .collection-heading {
+.spark-contact-modal-container.active .spark-contact-modal .cta-button, .spark-contact-modal-container.active .spark-contact-modal .gray-cta-button, .spark-contact-modal-container.active .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact-modal-container.active .spark-contact-modal .collection-heading {
   display: block;
   margin: auto;
   padding: 10px 24px;

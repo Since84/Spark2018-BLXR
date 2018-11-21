@@ -20,6 +20,17 @@
 	}
 }
 
+.gray-cta-button {
+	@extend .cta-button;
+	background: #E9EBF0;
+	color: $primary1;
+	font-weight: 400;
+
+	&:hover {
+		background: $primary5;
+	}
+}
+
 .youtube-modal{
 	.spark-modal-close {
 		display: block;
