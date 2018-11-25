@@ -68,10 +68,17 @@
 			width: 560px;
 			z-index: 1000;
 
-			svg {
+			.modal-close-button {
+				background-image: url(style/image/icon/close_button.png); 
+				background-size: contain;
+				background-repeat: no-repeat;
+				cursor: pointer;
+				display: block;
+				height: 40px;
 				position: absolute;
-				top: -60px;
-				right: -60px;
+				right: -40px;
+				top: -40px;
+				width: 40px;
 			}
 		}
 	}

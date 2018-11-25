@@ -502,10 +502,17 @@ em {
   z-index: 1000;
 }
 /* line 71, style/sass/_ui.scss */
-.youtube-modal.open .youtube-frame svg {
+.youtube-modal.open .youtube-frame .modal-close-button {
+  background-image: url(style/image/icon/close_button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+  height: 40px;
   position: absolute;
-  top: -60px;
-  right: -60px;
+  right: -40px;
+  top: -40px;
+  width: 40px;
 }
 
 /* line 1, style/sass/_nav.scss */

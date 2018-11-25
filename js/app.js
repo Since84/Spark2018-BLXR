@@ -81,7 +81,7 @@
 			$modal.addClass('open');
 		})
 
-		$('.youtube-modal svg').on('click', function(){
+		$('.youtube-modal .modal-close-button').on('click', function(){
 			var $modal = $('.youtube-modal.open');
 			$modal.removeClass('open').find('iframe').removeAttr('src')
 		})
