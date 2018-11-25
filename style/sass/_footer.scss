@@ -29,6 +29,10 @@
 			flex-direction: column; 
 			margin-bottom: base(3);
 		}
+
+		@include breakpoint($medium-up){
+			margin-right: base(2);
+		}
 	}
 
 	.spark-footer-socials {
