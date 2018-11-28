@@ -1136,8 +1136,8 @@ section.nav {
     height: 234px;
     position: absolute;
     width: 234px;
-    bottom: -20px;
-    left: -16px;
+    bottom: -40px;
+    left: -32px;
     z-index: -1;
   }
 }
@@ -1190,12 +1190,12 @@ section.nav {
   .spark-content-with-image.staggered .spark-content:after {
     background: linear-gradient(to right, #f4f5f9, #dfe0e4);
     transition: all .45s;
-    background: #F4F5F9;
-    top: -24px;
+    background: #E9EBF0;
+    top: -40px;
     content: "";
     height: 234px;
     position: absolute;
-    right: -16px;
+    right: -32px;
     width: 234px;
     z-index: -1;
   }

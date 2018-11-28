@@ -91,8 +91,8 @@
 					height: 234px;
 					position: absolute;
 					width: 234px;
-					bottom: base(-2.5);
-					left: base(-2);
+					bottom: base(-5);
+					left: base(-4);
 					z-index: -1;
 				}
 			}
@@ -134,12 +134,12 @@
 				transform: translateX(base(-5));
 				&:after {
 					@include gray-gradient;
-					background: $primary6;
-					top: base(-3);
+					background: #E9EBF0;
+					top: base(-5);
 					content: "";
 					height: 234px;
 					position: absolute;
-					right: base(-2);
+					right: base(-4);
 					width: 234px;
 					z-index: -1;
 				}
