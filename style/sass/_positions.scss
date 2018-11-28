@@ -123,6 +123,10 @@
 		}
 	}
 
+	.position-meta {
+		height: 10em;
+	}
+
 	.see-more {
 		justify-content: flex-end;
 
@@ -160,12 +164,6 @@ article.job-listing {
 		ul {
 		    list-style: disc outside;
 		    margin-left: 20px;
-		}
-	}
-
-	.position-meta {
-		h3,p {
-			line-height: 2em;
 		}
 	}
 
