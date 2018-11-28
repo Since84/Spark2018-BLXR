@@ -36,18 +36,25 @@
 
 	&.advisors {
 
+		.spark-profile-position {
+			padding-bottom: 20px;
+		}
+
+		.spark-grid-item {
+			@include span(2.4);
+		}
+
 		.spark-profile {
 			background: none;
 			box-shadow: none;
 		}
 
-		.spark-profile-position {
-			padding-bottom: 20px;
-		}
-
-		.spark-profile .spark-profile-preview .spark-profile-image {
-			width: 200px;
-			height: 200px;
+		.spark-profile .spark-profile-image {
+			background-repeat: no-repeat;
+			background-size: contain;
+			border-radius: 0;
+			width: 180px;
+			height: 180px;
 		}
 
 		.spark-info-text, .spark-social-icons {
