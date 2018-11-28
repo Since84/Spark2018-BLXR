@@ -1,0 +1,14 @@
+<section class="spark-accordion">
+	<div class="spark-container accordion-tabs">
+		{% for tab in page.get_field('poc_tabs') %}
+			<div class="collection-heading accordion-tab-heading {% if loop.index == 1 %}active-tab{% endif %}" data-index="{{ loop.index }}">{{ tab.heading }}</div>
+		{% endfor %}
+	</div>
+	<div class="spark-container">
+	{% for tab in page.get_field('poc_tabs') %}
+		<div class="accordion-items spark-container accordion-tab{% if loop.index == 1 %} active-content{% endif %}" data-index="{{ loop.index }}">
+			{% include "view/poc/" ~ tab.acf_fc_layout ~ ".html.twig" %}
+		</div>
+	{% endfor %}
+	</div>
+</section>

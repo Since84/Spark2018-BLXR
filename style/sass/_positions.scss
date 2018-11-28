@@ -172,13 +172,14 @@ article.job-listing {
 	}
 	.apply-now {
 		@extend .cta-button;
-		background: #E9EBF0;
+		background: #dde1ea;
 		color: $primary1;
 		font-weight: 400;
 		margin: auto;
 
 		&:hover {
-			background: $primary5;
+			background: #c6cbd8 !important;
+			color: $primary1;
 		}
 	}
 }

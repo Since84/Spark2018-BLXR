@@ -16,7 +16,7 @@
 			@include span(3);
 			text-align: center;
 			margin: 0 base();
-			box-shadow: 2px 2px 2px $primary5;
+			// box-shadow: 2px 2px 2px $primary5;
 			cursor: pointer;
 
 			@include breakpoint($small){
@@ -28,14 +28,13 @@
 			@include breakpoint($medium-up){
 				@include span(2.5);
 			}
-
 			&:not(.active-tab) {
-				background: #E9EBF0;
+				background: #dde1ea;
 				color: $primary1;
 				font-weight: 400;
 
 				&:hover {
-					background: darken(#E9EBF0, 20%) !important;
+					background: #c6cbd8 !important;
 				}
 			}
 		}

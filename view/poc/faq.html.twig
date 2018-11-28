@@ -1,0 +1,8 @@
+{% for item in tab.list %}
+	<div class="accordion-item">
+		<p class="accordion-trigger"><strong>
+			{{ item.heading }}
+		</strong></p>
+		<div class="spark-content">{{ item.content }}</div>
+	</div>
+{% endfor %}
