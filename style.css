@@ -447,7 +447,7 @@ em {
 }
 /* line 17, style/sass/_ui.scss */
 .cta-button:hover, .gray-cta-button:hover, .spark-accordion .accordion-tabs .collection-heading:hover {
-  background: #234898;
+  background: #234898 !important;
   color: #F4F5F9;
 }
 
@@ -1759,7 +1759,7 @@ section.nav {
   font-weight: 600;
 }
 /* line 102, style/sass/_footer.scss */
-.spark-footer .spark-nav-footer-menu .menu-item-has-children > a {
+.spark-footer .spark-nav-footer-menu a[href="#"] {
   pointer-events: none;
 }
 /* line 106, style/sass/_footer.scss */
@@ -1865,7 +1865,7 @@ section.nav {
 }
 /* line 196, style/sass/_footer.scss */
 .spark-footer .ctct-form-button:hover {
-  background: linear-gradient(to bottom, #234092, #2085c7) !important;
+  background: #234898 !important;
   transition: all .45s !important;
   color: #F4F5F9 !important;
 }

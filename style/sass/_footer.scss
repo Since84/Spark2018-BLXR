@@ -99,7 +99,7 @@
 			font-weight: 600;
 		}
 
-		.menu-item-has-children > a {
+		a[href="#"] {
 			pointer-events: none;
 		}
 	}
@@ -194,7 +194,7 @@
 		border: none !important;
 
 		&:hover {
-			background: linear-gradient(to bottom, $primary2, $primary3) !important;
+			background: #234898 !important;
 			transition: all .45s !important;
 			color: $primary6 !important;
 		}
