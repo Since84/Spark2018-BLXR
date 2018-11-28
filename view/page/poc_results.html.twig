@@ -1,3 +1,11 @@
+<section class="page-intro">
+	<div class="spark-container">
+		<h2>{{ page.title }}</h2>
+	</div>
+	<div class="spark-container">
+		<div class="page-content">{{ page.content }}</div>
+	</div>
+</section>
 <section class="spark-accordion">
 	<div class="spark-container accordion-tabs">
 		{% for tab in page.get_field('poc_tabs') %}
