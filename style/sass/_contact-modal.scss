@@ -114,9 +114,12 @@
 					border:none;
 					border-bottom: 1px solid $primary5;
 					margin-bottom: base(3);
-					padding: base(2) 0;
+					padding: base() 0;
 					width: 100%;
 					height: 120px;
+					font-family: $body_family;
+					color: $primary1;
+					outline: none;
 				}
 
 				.wpcf7-list-item {

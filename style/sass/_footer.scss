@@ -102,6 +102,12 @@
 		a[href="#"] {
 			pointer-events: none;
 		}
+
+		.contact-modal-trigger {
+			a[href="#"] {
+				pointer-events: all;
+			}
+		}
 	}
 	.spark-nav-footer-subscribe {
 		@include span(12);
