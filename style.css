@@ -2094,22 +2094,54 @@ section.nav {
   border-color: red !important;
 }
 /* line 191, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7-validation-errors {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+.spark-contact-modal-container.active .spark-contact-modal .wpcf7-checkbox + .wpcf7-not-valid-tip {
   display: block;
-  height: 56px;
-  margin: auto !important;
+  position: absolute;
+  top: -52px;
   left: 0;
   right: 0;
-  width: 350px;
-  border: none !important;
+  margin: auto;
+  height: 35px;
+  width: 200px;
   background: white;
-  padding: 10px 15px;
-  line-height: 1.4;
+  box-shadow: 1px 1px 3px #DFE0E4;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #DFE0E4;
 }
-/* line 207, style/sass/_contact-modal.scss */
+/* line 206, style/sass/_contact-modal.scss */
+.spark-contact-modal-container.active .spark-contact-modal .wpcf7-checkbox + .wpcf7-not-valid-tip:before {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #DFE0E4;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 221, style/sass/_contact-modal.scss */
+.spark-contact-modal-container.active .spark-contact-modal .wpcf7-validation-errors {
+  background: white;
+  border: 1px solid #DFE0E4;
+  bottom: 0;
+  box-shadow: 1px 1px 3px #DFE0E4;
+  display: block;
+  height: 56px;
+  line-height: 1.4;
+  left: 0;
+  margin: auto !important;
+  padding: 10px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-40px);
+  width: 350px;
+}
+/* line 239, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7-mail-sent-ok {
   background-color: #ffffff;
   border: none;
@@ -2126,26 +2158,26 @@ section.nav {
   font-weight: 500;
   pointer-events: none;
 }
-/* line 224, style/sass/_contact-modal.scss */
+/* line 256, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .form-container {
   border-radius: 5px;
   box-shadow: 0px 0px 8px #DFE0E4;
   padding: 0 24px;
   margin-top: 16px;
 }
-/* line 231, style/sass/_contact-modal.scss */
+/* line 263, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .form-radios {
   margin-bottom: 16px;
   font-size: 11px;
   line-height: 1.4;
 }
-/* line 237, style/sass/_contact-modal.scss */
+/* line 269, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .cta-button, .spark-contact-modal-container.active .spark-contact-modal .gray-cta-button, .spark-contact-modal-container.active .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact-modal-container.active .spark-contact-modal .collection-heading, .spark-contact-modal-container.active .spark-contact-modal article.job-listing .apply-now, article.job-listing .spark-contact-modal-container.active .spark-contact-modal .apply-now {
   display: block;
   margin: auto;
   padding: 10px 24px;
 }
-/* line 246, style/sass/_contact-modal.scss */
+/* line 278, style/sass/_contact-modal.scss */
 .spark-contact-modal-container:not(.active) {
   display: none;
 }

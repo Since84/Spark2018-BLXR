@@ -188,20 +188,52 @@
 				border-color: red !important;
 			}
 
-			.wpcf7-validation-errors {
-			    position: absolute;
-			    top: 0;
-			    bottom: 0;
+			.wpcf7-checkbox + .wpcf7-not-valid-tip {
 			    display: block;
-			    height: 56px;
-			    margin: auto !important;
+			    position: absolute;
+			    top: -52px;
 			    left: 0;
 			    right: 0;
-			    width: 350px;
-			    border: none !important;
+			    margin: auto;
+			    height: 35px;
+			    width: 200px;
 			    background: white;
-			    padding: 10px 15px;
+			    box-shadow: 1px 1px 3px $primary5;
+			    text-align: center;
+			    padding: 10px;
+			    border: 1px solid $primary5;
+
+			    &:before {
+				  	border-left: 5px solid transparent;
+				    border-right: 5px solid transparent;
+				    border-top: 5px solid $primary5;
+				    content: "";
+				    height: 0;
+				    width: 0;
+				    position: absolute;
+				    bottom: -5px;
+				    left: 0;
+				    right: 0;
+				    margin: auto;
+			    }
+			}
+
+			.wpcf7-validation-errors {
+			    background: white;
+			    border: 1px solid $primary5;
+			    bottom: 0;
+			    box-shadow: 1px 1px 3px $primary5;
+			    display: block;
+			    height: 56px;
 			    line-height: 1.4;
+			    left: 0;
+			    margin: auto !important;
+			    padding: 10px 15px;
+			    position: absolute;
+			    right: 0;
+			    top: 0;
+		        transform: translateY(-40px);
+			    width: 350px;
 			}
 
 			.wpcf7-mail-sent-ok {

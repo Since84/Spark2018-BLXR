@@ -91,8 +91,8 @@
 		})
 
 		$('.spark-contact-modal').on('click', function(){
-			var $modal = $('.spark-contact-modal');
-			$modal.find('.wpcf7-display-none').hide();
+			var $modal = $('.spark-contact-modal');	
+			$modal.find('.wpcf7-validation-errors, .wpcf7-not-valid-tip').hide();
 		})
 
 		$('body').keyup(function(e){
