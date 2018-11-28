@@ -2299,18 +2299,22 @@ article.job-listing .post-content ul {
   list-style: disc outside;
   margin-left: 20px;
 }
-/* line 166, style/sass/_positions.scss */
+/* line 167, style/sass/_positions.scss */
+article.job-listing .position-meta h3, article.job-listing .position-meta .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing .position-meta .ctct-form-label, article.job-listing .position-meta p {
+  line-height: 2em;
+}
+/* line 172, style/sass/_positions.scss */
 article.job-listing .apply {
   text-align: center;
 }
-/* line 169, style/sass/_positions.scss */
+/* line 175, style/sass/_positions.scss */
 article.job-listing .apply-now {
   background: #E9EBF0;
   color: #1A1A33;
   font-weight: 400;
   margin: auto;
 }
-/* line 176, style/sass/_positions.scss */
+/* line 182, style/sass/_positions.scss */
 article.job-listing .apply-now:hover {
   background: #DFE0E4;
 }

@@ -4,8 +4,10 @@
 		{% for position in layout.posts %}
 			<div class="spark-position-preview-container">
 				<div class="spark-position-preview">
-					<h3>{{ position.name }}</h3>
-					<p>{{ position.location }}</p>
+					<div class="position-meta">
+						<h3>{{ position.name }}</h3>
+						<p>{{ position.location }}</p>
+					</div>
 					<a class="spark-position-link" href="{{ position.link }}"><span>See Position</span></a>
 				</div>
 			</div>
