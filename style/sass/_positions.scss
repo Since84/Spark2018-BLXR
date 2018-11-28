@@ -145,6 +145,10 @@ article.job-listing {
 
 	hgroup {
 		margin-bottom: base(4);
+
+		h2, h3{
+			line-height: 1.5em;
+		}
 	}
 
 	.post-content {
@@ -154,7 +158,23 @@ article.job-listing {
 		}
 
 		ul {
-			list-style: disc inside;
+		    list-style: disc outside;
+		    margin-left: 20px;
+		}
+	}
+
+	.apply {
+		text-align: center;
+	}
+	.apply-now {
+		@extend .cta-button;
+		background: #E9EBF0;
+		color: $primary1;
+		font-weight: 400;
+		margin: auto;
+
+		&:hover {
+			background: $primary5;
 		}
 	}
 }
