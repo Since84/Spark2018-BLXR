@@ -17,6 +17,7 @@
 
 		function openModal($elem){
 			$('.spark-modal.open').removeClass('open');
+			$('body').addClass('noscroll');
 			open($elem);
 			$('body').addClass('spark-modal-open');
 		}
@@ -24,6 +25,7 @@
 		function closeModal($elem){
 			close($elem);
 			$('body').removeClass('spark-modal-open');
+			$('body').removeClass('noscroll');
 		}
 
 		$('.spark-modal-close').click(function(e){
@@ -79,11 +81,18 @@
 			var $modal = $(e.currentTarget).parents('.spark-position-list').find('.youtube-modal');
 			$modal.find('iframe').removeAttr('src').attr('src', 'https://www.youtube.com/embed/'+ id +'?autoplay=1');
 			$modal.addClass('open');
+			$('body').addClass('noscroll');
 		})
 
 		$('.youtube-modal .modal-close-button').on('click', function(){
 			var $modal = $('.youtube-modal.open');
 			$modal.removeClass('open').find('iframe').removeAttr('src')
+			$('body').removeClass('noscroll');
+		})
+
+		$('.spark-contact-modal').on('click', function(){
+			var $modal = $('.spark-contact-modal');
+			$modal.find('.wpcf7-display-none').hide();
 		})
 
 		$('body').keyup(function(e){

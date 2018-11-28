@@ -3,6 +3,10 @@
 	All UI element styles
 */	
 
+.noscroll {
+	overflow: hidden;
+}
+
 
 .cta-button {
 	@include subtle-gradient-tb;
