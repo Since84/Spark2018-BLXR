@@ -1,0 +1,44 @@
+.horizontal-stack {
+	.content {
+		@extend .knockout;
+		background: $primary1;
+		width: 100%;
+		margin: 0;
+		padding: base(10) 0 base(20);
+
+		.spark-content {
+			@include span(10);
+
+			@include breakpoint($medium-up){
+				@include span(6);
+			}
+		}
+	}
+
+	.tab-container {
+		transform: translateY(-80px);
+		flex-wrap: wrap;
+	}
+
+	.spark-tabs-content-item {
+		@include span(8); 
+		padding: base(4) base(4);
+		background: white;
+		border-radius: 4px;
+		border: 1px solid $secondary2;
+		box-shadow: 2px 2px 2px $secondary2;
+		margin: 0 base(2) base(4);
+		h4 {
+			margin-bottom: base(2);
+			text-align: center;
+		}
+		.tab-image {
+			text-align: center;
+			margin-bottom: base(2);
+		}
+
+		@include breakpoint($medium-up){
+			@include span(3);
+		}
+	}	
+}
