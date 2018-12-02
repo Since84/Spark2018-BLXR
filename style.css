@@ -1305,6 +1305,8 @@ section.nav {
     padding-left: 8px;
     flex: 1 1 calc(25%);
     max-width: calc(25%);
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 

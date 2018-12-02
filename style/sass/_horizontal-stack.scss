@@ -39,6 +39,8 @@
 
 		@include breakpoint($medium-up){
 			@include span(3);
+			padding-left: base(3);
+			padding-right: base(3);
 		}
 	}	
 }
