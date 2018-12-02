@@ -10,7 +10,7 @@
 			@include span(10);
 
 			@include breakpoint($medium-up){
-				@include span(6);
+				// @include span(6);
 			}
 		}
 	}

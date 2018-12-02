@@ -1270,15 +1270,6 @@ section.nav {
   flex: 1 1 calc(83.33333%);
   max-width: calc(83.33333%);
 }
-@media (min-width: 815px) {
-  /* line 9, style/sass/_horizontal-stack.scss */
-  .horizontal-stack .content .spark-content {
-    padding-right: 8px;
-    padding-left: 8px;
-    flex: 1 1 calc(50%);
-    max-width: calc(50%);
-  }
-}
 /* line 18, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-container {
   transform: translateY(-80px);
