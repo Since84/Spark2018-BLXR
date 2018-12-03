@@ -1256,27 +1256,27 @@ section.nav {
   margin-right: 24px;
 }
 
-/* line 1, style/sass/_horizontal-stack.scss */
-.horizontal-stack {
+/* line 2, style/sass/_horizontal-stack.scss */
+.horizontal-stack .tab-top-content {
   background: #1A1A33;
 }
-/* line 3, style/sass/_horizontal-stack.scss */
+/* line 5, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content {
   padding: 80px 0 160px;
 }
-/* line 7, style/sass/_horizontal-stack.scss */
+/* line 9, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content .spark-content {
   padding-right: 8px;
   padding-left: 8px;
   flex: 1 1 calc(83.33333%);
   max-width: calc(83.33333%);
 }
-/* line 16, style/sass/_horizontal-stack.scss */
+/* line 18, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-container {
   transform: translateY(-80px);
   flex-wrap: wrap;
 }
-/* line 21, style/sass/_horizontal-stack.scss */
+/* line 23, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item {
   padding-right: 8px;
   padding-left: 8px;
@@ -1291,18 +1291,18 @@ section.nav {
   padding-left: 24px;
   padding-right: 24px;
 }
-/* line 31, style/sass/_horizontal-stack.scss */
+/* line 33, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item h4 {
   margin-bottom: 16px;
   text-align: center;
 }
-/* line 35, style/sass/_horizontal-stack.scss */
+/* line 37, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item .tab-image {
   text-align: center;
   margin-bottom: 16px;
 }
 @media (min-width: 815px) {
-  /* line 21, style/sass/_horizontal-stack.scss */
+  /* line 23, style/sass/_horizontal-stack.scss */
   .horizontal-stack .spark-tabs-content-item {
     padding-right: 8px;
     padding-left: 8px;

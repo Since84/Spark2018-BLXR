@@ -1,5 +1,7 @@
 .horizontal-stack {
-	background: $primary1;
+	.tab-top-content {
+		background: $primary1;
+	}
 	.content {
 		@extend .knockout;
 		padding: base(10) 0 base(20);

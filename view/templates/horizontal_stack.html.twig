@@ -1,20 +1,24 @@
 <section class="spark-tabs horizontal-stack">
-    <div class="spark-container content">
-        <div class="spark-content">
-            {{ layout.content }}
+    <div class="tab-top-content">
+        <div class="spark-container content">
+            <div class="spark-content">
+                {{ layout.content }}
+            </div>
         </div>
     </div>
-    <div class="spark-container tab-container">
-        {% for item in layout.tab_items %}
-        <div class="spark-tabs-content-item">
-            <div class="tab-image">
-                {% include "/view/content/image.html.twig" with item.tab_image %}
+    <div class="spark-tabs">
+        <div class="spark-container tab-container">
+            {% for item in layout.tab_items %}
+            <div class="spark-tabs-content-item">
+                <div class="tab-image">
+                    {% include "/view/content/image.html.twig" with item.tab_image %}
+                </div>
+                <div class="tab-content">
+                    <h4>{{ item.heading }}</h4>
+                    {{ item.content }}
+                </div>
             </div>
-            <div class="tab-content">
-                <h4>{{ item.heading }}</h4>
-                {{ item.content }}
-            </div>
+            {% endfor %}   
         </div>
-        {% endfor %}   
     </div>
 </section>
