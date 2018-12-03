@@ -1,9 +1,7 @@
 .horizontal-stack {
+	background: $primary1;
 	.content {
 		@extend .knockout;
-		background: $primary1;
-		width: 100%;
-		margin: 0;
 		padding: base(10) 0 base(20);
 
 		.spark-content {
