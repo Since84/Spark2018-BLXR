@@ -13,7 +13,7 @@ $heading1_lineheight: 37px;
 
 $heading2_size: 24px;
 $heading2_lineheight: 24px;
-$heading3_size: 18px;
+$heading3_size: 16px;
 $heading3_lineheight: 24px;
 $heading4_size: 14px;
 $heading4_lineheight: 15px;
@@ -25,11 +25,11 @@ $body_size: 14px;
 $body_lineheight: 24px;
 
 //// Small
-$heading1_size_small: 36px;
-$heading1_lineheight_small: 38px;
+$heading1_size_small: 30px;
+$heading1_lineheight_small: 37px;
 
-$heading2_size_small: 32px;
-$heading2_lineheight_small: 36px;
+$heading2_size_small: 22px;
+$heading2_lineheight_small: 22px;
 
 $heading3_size_small: 30px;
 $heading3_lineheight_small: 32px;
@@ -40,7 +40,8 @@ $heading4_lineheight_small: 27px;
 $heading5_size_small: 11px;
 $heading5_lineheight_small: 18px;
 
-$body_lineheight_small: 30px;
+$body_size_small: 12px;
+$body_lineheight_small: 20px;
 
 /// Font Family
 $heading_family: "montserrat", sans-serif;
@@ -138,6 +139,11 @@ em {
 }
 
 @include breakpoint($small){
+
+	body {
+		font-size: $body_size_small;
+		line-height: $body_lineheight_small;
+	}
 	
 	h1 {
 		font-size: $heading1_size_small;
@@ -160,6 +166,7 @@ em {
 		letter-spacing: 4px;
 		text-transform: uppercase;
 	}
+
 	strong {
 		
 		font-weight: 600;
