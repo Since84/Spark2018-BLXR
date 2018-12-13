@@ -1826,11 +1826,11 @@ section.nav {
   font-size: 12px;
 }
 /* line 90, style/sass/_footer.scss */
-.spark-footer .spark-nav-footer-menu a:hover {
+.spark-footer .spark-nav-footer-menu a:not([href='']):not([href='#']):hover {
   color: #2085C7;
 }
 /* line 92, style/sass/_footer.scss */
-.spark-footer .spark-nav-footer-menu a:hover p {
+.spark-footer .spark-nav-footer-menu a:not([href='']):not([href='#']):hover p {
   color: #2085C7;
 }
 /* line 98, style/sass/_footer.scss */

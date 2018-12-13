@@ -87,7 +87,7 @@
 			text-transform: uppercase;
 			font-size: 12px;
 
-			&:hover {
+			&:not([href='']):not([href='#']):hover{
 				color: $primary3;
 				p {
 					color: $primary3;
