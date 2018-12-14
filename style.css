@@ -1360,8 +1360,8 @@ section.nav {
 }
 /* line 27, style/sass/_icon-grid.scss */
 .spark-icon-grid .spark-grid .spark-grid-item img {
-  height: 24px;
-  width: auto;
+  height: auto;
+  width: 155px;
 }
 
 /* line 1, style/sass/_team-grid.scss */
