@@ -168,16 +168,18 @@ section.nav {
 					display: block;
 					text-decoration: none;
 					text-transform: uppercase;
+					font-size: 12px;
 					font-weight: 300;
 					padding: base(2);
 					position: relative;
+					z-index: 1000;
 				}
 
 
 				&.current_page_item, &:hover {
 					// background: $secondary1;
 					&:after {
-						height: 3px;
+						height: 100%;
 						transition-delay: 0s;
 					}
 				}
