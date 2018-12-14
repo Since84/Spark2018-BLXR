@@ -1515,8 +1515,8 @@ section.nav {
 }
 /* line 77, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-image {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   display: block;
   border-radius: 50%;
   background-size: cover;
