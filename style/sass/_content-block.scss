@@ -2,7 +2,11 @@
 	padding: base(8) 0;
 	&.center {
 		.spark-content {
-			@include span(10);
+			@include span(12);
+
+			@include breakpoint($medium-up){
+				@include span(10);
+			}
 		}
 	}
 }

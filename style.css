@@ -1017,8 +1017,17 @@ section.nav {
 .spark-content-block.center .spark-content {
   padding-right: 8px;
   padding-left: 8px;
-  flex: 1 1 calc(83.33333%);
-  max-width: calc(83.33333%);
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+}
+@media (min-width: 815px) {
+  /* line 4, style/sass/_content-block.scss */
+  .spark-content-block.center .spark-content {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(83.33333%);
+    max-width: calc(83.33333%);
+  }
 }
 
 /* line 1, style/sass/_content-with-image.scss */
@@ -1430,11 +1439,15 @@ section.nav {
   padding: 80px 0;
 }
 /* line 5, style/sass/_team-grid.scss */
+.spark-team-grid + .spark-team-grid {
+  padding-top: 0;
+}
+/* line 9, style/sass/_team-grid.scss */
 .spark-team-grid .spark-grid {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 9, style/sass/_team-grid.scss */
+/* line 13, style/sass/_team-grid.scss */
 .spark-team-grid .spark-grid .spark-grid-item {
   padding-right: 8px;
   padding-left: 8px;
@@ -1443,7 +1456,7 @@ section.nav {
   margin-bottom: 48px;
 }
 @media (min-width: 815px) {
-  /* line 9, style/sass/_team-grid.scss */
+  /* line 13, style/sass/_team-grid.scss */
   .spark-team-grid .spark-grid .spark-grid-item {
     padding-right: 8px;
     padding-left: 8px;
@@ -1451,7 +1464,7 @@ section.nav {
     max-width: calc(25%);
   }
 }
-/* line 19, style/sass/_team-grid.scss */
+/* line 23, style/sass/_team-grid.scss */
 .spark-team-grid h2 {
   text-align: center;
   margin-bottom: 40px;
@@ -1460,7 +1473,7 @@ section.nav {
   align-items: center;
   justify-content: center;
 }
-/* line 27, style/sass/_team-grid.scss */
+/* line 31, style/sass/_team-grid.scss */
 .spark-team-grid h2:before, .spark-team-grid h2:after {
   content: "";
   height: 1px;
@@ -1469,15 +1482,15 @@ section.nav {
   background: #ffffff;
   margin: 0 24px;
 }
-/* line 39, style/sass/_team-grid.scss */
+/* line 43, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-profile-position {
   padding-bottom: 20px;
 }
-/* line 43, style/sass/_team-grid.scss */
+/* line 47, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-grid {
   flex-wrap: wrap;
 }
-/* line 47, style/sass/_team-grid.scss */
+/* line 51, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-grid-item {
   padding-right: 8px;
   padding-left: 8px;
@@ -1485,7 +1498,7 @@ section.nav {
   max-width: calc(50%);
 }
 @media (min-width: 815px) {
-  /* line 47, style/sass/_team-grid.scss */
+  /* line 51, style/sass/_team-grid.scss */
   .spark-team-grid.advisors .spark-grid-item {
     padding-right: 8px;
     padding-left: 8px;
@@ -1493,12 +1506,12 @@ section.nav {
     max-width: calc(20%);
   }
 }
-/* line 56, style/sass/_team-grid.scss */
+/* line 60, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-profile {
   background: none;
   box-shadow: none;
 }
-/* line 61, style/sass/_team-grid.scss */
+/* line 65, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-profile .spark-profile-image {
   background-repeat: no-repeat;
   background-size: contain;
@@ -1509,7 +1522,7 @@ section.nav {
   width: 200px;
 }
 @media (min-width: 815px) {
-  /* line 61, style/sass/_team-grid.scss */
+  /* line 65, style/sass/_team-grid.scss */
   .spark-team-grid.advisors .spark-profile .spark-profile-image {
     width: 180px;
     height: 180px;
@@ -1517,25 +1530,25 @@ section.nav {
     max-height: 14vw;
   }
 }
-/* line 80, style/sass/_team-grid.scss */
+/* line 84, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-info-text, .spark-team-grid.advisors .spark-social-icons {
   display: none;
 }
 
-/* line 86, style/sass/_team-grid.scss */
+/* line 90, style/sass/_team-grid.scss */
 .spark-profile {
   background: #ffffff;
   border-radius: 2px;
   box-shadow: 2px 2px 8px #DFE0E4;
 }
-/* line 90, style/sass/_team-grid.scss */
+/* line 94, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 32px 0 0;
 }
-/* line 95, style/sass/_team-grid.scss */
+/* line 99, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-image {
   width: 180px;
   height: 180px;
@@ -1544,18 +1557,18 @@ section.nav {
   background-size: cover;
   margin-bottom: 24px;
 }
-/* line 104, style/sass/_team-grid.scss */
+/* line 108, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview h4 {
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: 8px;
 }
-/* line 110, style/sass/_team-grid.scss */
+/* line 114, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-position {
   line-height: 1.3;
   text-align: center;
 }
-/* line 115, style/sass/_team-grid.scss */
+/* line 119, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text {
   font-size: 12px;
   height: 120px;
@@ -1566,7 +1579,7 @@ section.nav {
   padding-right: 9.6px;
   position: relative;
 }
-/* line 125, style/sass/_team-grid.scss */
+/* line 129, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y {
   position: absolute;
   top: 0;
@@ -1578,17 +1591,17 @@ section.nav {
   overflow: hidden;
   opacity: 1;
 }
-/* line 136, style/sass/_team-grid.scss */
+/* line 140, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y .ps__thumb-y {
   border-radius: 5px;
   background-color: #DFE0E4;
   right: 1px !important;
 }
-/* line 143, style/sass/_team-grid.scss */
+/* line 147, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y:hover .ps__thumb-y {
   width: 8px;
 }
-/* line 150, style/sass/_team-grid.scss */
+/* line 154, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons {
   padding: 16px 0;
   position: relative;
@@ -1596,7 +1609,7 @@ section.nav {
   text-align: center;
   margin-top: 16px;
 }
-/* line 156, style/sass/_team-grid.scss */
+/* line 160, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons a {
   color: #234092;
   display: inline-block;
@@ -1606,7 +1619,7 @@ section.nav {
   text-decoration: none;
   z-index: 1;
 }
-/* line 165, style/sass/_team-grid.scss */
+/* line 169, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:before {
   background-color: #DFE0E4;
   content: "";
@@ -1619,7 +1632,7 @@ section.nav {
   top: 0;
   width: calc(100% - 32px);
 }
-/* line 177, style/sass/_team-grid.scss */
+/* line 181, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -1632,12 +1645,12 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 190, style/sass/_team-grid.scss */
-.spark-profile .spark-profile-preview .spark-social-icons:hover a {
+/* line 197, style/sass/_team-grid.scss */
+.spark-profile:hover .spark-social-icons a {
   color: white;
 }
-/* line 194, style/sass/_team-grid.scss */
-.spark-profile .spark-profile-preview .spark-social-icons:hover:after {
+/* line 201, style/sass/_team-grid.scss */
+.spark-profile:hover .spark-social-icons:after {
   height: 100%;
 }
 
@@ -2486,12 +2499,14 @@ section.nav {
 .spark-position-list .see-more span {
   display: inline-block;
 }
-/* line 135, style/sass/_positions.scss */
-.spark-position-list .see-more span a {
+/* line 134, style/sass/_positions.scss */
+.spark-position-list .see-more span l
+a {
   text-align: right;
 }
 /* line 137, style/sass/_positions.scss */
-.spark-position-list .see-more span a:after {
+.spark-position-list .see-more span l
+a:after {
   margin-right: 2em;
   content: " >";
 }
@@ -2509,31 +2524,40 @@ article.job-listing hgroup {
 article.job-listing hgroup h2, article.job-listing hgroup h3, article.job-listing hgroup .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing hgroup .ctct-form-label {
   line-height: 1.5em;
 }
-/* line 158, style/sass/_positions.scss */
+/* line 157, style/sass/_positions.scss */
+article.job-listing hgroup .location {
+  color: #2085C7;
+}
+/* line 162, style/sass/_positions.scss */
 article.job-listing .post-content {
   max-width: 684px;
 }
-/* line 160, style/sass/_positions.scss */
-article.job-listing .post-content h1, article.job-listing .post-content h2, article.job-listing .post-content h3, article.job-listing .post-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing .post-content .ctct-form-label, article.job-listing .post-content h4, article.job-listing .post-content h5, article.job-listing .post-content p, article.job-listing .post-content ul, article.job-listing .post-content ol {
-  margin-bottom: 16px;
+/* line 165, style/sass/_positions.scss */
+article.job-listing .post-content h1, article.job-listing .post-content h2, article.job-listing .post-content h3, article.job-listing .post-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing .post-content .ctct-form-label, article.job-listing .post-content h4, article.job-listing .post-content h5 {
+  margin-top: 40px;
 }
-/* line 164, style/sass/_positions.scss */
+/* line 168, style/sass/_positions.scss */
+article.job-listing .post-content p, article.job-listing .post-content ul, article.job-listing .post-content ol {
+  margin-top: 8px;
+}
+/* line 175, style/sass/_positions.scss */
 article.job-listing .post-content ul {
   list-style: disc outside;
   margin-left: 20px;
 }
-/* line 170, style/sass/_positions.scss */
+/* line 181, style/sass/_positions.scss */
 article.job-listing .apply {
   text-align: center;
+  margin-top: 80px;
 }
-/* line 173, style/sass/_positions.scss */
+/* line 185, style/sass/_positions.scss */
 article.job-listing .apply-now {
   background: #dde1ea;
   color: #1A1A33;
   font-weight: 400;
   margin: auto;
 }
-/* line 180, style/sass/_positions.scss */
+/* line 192, style/sass/_positions.scss */
 article.job-listing .apply-now:hover {
   background: #c6cbd8 !important;
   color: #1A1A33;

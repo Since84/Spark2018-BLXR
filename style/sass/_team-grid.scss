@@ -2,6 +2,10 @@
 	background: $primary6;
 	padding: base(10) 0;
 
+	+ .spark-team-grid {
+		padding-top: 0;
+	}
+
 	.spark-grid {
 		display: flex;
 		flex-wrap: wrap;
@@ -186,14 +190,16 @@
 				z-index: 0;
 			}
 
-			&:hover {
-				a {
-					color: white;
-				}
+		}
+	}
+	&:hover {
+		.spark-social-icons {
+			a {
+				color: white;
+			}
 
-				&:after{
-					height: 100%;
-				}
+			&:after{
+				height: 100%;
 			}
 		}
 	}
