@@ -40,8 +40,17 @@
 			padding-bottom: 20px;
 		}
 
+		.spark-grid {
+			flex-wrap: wrap;
+		}
+
 		.spark-grid-item {
-			@include span(2.4);
+			@include span(6);
+			@include breakpoint($medium-up){
+				@include span(2.4);
+			}
+
+
 		}
 
 		.spark-profile {
@@ -53,10 +62,19 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 			border-radius: 0;
-			width: 180px;
-			height: 180px;
-			max-width: 14vw;
-			max-height: 14vw;
+			height: 200px;
+			max-width: 24vw;
+			max-height: 24vw;
+			width: 200px;
+
+			@include breakpoint($medium-up){
+				width: 180px;
+				height: 180px;
+				max-width: 14vw;
+				max-height: 14vw;
+			}
+
+
 		}
 
 		.spark-info-text, .spark-social-icons {
