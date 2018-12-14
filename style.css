@@ -693,7 +693,7 @@ section.nav {
     display: block;
     height: 0px;
     width: 100%;
-    transition: height .1s linear .3s;
+    transition: height .25s linear;
     position: absolute;
   }
   /* line 166, style/sass/_nav.scss */
