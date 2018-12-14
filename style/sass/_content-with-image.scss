@@ -2,13 +2,13 @@
 	position: relative;
 
 	&.default {
-		background: $primary1;
 		.spark-container {
 			justify-content: left;
 		}
 
 
 		&.left {
+			background: $primary1;
 			@include breakpoint($small){
 				flex-wrap: wrap;
 			}
@@ -55,6 +55,45 @@
 					height: auto;
 				}
 			}
+		}
+
+		&.right {
+			.spark-content {
+				order: 2;
+				padding: base(4) base(10) base(4) 0;
+
+				@include breakpoint($small) {
+					@include span(11);
+					flex: 0;
+				}
+
+				@include breakpoint($medium-up) {
+					@include span(6);
+					padding-right: base(8);
+					margin-right: base(4);
+				}
+
+				@include breakpoint($large-up) {
+					@include span(6);
+					padding-right: base(18);
+				}
+			}
+			img {
+				max-width: 100%;
+				order: 1;
+
+				@include breakpoint($small) {
+					width: span(10);
+					margin: base(4);
+					max-width: 100%;
+					height: auto;
+				}
+
+				@include breakpoint($medium-up){
+					@include span(6);
+					margin: base(4) base(8) base(4) 0;
+				}
+			}	
 		}
 
 		.spark-container {
