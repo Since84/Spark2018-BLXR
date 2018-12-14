@@ -23,6 +23,11 @@
 			@include breakpoint($medium-up){
 				flex-basis: 20%;
 			}
+
+			img {
+			    height: 24px;
+			    width: auto;
+			}
 		}
 	}
 }
