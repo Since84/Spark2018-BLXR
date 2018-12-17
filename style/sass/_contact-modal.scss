@@ -18,6 +18,19 @@
 			height: 100%;
 			background: rgba(255,255,255,.9);
 		}
+
+		.contact-links{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			padding: base(2) 0;
+			li {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 0 base(2);
+			}
+		}
 		.spark-contact-modal {
 			background: white;
 		    bottom: 0;
@@ -38,11 +51,10 @@
 			}
 
 			.contact-left {
-				width: 202px;
 				background: url('style/image/graphics/contact-background.jpg');
 				background-size: cover;
-				margin-right: base(4);
 				position: relative;
+				width: 202px;
 
 				@include breakpoint($small){
 					display: none;
@@ -79,6 +91,57 @@
 			.contact-right {
 				@include breakpoint($small){
 					padding-top: base(8);
+				}
+
+				.wpcf7-form-control-wrap {
+					.wpcf7-form-control {
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+
+						label {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+						}
+					}
+					input[type="radio"]{
+						order:2;
+						+ .wpcf7-list-item-label {
+							align-items: center;
+							display: flex;
+							flex-direction: column;
+							order:1;
+							padding: 0 base(3);
+							&:before {
+								font-family: "Font Awesome\ 5 Free";
+								font-weight: 900;
+							}
+
+						}
+
+						&[value="Social"], &[value="Investor Relations"], &[value="Contact"]{
+							+ .wpcf7-list-item-label {
+								font-size: 12px;
+								font-weight: 400;
+								&:before {
+									content: "\f0e0";
+									background: none;
+									height: 0;
+									left: auto;
+									margin: 0;
+									margin-bottom: base(2);
+									position: relative;
+									top: auto;
+									width: auto;
+
+								}
+								&:after {
+									content: none;
+								}
+							}
+						}
+					}
 				}
 			}
 
@@ -264,6 +327,7 @@
 			}
 
 			.form-radios {
+				display: none;
 				margin-bottom: base(2);
 				font-size: 11px;
 				line-height: 1.4;
