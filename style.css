@@ -269,9 +269,9 @@ section .spark-container:after {
 	Site Color Pallette
 */
 /* line 22, style/sass/_colors.scss */
-.knockout, .spark-content-with-image.default.left .spark-content, .horizontal-stack .content, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
+.knockout, .spark-content-with-image.default.left .spark-content, .horizontal-stack .content, .resources-page .resource-sidebar .link-list, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text,
-.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.default.left .spark-content *, .horizontal-stack .content *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
+.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.default.left .spark-content *, .horizontal-stack .content *, .resources-page .resource-sidebar .link-list *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a * {
   color: white;
@@ -461,20 +461,25 @@ em {
   background: #234898 !important;
   color: #F4F5F9;
 }
+/* line 26, style/sass/_ui.scss */
+.cta-button.small-button, .small-button.gray-cta-button, .spark-accordion .accordion-tabs .small-button.collection-heading, article.job-listing .small-button.apply-now {
+  padding: 8px 16px;
+  font-size: 12px;
+}
 
-/* line 27, style/sass/_ui.scss */
+/* line 32, style/sass/_ui.scss */
 .gray-cta-button {
   background: #E9EBF0;
   color: #1A1A33;
   font-weight: 400;
 }
-/* line 33, style/sass/_ui.scss */
+/* line 38, style/sass/_ui.scss */
 .gray-cta-button:hover {
   background: #D0D4E1 !important;
   color: #1A1A33;
 }
 
-/* line 40, style/sass/_ui.scss */
+/* line 45, style/sass/_ui.scss */
 .youtube-modal .spark-modal-close {
   display: block;
   position: absolute;
@@ -484,11 +489,11 @@ em {
   right: 0;
   margin: auto;
 }
-/* line 49, style/sass/_ui.scss */
+/* line 54, style/sass/_ui.scss */
 .youtube-modal:not(.open) {
   display: none;
 }
-/* line 53, style/sass/_ui.scss */
+/* line 58, style/sass/_ui.scss */
 .youtube-modal.open {
   position: fixed;
   top: 0;
@@ -497,7 +502,7 @@ em {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 61, style/sass/_ui.scss */
+/* line 66, style/sass/_ui.scss */
 .youtube-modal.open .youtube-frame {
   background: white;
   bottom: 0;
@@ -512,7 +517,7 @@ em {
   width: 560px;
   z-index: 1000;
 }
-/* line 75, style/sass/_ui.scss */
+/* line 80, style/sass/_ui.scss */
 .youtube-modal.open .youtube-frame .modal-close-button {
   background-image: url(style/image/icon/close_button.png);
   background-size: contain;
@@ -1333,6 +1338,30 @@ section.nav {
   margin-right: 24px;
 }
 
+/* line 2, style/sass/_video-list.scss */
+.spark-video-list .spark-container {
+  flex-wrap: wrap;
+}
+/* line 5, style/sass/_video-list.scss */
+.spark-video-list .section-heading {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  margin-bottom: 24px;
+}
+/* line 9, style/sass/_video-list.scss */
+.spark-video-list .spark-video-preview-container {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(33.33333%);
+  max-width: calc(33.33333%);
+}
+/* line 13, style/sass/_video-list.scss */
+.spark-video-list .spark-video-preview-container .video-thumb img {
+  width: 100%;
+}
+
 /* line 2, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-top-content {
   background: #1A1A33;
@@ -1433,6 +1462,184 @@ section.nav {
 .spark-icon-grid .spark-grid .spark-grid-item img {
   height: auto;
   width: 155px;
+}
+
+/* line 1, style/sass/_resources.scss */
+.resources-page {
+  margin: 80px 0;
+}
+/* line 4, style/sass/_resources.scss */
+.resources-page a {
+  text-decoration: none;
+}
+/* line 8, style/sass/_resources.scss */
+.resources-page .module-heading {
+  border-bottom: 1px solid #DFE0E4;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 17, style/sass/_resources.scss */
+.resources-page .module-heading:after {
+  content: none;
+}
+/* line 22, style/sass/_resources.scss */
+.resources-page .module-content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+/* line 27, style/sass/_resources.scss */
+.resources-page .spark-container {
+  flex-wrap: wrap;
+}
+/* line 31, style/sass/_resources.scss */
+.resources-page .resource-videos {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+}
+@media (max-width: 815px) {
+  /* line 31, style/sass/_resources.scss */
+  .resources-page .resource-videos {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 815px) {
+  /* line 31, style/sass/_resources.scss */
+  .resources-page .resource-videos {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(58.33333%);
+    max-width: calc(58.33333%);
+  }
+}
+/* line 42, style/sass/_resources.scss */
+.resources-page .resource-videos .spark-video-list {
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+/* line 47, style/sass/_resources.scss */
+.resources-page .resource-videos .module-heading {
+  background: #ffffff;
+  flex-direction: row;
+}
+/* line 52, style/sass/_resources.scss */
+.resources-page .resource-videos .videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+  padding: 32px 16px;
+}
+/* line 60, style/sass/_resources.scss */
+.resources-page .resource-videos .spark-video-preview-container {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(33.33333%);
+  max-width: calc(33.33333%);
+  margin-bottom: 48px;
+}
+/* line 64, style/sass/_resources.scss */
+.resources-page .resource-videos .spark-video-preview-container .video-thumb {
+  margin-bottom: 16px;
+}
+/* line 69, style/sass/_resources.scss */
+.resources-page .resource-videos .spark-video-preview-container .video-meta h3, .resources-page .resource-videos .spark-video-preview-container .video-meta .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .resources-page .resource-videos .spark-video-preview-container .video-meta .ctct-form-label, .resources-page .resource-videos .spark-video-preview-container .video-meta p {
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 79, style/sass/_resources.scss */
+.resources-page .resource-sidebar {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+}
+@media (min-width: 815px) {
+  /* line 79, style/sass/_resources.scss */
+  .resources-page .resource-sidebar {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(41.66667%);
+    max-width: calc(41.66667%);
+  }
+}
+/* line 86, style/sass/_resources.scss */
+.resources-page .resource-sidebar .link-list {
+  background: #1A1A33;
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+/* line 92, style/sass/_resources.scss */
+.resources-page .resource-sidebar .link-list .read-more {
+  color: #ffffff;
+}
+/* line 95, style/sass/_resources.scss */
+.resources-page .resource-sidebar .link-list .spark-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 100, style/sass/_resources.scss */
+.resources-page .resource-sidebar .link-list .spark-position-preview {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 109, style/sass/_resources.scss */
+.resources-page .resource-sidebar .link-list .position-meta {
+  align-items: center;
+  width: calc(100% - 20px);
+}
+/* line 112, style/sass/_resources.scss */
+.resources-page .resource-sidebar .link-list .position-meta p {
+  font-size: 14px;
+  margin: 8px 8px 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 119, style/sass/_resources.scss */
+.resources-page .resource-sidebar .link-list .position-meta .spark-position-link {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(25%);
+  max-width: calc(25%);
+  text-align: right;
+}
+/* line 126, style/sass/_resources.scss */
+.resources-page .resource-sidebar .whitepaper {
+  background: white;
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
+}
+/* line 130, style/sass/_resources.scss */
+.resources-page .resource-sidebar .whitepaper .spark-image {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(33.33333%);
+  max-width: calc(33.33333%);
+}
+/* line 132, style/sass/_resources.scss */
+.resources-page .resource-sidebar .whitepaper .spark-image img {
+  max-width: 100%;
+}
+/* line 137, style/sass/_resources.scss */
+.resources-page .resource-sidebar .whitepaper .spark-content {
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 1 1 calc(66.66667%);
+  max-width: calc(66.66667%);
 }
 
 /* line 1, style/sass/_team-grid.scss */

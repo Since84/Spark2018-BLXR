@@ -1,0 +1,142 @@
+.resources-page {
+	margin: base(10) 0;
+
+	a {
+		text-decoration: none;
+	}
+
+	.module-heading {
+		border-bottom: 1px solid $primary5;
+		padding-top: base();
+		padding-bottom: base();
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		&:after {
+			content: none;
+		}
+	}
+
+	.module-content {
+		padding-top: base(2);
+		padding-bottom: base(2);
+	}
+
+	.spark-container {
+		flex-wrap: wrap;
+	}
+
+	.resource-videos {
+		@include span(12);
+
+		@include breakpoint($small){
+			margin-bottom: base(5)
+		}
+		
+		@include breakpoint($medium-up){
+			@include span(7);
+		}
+
+		.spark-video-list {
+			box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+			border-radius: 4px;
+		}
+
+		.module-heading {
+			background: $primary7;
+			flex-direction: row;
+		}
+		
+		.videos{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			background: white;
+			padding: base(4) base(2);
+		}
+
+		.spark-video-preview-container {
+			@include span(4);
+			margin-bottom: base(6);
+
+			.video-thumb {
+				margin-bottom: base(2);
+			}
+
+			.video-meta {
+				h3,p {
+					margin-bottom: base(.5);
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+			}
+		}
+	}
+	.resource-sidebar {
+		@include span(12);
+
+		@include breakpoint($medium-up){
+			@include span(5);
+		}
+
+		.link-list {
+			@extend .knockout;
+			background: $primary1;
+			margin-bottom: base(4);
+			border-radius: 4px;
+
+			.read-more {
+				color: $primary7;
+			}
+			.spark-container {
+				padding-top: base();
+				padding-bottom: base();
+			}
+
+			.spark-position-preview {
+				@include span(12);
+				padding: 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.position-meta {
+				align-items: center;
+				width: calc(100% - 20px);
+				p {
+					font-size: 14px;
+					margin: base() base() base() 0;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.spark-position-link {
+					@include span(3);
+					text-align: right;
+				}
+			}
+		}
+
+		.whitepaper {
+			background: white;
+			box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+
+			.spark-image {
+				@include span(4);
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.spark-content {
+				@include span(8)
+			}
+		}
+	}
+}

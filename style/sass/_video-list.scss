@@ -1,0 +1,18 @@
+.spark-video-list {
+	.spark-container {
+		flex-wrap: wrap;
+	}
+	.section-heading {
+		@include span(12);
+		margin-bottom: base(3);
+	}
+	.spark-video-preview-container {
+		@include span(4);
+
+		.video-thumb {
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

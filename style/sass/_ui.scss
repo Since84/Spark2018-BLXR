@@ -22,6 +22,11 @@
 		background: #234898 !important;
 		color: $primary6;
 	}
+
+	&.small-button {
+		padding: base() base(2);
+		font-size: 12px; 
+	}
 }
 
 .gray-cta-button {
