@@ -1755,12 +1755,12 @@ section.nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 32px 0 0;
+  padding: 24px 0 0;
 }
 /* line 99, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-image {
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   display: block;
   border-radius: 50%;
   background-size: cover;
@@ -1850,7 +1850,7 @@ section.nav {
   height: 3px;
   left: 0;
   position: absolute;
-  transition: color .25s linear .25s, height .5s linear;
+  transition: color .25s linear .25s, height .3s linear;
   width: 100%;
   z-index: 0;
 }
@@ -2719,7 +2719,7 @@ section.nav {
   height: 3px;
   left: 0;
   position: absolute;
-  transition: color .25s linear .25s, height .5s linear;
+  transition: color .25s linear .25s, height .3s linear;
   width: 100%;
   z-index: 0;
 }
@@ -2763,7 +2763,7 @@ section.nav {
 }
 /* line 129, style/sass/_positions.scss */
 .spark-position-list .position-meta {
-  height: 10em;
+  height: 6em;
 }
 /* line 133, style/sass/_positions.scss */
 .spark-position-list .see-more {

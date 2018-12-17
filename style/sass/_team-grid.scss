@@ -95,10 +95,10 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		padding: base(4) 0 0;
+		padding: base(3) 0 0;
 		.spark-profile-image {
-			width: 180px;
-		    height: 180px;
+			width: 140px;
+		    height: 140px;
 		    display: block;
 		    border-radius: 50%;
 		    background-size: cover;
@@ -185,7 +185,7 @@
 				height: 3px;
 				left: 0;
 				position: absolute;
-				transition: color .25s linear .25s, height .5s linear;
+				transition: color .25s linear .25s, height .3s linear;
 				width: 100%;
 				z-index: 0;
 			}
