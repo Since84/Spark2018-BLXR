@@ -1906,7 +1906,7 @@ section.nav {
 @media (max-width: 815px) {
   /* line 14, style/sass/_faq-accordion.scss */
   .spark-accordion .accordion-tabs .collection-heading {
-    padding: 16px 8px;
+    padding: 12px 8px;
     margin: 8px;
     padding-right: 8px;
     padding-left: 8px;
@@ -1917,23 +1917,24 @@ section.nav {
 @media (min-width: 815px) {
   /* line 14, style/sass/_faq-accordion.scss */
   .spark-accordion .accordion-tabs .collection-heading {
+    padding: 12px 8px;
     padding-right: 8px;
     padding-left: 8px;
     flex: 1 1 calc(20.83333%);
     max-width: calc(20.83333%);
   }
 }
-/* line 31, style/sass/_faq-accordion.scss */
+/* line 32, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-tabs .collection-heading:not(.active-tab) {
   background: #dde1ea;
   color: #1A1A33;
   font-weight: 400;
 }
-/* line 36, style/sass/_faq-accordion.scss */
+/* line 37, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-tabs .collection-heading:not(.active-tab):hover {
   background: #c6cbd8 !important;
 }
-/* line 43, style/sass/_faq-accordion.scss */
+/* line 44, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-items {
   padding-right: 8px;
   padding-left: 8px;
@@ -1947,11 +1948,11 @@ section.nav {
   overflow: hidden;
   box-shadow: 0px 0px 4px #DFE0E4;
 }
-/* line 53, style/sass/_faq-accordion.scss */
+/* line 54, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-items:not(.active-content) {
   display: none;
 }
-/* line 57, style/sass/_faq-accordion.scss */
+/* line 58, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item {
   padding-right: 8px;
   padding-left: 8px;
@@ -1960,21 +1961,21 @@ section.nav {
   background-color: #ffffff;
   border-bottom: 1px solid #DFE0E4;
   flex: 0;
-  padding: 16px 32px 16px 40px;
+  padding: 0 32px 0 40px;
   position: relative;
 }
 @media (min-width: 815px) {
-  /* line 57, style/sass/_faq-accordion.scss */
+  /* line 58, style/sass/_faq-accordion.scss */
   .spark-accordion .accordion-item {
-    padding: 16px 32px 16px 64px;
+    padding: 8px 32px 8px 64px;
   }
 }
-/* line 69, style/sass/_faq-accordion.scss */
+/* line 70, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .accordion-trigger {
   cursor: pointer;
   padding: 16px 0;
 }
-/* line 72, style/sass/_faq-accordion.scss */
+/* line 73, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .accordion-trigger:before {
   background: url("style/image/icon/plus.svg");
   background-size: cover;
@@ -1983,22 +1984,23 @@ section.nav {
   height: 10px;
   left: 20px;
   position: absolute;
-  top: 40px;
+  top: auto;
+  bottom: auto;
   width: 10px;
 }
-/* line 85, style/sass/_faq-accordion.scss */
+/* line 87, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .spark-content {
   padding-left: 16px;
   position: relative;
   margin-left: -18px;
 }
 @media (min-width: 815px) {
-  /* line 85, style/sass/_faq-accordion.scss */
+  /* line 87, style/sass/_faq-accordion.scss */
   .spark-accordion .accordion-item .spark-content {
     margin-left: 24px;
   }
 }
-/* line 93, style/sass/_faq-accordion.scss */
+/* line 95, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .spark-content:before {
   background-color: #1D7CC5;
   content: "";
@@ -2008,15 +2010,15 @@ section.nav {
   left: 0;
   top: 0;
 }
-/* line 107, style/sass/_faq-accordion.scss */
+/* line 109, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item:not(.open) .spark-content {
   display: none;
 }
-/* line 113, style/sass/_faq-accordion.scss */
+/* line 115, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item.open .accordion-trigger:before {
   transform: rotate(45deg);
 }
-/* line 116, style/sass/_faq-accordion.scss */
+/* line 118, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item.open .spark-content {
   margin-bottom: 16px;
 }

@@ -1,5 +1,38 @@
 <section class="resources-page">
 	<div class="spark-container">
+		<div class="resource-sidebar">
+			{% for layout in page.meta('resource_sidebar') %}
+				{% if layout.acf_fc_layout == "link_list" %}
+					<div class="link-list">
+						<div class="spark-container module-heading">
+							<h5>{{ layout.heading }}</h5>
+							<a class="read-more fab fa-medium" href="{{ layout.see_more_link }}" target="_blank"></a>
+						</div>
+						<div class="spark-container">
+							{% for post in layout.posts %}
+								<div class="spark-position-preview">
+									<div class="position-meta">
+										<p>{{ post.title }}</p>
+									</div>
+									<a class="spark-position-link fas fa-file-text" href="{{ post.link }}" target="_blank"></a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+				{% if layout.acf_fc_layout == "whitepaper" %}
+					<div class="whitepaper">
+						<div class="spark-container module-heading">
+							<h5>Live</h5>
+						</div>
+						<div class="spark-container module-content">
+							<div class="spark-image"><img src="{{ layout.image.url }}"/></div>
+							<div class="spark-content">{{ layout.content }}</div>
+						</div>	
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
 		<div class="resource-videos">
 			<div id="{{ layout.heading|lower|replace({" ": "-"}) }}" class="spark-video-list">
 				<div class="spark-container module-heading">
@@ -38,39 +71,6 @@
 				</div>
 				{% endif %}
 			</div>
-		</div>
-		<div class="resource-sidebar">
-			{% for layout in page.meta('resource_sidebar') %}
-				{% if layout.acf_fc_layout == "link_list" %}
-					<div class="link-list">
-						<div class="spark-container module-heading">
-							<div>{{ layout.heading }}</div>
-							<a class="read-more fab fa-medium" href="{{ layout.see_more_link }}" target="_blank"></a>
-						</div>
-						<div class="spark-container">
-							{% for post in layout.posts %}
-								<div class="spark-position-preview">
-									<div class="position-meta">
-										<p>{{ post.title }}</p>
-									</div>
-									<a class="spark-position-link fas fa-file-text" href="{{ post.link }}" target="_blank"></a>
-								</div>
-							{% endfor %}
-						</div>
-					</div>
-				{% endif %}
-				{% if layout.acf_fc_layout == "whitepaper" %}
-					<div class="whitepaper">
-						<div class="spark-container module-heading">
-							<h5>Live</h5>
-						</div>
-						<div class="spark-container module-content">
-							<div class="spark-image"><img src="{{ layout.image.url }}"/></div>
-							<div class="spark-content">{{ layout.content }}</div>
-						</div>	
-					</div>
-				{% endif %}
-			{% endfor %}
 		</div>
 	</div>
 </section>
