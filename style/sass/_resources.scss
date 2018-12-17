@@ -86,7 +86,6 @@
 		.link-list {
 			@extend .knockout;
 			background: $primary1;
-			margin-bottom: base(2);
 			border-radius: 4px;
 
 			.read-more {
@@ -126,6 +125,7 @@
 		.whitepaper {
 			background: white;
 			box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+			margin-bottom: base(2);
 
 			.spark-image {
 				@include span(4);
