@@ -109,6 +109,11 @@
 			white-space: nowrap;
 			overflow: hidden;
 			margin-bottom: base();
+
+			@include breakpoint($small){
+			    font-size: 16px;
+			    line-height: 18px;
+			}
 		}
 
 		.spark-profile-position {
