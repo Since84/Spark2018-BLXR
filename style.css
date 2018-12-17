@@ -1780,7 +1780,6 @@ section.nav {
 /* line 119, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text {
   font-size: 12px;
-  height: 120px;
   line-height: 1.6;
   margin-top: 8px;
   overflow: hidden;
@@ -1788,7 +1787,13 @@ section.nav {
   padding-right: 9.6px;
   position: relative;
 }
-/* line 129, style/sass/_team-grid.scss */
+@media (min-width: 815px) {
+  /* line 119, style/sass/_team-grid.scss */
+  .spark-profile .spark-profile-preview .spark-info-text {
+    height: 120px;
+  }
+}
+/* line 132, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y {
   position: absolute;
   top: 0;
@@ -1800,17 +1805,17 @@ section.nav {
   overflow: hidden;
   opacity: 1;
 }
-/* line 140, style/sass/_team-grid.scss */
+/* line 143, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y .ps__thumb-y {
   border-radius: 5px;
   background-color: #DFE0E4;
   right: 1px !important;
 }
-/* line 147, style/sass/_team-grid.scss */
+/* line 150, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y:hover .ps__thumb-y {
   width: 8px;
 }
-/* line 154, style/sass/_team-grid.scss */
+/* line 157, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons {
   padding: 16px 0;
   position: relative;
@@ -1818,7 +1823,7 @@ section.nav {
   text-align: center;
   margin-top: 16px;
 }
-/* line 160, style/sass/_team-grid.scss */
+/* line 163, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons a {
   color: #234092;
   display: inline-block;
@@ -1828,7 +1833,7 @@ section.nav {
   text-decoration: none;
   z-index: 1;
 }
-/* line 169, style/sass/_team-grid.scss */
+/* line 172, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:before {
   background-color: #DFE0E4;
   content: "";
@@ -1841,7 +1846,7 @@ section.nav {
   top: 0;
   width: calc(100% - 32px);
 }
-/* line 181, style/sass/_team-grid.scss */
+/* line 184, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -1854,11 +1859,11 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 197, style/sass/_team-grid.scss */
+/* line 200, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons a {
   color: white;
 }
-/* line 201, style/sass/_team-grid.scss */
+/* line 204, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons:after {
   height: 100%;
 }
