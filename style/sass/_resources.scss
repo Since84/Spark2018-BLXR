@@ -32,7 +32,8 @@
 		@include span(12);
 
 		@include breakpoint($small){
-			margin-bottom: base(5)
+			margin-bottom: base(5);
+			margin-top: base(2);
 		}
 		
 		@include breakpoint($medium-up){
