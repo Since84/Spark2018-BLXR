@@ -825,7 +825,7 @@ section.nav {
 .spark-vimeo-hero {
   background: #1A1A33;
   overflow: hidden;
-  padding: 96px 0;
+  padding: 64px 0;
   position: relative;
 }
 /* line 7, style/sass/_hero.scss */
@@ -833,6 +833,7 @@ section.nav {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  align-items: center;
 }
 @media (max-width: 815px) {
   /* line 7, style/sass/_hero.scss */
@@ -840,7 +841,7 @@ section.nav {
     flex-wrap: wrap;
   }
 }
-/* line 17, style/sass/_hero.scss */
+/* line 18, style/sass/_hero.scss */
 .spark-vimeo-hero .spark-content {
   padding-right: 8px;
   padding-left: 8px;
@@ -848,13 +849,13 @@ section.nav {
   max-width: calc(100%);
 }
 @media (max-width: 815px) {
-  /* line 17, style/sass/_hero.scss */
+  /* line 18, style/sass/_hero.scss */
   .spark-vimeo-hero .spark-content {
     margin-bottom: 24px;
   }
 }
 @media (min-width: 815px) {
-  /* line 17, style/sass/_hero.scss */
+  /* line 18, style/sass/_hero.scss */
   .spark-vimeo-hero .spark-content {
     padding-right: 8px;
     padding-left: 8px;
@@ -862,11 +863,11 @@ section.nav {
     max-width: calc(25%);
   }
 }
-/* line 28, style/sass/_hero.scss */
+/* line 29, style/sass/_hero.scss */
 .spark-vimeo-hero .spark-content h1, .spark-vimeo-hero .spark-content p {
   margin-bottom: 24px;
 }
-/* line 33, style/sass/_hero.scss */
+/* line 34, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container {
   cursor: pointer;
   position: relative;
@@ -876,7 +877,7 @@ section.nav {
   max-width: calc(100%);
 }
 @media (min-width: 815px) {
-  /* line 33, style/sass/_hero.scss */
+  /* line 34, style/sass/_hero.scss */
   .spark-vimeo-hero .video-container {
     margin-left: 8.33333%;
     padding-right: 8px;
@@ -885,7 +886,7 @@ section.nav {
     max-width: calc(66.66667%);
   }
 }
-/* line 43, style/sass/_hero.scss */
+/* line 44, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:after {
   background-image: url(style/image/play-button/inactive.png);
   background-size: cover;
@@ -900,23 +901,23 @@ section.nav {
   top: 0;
   width: 100px;
 }
-/* line 58, style/sass/_hero.scss */
+/* line 59, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
-/* line 62, style/sass/_hero.scss */
+/* line 63, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active {
   background-image: none !important;
 }
-/* line 64, style/sass/_hero.scss */
+/* line 65, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active:after {
   content: none;
 }
-/* line 69, style/sass/_hero.scss */
+/* line 70, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container .video {
   max-width: 100%;
 }
-/* line 74, style/sass/_hero.scss */
+/* line 75, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   background: linear-gradient(to top, #234092, #2085c7);
   top: 50%;
@@ -927,7 +928,7 @@ section.nav {
   width: 200%;
 }
 @media (min-width: 815px) {
-  /* line 74, style/sass/_hero.scss */
+  /* line 75, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 175.4vw;
     height: 112vw;
@@ -937,7 +938,7 @@ section.nav {
   }
 }
 @media (min-width: 1200px) {
-  /* line 74, style/sass/_hero.scss */
+  /* line 75, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
     height: 151%;
@@ -1362,27 +1363,31 @@ section.nav {
   width: 100%;
 }
 
-/* line 2, style/sass/_horizontal-stack.scss */
+/* line 1, style/sass/_horizontal-stack.scss */
+.horizontal-stack {
+  background: #F4F5F9;
+}
+/* line 3, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-top-content {
   background: #1A1A33;
 }
-/* line 5, style/sass/_horizontal-stack.scss */
+/* line 6, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content {
   padding: 80px 0 160px;
 }
-/* line 9, style/sass/_horizontal-stack.scss */
+/* line 10, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content .spark-content {
   padding-right: 8px;
   padding-left: 8px;
   flex: 1 1 calc(83.33333%);
   max-width: calc(83.33333%);
 }
-/* line 18, style/sass/_horizontal-stack.scss */
+/* line 19, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-container {
   transform: translateY(-80px);
   flex-wrap: wrap;
 }
-/* line 23, style/sass/_horizontal-stack.scss */
+/* line 24, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item {
   padding-right: 8px;
   padding-left: 8px;
@@ -1390,10 +1395,9 @@ section.nav {
   max-width: calc(83.33333%);
   padding: 32px 32px;
   background: white;
-  border-radius: 4px;
-  border: 1px solid #DFE0E4;
+  border-radius: 2px;
   box-shadow: 2px 2px 2px rgba(26, 26, 51, 0.1);
-  margin: 0 16px 40px;
+  margin: 0 16px 0;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -1408,7 +1412,7 @@ section.nav {
   margin-bottom: 16px;
 }
 @media (min-width: 815px) {
-  /* line 23, style/sass/_horizontal-stack.scss */
+  /* line 24, style/sass/_horizontal-stack.scss */
   .horizontal-stack .spark-tabs-content-item {
     padding-right: 8px;
     padding-left: 8px;
