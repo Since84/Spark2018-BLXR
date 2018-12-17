@@ -30,6 +30,12 @@
 		margin: 0 base(2) 0;
 		padding-left: base(3);
 		padding-right: base(3);
+
+		@include breakpoint($small){
+			margin-bottom: base(4);
+		}
+
+
 		h4 {
 			margin-bottom: base(2);
 			text-align: center;
