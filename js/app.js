@@ -116,6 +116,8 @@
 			var video = $(this).find('video');
 			
 			$(this).addClass('video-active');
+
+			video.attr('controls', '');
 			video.get(0).play();
 		})
 

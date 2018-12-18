@@ -42,10 +42,6 @@
 			@include span(8);
 		}
 
-		video {
-			visibility: hidden;
-		}
-
 		&:after{
 			background-image: url(style/image/play-button/inactive.png);
 			background-size: cover;
@@ -70,12 +66,6 @@
 			&:after {
 				content: none;
 			}	
-
-			video {
-				visibility: visible;
-				max-width: 100%;
-				height: auto;
-			}
 		}
 
 		.video {

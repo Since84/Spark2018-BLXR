@@ -888,10 +888,6 @@ section.nav {
   }
 }
 /* line 45, style/sass/_hero.scss */
-.spark-vimeo-hero .video-container video {
-  visibility: hidden;
-}
-/* line 49, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:after {
   background-image: url(style/image/play-button/inactive.png);
   background-size: cover;
@@ -906,29 +902,23 @@ section.nav {
   top: 0;
   width: 100px;
 }
-/* line 64, style/sass/_hero.scss */
+/* line 60, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
-/* line 68, style/sass/_hero.scss */
+/* line 64, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active {
   background-image: none !important;
 }
-/* line 70, style/sass/_hero.scss */
+/* line 66, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active:after {
   content: none;
 }
-/* line 74, style/sass/_hero.scss */
-.spark-vimeo-hero .video-container.video-active video {
-  visibility: visible;
-  max-width: 100%;
-  height: auto;
-}
-/* line 81, style/sass/_hero.scss */
+/* line 71, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container .video {
   max-width: 100%;
 }
-/* line 86, style/sass/_hero.scss */
+/* line 76, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   background: linear-gradient(to top, #234092, #2085c7);
   top: 50%;
@@ -939,7 +929,7 @@ section.nav {
   width: 200%;
 }
 @media (min-width: 815px) {
-  /* line 86, style/sass/_hero.scss */
+  /* line 76, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 175.4vw;
     height: 112vw;
@@ -949,7 +939,7 @@ section.nav {
   }
 }
 @media (min-width: 1200px) {
-  /* line 86, style/sass/_hero.scss */
+  /* line 76, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
     height: 151%;
