@@ -17,6 +17,10 @@
 		&:after {
 			content: none;
 		}
+
+		.more-icon {
+			margin-left: base();
+		}
 	}
 
 	.module-content {
