@@ -113,11 +113,10 @@
 		})
 
 		$('.video-container').click(function(e){
-			var $video = $(e.currentTarget).find('iframe.video');
-			var videoSrc = $video.attr('data-src');
-
-			$video.attr('src', videoSrc);
-			$(this).addClass('video-active') 
+			var video = $(this).find('video');
+			
+			$(this).addClass('video-active');
+			video.get(0).play();
 		})
 
 		$('.spark-profile').each(function(){
