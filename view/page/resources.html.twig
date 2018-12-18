@@ -41,7 +41,7 @@
 			<div id="{{ layout.heading|lower|replace({" ": "-"}) }}" class="spark-video-list">
 				<div class="spark-container module-heading">
 					<h5>Videos</h5>
-					<a class="read-more" href="{{ page.meta('resource_videos')[0].see_more_link }}" target="_blank">{{ page.meta('resource_videos')[0] }}<span class="more-icon fab fa-medium"></span></a>
+					<a class="read-more" href="{{ page.meta('resource_videos')[0].see_more_link }}" target="_blank">{{ page.meta('resource_videos')[0].see_more_text }}<span class="more-icon fab fa-medium"></span></a>
 				</div>
 				<div class="videos">
 					{% for layout in page.meta('resource_videos') %}
