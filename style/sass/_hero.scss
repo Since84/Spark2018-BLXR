@@ -32,6 +32,7 @@
 	}
 
 	.video-container {
+		background-size: cover;
 		cursor: pointer;
 		position: relative;
 		@include span(12);
