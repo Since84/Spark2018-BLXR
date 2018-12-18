@@ -96,6 +96,7 @@
 		align-items: center;
 		flex-direction: column;
 		padding: base(3) 0 0;
+
 		.spark-profile-image {
 			width: 140px;
 		    height: 140px;
@@ -103,6 +104,17 @@
 		    border-radius: 50%;
 		    background-size: cover;
 		    margin-bottom: base(3);
+		}
+
+		.profile-image-container {
+			position: relative;
+			.spark-profile-image-hover {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transition: opacity .25s linear;
+			}
 		}
 
 		h4 {
@@ -201,6 +213,17 @@
 		}
 	}
 	&:hover {
+
+		.profile-image-container {
+			position: relative;
+			.spark-profile-image-hover {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 1;
+			}
+		}
+
 		.spark-social-icons {
 			a {
 				color: white;
