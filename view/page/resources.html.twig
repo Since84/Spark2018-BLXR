@@ -4,35 +4,39 @@
 			{% for layout in page.meta('resource_sidebar') %}
 				{% if layout.acf_fc_layout == "link_list" %}
 					<div class="link-list">
-						<div class="spark-container module-heading">
-							<h5>{{ layout.heading }}</h5>
-							<div>
-								<a class="read-more" href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}<span class="more-icon fab fa-medium"></span></a>
-							</div>
-						</div>
-						<div class="spark-container module-content">
-							{% for post in layout.posts %}
-								<div class="spark-position-preview">
-									<div class="position-meta">
-										<p>{{ post.title }}</p>
-									</div>
-									<div>
-										<a class="spark-position-link fas fa-file-text" href="{{ post.link }}" target="_blank"></a>
-									</div>
+						<div class="link-list-content">
+							<div class="spark-container module-heading">
+								<h5>{{ layout.heading }}</h5>
+								<div>
+									<a class="read-more" href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}<span class="more-icon fab fa-medium"></span></a>
 								</div>
-							{% endfor %}
+							</div>
+							<div class="spark-container module-content">
+								{% for post in layout.posts %}
+									<div class="spark-position-preview">
+										<div class="position-meta">
+											<p>{{ post.title }}</p>
+										</div>
+										<div>
+											<a class="spark-position-link fas fa-file-text" href="{{ post.link }}" target="_blank"></a>
+										</div>
+									</div>
+								{% endfor %}
+							</div>
 						</div>
 					</div>
 				{% endif %}
 				{% if layout.acf_fc_layout == "whitepaper" %}
 					<div class="whitepaper">
-						<div class="spark-container module-heading">
-							<h5>Whitepaper</h5>
+						<div class="whitepaper-content">
+							<div class="spark-container module-heading">
+								<h5>Whitepaper</h5>
+							</div>
+							<div class="spark-container module-content">
+								<div class="spark-image"><img src="{{ layout.image.url }}"/></div>
+								<div class="spark-content">{{ layout.content }}</div>
+							</div>	
 						</div>
-						<div class="spark-container module-content">
-							<div class="spark-image"><img src="{{ layout.image.url }}"/></div>
-							<div class="spark-content">{{ layout.content }}</div>
-						</div>	
 					</div>
 				{% endif %}
 			{% endfor %}

@@ -1,5 +1,6 @@
 .resources-page {
-	margin: base(10) 0;
+	background: $primary6;
+	padding: base(10) 0;
 
 	a {
 		text-decoration: none;
@@ -38,10 +39,6 @@
 		@include breakpoint($small){
 			margin-bottom: base(5);
 			margin-top: base(2);
-		}
-		
-		@include breakpoint($medium-up){
-			@include span(7);
 		}
 
 		.spark-video-list {
@@ -87,18 +84,20 @@
 	}
 	.resource-sidebar {
 		@include span(12);
-
-		@include breakpoint($medium-up){
-			@include span(5);
-		}
+		display: flex;
+		flex-direction: row;
+		margin-bottom: base(4);
 
 		.link-list {
-			@extend .knockout;
-			background: $primary1;
-			border-radius: 4px;
+			@include span(6);
+
+			.link-list-content {
+				background: $primary7;
+				border-radius: 4px;
+				box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+			}
 
 			.read-more {
-				color: $primary7;
 			}
 			.spark-container {
 				padding-top: base();
@@ -117,10 +116,6 @@
 				justify-content: space-between;
 				align-items: center;
 				padding: 0 base(2);
-
-				&:nth-child(even) {
-					background: lighten($primary1, 10%);
-				}
 			}
 
 			.position-meta {
@@ -141,9 +136,14 @@
 		}
 
 		.whitepaper {
-			background: white;
-			box-shadow: 0px -1px 10px rgba(0,0,0, .2);
 			margin-bottom: base(2);
+			@include span(6);
+
+			.whitepaper-content {
+				background: white;
+				border-radius: 4px;
+				box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+				}
 
 			.spark-image {
 				@include span(4);
