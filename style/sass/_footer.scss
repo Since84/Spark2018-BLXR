@@ -51,6 +51,9 @@
 
 			&:hover {
 				color: $primary6;
+			}
+
+			&[href]:hover {
 				background-color: #323049;
 			}
 		}
