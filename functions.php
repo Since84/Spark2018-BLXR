@@ -735,7 +735,7 @@
 										array (
 											'key' => 'field_5aa8bef0cde89',
 											'label' => 'Content',
-											'name' => 'content',
+											'name' => 'profile_content',
 											'type' => 'wysiwyg',
 											'column_width' => '',
 											'default_value' => '',
