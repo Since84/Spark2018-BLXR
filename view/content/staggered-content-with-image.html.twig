@@ -1,10 +1,12 @@
 <div class="spark-container">
 	{% if layout.gallery %}
-		<div class="spark-image-container cycle-slideshow">
-			{% for slide in layout.gallery %}
-				<img src="{{slide.image.url}}"/>
-			{% endfor %}
-			<div class="cycle-pager"></div>
+		<div class="spark-image-container">
+			<div class="cycle-slideshow">
+				{% for slide in layout.gallery %}
+					<img src="{{slide.image.url}}"/>
+				{% endfor %}
+				<div class="cycle-pager"></div>
+			</div>
 		</div>
 	{% elseif layout.image %}
 		<div class="spark-image-container">
