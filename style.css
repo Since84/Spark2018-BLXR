@@ -1661,17 +1661,22 @@ section.nav {
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
 }
 /* line 148, style/sass/_resources.scss */
+.resources-page .resource-sidebar .whitepaper .module-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 153, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image {
   padding-right: 8px;
   padding-left: 8px;
   flex: 1 1 calc(33.33333%);
   max-width: calc(33.33333%);
 }
-/* line 150, style/sass/_resources.scss */
+/* line 155, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image img {
   max-width: 100%;
 }
-/* line 155, style/sass/_resources.scss */
+/* line 160, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-content {
   padding-right: 8px;
   padding-left: 8px;
