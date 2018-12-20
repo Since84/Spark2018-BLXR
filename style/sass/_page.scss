@@ -7,7 +7,6 @@
 	
 	.page-content {
 		@include breakpoint($medium-up){
-			@include span(8);
 		}
 	}
 }

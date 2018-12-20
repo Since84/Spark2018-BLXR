@@ -2148,15 +2148,6 @@ section.nav {
 .page-intro h2 {
   margin-bottom: 16px;
 }
-@media (min-width: 815px) {
-  /* line 8, style/sass/_page.scss */
-  .page-intro .page-content {
-    padding-right: 8px;
-    padding-left: 8px;
-    flex: 1 1 calc(66.66667%);
-    max-width: calc(66.66667%);
-  }
-}
 
 /* line 1, style/sass/_footer.scss */
 .spark-footer {
