@@ -6,7 +6,7 @@
 					<div class="link-list">
 						<div class="link-list-content">
 							<div class="spark-container module-heading">
-								<h5>{{ layout.heading }}</h5>
+			 					<h5>{{ layout.heading }}</h5>
 								<div>
 									<a class="read-more" href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}<span class="more-icon fab fa-medium"></span></a>
 								</div>
@@ -14,12 +14,10 @@
 							<div class="spark-container module-content">
 								{% for post in layout.posts %}
 									<div class="spark-position-preview">
-										<div class="position-meta">
-											<p>{{ post.title }}</p>
-										</div>
-										<div>
-											<a class="spark-position-link fas fa-file-text" href="{{ post.link }}" target="_blank"></a>
-										</div>
+										<a class="spark-position-link" href="{{ post.link }}" target="_blank">
+											<span class="position-title">{{ post.title }}</span>
+											<span class="fas fa-file-text" target="_blank"></span>
+										</a>
 									</div>
 								{% endfor %}
 							</div>
@@ -45,7 +43,7 @@
 			<div id="{{ layout.heading|lower|replace({" ": "-"}) }}" class="spark-video-list">
 				<div class="spark-container module-heading">
 					<h5>Videos</h5>
-					<a class="read-more" href="{{ page.meta('resource_videos')[0].see_more_link }}" target="_blank">{{ page.meta('resource_videos')[0].see_more_text }}<span class="more-icon fab fa-medium"></span></a>
+					<a class="read-more" href="{{ page.meta('resource_videos')[0].see_more_link }}" target="_blank">{{ page.meta('resource_videos')[0].see_more_text }}<span class="more-icon fab fa-youtube"></span></a>
 				</div>
 				<div class="videos">
 					{% for layout in page.meta('resource_videos') %}

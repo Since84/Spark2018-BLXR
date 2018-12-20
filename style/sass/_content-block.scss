@@ -3,10 +3,6 @@
 	&.center {
 		.spark-content {
 			@include span(12);
-
-			@include breakpoint($medium-up){
-				@include span(10);
-			}
 		}
 	}
 }

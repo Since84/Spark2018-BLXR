@@ -7,6 +7,7 @@
 	}
 
 	.module-heading {
+		@include subtle-gradient;
 		border-bottom: 1px solid $primary5;
 		padding-top: base();
 		padding-bottom: base();
@@ -15,12 +16,17 @@
 		justify-content: space-between;
 		align-items: center;
 
+		h5,a {
+			color: $primary7;
+		}
+
 		&:after {
 			content: none;
 		}
 
 		.more-icon {
 			margin-left: base();
+			font-size: base(2);
 		}
 	}
 
@@ -44,11 +50,18 @@
 		.spark-video-list {
 			box-shadow: 0px -1px 10px rgba(0,0,0, .2);
 			border-radius: 4px;
+
+			@include breakpoint($medium-up){
+				@include span(12);
+			}
 		}
 
 		.module-heading {
-			background: $primary7;
+			@include subtle-gradient;
 			flex-direction: row;
+			h5 {
+				color: $primary7;
+			}
 		}
 		
 		.videos{
@@ -61,12 +74,18 @@
 
 		.spark-video-preview-container {
 			@include span(6);
+			margin-bottom: base(6);
 			
 			@include breakpoint($medium-up){
 				@include span(4);
 			}
 
-			margin-bottom: base(6);
+			.spark-video-preview {
+				@include breakpoint($medium-up){
+					padding: 0 base(2);
+				}
+			}
+
 
 			.video-thumb {
 				margin-bottom: base(2);
@@ -87,10 +106,9 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin-bottom: base(4);
 
 		.link-list {
-			@include span(12);
+			width: span(12);
 
 			@include breakpoint($medium-up){
 				@include span(6);
@@ -121,6 +139,27 @@
 				justify-content: space-between;
 				align-items: center;
 				padding: 0 base(2);
+				cursor: pointer;
+
+				&:hover {
+					background: $primary6;
+				}
+			}
+
+			.spark-position-link {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				padding: base() 0;
+
+
+				.position-title {
+					width: calc(100% - #{base(3)});
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
 			}
 
 			.position-meta {
@@ -129,19 +168,18 @@
 				p {
 					font-size: 14px;
 					margin: base() base() base() 0;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space: nowrap;
 				}
 				.spark-position-link {
 					@include span(3);
 					text-align: right;
+
+
 				}
 			}
 		}
 
 		.whitepaper {
-			@include span(12);
+			width: span(12);
 			margin-bottom: base(2);
 
 			@include breakpoint($medium-up){
