@@ -915,10 +915,11 @@ section.nav {
   content: none;
 }
 /* line 71, style/sass/_hero.scss */
-.spark-vimeo-hero .video-container .video {
-  max-width: 100%;
+.spark-vimeo-hero .video-container video {
+  width: 100%;
+  height: auto;
 }
-/* line 76, style/sass/_hero.scss */
+/* line 77, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   background: linear-gradient(to top, #234092, #2085c7);
   top: 50%;
@@ -929,7 +930,7 @@ section.nav {
   width: 200%;
 }
 @media (min-width: 815px) {
-  /* line 76, style/sass/_hero.scss */
+  /* line 77, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 175.4vw;
     height: 112vw;
@@ -939,7 +940,7 @@ section.nav {
   }
 }
 @media (min-width: 1200px) {
-  /* line 76, style/sass/_hero.scss */
+  /* line 77, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
     height: 151%;
@@ -1592,25 +1593,34 @@ section.nav {
 .resources-page .resource-sidebar .link-list {
   padding-right: 8px;
   padding-left: 8px;
-  flex: 1 1 calc(50%);
-  max-width: calc(50%);
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
 }
-/* line 94, style/sass/_resources.scss */
+@media (min-width: 815px) {
+  /* line 91, style/sass/_resources.scss */
+  .resources-page .resource-sidebar .link-list {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+  }
+}
+/* line 98, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .link-list-content {
   background: #ffffff;
   border-radius: 4px;
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 102, style/sass/_resources.scss */
+/* line 106, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .spark-container {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 107, style/sass/_resources.scss */
+/* line 111, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .module-content {
   padding: 0;
 }
-/* line 111, style/sass/_resources.scss */
+/* line 115, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .spark-position-preview {
   padding-right: 8px;
   padding-left: 8px;
@@ -1623,12 +1633,12 @@ section.nav {
   align-items: center;
   padding: 0 16px;
 }
-/* line 121, style/sass/_resources.scss */
+/* line 125, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .position-meta {
   align-items: center;
   width: calc(100% - 20px);
 }
-/* line 124, style/sass/_resources.scss */
+/* line 128, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .position-meta p {
   font-size: 14px;
   margin: 8px 8px 8px 0;
@@ -1636,7 +1646,7 @@ section.nav {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 131, style/sass/_resources.scss */
+/* line 135, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .position-meta .spark-position-link {
   padding-right: 8px;
   padding-left: 8px;
@@ -1644,37 +1654,46 @@ section.nav {
   max-width: calc(25%);
   text-align: right;
 }
-/* line 138, style/sass/_resources.scss */
+/* line 142, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper {
-  margin-bottom: 16px;
   padding-right: 8px;
   padding-left: 8px;
-  flex: 1 1 calc(50%);
-  max-width: calc(50%);
+  flex: 1 1 calc(100%);
+  max-width: calc(100%);
+  margin-bottom: 16px;
 }
-/* line 142, style/sass/_resources.scss */
+@media (min-width: 815px) {
+  /* line 142, style/sass/_resources.scss */
+  .resources-page .resource-sidebar .whitepaper {
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
+  }
+}
+/* line 150, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .whitepaper-content {
   background: white;
   border-radius: 4px;
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 148, style/sass/_resources.scss */
+/* line 156, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .module-content {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 153, style/sass/_resources.scss */
+/* line 161, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image {
   padding-right: 8px;
   padding-left: 8px;
   flex: 1 1 calc(33.33333%);
   max-width: calc(33.33333%);
 }
-/* line 155, style/sass/_resources.scss */
+/* line 163, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image img {
   max-width: 100%;
 }
-/* line 160, style/sass/_resources.scss */
+/* line 168, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-content {
   padding-right: 8px;
   padding-left: 8px;

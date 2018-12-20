@@ -89,7 +89,11 @@
 		margin-bottom: base(4);
 
 		.link-list {
-			@include span(6);
+			@include span(12);
+
+			@include breakpoint($medium-up){
+				@include span(6);
+			}
 
 			.link-list-content {
 				background: $primary7;
@@ -136,8 +140,12 @@
 		}
 
 		.whitepaper {
+			@include span(12);
 			margin-bottom: base(2);
-			@include span(6);
+
+			@include breakpoint($medium-up){
+				@include span(6);
+			}
 
 			.whitepaper-content {
 				background: white;
