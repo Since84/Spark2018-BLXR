@@ -2142,11 +2142,18 @@ section.nav {
 
 /* line 1, style/sass/_page.scss */
 .page-intro {
-  padding: 64px 0;
+  padding: 64px 0 16px;
+  background: #F4F5F9;
 }
-/* line 4, style/sass/_page.scss */
+/* line 5, style/sass/_page.scss */
 .page-intro h2 {
   margin-bottom: 16px;
+}
+@media (min-width: 815px) {
+  /* line 9, style/sass/_page.scss */
+  .page-intro .page-content {
+    padding: 0 72px;
+  }
 }
 
 /* line 1, style/sass/_footer.scss */
@@ -2756,14 +2763,15 @@ section.nav {
 /* line 1, style/sass/_positions.scss */
 .spark-position-list {
   background: #F4F5F9;
-  padding: 40px 0;
+  padding: 40px 0 24px;
 }
 /* line 5, style/sass/_positions.scss */
 .spark-position-list .spark-container {
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 72px;
 }
-/* line 8, style/sass/_positions.scss */
+/* line 9, style/sass/_positions.scss */
 .spark-position-list .spark-container .section-heading {
   padding-right: 8px;
   padding-left: 8px;
@@ -2772,7 +2780,7 @@ section.nav {
   text-align: center;
   margin-bottom: 32px;
 }
-/* line 16, style/sass/_positions.scss */
+/* line 17, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview-container {
   padding-right: 8px;
   padding-left: 8px;
@@ -2781,7 +2789,7 @@ section.nav {
   margin-bottom: 32px;
 }
 @media (min-width: 815px) {
-  /* line 16, style/sass/_positions.scss */
+  /* line 17, style/sass/_positions.scss */
   .spark-position-list .spark-position-preview-container {
     padding-right: 8px;
     padding-left: 8px;
@@ -2789,30 +2797,30 @@ section.nav {
     max-width: calc(33.33333%);
   }
 }
-/* line 28, style/sass/_positions.scss */
+/* line 29, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview {
   border-radius: 2px;
   box-shadow: 2px 2px 8px #DFE0E4;
   background: #ffffff;
 }
-/* line 33, style/sass/_positions.scss */
+/* line 34, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview h3, .spark-position-list .spark-position-preview .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-position-list .spark-position-preview .ctct-form-label, .spark-position-list .spark-position-preview p {
   padding: 0 24px;
 }
-/* line 37, style/sass/_positions.scss */
+/* line 38, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview h3, .spark-position-list .spark-position-preview .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-position-list .spark-position-preview .ctct-form-label {
   padding-top: 24px;
 }
-/* line 41, style/sass/_positions.scss */
+/* line 42, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview p {
   height: 5em;
   padding-bottom: 24px;
 }
-/* line 46, style/sass/_positions.scss */
+/* line 47, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview p + a.spark-position-link {
   margin-top: 0;
 }
-/* line 50, style/sass/_positions.scss */
+/* line 51, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link {
   padding: 16px 0;
   display: block;
@@ -2821,7 +2829,7 @@ section.nav {
   text-align: center;
   text-decoration: none;
 }
-/* line 57, style/sass/_positions.scss */
+/* line 58, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:before {
   content: "";
   top: 0;
@@ -2833,12 +2841,12 @@ section.nav {
   right: 0;
   margin: auto;
 }
-/* line 69, style/sass/_positions.scss */
+/* line 70, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link span {
   font-weight: 600;
   transition: color .12s linear .25s;
 }
-/* line 74, style/sass/_positions.scss */
+/* line 75, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -2851,26 +2859,26 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 89, style/sass/_positions.scss */
+/* line 90, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview:hover .spark-position-link span {
   color: white;
   z-index: 1;
   position: relative;
 }
-/* line 95, style/sass/_positions.scss */
+/* line 96, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview:hover .spark-position-link:after {
   height: 100%;
 }
-/* line 101, style/sass/_positions.scss */
+/* line 102, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb {
   position: relative;
   cursor: pointer;
 }
-/* line 105, style/sass/_positions.scss */
+/* line 106, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb img {
   width: 100%;
 }
-/* line 108, style/sass/_positions.scss */
+/* line 109, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb:after {
   background-image: url(style/image/play-button/inactive.png);
   background-size: cover;
@@ -2885,81 +2893,81 @@ section.nav {
   top: 0;
   width: 100px;
 }
-/* line 123, style/sass/_positions.scss */
+/* line 124, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
-/* line 129, style/sass/_positions.scss */
+/* line 130, style/sass/_positions.scss */
 .spark-position-list .position-meta {
   height: 6em;
 }
-/* line 133, style/sass/_positions.scss */
+/* line 134, style/sass/_positions.scss */
 .spark-position-list .see-more {
   justify-content: flex-end;
 }
-/* line 136, style/sass/_positions.scss */
+/* line 137, style/sass/_positions.scss */
 .spark-position-list .see-more span {
   display: inline-block;
 }
-/* line 137, style/sass/_positions.scss */
+/* line 138, style/sass/_positions.scss */
 .spark-position-list .see-more span l
 a {
   text-align: right;
 }
-/* line 140, style/sass/_positions.scss */
+/* line 141, style/sass/_positions.scss */
 .spark-position-list .see-more span l
 a:after {
   margin-right: 2em;
   content: " >";
 }
 
-/* line 149, style/sass/_positions.scss */
+/* line 150, style/sass/_positions.scss */
 article.job-listing {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-/* line 153, style/sass/_positions.scss */
+/* line 154, style/sass/_positions.scss */
 article.job-listing hgroup {
   margin-bottom: 32px;
 }
-/* line 156, style/sass/_positions.scss */
+/* line 157, style/sass/_positions.scss */
 article.job-listing hgroup h2, article.job-listing hgroup h3, article.job-listing hgroup .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing hgroup .ctct-form-label {
   line-height: 1.5em;
 }
-/* line 160, style/sass/_positions.scss */
+/* line 161, style/sass/_positions.scss */
 article.job-listing hgroup .location {
   color: #2085C7;
 }
-/* line 165, style/sass/_positions.scss */
+/* line 166, style/sass/_positions.scss */
 article.job-listing .post-content {
   max-width: 684px;
 }
-/* line 168, style/sass/_positions.scss */
+/* line 169, style/sass/_positions.scss */
 article.job-listing .post-content h1, article.job-listing .post-content h2, article.job-listing .post-content h3, article.job-listing .post-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing .post-content .ctct-form-label, article.job-listing .post-content h4, article.job-listing .post-content h5 {
   margin-top: 40px;
 }
-/* line 171, style/sass/_positions.scss */
+/* line 172, style/sass/_positions.scss */
 article.job-listing .post-content p, article.job-listing .post-content ul, article.job-listing .post-content ol {
   margin-top: 8px;
 }
-/* line 178, style/sass/_positions.scss */
+/* line 179, style/sass/_positions.scss */
 article.job-listing .post-content ul {
   list-style: disc outside;
   margin-left: 20px;
 }
-/* line 184, style/sass/_positions.scss */
+/* line 185, style/sass/_positions.scss */
 article.job-listing .apply {
   text-align: center;
   margin-top: 80px;
 }
-/* line 188, style/sass/_positions.scss */
+/* line 189, style/sass/_positions.scss */
 article.job-listing .apply-now {
   background: #dde1ea;
   color: #1A1A33;
   font-weight: 400;
   margin: auto;
 }
-/* line 195, style/sass/_positions.scss */
+/* line 196, style/sass/_positions.scss */
 article.job-listing .apply-now:hover {
   background: #c6cbd8 !important;
   color: #1A1A33;

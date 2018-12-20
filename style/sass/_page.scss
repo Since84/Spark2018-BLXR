@@ -1,5 +1,6 @@
 .page-intro {
-	padding: base(8) 0;
+	padding: base(8) 0 base(2);
+	background: $primary6; 
 
 	h2 {
 		margin-bottom: base(2);
@@ -7,6 +8,7 @@
 	
 	.page-content {
 		@include breakpoint($medium-up){
+			padding: 0 base(9);
 		}
 	}
 }
