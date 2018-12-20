@@ -2203,55 +2203,53 @@ section.nav {
     padding-left: 8px;
     flex: 1 1 calc(66.66667%);
     max-width: calc(66.66667%);
-    flex-direction: row;
   }
 }
-/* line 77, style/sass/_footer.scss */
+/* line 76, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu li {
   margin-right: 24px;
 }
 @media (max-width: 815px) {
-  /* line 82, style/sass/_footer.scss */
+  /* line 81, style/sass/_footer.scss */
   .spark-footer .spark-nav-footer-menu > li {
     margin-bottom: 24px;
   }
 }
-/* line 88, style/sass/_footer.scss */
+/* line 87, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 93, style/sass/_footer.scss */
+/* line 92, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu a[href]:hover {
   color: #2085C7;
 }
-/* line 95, style/sass/_footer.scss */
+/* line 94, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu a[href]:hover p {
   color: #2085C7;
 }
-/* line 101, style/sass/_footer.scss */
+/* line 100, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu > li > a {
   font-weight: 600;
 }
-/* line 105, style/sass/_footer.scss */
+/* line 104, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu a[href="#"] {
   pointer-events: none;
 }
-/* line 110, style/sass/_footer.scss */
+/* line 109, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-menu .contact-modal-trigger a[href="#"] {
   pointer-events: all;
 }
-/* line 115, style/sass/_footer.scss */
+/* line 114, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-subscribe {
   padding-right: 8px;
   padding-left: 8px;
   flex: 1 1 calc(100%);
   max-width: calc(100%);
-  margin-bottom: 40px;
 }
 @media (min-width: 815px) {
-  /* line 115, style/sass/_footer.scss */
+  /* line 114, style/sass/_footer.scss */
   .spark-footer .spark-nav-footer-subscribe {
     padding-right: 8px;
     padding-left: 8px;
@@ -2259,78 +2257,78 @@ section.nav {
     max-width: calc(33.33333%);
   }
 }
-/* line 123, style/sass/_footer.scss */
+/* line 121, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-subscribe h3, .spark-footer .spark-nav-footer-subscribe .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-nav-footer-subscribe .ctct-form-label, .spark-footer .spark-nav-footer-subscribe p {
   font-size: 12px;
   line-height: 1.3;
 }
-/* line 128, style/sass/_footer.scss */
+/* line 126, style/sass/_footer.scss */
 .spark-footer .spark-nav-footer-subscribe h3, .spark-footer .spark-nav-footer-subscribe .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-nav-footer-subscribe .ctct-form-label {
   text-transform: uppercase;
   line-height: 1.6;
   margin-bottom: 8px;
 }
-/* line 135, style/sass/_footer.scss */
+/* line 133, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom {
   align-items: center;
   display: flex;
 }
-/* line 138, style/sass/_footer.scss */
+/* line 136, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom .ctct-form-element {
   border-radius: 0;
   border: none;
 }
-/* line 142, style/sass/_footer.scss */
+/* line 140, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom .ctct-form-field {
   flex: 1;
 }
-/* line 146, style/sass/_footer.scss */
+/* line 144, style/sass/_footer.scss */
 .spark-footer .ctct-form-custom button.ctct-form-button {
   flex-basis: 120px;
   padding: 16px !important;
   transition: none !important;
 }
-/* line 152, style/sass/_footer.scss */
+/* line 150, style/sass/_footer.scss */
 .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a {
   font-family: "montserrat", sans-serif;
 }
-/* line 158, style/sass/_footer.scss */
+/* line 156, style/sass/_footer.scss */
 .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label {
   color: white;
   font-size: 14px;
 }
-/* line 163, style/sass/_footer.scss */
+/* line 161, style/sass/_footer.scss */
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults {
   background: none;
   padding: 32px 0;
 }
-/* line 168, style/sass/_footer.scss */
+/* line 166, style/sass/_footer.scss */
 .spark-footer .ctct-gdpr-text {
   display: none;
 }
-/* line 172, style/sass/_footer.scss */
+/* line 170, style/sass/_footer.scss */
 .spark-footer .ctct-form-success * {
   color: white !important;
 }
-/* line 176, style/sass/_footer.scss */
+/* line 174, style/sass/_footer.scss */
 .spark-footer .ctct-form-label {
   display: none !important;
 }
-/* line 180, style/sass/_footer.scss */
+/* line 178, style/sass/_footer.scss */
 .spark-footer div.ctct-form-field {
   margin-bottom: 0 !important;
 }
-/* line 185, style/sass/_footer.scss */
+/* line 183, style/sass/_footer.scss */
 .spark-footer .ctct-form-footer {
   display: none;
 }
-/* line 189, style/sass/_footer.scss */
+/* line 187, style/sass/_footer.scss */
 .spark-footer .ctct-form-defaults {
   padding: 0 !important;
 }
-/* line 193, style/sass/_footer.scss */
+/* line 191, style/sass/_footer.scss */
 .spark-footer .ctct-form-button {
   background: linear-gradient(to top, #234092, #2085c7) !important;
   transition: all .45s !important;
@@ -2344,13 +2342,13 @@ section.nav {
   color: #ffffff !important;
   border: none !important;
 }
-/* line 206, style/sass/_footer.scss */
+/* line 204, style/sass/_footer.scss */
 .spark-footer .ctct-form-button:hover {
   background: #234898 !important;
   transition: all .45s !important;
   color: #F4F5F9 !important;
 }
-/* line 213, style/sass/_footer.scss */
+/* line 211, style/sass/_footer.scss */
 .spark-footer .ctct-form-element {
   height: 44px !important;
   border-radius: 4px 0 0 4px !important;

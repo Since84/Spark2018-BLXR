@@ -71,7 +71,6 @@
 
 		@include breakpoint($medium-up){
 			@include span(8);
-			flex-direction: row;
 		}
 
 		li {
@@ -114,7 +113,6 @@
 	}
 	.spark-nav-footer-subscribe {
 		@include span(12);
-		margin-bottom: base(5);
 
 		@include breakpoint($medium-up){
 			@include span(4);
