@@ -508,13 +508,13 @@ em {
   bottom: 0;
   box-shadow: 1px 5px 20px rgba(26, 26, 51, 0.5);
   display: flex;
-  height: 360px;
+  height: 405px;
   left: 0;
   margin: auto;
   position: fixed;
   right: 0;
   top: 0;
-  width: 560px;
+  width: 720px;
   z-index: 1000;
 }
 /* line 80, style/sass/_ui.scss */
@@ -1590,15 +1590,41 @@ section.nav {
 /* line 93, style/sass/_resources.scss */
 .resources-page .resource-videos .spark-video-preview-container .video-thumb {
   margin-bottom: 16px;
+  position: relative;
 }
-/* line 98, style/sass/_resources.scss */
+/* line 97, style/sass/_resources.scss */
+.resources-page .resource-videos .spark-video-preview-container .video-thumb:hover {
+  cursor: pointer;
+}
+/* line 101, style/sass/_resources.scss */
+.resources-page .resource-videos .spark-video-preview-container .video-thumb:after {
+  background-image: url(style/image/play-button/active.png);
+  background-size: cover;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+/* line 118, style/sass/_resources.scss */
+.resources-page .resource-videos .spark-video-preview-container .video-thumb:hover:after {
+  opacity: 1;
+}
+/* line 125, style/sass/_resources.scss */
 .resources-page .resource-videos .spark-video-preview-container .video-meta h3, .resources-page .resource-videos .spark-video-preview-container .video-meta .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .resources-page .resource-videos .spark-video-preview-container .video-meta .ctct-form-label, .resources-page .resource-videos .spark-video-preview-container .video-meta p {
   margin-bottom: 4px;
   overflow: hidden;
   font-size: 12px;
   line-height: 1.3;
 }
-/* line 107, style/sass/_resources.scss */
+/* line 134, style/sass/_resources.scss */
 .resources-page .resource-sidebar {
   padding-right: 8px;
   padding-left: 8px;
@@ -1608,12 +1634,12 @@ section.nav {
   flex-direction: row;
   flex-wrap: wrap;
 }
-/* line 113, style/sass/_resources.scss */
+/* line 140, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list {
   width: 100%;
 }
 @media (min-width: 815px) {
-  /* line 113, style/sass/_resources.scss */
+  /* line 140, style/sass/_resources.scss */
   .resources-page .resource-sidebar .link-list {
     padding-right: 8px;
     padding-left: 8px;
@@ -1621,23 +1647,23 @@ section.nav {
     max-width: calc(50%);
   }
 }
-/* line 120, style/sass/_resources.scss */
+/* line 147, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .link-list-content {
   background: #ffffff;
   border-radius: 4px;
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-/* line 129, style/sass/_resources.scss */
+/* line 156, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .spark-container {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 134, style/sass/_resources.scss */
+/* line 161, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .module-content {
   padding: 0;
 }
-/* line 138, style/sass/_resources.scss */
+/* line 165, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .spark-position-preview {
   padding-right: 8px;
   padding-left: 8px;
@@ -1651,11 +1677,11 @@ section.nav {
   padding: 0 16px;
   cursor: pointer;
 }
-/* line 148, style/sass/_resources.scss */
+/* line 175, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .spark-position-preview:hover {
   background: #F4F5F9;
 }
-/* line 153, style/sass/_resources.scss */
+/* line 180, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .spark-position-link {
   display: flex;
   justify-content: space-between;
@@ -1663,24 +1689,24 @@ section.nav {
   width: 100%;
   padding: 8px 0;
 }
-/* line 161, style/sass/_resources.scss */
+/* line 188, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .spark-position-link .position-title {
   width: calc(100% - 24px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 169, style/sass/_resources.scss */
+/* line 196, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .position-meta {
   align-items: center;
   width: calc(100% - 20px);
 }
-/* line 172, style/sass/_resources.scss */
+/* line 199, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .position-meta p {
   font-size: 14px;
   margin: 8px 8px 8px 0;
 }
-/* line 176, style/sass/_resources.scss */
+/* line 203, style/sass/_resources.scss */
 .resources-page .resource-sidebar .link-list .position-meta .spark-position-link {
   padding-right: 8px;
   padding-left: 8px;
@@ -1688,13 +1714,13 @@ section.nav {
   max-width: calc(25%);
   text-align: right;
 }
-/* line 185, style/sass/_resources.scss */
+/* line 212, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper {
   width: 100%;
   margin-bottom: 16px;
 }
 @media (min-width: 815px) {
-  /* line 185, style/sass/_resources.scss */
+  /* line 212, style/sass/_resources.scss */
   .resources-page .resource-sidebar .whitepaper {
     padding-right: 8px;
     padding-left: 8px;
@@ -1702,30 +1728,30 @@ section.nav {
     max-width: calc(50%);
   }
 }
-/* line 193, style/sass/_resources.scss */
+/* line 220, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .whitepaper-content {
   background: white;
   border-radius: 4px;
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-/* line 200, style/sass/_resources.scss */
+/* line 227, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .module-content {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 205, style/sass/_resources.scss */
+/* line 232, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image {
   padding-right: 8px;
   padding-left: 8px;
   flex: 1 1 calc(33.33333%);
   max-width: calc(33.33333%);
 }
-/* line 207, style/sass/_resources.scss */
+/* line 234, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image img {
   max-width: 100%;
 }
-/* line 212, style/sass/_resources.scss */
+/* line 239, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-content {
   padding-right: 8px;
   padding-left: 8px;

@@ -92,6 +92,33 @@
 
 			.video-thumb {
 				margin-bottom: base(2);
+				position: relative;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&:after{
+					background-image: url(style/image/play-button/active.png);
+					background-size: cover;
+				    bottom: 0;
+					content: "";
+					display: block;
+					height: 100px;
+				    left: 0;
+					margin: auto;
+					position: absolute;
+				    right: 0;
+				    top: 0;
+					width: 100px;
+					opacity: 0;
+					transition: opacity .3s linear;
+				}
+
+				&:hover:after{
+					opacity: 1;
+				}
+
 			}
 
 			.video-meta {
