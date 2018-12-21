@@ -8,7 +8,8 @@
 		padding: base(10) 0 base(20);
 
 		.spark-content {
-			@include span(10);
+			width: span(10);
+			padding: 0 30px;
 
 			@include breakpoint($medium-up){
 				// @include span(6);

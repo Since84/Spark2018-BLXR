@@ -48,11 +48,15 @@
 		}
 
 		.spark-video-list {
-			box-shadow: 0px -1px 10px rgba(0,0,0, .2);
-			border-radius: 4px;
-
 			@include breakpoint($medium-up){
 				@include span(12);
+			}
+
+			.module-container{
+				background: $primary7;
+				box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+				border-radius: 4px;
+				overflow: hidden;
 			}
 		}
 
@@ -68,7 +72,6 @@
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			background: white;
 			padding: base(4) base(2) 0;
 		}
 
@@ -118,6 +121,7 @@
 				background: $primary7;
 				border-radius: 4px;
 				box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+				overflow: hidden;
 			}
 
 			.read-more {
@@ -190,6 +194,7 @@
 				background: white;
 				border-radius: 4px;
 				box-shadow: 0px -1px 10px rgba(0,0,0, .2);
+				overflow: hidden;
 			}
 
 			.module-content {

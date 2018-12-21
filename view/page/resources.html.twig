@@ -41,41 +41,43 @@
 		</div>
 		<div class="resource-videos">
 			<div id="{{ layout.heading|lower|replace({" ": "-"}) }}" class="spark-video-list">
-				<div class="spark-container module-heading">
-					<h5>Videos</h5>
-					<a class="read-more" href="{{ page.meta('resource_videos')[0].see_more_link }}" target="_blank">{{ page.meta('resource_videos')[0].see_more_text }}<span class="more-icon fab fa-youtube"></span></a>
-				</div>
-				<div class="videos">
-					{% for layout in page.meta('resource_videos') %}
-						{% for post in layout.videos %}
-							<div class="spark-video-preview-container">
-								<div class="spark-video-preview youtube-item" data-id="{{ post.youtube_id }}">
-									<div class="video-thumb trigger-youtube-modal">
-										<img src="https://img.youtube.com/vi/{{ post.youtube_id }}/maxresdefault.jpg"/>
-									</div>
-									<div class="video-meta">
-										<h3>{{ post.title }}</h3>
-										<p>{{ post.description }}</p>
+				<div class="module-container">
+					<div class="spark-container module-heading">
+						<h5>Videos</h5>
+						<a class="read-more" href="{{ page.meta('resource_videos')[0].see_more_link }}" target="_blank">{{ page.meta('resource_videos')[0].see_more_text }}<span class="more-icon fab fa-youtube"></span></a>
+					</div>
+					<div class="videos">
+						{% for layout in page.meta('resource_videos') %}
+							{% for post in layout.videos %}
+								<div class="spark-video-preview-container">
+									<div class="spark-video-preview youtube-item" data-id="{{ post.youtube_id }}">
+										<div class="video-thumb trigger-youtube-modal">
+											<img src="https://img.youtube.com/vi/{{ post.youtube_id }}/maxresdefault.jpg"/>
+										</div>
+										<div class="video-meta">
+											<h3>{{ post.title }}</h3>
+											<p>{{ post.description }}</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							{% endfor %}
 						{% endfor %}
-					{% endfor %}
-				</div>
-				<div class="youtube-modal">
-					<div class="spark-modal-close"></div>
-					<div class="youtube-frame">
-						<span class="modal-close-button"></span>
-						<iframe width="560" height="360" frameborder="0" allowfullscreen></iframe>
 					</div>
+					<div class="youtube-modal">
+						<div class="spark-modal-close"></div>
+						<div class="youtube-frame">
+							<span class="modal-close-button"></span>
+							<iframe width="560" height="360" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					{% if layout.see_more_link %}
+					<div class="spark-container see-more">
+						<span>
+							<a href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}</a>
+						</span>
+					</div>
+					{% endif %}
 				</div>
-				{% if layout.see_more_link %}
-				<div class="spark-container see-more">
-					<span>
-						<a href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}</a>
-					</span>
-				</div>
-				{% endif %}
 			</div>
 		</div>
 	</div>
