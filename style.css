@@ -830,7 +830,7 @@ section.nav {
 }
 /* line 7, style/sass/_hero.scss */
 .spark-vimeo-hero .spark-container {
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   z-index: 1;
   align-items: center;
@@ -930,7 +930,7 @@ section.nav {
 .spark-vimeo-hero .video-container video {
   width: 100%;
   height: auto;
-  box-shadow: 3px 2px 7px #1A1A33;
+  box-shadow: 3px 3px 7px #1A1A33;
 }
 /* line 90, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {

@@ -5,7 +5,7 @@
 	position: relative;
 
 	.spark-container {
-		overflow: hidden;
+		overflow: visible;
 		position: relative;
 		z-index: 1;
 		align-items: center;
@@ -83,7 +83,7 @@
 		video {
 			width: 100%;
 			height: auto;
-		    box-shadow: 3px 2px 7px #1A1A33;
+		    box-shadow: 3px 3px 7px #1A1A33;
 		}
 	}
 
