@@ -57,6 +57,14 @@
 			width: 100px;
 		}
 
+		.control-button {
+			display: none;
+			position: absolute;
+			bottom: base(3);
+			right: base(3);
+			font-size: 18px;
+		}
+
 		&:hover:after{
 			background-image: url(style/image/play-button/active.png);
 		}
@@ -66,12 +74,15 @@
 			&:after {
 				content: none;
 			}	
+
+			.control-button {
+				display: block;
+			}
 		}
 
 		video {
 			width: 100%;
 			height: auto;
-		    margin: 20px 0;
 		    box-shadow: 3px 2px 7px #1A1A33;
 		}
 	}

@@ -12,7 +12,9 @@
 	<div class="spark-container" style="background-image:url({{ layout.background_image.url }}); background-color:{{ layout.background_color }}">
 		<div class="spark-content">{{ layout.content }}</div>
 		<div class="video-container">
-			<video src="{{ layout.video_url }}" width="720" height="420" poster="{{ layout.placeholder_img.url }}" />
+			<video id="heroVideo" src="{{ layout.video_url }}" width="720" height="420" poster="{{ layout.placeholder_img.url }}"></video>
+			<span class="control-button play fas fa-play">
+			</span>
 		</div>
 	</div>
     <div class="overlay"></div>

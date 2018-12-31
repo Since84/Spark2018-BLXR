@@ -28,6 +28,17 @@
 			$('body').removeClass('noscroll');
 		}
 
+		function triggerPlay($elem){
+			var video = $(this).parent().find('video');
+
+			$(this).removeClass('fa-pause').addClass('fa-play');
+			video.get(0).play();
+		}
+		
+		function triggerPause($elem){
+
+		}
+
 		$('.spark-modal-close').click(function(e){
 			closeModal($(e.currentTarget).parents('.spark-modal'));
 			var $modal = $('.youtube-modal.open');
@@ -114,10 +125,26 @@
 		$('.video-container').click(function(e){
 			var video = $(this).find('video');
 			
-			$(this).addClass('video-active');
-
-			video.attr('controls', '');
+	   	   if (!$(this).hasClass('video-active')){
 			video.get(0).play();
+			$(this).find('.control-button').removeClass('fa-play')
+									   	   .addClass('fa-pause');
+	   	   }
+			
+			$(this).addClass('video-active');
+		})
+
+		$('.control-button').click(function(){
+			var $container = $('.video-container');
+			var video = $container.find('video');
+
+			if ($(this).hasClass('fa-play')){
+				video.get(0).play();
+				$(this).removeClass('fa-play').addClass('fa-pause');
+			} else if (($(this).hasClass('fa-pause'))) {
+				video.get(0).pause();
+				$(this).removeClass('fa-pause').addClass('fa-play');
+			}
 		})
 
 		$('.spark-profile').each(function(){
