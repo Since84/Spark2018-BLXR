@@ -248,6 +248,11 @@
 			.spark-content {
 				@include span(12);
 
+				@include breakpoint($small){
+					justify-content: center;
+					text-align: center;
+				}
+
 				@include breakpoint($medium-up){
 					@include span(5);
 				}

@@ -1772,6 +1772,13 @@ section.nav {
   flex: 1 1 calc(100%);
   max-width: calc(100%);
 }
+@media (max-width: 815px) {
+  /* line 248, style/sass/_resources.scss */
+  .resources-page .resource-sidebar .whitepaper .spark-content {
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media (min-width: 815px) {
   /* line 248, style/sass/_resources.scss */
   .resources-page .resource-sidebar .whitepaper .spark-content {
