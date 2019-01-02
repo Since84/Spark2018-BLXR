@@ -4,6 +4,7 @@ section.nav {
 
 .spark-nav-basic {
 	background-color: $primary1;
+	box-shadow: 2px 2px 10px $secondary1;
 	color: white;
 	left: 0;
 	margin: auto;
@@ -12,10 +13,6 @@ section.nav {
 	top: 0;
 	z-index: 1000;
 	transition: all .25s linear;
-
-	&.nav-scrolled {
-		box-shadow: 2px 2px 10px $secondary1;
-	}
 
 	.spark-nav-basic-container .spark-container {
 		align-items: center;
