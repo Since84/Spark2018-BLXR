@@ -7,7 +7,7 @@
 	}
 
 	.module-heading {
-		@include subtle-gradient;
+		background-color: #2267b0;
 		border-bottom: 1px solid $primary5;
 		padding-top: base();
 		padding-bottom: base();
@@ -61,7 +61,7 @@
 		}
 
 		.module-heading {
-			@include subtle-gradient;
+			// background-color: #dde1ea;
 			flex-direction: row;
 			h5 {
 				color: $primary7;
@@ -96,6 +96,10 @@
 
 				&:hover {
 					cursor: pointer;
+
+					img {
+						opacity: .3;
+					}
 				}
 
 				&:after{
@@ -104,13 +108,13 @@
 				    bottom: 0;
 					content: "";
 					display: block;
-					height: 100px;
+					height: 80px;
 				    left: 0;
 					margin: auto;
 					position: absolute;
 				    right: 0;
 				    top: 0;
-					width: 100px;
+					width: 80px;
 					opacity: 0;
 					transition: opacity .3s linear;
 				}
@@ -164,12 +168,13 @@
 
 			.spark-position-preview {
 				@include span(12);
+				border-bottom: 1px solid $primary6;
 				padding: 0;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				align-items: center;
-				padding: 0 base(2);
+				padding: base() base(2);
 				cursor: pointer;
 
 				&:hover {
@@ -178,11 +183,12 @@
 			}
 
 			.spark-position-link {
+				align-items: center;
+				color: $primary1;
 				display: flex;
 				justify-content: space-between;
-				align-items: center;
-				width: 100%;
 				padding: base() 0;
+				width: 100%;
 
 
 				.position-title {
@@ -225,19 +231,19 @@
 			}
 
 			.module-content {
-				padding-top: base(5);
-				padding-bottom: base(5);
+				padding-top: 27px;
+				padding-bottom: 27px;
 			}
 
 			.spark-image {
-				@include span(4);
+				@include span(6);
 				img {
 					max-width: 100%;
 				}
 			}
 
 			.spark-content {
-				@include span(8)
+				@include span(12);
 			}
 		}
 	}

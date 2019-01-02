@@ -61,7 +61,7 @@
 			display: none;
 			position: absolute;
 			bottom: base(3);
-			right: base(3);
+			left: base(4);
 			font-size: 18px;
 		}
 
@@ -83,7 +83,8 @@
 		video {
 			width: 100%;
 			height: auto;
-		    box-shadow: 3px 3px 7px #1A1A33;
+		    box-shadow: 5px 5px 17px #1A1A3399;
+		    background-color: #1A1A33;
 		}
 	}
 

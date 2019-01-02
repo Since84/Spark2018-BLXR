@@ -51,9 +51,16 @@
 				width: 620px;
 			}
 
+			.wpcf7 {
+				width: 100%;
+
+				form {
+					display: flex;
+					flex-direction: row;
+				}
+			}
+
 			.contact-left {
-				background: url('style/image/graphics/contact-background.jpg');
-				background-size: cover;
 				position: relative;
 				width: 202px;
 
