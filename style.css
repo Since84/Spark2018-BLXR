@@ -1749,22 +1749,24 @@ section.nav {
 }
 /* line 233, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .module-content {
+  background-color: #1A1A33;
   padding-top: 27px;
   padding-bottom: 27px;
   flex-direction: row;
+  align-items: center;
 }
-/* line 239, style/sass/_resources.scss */
+/* line 241, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image {
   padding-right: 8px;
   padding-left: 8px;
-  flex: 1 1 calc(33.33333%);
-  max-width: calc(33.33333%);
+  flex: 1 1 calc(50%);
+  max-width: calc(50%);
 }
-/* line 241, style/sass/_resources.scss */
+/* line 243, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image img {
   max-width: 100%;
 }
-/* line 246, style/sass/_resources.scss */
+/* line 248, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-content {
   padding-right: 8px;
   padding-left: 8px;
@@ -1772,12 +1774,12 @@ section.nav {
   max-width: calc(100%);
 }
 @media (min-width: 815px) {
-  /* line 246, style/sass/_resources.scss */
+  /* line 248, style/sass/_resources.scss */
   .resources-page .resource-sidebar .whitepaper .spark-content {
     padding-right: 8px;
     padding-left: 8px;
-    flex: 1 1 calc(66.66667%);
-    max-width: calc(66.66667%);
+    flex: 1 1 calc(50%);
+    max-width: calc(50%);
   }
 }
 

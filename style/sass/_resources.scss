@@ -231,13 +231,15 @@
 			}
 
 			.module-content {
+				background-color: $primary1;
 				padding-top: 27px;
 				padding-bottom: 27px;
 				flex-direction: row;
+				align-items: center;
 			}
 
 			.spark-image {
-				@include span(4);
+				@include span(6);
 				img {
 					max-width: 100%;
 				}
@@ -247,7 +249,7 @@
 				@include span(12);
 
 				@include breakpoint($medium-up){
-					@include span(8);
+					@include span(6);
 				}
 			}
 		}
