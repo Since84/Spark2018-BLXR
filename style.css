@@ -2806,8 +2806,9 @@ section.nav {
 /* line 349, style/sass/_contact.scss */
 .spark-contact .spark-contact-modal .cta-button, .spark-contact .spark-contact-modal .gray-cta-button, .spark-contact .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact .spark-contact-modal .collection-heading, .spark-contact .spark-contact-modal article.job-listing .apply-now, article.job-listing .spark-contact .spark-contact-modal .apply-now, .spark-contact .spark-container .cta-button, .spark-contact .spark-container .gray-cta-button, .spark-contact .spark-container .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact .spark-container .collection-heading, .spark-contact .spark-container article.job-listing .apply-now, article.job-listing .spark-contact .spark-container .apply-now {
   display: block;
+  font-size: 14px;
   margin: auto;
-  padding: 10px 24px;
+  padding: 12px 32px;
   border: none;
 }
 
