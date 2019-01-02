@@ -98,6 +98,8 @@
 					li{
 						height: 100px;
 						margin-bottom: base(3);
+
+						p { font-size: 12px; }
 					}
 				}
 
@@ -207,7 +209,7 @@
 				border: 1px solid $primary5;
 				color: $primary1;
 				font-family: $body_family;
-				height: 160px;
+				height: 190px;
 				margin-bottom: base(3);
 				outline: none;
 				position: relative;
@@ -336,7 +338,7 @@
 		}
 
 		.form-container {
-			margin-top: base(7); 
+			margin-top: base(3); 
 		}
 
 		.form-radios {

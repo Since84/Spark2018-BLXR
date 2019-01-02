@@ -233,10 +233,11 @@
 			.module-content {
 				padding-top: 27px;
 				padding-bottom: 27px;
+				flex-direction: row;
 			}
 
 			.spark-image {
-				@include span(6);
+				@include span(4);
 				img {
 					max-width: 100%;
 				}
@@ -244,6 +245,10 @@
 
 			.spark-content {
 				@include span(12);
+
+				@include breakpoint($medium-up){
+					@include span(8);
+				}
 			}
 		}
 	}
