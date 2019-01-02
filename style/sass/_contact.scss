@@ -1,0 +1,349 @@
+.spark-contact{
+	padding: base(10);
+	background: url('style/image/graphics/contact-background.jpg');
+	background-size: cover;
+	background-position: center;
+
+	.spark-contact-modal, .spark-container {
+		background: white;
+		bottom: 0;
+		box-shadow: 1px 5px 20px rgba($primary1,.5);
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		overflow-y: scroll;
+		margin: auto;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+
+		@include breakpoint($medium-up){
+			height: 540px;
+			width: 860px;
+		}
+
+		.wpcf7 {
+			width: 100%;
+
+			form {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+
+				@include breakpoint($medium-up){
+					flex-direction: row;
+				}
+			}
+		}
+
+		.contact-left {
+			background: $primary6;
+			line-height: 1.4;
+			padding: base(5);
+			position: relative;
+			width: span(12);
+
+			@include breakpoint($medium-up){
+				width: span(5);
+			}
+
+			.contact-heading {
+				position: absolute;
+				transform: rotate(-90deg);
+				top: base(12);
+				left: base(-4);
+				color: $primary7;
+			}
+			.social-icons {
+				bottom: 20px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				position: absolute;
+				text-align: center;
+
+				a{
+					color: white;
+					text-decoration: none;
+					font-size: 22px;
+					margin: 0 base();
+
+					&:not(.telegram-plane):not(.twitter) {
+						display: none;
+					}
+				}
+			}
+			.wpcf7-radio {
+				display: flex;
+				flex-direction: column;
+			}
+			.wpcf7-list-item {
+				width: 20px;
+			}
+
+			.contact-radio {
+				display: flex;
+				flex-direction: row;
+				margin-top: base(2);
+
+				ul {
+					margin-left: base(2);
+					li{
+						height: 100px;
+					}
+				}
+
+				a:link {
+					text-decoration: none;
+					color: $primary3;
+				}
+
+				h4 {
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.contact-right {
+			width: span(7);
+			padding: base(5);
+
+			@include breakpoint($small){
+				width: span(12);
+				padding-top: base(2);
+			}
+
+			.wpcf7-form-control-wrap {
+				.wpcf7-form-control {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+
+					label {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					}
+				}
+				input[type="radio"]{
+					order:2;
+					+ .wpcf7-list-item-label {
+						align-items: center;
+						display: flex;
+						flex-direction: column;
+						order:1;
+						padding: 0 base(3);
+						text-align: center;
+						&:before {
+							font-family: "Font Awesome\ 5 Free";
+							font-weight: 900;
+						}
+
+					}
+
+					&[value="Social"], &[value="Investor Relations"], &[value="Contact"]{
+						+ .wpcf7-list-item-label {
+							font-size: 12px;
+							font-weight: 400;
+							&:before {
+								content: "\f0e0";
+								background: none;
+								height: 0;
+								left: auto;
+								margin: 0;
+								margin-bottom: base(2);
+								position: relative;
+								text-align: center;
+								top: auto;
+								width: auto;
+
+							}
+							&:after {
+								content: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.close {
+			cursor: pointer;
+			position: absolute;
+			right: base(2);
+			top: base(2);
+			width: 30px;
+			height: 30px;
+			z-index: 9000;
+			img {
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		.wpcf7 {
+			input {
+				&[type="text"], &[type="email"] {
+					border: none;
+					border: 1px solid $primary5;
+					margin-bottom: base(2);
+					padding: base(1.5) base(2);
+					width: 100%;
+					font-family: $body_family;
+					color: $primary1;
+				}
+			}
+
+			textarea {
+				border:none;
+				border: 1px solid $primary5;
+				color: $primary1;
+				font-family: $body_family;
+				height: 160px;
+				margin-bottom: base(3);
+				outline: none;
+				position: relative;
+				padding: base(1.5) base(2);
+				resize: none;
+				width: 100%;
+			}
+
+			.wpcf7-list-item {
+				margin: 0;
+				font-weight: 600;
+				position: relative;
+				height: 100px;
+
+				.wpcf7-list-item-label{
+					padding-left: base(4);
+					display: block;
+					text-indent: -9000;
+					width: 20px;
+					&:before {
+						background: $secondary2;
+						border: 4px solid transparent;
+						border-radius: 50%;
+						content: "";
+						display: inline-block;
+						vertical-align: middle;
+						width: 10px;
+						height: 10px;
+						position: absolute;
+						left: 0;
+						top: 5;
+					}
+				}
+
+				input[type="radio"] {
+					height: 20px;
+					left: 0px;
+					margin: 0;
+					opacity: .01;
+					padding: 10px;
+					position: absolute;
+					top: 5px;
+					width: 20px;
+					z-index: 999;
+				}
+				input[type="radio"]:checked ~ .wpcf7-list-item-label {
+					&:before {
+						border: 4px solid $primary3;
+					}
+				}
+			}
+
+			.wpcf7-not-valid-tip {
+				display: none;
+			}
+		}
+
+		.wpcf7-not-valid {
+			border-color: red !important;
+		}
+
+		.wpcf7-checkbox + .wpcf7-not-valid-tip {
+			display: block;
+			position: absolute;
+			top: -52px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			height: 35px;
+			width: 200px;
+			background: white;
+			box-shadow: 1px 1px 3px $primary5;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid $primary5;
+
+			&:before {
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 5px solid $primary5;
+				content: "";
+				height: 0;
+				width: 0;
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+
+		.wpcf7-validation-errors {
+			background: white;
+			border: 1px solid $primary5;
+			bottom: 0;
+			box-shadow: 1px 1px 3px $primary5;
+			display: block;
+			height: 56px;
+			line-height: 1.4;
+			left: 0;
+			margin: auto !important;
+			padding: 10px 15px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: translateY(-40px);
+			width: 350px;
+		}
+
+		.wpcf7-mail-sent-ok {
+			background-color: $primary7;
+			border: none;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin: auto;
+			text-align: center;
+			padding: 33% base(4);
+			font-size: 22px;
+			font-family: $body_family;
+			font-weight: 500;
+			pointer-events: none;
+		}
+
+		.form-container {
+			margin-top: base(7); 
+		}
+
+		.form-radios {
+			display: none;
+			margin-bottom: base(2);
+			font-size: 11px;
+			line-height: 1.4;
+		}
+
+		.cta-button {
+			display: block;
+			margin: auto;
+			padding: 10px base(3);
+			border: none;
+		}
+	}
+}

@@ -2443,47 +2443,15 @@ section.nav {
   border: none !important;
 }
 
-/* line 1, style/sass/_contact-modal.scss */
-.spark-contact-modal-container {
-  display: none;
+/* line 1, style/sass/_contact.scss */
+.spark-contact {
+  padding: 80px;
+  background: url("style/image/graphics/contact-background.jpg");
+  background-size: cover;
+  background-position: center;
 }
-/* line 3, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active {
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1001;
-}
-/* line 11, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active:before {
-  content: "";
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.9);
-}
-/* line 22, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .contact-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 16px 0;
-}
-/* line 27, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .contact-links li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 16px;
-}
-/* line 34, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal {
+/* line 7, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal, .spark-contact .spark-container {
   background: white;
   bottom: 0;
   box-shadow: 1px 5px 20px rgba(26, 26, 51, 0.5);
@@ -2493,37 +2461,36 @@ section.nav {
   left: 0;
   overflow-y: scroll;
   margin: auto;
-  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 @media (min-width: 815px) {
-  /* line 34, style/sass/_contact-modal.scss */
-  .spark-contact-modal-container.active .spark-contact-modal {
+  /* line 7, style/sass/_contact.scss */
+  .spark-contact .spark-contact-modal, .spark-contact .spark-container {
     height: 540px;
     width: 860px;
   }
 }
-/* line 55, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 {
+/* line 27, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7, .spark-contact .spark-container .wpcf7 {
   width: 100%;
 }
-/* line 58, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 form {
+/* line 30, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 form, .spark-contact .spark-container .wpcf7 form {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 @media (min-width: 815px) {
-  /* line 58, style/sass/_contact-modal.scss */
-  .spark-contact-modal-container.active .spark-contact-modal .wpcf7 form {
+  /* line 30, style/sass/_contact.scss */
+  .spark-contact .spark-contact-modal .wpcf7 form, .spark-contact .spark-container .wpcf7 form {
     flex-direction: row;
   }
 }
-/* line 69, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left {
+/* line 41, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left, .spark-contact .spark-container .contact-left {
   background: #F4F5F9;
   line-height: 1.4;
   padding: 40px;
@@ -2531,21 +2498,21 @@ section.nav {
   width: 100%;
 }
 @media (min-width: 815px) {
-  /* line 69, style/sass/_contact-modal.scss */
-  .spark-contact-modal-container.active .spark-contact-modal .contact-left {
+  /* line 41, style/sass/_contact.scss */
+  .spark-contact .spark-contact-modal .contact-left, .spark-contact .spark-container .contact-left {
     width: 41.66667%;
   }
 }
-/* line 80, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-heading {
+/* line 52, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .contact-heading, .spark-contact .spark-container .contact-left .contact-heading {
   position: absolute;
   transform: rotate(-90deg);
   top: 96px;
   left: -32px;
   color: #ffffff;
 }
-/* line 87, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .social-icons {
+/* line 59, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .social-icons, .spark-contact .spark-container .contact-left .social-icons {
   bottom: 20px;
   left: 0;
   right: 0;
@@ -2553,79 +2520,79 @@ section.nav {
   position: absolute;
   text-align: center;
 }
-/* line 95, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .social-icons a {
+/* line 67, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .social-icons a, .spark-contact .spark-container .contact-left .social-icons a {
   color: white;
   text-decoration: none;
   font-size: 22px;
   margin: 0 8px;
 }
-/* line 101, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .social-icons a:not(.telegram-plane):not(.twitter) {
+/* line 73, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .social-icons a:not(.telegram-plane):not(.twitter), .spark-contact .spark-container .contact-left .social-icons a:not(.telegram-plane):not(.twitter) {
   display: none;
 }
-/* line 106, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .wpcf7-radio {
+/* line 78, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .wpcf7-radio, .spark-contact .spark-container .contact-left .wpcf7-radio {
   display: flex;
   flex-direction: column;
 }
-/* line 110, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .wpcf7-list-item {
+/* line 82, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .wpcf7-list-item, .spark-contact .spark-container .contact-left .wpcf7-list-item {
   width: 20px;
 }
-/* line 114, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio {
+/* line 86, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .contact-radio, .spark-contact .spark-container .contact-left .contact-radio {
   display: flex;
   flex-direction: row;
   margin-top: 16px;
 }
-/* line 119, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio ul {
+/* line 91, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .contact-radio ul, .spark-contact .spark-container .contact-left .contact-radio ul {
   margin-left: 16px;
 }
-/* line 121, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio ul li {
+/* line 93, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .contact-radio ul li, .spark-contact .spark-container .contact-left .contact-radio ul li {
   height: 100px;
 }
-/* line 126, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio a:link {
+/* line 98, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .contact-radio a:link, .spark-contact .spark-container .contact-left .contact-radio a:link {
   text-decoration: none;
   color: #2085C7;
 }
-/* line 131, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio h4 {
+/* line 103, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-left .contact-radio h4, .spark-contact .spark-container .contact-left .contact-radio h4 {
   text-transform: uppercase;
 }
-/* line 137, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right {
+/* line 109, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right, .spark-contact .spark-container .contact-right {
   width: 58.33333%;
   padding: 40px;
 }
 @media (max-width: 815px) {
-  /* line 137, style/sass/_contact-modal.scss */
-  .spark-contact-modal-container.active .spark-contact-modal .contact-right {
+  /* line 109, style/sass/_contact.scss */
+  .spark-contact .spark-contact-modal .contact-right, .spark-contact .spark-container .contact-right {
     width: 100%;
     padding-top: 16px;
   }
 }
-/* line 147, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap .wpcf7-form-control {
+/* line 119, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap .wpcf7-form-control, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap .wpcf7-form-control {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-/* line 152, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap .wpcf7-form-control label {
+/* line 124, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap .wpcf7-form-control label, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap .wpcf7-form-control label {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 158, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"] {
+/* line 130, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"], .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"] {
   order: 2;
 }
-/* line 160, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"] + .wpcf7-list-item-label {
+/* line 132, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"] + .wpcf7-list-item-label, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"] + .wpcf7-list-item-label {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -2633,18 +2600,18 @@ section.nav {
   padding: 0 24px;
   text-align: center;
 }
-/* line 167, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"] + .wpcf7-list-item-label:before {
+/* line 139, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"] + .wpcf7-list-item-label:before, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"] + .wpcf7-list-item-label:before {
   font-family: "Font Awesome\ 5 Free";
   font-weight: 900;
 }
-/* line 175, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label, .spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label, .spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label {
+/* line 147, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label, .spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label, .spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label {
   font-size: 12px;
   font-weight: 400;
 }
-/* line 178, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label:before, .spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label:before, .spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label:before {
+/* line 150, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label:before, .spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label:before, .spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label:before, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label:before, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label:before, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label:before {
   content: "\f0e0";
   background: none;
   height: 0;
@@ -2656,12 +2623,12 @@ section.nav {
   top: auto;
   width: auto;
 }
-/* line 191, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label:after, .spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label:after, .spark-contact-modal-container.active .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label:after {
+/* line 163, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label:after, .spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label:after, .spark-contact .spark-contact-modal .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label:after, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Social"] + .wpcf7-list-item-label:after, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Investor Relations"] + .wpcf7-list-item-label:after, .spark-contact .spark-container .contact-right .wpcf7-form-control-wrap input[type="radio"][value="Contact"] + .wpcf7-list-item-label:after {
   content: none;
 }
-/* line 200, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .close {
+/* line 172, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .close, .spark-contact .spark-container .close {
   cursor: pointer;
   position: absolute;
   right: 16px;
@@ -2670,13 +2637,13 @@ section.nav {
   height: 30px;
   z-index: 9000;
 }
-/* line 208, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .close img {
+/* line 180, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .close img, .spark-contact .spark-container .close img {
   height: 30px;
   width: 30px;
 }
-/* line 216, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 input[type="text"], .spark-contact-modal-container.active .spark-contact-modal .wpcf7 input[type="email"] {
+/* line 188, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 input[type="text"], .spark-contact .spark-contact-modal .wpcf7 input[type="email"], .spark-contact .spark-container .wpcf7 input[type="text"], .spark-contact .spark-container .wpcf7 input[type="email"] {
   border: none;
   border: 1px solid #DFE0E4;
   margin-bottom: 16px;
@@ -2685,8 +2652,8 @@ section.nav {
   font-family: "montserrat", sans-serif;
   color: #1A1A33;
 }
-/* line 227, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 textarea {
+/* line 199, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 textarea, .spark-contact .spark-container .wpcf7 textarea {
   border: none;
   border: 1px solid #DFE0E4;
   color: #1A1A33;
@@ -2699,22 +2666,22 @@ section.nav {
   resize: none;
   width: 100%;
 }
-/* line 241, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item {
+/* line 213, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 .wpcf7-list-item, .spark-contact .spark-container .wpcf7 .wpcf7-list-item {
   margin: 0;
   font-weight: 600;
   position: relative;
   height: 100px;
 }
-/* line 247, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label {
+/* line 219, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label, .spark-contact .spark-container .wpcf7 .wpcf7-list-item .wpcf7-list-item-label {
   padding-left: 32px;
   display: block;
   text-indent: -9000;
   width: 20px;
 }
-/* line 252, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label:before {
+/* line 224, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label:before, .spark-contact .spark-container .wpcf7 .wpcf7-list-item .wpcf7-list-item-label:before {
   background: #DFE0E4;
   border: 4px solid transparent;
   border-radius: 50%;
@@ -2727,8 +2694,8 @@ section.nav {
   left: 0;
   top: 5;
 }
-/* line 267, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"] {
+/* line 239, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"], .spark-contact .spark-container .wpcf7 .wpcf7-list-item input[type="radio"] {
   height: 20px;
   left: 0px;
   margin: 0;
@@ -2739,20 +2706,20 @@ section.nav {
   width: 20px;
   z-index: 999;
 }
-/* line 279, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label:before {
+/* line 251, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 .wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label:before, .spark-contact .spark-container .wpcf7 .wpcf7-list-item input[type="radio"]:checked ~ .wpcf7-list-item-label:before {
   border: 4px solid #2085C7;
 }
-/* line 285, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-not-valid-tip {
+/* line 257, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7 .wpcf7-not-valid-tip, .spark-contact .spark-container .wpcf7 .wpcf7-not-valid-tip {
   display: none;
 }
-/* line 290, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7-not-valid {
+/* line 262, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7-not-valid, .spark-contact .spark-container .wpcf7-not-valid {
   border-color: red !important;
 }
-/* line 294, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7-checkbox + .wpcf7-not-valid-tip {
+/* line 266, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7-checkbox + .wpcf7-not-valid-tip, .spark-contact .spark-container .wpcf7-checkbox + .wpcf7-not-valid-tip {
   display: block;
   position: absolute;
   top: -52px;
@@ -2767,8 +2734,8 @@ section.nav {
   padding: 10px;
   border: 1px solid #DFE0E4;
 }
-/* line 309, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7-checkbox + .wpcf7-not-valid-tip:before {
+/* line 281, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7-checkbox + .wpcf7-not-valid-tip:before, .spark-contact .spark-container .wpcf7-checkbox + .wpcf7-not-valid-tip:before {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #DFE0E4;
@@ -2781,8 +2748,8 @@ section.nav {
   right: 0;
   margin: auto;
 }
-/* line 324, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7-validation-errors {
+/* line 296, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7-validation-errors, .spark-contact .spark-container .wpcf7-validation-errors {
   background: white;
   border: 1px solid #DFE0E4;
   bottom: 0;
@@ -2799,8 +2766,8 @@ section.nav {
   transform: translateY(-40px);
   width: 350px;
 }
-/* line 342, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .wpcf7-mail-sent-ok {
+/* line 314, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .wpcf7-mail-sent-ok, .spark-contact .spark-container .wpcf7-mail-sent-ok {
   background-color: #ffffff;
   border: none;
   bottom: 0;
@@ -2816,27 +2783,23 @@ section.nav {
   font-weight: 500;
   pointer-events: none;
 }
-/* line 359, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .form-container {
+/* line 331, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .form-container, .spark-contact .spark-container .form-container {
   margin-top: 56px;
 }
-/* line 363, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .form-radios {
+/* line 335, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .form-radios, .spark-contact .spark-container .form-radios {
   display: none;
   margin-bottom: 16px;
   font-size: 11px;
   line-height: 1.4;
 }
-/* line 370, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .cta-button, .spark-contact-modal-container.active .spark-contact-modal .gray-cta-button, .spark-contact-modal-container.active .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact-modal-container.active .spark-contact-modal .collection-heading, .spark-contact-modal-container.active .spark-contact-modal article.job-listing .apply-now, article.job-listing .spark-contact-modal-container.active .spark-contact-modal .apply-now {
+/* line 342, style/sass/_contact.scss */
+.spark-contact .spark-contact-modal .cta-button, .spark-contact .spark-contact-modal .gray-cta-button, .spark-contact .spark-contact-modal .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact .spark-contact-modal .collection-heading, .spark-contact .spark-contact-modal article.job-listing .apply-now, article.job-listing .spark-contact .spark-contact-modal .apply-now, .spark-contact .spark-container .cta-button, .spark-contact .spark-container .gray-cta-button, .spark-contact .spark-container .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-contact .spark-container .collection-heading, .spark-contact .spark-container article.job-listing .apply-now, article.job-listing .spark-contact .spark-container .apply-now {
   display: block;
   margin: auto;
   padding: 10px 24px;
   border: none;
-}
-/* line 380, style/sass/_contact-modal.scss */
-.spark-contact-modal-container:not(.active) {
-  display: none;
 }
 
 /* line 1, style/sass/_positions.scss */
