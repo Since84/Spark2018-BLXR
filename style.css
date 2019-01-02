@@ -1925,25 +1925,42 @@ section.nav {
   opacity: 0;
   transition: opacity .25s linear;
 }
-/* line 120, style/sass/_team-grid.scss */
+/* line 119, style/sass/_team-grid.scss */
+.spark-profile .spark-profile-preview .profile-image-container .dev-tag {
+  background: #1A1A33;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  text-transform: uppercase;
+  width: 35px;
+  height: 35px;
+  padding: 6px 0px;
+  font-size: 10px;
+  text-align: center;
+  bottom: 20px;
+  right: 0px;
+  font-weight: 600;
+  box-shadow: 0px 0px 6px #1A1A33;
+}
+/* line 137, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview h4 {
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: 8px;
 }
 @media (max-width: 815px) {
-  /* line 120, style/sass/_team-grid.scss */
+  /* line 137, style/sass/_team-grid.scss */
   .spark-profile .spark-profile-preview h4 {
     font-size: 16px;
     line-height: 18px;
   }
 }
-/* line 131, style/sass/_team-grid.scss */
+/* line 148, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-position {
   line-height: 1.3;
   text-align: center;
 }
-/* line 136, style/sass/_team-grid.scss */
+/* line 153, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text {
   font-size: 12px;
   line-height: 1.6;
@@ -1954,12 +1971,12 @@ section.nav {
   position: relative;
 }
 @media (min-width: 815px) {
-  /* line 136, style/sass/_team-grid.scss */
+  /* line 153, style/sass/_team-grid.scss */
   .spark-profile .spark-profile-preview .spark-info-text {
     height: 120px;
   }
 }
-/* line 149, style/sass/_team-grid.scss */
+/* line 166, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y {
   position: absolute;
   top: 0;
@@ -1971,17 +1988,17 @@ section.nav {
   overflow: hidden;
   opacity: 1;
 }
-/* line 160, style/sass/_team-grid.scss */
+/* line 177, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y .ps__thumb-y {
   border-radius: 5px;
   background-color: #DFE0E4;
   right: 1px !important;
 }
-/* line 167, style/sass/_team-grid.scss */
+/* line 184, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y:hover .ps__thumb-y {
   width: 8px;
 }
-/* line 174, style/sass/_team-grid.scss */
+/* line 191, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons {
   padding: 16px 0;
   position: relative;
@@ -1989,7 +2006,7 @@ section.nav {
   text-align: center;
   margin-top: 16px;
 }
-/* line 180, style/sass/_team-grid.scss */
+/* line 197, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons a {
   color: #234092;
   display: inline-block;
@@ -1999,7 +2016,7 @@ section.nav {
   text-decoration: none;
   z-index: 1;
 }
-/* line 189, style/sass/_team-grid.scss */
+/* line 206, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:before {
   background-color: #DFE0E4;
   content: "";
@@ -2012,7 +2029,7 @@ section.nav {
   top: 0;
   width: calc(100% - 32px);
 }
-/* line 201, style/sass/_team-grid.scss */
+/* line 218, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -2025,22 +2042,22 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 217, style/sass/_team-grid.scss */
+/* line 234, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container {
   position: relative;
 }
-/* line 219, style/sass/_team-grid.scss */
+/* line 236, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container .spark-profile-image-hover {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 228, style/sass/_team-grid.scss */
+/* line 245, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons a {
   color: white;
 }
-/* line 232, style/sass/_team-grid.scss */
+/* line 249, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons:after {
   height: 100%;
 }
