@@ -269,9 +269,9 @@ section .spark-container:after {
 	Site Color Pallette
 */
 /* line 22, style/sass/_colors.scss */
-.knockout, .spark-content-with-image.default.left .spark-content, .horizontal-stack .content, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
+.knockout, .spark-content-with-image.default.left .spark-content, .horizontal-stack .content, .resources-page .resource-sidebar .whitepaper .module-content, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text,
-.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.default.left .spark-content *, .horizontal-stack .content *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
+.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.default.left .spark-content *, .horizontal-stack .content *, .resources-page .resource-sidebar .whitepaper .module-content *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a * {
   color: white;
@@ -1755,18 +1755,18 @@ section.nav {
   flex-direction: row;
   align-items: center;
 }
-/* line 241, style/sass/_resources.scss */
+/* line 242, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image {
   padding-right: 8px;
   padding-left: 8px;
-  flex: 1 1 calc(50%);
-  max-width: calc(50%);
+  flex: 1 1 calc(58.33333%);
+  max-width: calc(58.33333%);
 }
-/* line 243, style/sass/_resources.scss */
+/* line 244, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-image img {
   max-width: 100%;
 }
-/* line 248, style/sass/_resources.scss */
+/* line 249, style/sass/_resources.scss */
 .resources-page .resource-sidebar .whitepaper .spark-content {
   padding-right: 8px;
   padding-left: 8px;
@@ -1774,12 +1774,12 @@ section.nav {
   max-width: calc(100%);
 }
 @media (min-width: 815px) {
-  /* line 248, style/sass/_resources.scss */
+  /* line 249, style/sass/_resources.scss */
   .resources-page .resource-sidebar .whitepaper .spark-content {
     padding-right: 8px;
     padding-left: 8px;
-    flex: 1 1 calc(50%);
-    max-width: calc(50%);
+    flex: 1 1 calc(41.66667%);
+    max-width: calc(41.66667%);
   }
 }
 

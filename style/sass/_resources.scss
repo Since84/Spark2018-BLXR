@@ -231,6 +231,7 @@
 			}
 
 			.module-content {
+				@extend .knockout;
 				background-color: $primary1;
 				padding-top: 27px;
 				padding-bottom: 27px;
@@ -239,7 +240,7 @@
 			}
 
 			.spark-image {
-				@include span(6);
+				@include span(7);
 				img {
 					max-width: 100%;
 				}
@@ -249,7 +250,7 @@
 				@include span(12);
 
 				@include breakpoint($medium-up){
-					@include span(6);
+					@include span(5);
 				}
 			}
 		}
