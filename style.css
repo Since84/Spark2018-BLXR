@@ -2585,7 +2585,7 @@ section.nav {
 }
 /* line 121, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio ul li {
-  height: 120px;
+  height: 100px;
 }
 /* line 126, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio a:link {
@@ -2593,7 +2593,7 @@ section.nav {
   color: #2085C7;
 }
 /* line 131, style/sass/_contact-modal.scss */
-.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio h3, .spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio .ctct-form-label {
+.spark-contact-modal-container.active .spark-contact-modal .contact-left .contact-radio h4 {
   text-transform: uppercase;
 }
 /* line 137, style/sass/_contact-modal.scss */
@@ -2704,7 +2704,7 @@ section.nav {
   margin: 0;
   font-weight: 600;
   position: relative;
-  height: 120px;
+  height: 100px;
 }
 /* line 247, style/sass/_contact-modal.scss */
 .spark-contact-modal-container.active .spark-contact-modal .wpcf7 .wpcf7-list-item .wpcf7-list-item-label {

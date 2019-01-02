@@ -119,7 +119,7 @@
 					ul {
 						margin-left: base(2);
 						li{
-							height: 120px;
+							height: 100px;
 						}
 					}
 
@@ -128,7 +128,7 @@
 						color: $primary3;
 					}
 
-					h3 {
+					h4 {
 						text-transform: uppercase;
 					}
 				}
@@ -242,7 +242,7 @@
 					margin: 0;
 					font-weight: 600;
 					position: relative;
-					height: 120px;
+					height: 100px;
 
 					.wpcf7-list-item-label{
 						padding-left: base(4);
