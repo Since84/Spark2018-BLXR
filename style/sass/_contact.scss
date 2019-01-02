@@ -49,6 +49,10 @@
 				width: span(5);
 			}
 
+			h2 {
+				margin-bottom: base(2); 
+			}
+
 			.contact-heading {
 				position: absolute;
 				transform: rotate(-90deg);
@@ -92,6 +96,7 @@
 					margin-left: base(2);
 					li{
 						height: 100px;
+						margin-bottom: base(3);
 					}
 				}
 
@@ -215,6 +220,7 @@
 				font-weight: 600;
 				position: relative;
 				height: 100px;
+				margin-bottom: base(3);
 
 				.wpcf7-list-item-label{
 					padding-left: base(4);
