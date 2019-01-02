@@ -8,7 +8,6 @@
 
 	.module-heading {
 		background-color: #2267b0;
-		border-bottom: 1px solid $primary5;
 		padding-top: base();
 		padding-bottom: base();
 		display: flex;
@@ -187,7 +186,7 @@
 				color: $primary1;
 				display: flex;
 				justify-content: space-between;
-				padding: base() 0;
+				padding: 7px 0;
 				width: 100%;
 
 
