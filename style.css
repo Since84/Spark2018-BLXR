@@ -1130,7 +1130,7 @@ section.nav {
 /* line 66, style/sass/_content-with-image.scss */
 .spark-content-with-image.default.right .spark-content {
   order: 2;
-  padding: 32px 80px 32px 0;
+  padding: 32px 0;
 }
 @media (max-width: 815px) {
   /* line 66, style/sass/_content-with-image.scss */
@@ -1152,19 +1152,13 @@ section.nav {
     margin-right: 32px;
   }
 }
-@media (min-width: 1200px) {
-  /* line 66, style/sass/_content-with-image.scss */
-  .spark-content-with-image.default.right .spark-content {
-    padding-right: 144px;
-  }
-}
-/* line 84, style/sass/_content-with-image.scss */
+/* line 80, style/sass/_content-with-image.scss */
 .spark-content-with-image.default.right img {
   max-width: 100%;
   order: 1;
 }
 @media (max-width: 815px) {
-  /* line 84, style/sass/_content-with-image.scss */
+  /* line 80, style/sass/_content-with-image.scss */
   .spark-content-with-image.default.right img {
     width: 83.33333%;
     margin: 32px;
@@ -1173,7 +1167,7 @@ section.nav {
   }
 }
 @media (min-width: 815px) {
-  /* line 84, style/sass/_content-with-image.scss */
+  /* line 80, style/sass/_content-with-image.scss */
   .spark-content-with-image.default.right img {
     padding-right: 8px;
     padding-left: 8px;
@@ -1182,29 +1176,29 @@ section.nav {
     margin: 32px 64px 32px 0;
   }
 }
-/* line 102, style/sass/_content-with-image.scss */
+/* line 98, style/sass/_content-with-image.scss */
 .spark-content-with-image.default .spark-container {
   align-items: center;
   position: relative;
   z-index: 100;
 }
 @media (max-width: 815px) {
-  /* line 102, style/sass/_content-with-image.scss */
+  /* line 98, style/sass/_content-with-image.scss */
   .spark-content-with-image.default .spark-container {
     flex-direction: column;
   }
 }
-/* line 113, style/sass/_content-with-image.scss */
+/* line 109, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered {
   padding: 64px 0;
 }
-/* line 116, style/sass/_content-with-image.scss */
+/* line 112, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-container {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 122, style/sass/_content-with-image.scss */
+/* line 118, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container {
   position: relative;
   padding-right: 8px;
@@ -1213,7 +1207,7 @@ section.nav {
   max-width: calc(100%);
 }
 @media (min-width: 815px) {
-  /* line 122, style/sass/_content-with-image.scss */
+  /* line 118, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-image-container {
     padding-right: 8px;
     padding-left: 8px;
@@ -1222,7 +1216,7 @@ section.nav {
     transform: translateX(64px);
     margin-bottom: 32px;
   }
-  /* line 130, style/sass/_content-with-image.scss */
+  /* line 126, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-image-container:before {
     background: linear-gradient(to right, #234092, #2085c7);
     transition: all 0.45s;
@@ -1236,17 +1230,17 @@ section.nav {
     z-index: -1;
   }
 }
-/* line 143, style/sass/_content-with-image.scss */
+/* line 139, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-slideshow {
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 148, style/sass/_content-with-image.scss */
+/* line 144, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container img {
   width: 100%;
   display: block;
 }
-/* line 153, style/sass/_content-with-image.scss */
+/* line 149, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-pager {
   bottom: 0;
   display: block;
@@ -1257,16 +1251,16 @@ section.nav {
   text-align: center;
   z-index: 1000;
 }
-/* line 162, style/sass/_content-with-image.scss */
+/* line 158, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-pager span {
   font-size: 100px;
   color: #F4F5F9;
 }
-/* line 166, style/sass/_content-with-image.scss */
+/* line 162, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-pager span.cycle-pager-active {
   color: #2085C7;
 }
-/* line 173, style/sass/_content-with-image.scss */
+/* line 169, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content {
   padding-right: 8px;
   padding-left: 8px;
@@ -1275,7 +1269,7 @@ section.nav {
   margin-top: 32px;
 }
 @media (min-width: 815px) {
-  /* line 173, style/sass/_content-with-image.scss */
+  /* line 169, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-content {
     padding-right: 8px;
     padding-left: 8px;
@@ -1286,7 +1280,7 @@ section.nav {
     z-index: 10;
     transform: translateX(-40px);
   }
-  /* line 183, style/sass/_content-with-image.scss */
+  /* line 179, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-content:after {
     background: linear-gradient(to right, #f4f5f9, #dfe0e4);
     transition: all .45s;
@@ -1301,22 +1295,22 @@ section.nav {
     z-index: -1;
   }
 }
-/* line 197, style/sass/_content-with-image.scss */
+/* line 193, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content .spark-content-container {
   background: #1A1A33;
   border-radius: 4px;
   padding: 48px 24px 48px 32px;
 }
-/* line 203, style/sass/_content-with-image.scss */
+/* line 199, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content h3, .spark-content-with-image.staggered .spark-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-content-with-image.staggered .spark-content .ctct-form-label, .spark-content-with-image.staggered .spark-content p, .spark-content-with-image.staggered .spark-content a {
   color: #ffffff;
 }
 @media (max-width: 815px) {
-  /* line 211, style/sass/_content-with-image.scss */
+  /* line 207, style/sass/_content-with-image.scss */
   .spark-content-with-image .spark-container {
     flex-wrap: wrap;
   }
-  /* line 213, style/sass/_content-with-image.scss */
+  /* line 209, style/sass/_content-with-image.scss */
   .spark-content-with-image .spark-container img {
     max-width: 100%;
     height: auto;
@@ -1384,61 +1378,66 @@ section.nav {
 /* line 3, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-top-content {
   background: #1A1A33;
+  height: 380px;
 }
-/* line 6, style/sass/_horizontal-stack.scss */
+/* line 7, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content {
   padding: 80px 0 160px;
 }
-/* line 10, style/sass/_horizontal-stack.scss */
+/* line 11, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content .spark-content {
   width: 83.33333%;
   padding: 0 30px;
 }
-/* line 20, style/sass/_horizontal-stack.scss */
+/* line 21, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-container {
-  transform: translateY(-80px);
+  transform: translateY(-153px);
   flex-wrap: wrap;
 }
-/* line 25, style/sass/_horizontal-stack.scss */
+/* line 26, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item {
-  padding-right: 8px;
-  padding-left: 8px;
-  flex: 1 1 calc(83.33333%);
-  max-width: calc(83.33333%);
-  padding: 32px 32px;
+  width: 83.33333%;
   background: white;
   border-radius: 2px;
   box-shadow: 2px 2px 2px rgba(26, 26, 51, 0.1);
   margin: 0 16px 0;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0;
 }
 @media (max-width: 815px) {
-  /* line 25, style/sass/_horizontal-stack.scss */
+  /* line 26, style/sass/_horizontal-stack.scss */
   .horizontal-stack .spark-tabs-content-item {
     margin-bottom: 32px;
   }
 }
-/* line 40, style/sass/_horizontal-stack.scss */
+/* line 39, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item h4 {
   margin-bottom: 16px;
   text-align: center;
 }
-/* line 44, style/sass/_horizontal-stack.scss */
+/* line 43, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item .tab-image {
   text-align: center;
   margin-bottom: 16px;
+  padding: 32px 16px;
+  background-image: url("style/image/graphics/card-background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* line 51, style/sass/_horizontal-stack.scss */
+.horizontal-stack .spark-tabs-content-item .tab-image img {
+  height: auto;
+  max-width: 100%;
+  width: auto;
 }
 @media (min-width: 815px) {
-  /* line 25, style/sass/_horizontal-stack.scss */
+  /* line 26, style/sass/_horizontal-stack.scss */
   .horizontal-stack .spark-tabs-content-item {
-    padding-right: 8px;
-    padding-left: 8px;
-    flex: 1 1 calc(25%);
-    max-width: calc(25%);
-    padding-left: 24px;
-    padding-right: 24px;
+    width: 25%;
   }
+}
+/* line 62, style/sass/_horizontal-stack.scss */
+.horizontal-stack .spark-tabs-content-item .tab-content {
+  padding: 24px;
 }
 
 /* line 1, style/sass/_icon-grid.scss */

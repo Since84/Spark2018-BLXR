@@ -65,7 +65,7 @@
 
 			.spark-content {
 				order: 2;
-				padding: base(4) base(10) base(4) 0;
+				padding: base(4) 0;
 
 				@include breakpoint($small) {
 					@include span(11);
@@ -75,10 +75,6 @@
 				@include breakpoint($medium-up) {
 					@include span(5);
 					margin-right: base(4);
-				}
-
-				@include breakpoint($large-up) {
-					padding-right: base(18);
 				}
 			}
 			img {
