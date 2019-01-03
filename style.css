@@ -1898,22 +1898,23 @@ section.nav {
   height: 2em;
   margin-top: 0 !important;
   padding: 0 !important;
+  text-align: center;
 }
 
-/* line 96, style/sass/_team-grid.scss */
+/* line 97, style/sass/_team-grid.scss */
 .spark-profile {
   background: #ffffff;
   border-radius: 2px;
   box-shadow: 2px 2px 8px #DFE0E4;
 }
-/* line 100, style/sass/_team-grid.scss */
+/* line 101, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 24px 0 0;
 }
-/* line 106, style/sass/_team-grid.scss */
+/* line 107, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-image {
   width: 140px;
   height: 140px;
@@ -1922,11 +1923,11 @@ section.nav {
   background-size: cover;
   margin-bottom: 24px;
 }
-/* line 115, style/sass/_team-grid.scss */
+/* line 116, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .profile-image-container {
   position: relative;
 }
-/* line 117, style/sass/_team-grid.scss */
+/* line 118, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .profile-image-container .spark-profile-image-hover {
   position: absolute;
   top: 0;
@@ -1934,7 +1935,7 @@ section.nav {
   opacity: 0;
   transition: opacity .25s linear;
 }
-/* line 125, style/sass/_team-grid.scss */
+/* line 126, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .profile-image-container .dev-tag {
   background: #1A1A33;
   border-radius: 50%;
@@ -1951,25 +1952,25 @@ section.nav {
   font-weight: 600;
   box-shadow: 0px 0px 6px #1A1A3388;
 }
-/* line 143, style/sass/_team-grid.scss */
+/* line 144, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview h4 {
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: 8px;
 }
 @media (max-width: 815px) {
-  /* line 143, style/sass/_team-grid.scss */
+  /* line 144, style/sass/_team-grid.scss */
   .spark-profile .spark-profile-preview h4 {
     font-size: 16px;
     line-height: 18px;
   }
 }
-/* line 154, style/sass/_team-grid.scss */
+/* line 155, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-position {
   line-height: 1.3;
   text-align: center;
 }
-/* line 159, style/sass/_team-grid.scss */
+/* line 160, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text {
   font-size: 12px;
   line-height: 1.6;
@@ -1980,12 +1981,12 @@ section.nav {
   position: relative;
 }
 @media (min-width: 815px) {
-  /* line 159, style/sass/_team-grid.scss */
+  /* line 160, style/sass/_team-grid.scss */
   .spark-profile .spark-profile-preview .spark-info-text {
     height: 120px;
   }
 }
-/* line 172, style/sass/_team-grid.scss */
+/* line 173, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y {
   position: absolute;
   top: 0;
@@ -1997,17 +1998,17 @@ section.nav {
   overflow: hidden;
   opacity: 1;
 }
-/* line 183, style/sass/_team-grid.scss */
+/* line 184, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y .ps__thumb-y {
   border-radius: 5px;
   background-color: #DFE0E4;
   right: 1px !important;
 }
-/* line 190, style/sass/_team-grid.scss */
+/* line 191, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y:hover .ps__thumb-y {
   width: 8px;
 }
-/* line 197, style/sass/_team-grid.scss */
+/* line 198, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons {
   padding: 16px 0;
   position: relative;
@@ -2015,7 +2016,7 @@ section.nav {
   text-align: center;
   margin-top: 16px;
 }
-/* line 203, style/sass/_team-grid.scss */
+/* line 204, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons a {
   align-items: center;
   color: #234092;
@@ -2027,7 +2028,7 @@ section.nav {
   text-decoration: none;
   z-index: 1;
 }
-/* line 214, style/sass/_team-grid.scss */
+/* line 215, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:before {
   background-color: #DFE0E4;
   content: "";
@@ -2040,7 +2041,7 @@ section.nav {
   top: 0;
   width: calc(100% - 32px);
 }
-/* line 226, style/sass/_team-grid.scss */
+/* line 227, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -2053,22 +2054,22 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 242, style/sass/_team-grid.scss */
+/* line 243, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container {
   position: relative;
 }
-/* line 244, style/sass/_team-grid.scss */
+/* line 245, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container .spark-profile-image-hover {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 253, style/sass/_team-grid.scss */
+/* line 254, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons a {
   color: white;
 }
-/* line 257, style/sass/_team-grid.scss */
+/* line 258, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons:after {
   height: 100%;
 }
