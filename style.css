@@ -1890,7 +1890,7 @@ section.nav {
   }
 }
 /* line 84, style/sass/_team-grid.scss */
-.spark-team-grid.advisors .spark-info-text, .spark-team-grid.advisors .spark-social-icons {
+.spark-team-grid.advisors .spark-social-icons {
   display: none;
 }
 
