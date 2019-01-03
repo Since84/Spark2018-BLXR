@@ -1,3 +1,8 @@
+.page-container {
+	min-height: calc(100vh - 400px);
+	background: $primary6; 
+}
+
 .page-intro {
 	padding: base(8) 0 base(2);
 	background: $primary6; 
