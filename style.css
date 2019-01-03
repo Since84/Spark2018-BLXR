@@ -1123,6 +1123,10 @@ section.nav {
     height: auto;
   }
 }
+/* line 60, style/sass/_content-with-image.scss */
+.spark-content-with-image.default.right {
+  padding: 40px 0;
+}
 /* line 62, style/sass/_content-with-image.scss */
 .spark-content-with-image.default.right .spark-container {
   justify-content: center;
