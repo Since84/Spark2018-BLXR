@@ -1412,7 +1412,7 @@ section.nav {
 @media (min-width: 815px) {
   /* line 25, style/sass/_horizontal-stack.scss */
   .horizontal-stack .tab-container {
-    transform: translateY(-153px);
+    transform: translateY(-163px);
   }
 }
 /* line 37, style/sass/_horizontal-stack.scss */
