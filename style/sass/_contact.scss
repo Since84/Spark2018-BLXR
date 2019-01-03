@@ -1,7 +1,7 @@
 .spark-contact{
 	background: url('style/image/graphics/contact-background.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: top right;
 
 	@include breakpoint($medium-up){
 		padding: base(10);

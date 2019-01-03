@@ -195,9 +195,11 @@
 			text-align: center;
 			margin-top: base(2);
 			a {
+				align-items: center;
 				color: $primary2;
 				display: inline-block;
 				font-size: 22px;
+				height: 26px;
 				margin: 0 base();
 				position: relative;
 				text-decoration: none;

@@ -824,8 +824,11 @@ section.nav {
   overflow: hidden;
   padding: 64px 0;
   position: relative;
+  background: url("style/image/graphics/contact-background.jpg");
+  background-size: cover;
+  background-position: top right;
 }
-/* line 7, style/sass/_hero.scss */
+/* line 10, style/sass/_hero.scss */
 .spark-vimeo-hero .spark-container {
   overflow: visible;
   position: relative;
@@ -833,12 +836,12 @@ section.nav {
   align-items: center;
 }
 @media (max-width: 815px) {
-  /* line 7, style/sass/_hero.scss */
+  /* line 10, style/sass/_hero.scss */
   .spark-vimeo-hero .spark-container {
     flex-wrap: wrap;
   }
 }
-/* line 18, style/sass/_hero.scss */
+/* line 21, style/sass/_hero.scss */
 .spark-vimeo-hero .spark-content {
   padding-right: 8px;
   padding-left: 8px;
@@ -846,13 +849,13 @@ section.nav {
   max-width: calc(100%);
 }
 @media (max-width: 815px) {
-  /* line 18, style/sass/_hero.scss */
+  /* line 21, style/sass/_hero.scss */
   .spark-vimeo-hero .spark-content {
     margin-bottom: 24px;
   }
 }
 @media (min-width: 815px) {
-  /* line 18, style/sass/_hero.scss */
+  /* line 21, style/sass/_hero.scss */
   .spark-vimeo-hero .spark-content {
     padding-right: 8px;
     padding-left: 8px;
@@ -860,11 +863,11 @@ section.nav {
     max-width: calc(25%);
   }
 }
-/* line 29, style/sass/_hero.scss */
+/* line 32, style/sass/_hero.scss */
 .spark-vimeo-hero .spark-content h1, .spark-vimeo-hero .spark-content p {
   margin-bottom: 24px;
 }
-/* line 34, style/sass/_hero.scss */
+/* line 37, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container {
   background-size: cover;
   cursor: pointer;
@@ -875,7 +878,7 @@ section.nav {
   max-width: calc(100%);
 }
 @media (min-width: 815px) {
-  /* line 34, style/sass/_hero.scss */
+  /* line 37, style/sass/_hero.scss */
   .spark-vimeo-hero .video-container {
     margin-left: 8.33333%;
     padding-right: 8px;
@@ -884,7 +887,7 @@ section.nav {
     max-width: calc(66.66667%);
   }
 }
-/* line 45, style/sass/_hero.scss */
+/* line 48, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:after {
   background-image: url(style/image/play-button/inactive.png);
   background-size: cover;
@@ -899,7 +902,7 @@ section.nav {
   top: 0;
   width: 100px;
 }
-/* line 60, style/sass/_hero.scss */
+/* line 63, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container .control-button {
   display: none;
   position: absolute;
@@ -907,30 +910,30 @@ section.nav {
   left: 32px;
   font-size: 18px;
 }
-/* line 68, style/sass/_hero.scss */
+/* line 71, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
-/* line 72, style/sass/_hero.scss */
+/* line 75, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active {
   background-image: none !important;
 }
-/* line 74, style/sass/_hero.scss */
+/* line 77, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active:after {
   content: none;
 }
-/* line 78, style/sass/_hero.scss */
+/* line 81, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active .control-button {
   display: block;
 }
-/* line 83, style/sass/_hero.scss */
+/* line 86, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container video {
   width: 100%;
   height: auto;
   box-shadow: 5px 5px 17px #1A1A3399;
   background-color: #1A1A33;
 }
-/* line 91, style/sass/_hero.scss */
+/* line 94, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   background: linear-gradient(to top, #234092, #2085c7);
   top: 50%;
@@ -941,7 +944,7 @@ section.nav {
   width: 200%;
 }
 @media (min-width: 815px) {
-  /* line 91, style/sass/_hero.scss */
+  /* line 94, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 175.4vw;
     height: 112vw;
@@ -951,7 +954,7 @@ section.nav {
   }
 }
 @media (min-width: 1200px) {
-  /* line 91, style/sass/_hero.scss */
+  /* line 94, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
     height: 151%;
@@ -1486,7 +1489,7 @@ section.nav {
 /* line 1, style/sass/_resources.scss */
 .resources-page {
   background: #F4F5F9;
-  padding: 80px 0;
+  padding: 40px 0 80px;
 }
 /* line 5, style/sass/_resources.scss */
 .resources-page a {
@@ -2008,15 +2011,17 @@ section.nav {
 }
 /* line 197, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons a {
+  align-items: center;
   color: #234092;
   display: inline-block;
   font-size: 22px;
+  height: 26px;
   margin: 0 8px;
   position: relative;
   text-decoration: none;
   z-index: 1;
 }
-/* line 206, style/sass/_team-grid.scss */
+/* line 208, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:before {
   background-color: #DFE0E4;
   content: "";
@@ -2029,7 +2034,7 @@ section.nav {
   top: 0;
   width: calc(100% - 32px);
 }
-/* line 218, style/sass/_team-grid.scss */
+/* line 220, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -2042,22 +2047,22 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 234, style/sass/_team-grid.scss */
+/* line 236, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container {
   position: relative;
 }
-/* line 236, style/sass/_team-grid.scss */
+/* line 238, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container .spark-profile-image-hover {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 245, style/sass/_team-grid.scss */
+/* line 247, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons a {
   color: white;
 }
-/* line 249, style/sass/_team-grid.scss */
+/* line 251, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons:after {
   height: 100%;
 }
@@ -2479,7 +2484,7 @@ section.nav {
 .spark-contact {
   background: url("style/image/graphics/contact-background.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top right;
 }
 @media (min-width: 815px) {
   /* line 1, style/sass/_contact.scss */

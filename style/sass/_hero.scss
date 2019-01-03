@@ -3,6 +3,9 @@
 	overflow: hidden;
 	padding: base(8) 0;
 	position: relative;
+	background: url('style/image/graphics/contact-background.jpg');
+	background-size: cover;
+	background-position: top right;
 
 	.spark-container {
 		overflow: visible;
