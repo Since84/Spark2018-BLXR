@@ -58,7 +58,10 @@
 		}
 
 		&.right {
-			justify-content: center;
+
+			.spark-container {
+				justify-content: center;
+			}
 
 			.spark-content {
 				order: 2;
