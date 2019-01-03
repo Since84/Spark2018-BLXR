@@ -1147,8 +1147,8 @@ section.nav {
   .spark-content-with-image.default.right .spark-content {
     padding-right: 8px;
     padding-left: 8px;
-    flex: 1 1 calc(41.66667%);
-    max-width: calc(41.66667%);
+    flex: 1 1 calc(33.33333%);
+    max-width: calc(33.33333%);
     margin-right: 32px;
   }
 }
@@ -1171,8 +1171,8 @@ section.nav {
   .spark-content-with-image.default.right img {
     padding-right: 8px;
     padding-left: 8px;
-    flex: 1 1 calc(33.33333%);
-    max-width: calc(33.33333%);
+    flex: 1 1 calc(41.66667%);
+    max-width: calc(41.66667%);
     margin: 32px 64px 32px 0;
   }
 }
@@ -1380,21 +1380,38 @@ section.nav {
   background: #1A1A33;
   height: 380px;
 }
-/* line 7, style/sass/_horizontal-stack.scss */
+@media (min-width: 815px) {
+  /* line 3, style/sass/_horizontal-stack.scss */
+  .horizontal-stack .tab-top-content {
+    height: 420px;
+  }
+}
+/* line 11, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content {
   padding: 80px 0 160px;
 }
-/* line 11, style/sass/_horizontal-stack.scss */
+/* line 15, style/sass/_horizontal-stack.scss */
 .horizontal-stack .content .spark-content {
   width: 83.33333%;
   padding: 0 30px;
 }
-/* line 21, style/sass/_horizontal-stack.scss */
+/* line 25, style/sass/_horizontal-stack.scss */
 .horizontal-stack .tab-container {
-  transform: translateY(-153px);
   flex-wrap: wrap;
 }
-/* line 26, style/sass/_horizontal-stack.scss */
+@media (max-width: 815px) {
+  /* line 25, style/sass/_horizontal-stack.scss */
+  .horizontal-stack .tab-container {
+    padding-top: 32px;
+  }
+}
+@media (min-width: 815px) {
+  /* line 25, style/sass/_horizontal-stack.scss */
+  .horizontal-stack .tab-container {
+    transform: translateY(-153px);
+  }
+}
+/* line 37, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item {
   width: 83.33333%;
   background: white;
@@ -1404,17 +1421,17 @@ section.nav {
   padding: 0;
 }
 @media (max-width: 815px) {
-  /* line 26, style/sass/_horizontal-stack.scss */
+  /* line 37, style/sass/_horizontal-stack.scss */
   .horizontal-stack .spark-tabs-content-item {
     margin-bottom: 32px;
   }
 }
-/* line 39, style/sass/_horizontal-stack.scss */
+/* line 50, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item h4 {
   margin-bottom: 16px;
   text-align: center;
 }
-/* line 43, style/sass/_horizontal-stack.scss */
+/* line 54, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item .tab-image {
   text-align: center;
   margin-bottom: 16px;
@@ -1422,20 +1439,27 @@ section.nav {
   background-image: url("style/image/graphics/card-background.png");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
 }
-/* line 51, style/sass/_horizontal-stack.scss */
+/* line 63, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item .tab-image img {
   height: auto;
   max-width: 100%;
   width: auto;
 }
+@media (max-width: 815px) {
+  /* line 70, style/sass/_horizontal-stack.scss */
+  .horizontal-stack .spark-tabs-content-item .tab-image img {
+    max-width: 75%;
+  }
+}
 @media (min-width: 815px) {
-  /* line 26, style/sass/_horizontal-stack.scss */
+  /* line 37, style/sass/_horizontal-stack.scss */
   .horizontal-stack .spark-tabs-content-item {
     width: 25%;
   }
 }
-/* line 62, style/sass/_horizontal-stack.scss */
+/* line 80, style/sass/_horizontal-stack.scss */
 .horizontal-stack .spark-tabs-content-item .tab-content {
   padding: 24px;
 }

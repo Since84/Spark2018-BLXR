@@ -3,6 +3,10 @@
 	.tab-top-content {
 		background: $primary1;
 		height: 380px;
+		
+		@include breakpoint($medium-up){
+			height: 420px;
+		}
 	}
 	.content {
 		@extend .knockout;
@@ -19,8 +23,15 @@
 	}
 
 	.tab-container {
-		transform: translateY(-153px);
 		flex-wrap: wrap;
+
+		@include breakpoint($small){
+			padding-top: base(4);
+		}
+		
+		@include breakpoint($medium-up){
+			transform: translateY(-153px);
+		}
 	}
 
 	.spark-tabs-content-item {
@@ -47,11 +58,18 @@
 			background-image: url('style/image/graphics/card-background.png');
 			background-repeat: no-repeat;
 			background-position: top center;
+			background-size: cover;
 
 			img {
 				height: auto;
 				max-width: 100%;
 				width: auto;
+			}
+
+			@include breakpoint($small){
+				img {
+					max-width: 75%;
+				}
 			}
 		}
 

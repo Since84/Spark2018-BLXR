@@ -73,7 +73,7 @@
 				}
 
 				@include breakpoint($medium-up) {
-					@include span(5);
+					@include span(4);
 					margin-right: base(4);
 				}
 			}
@@ -89,7 +89,7 @@
 				}
 
 				@include breakpoint($medium-up){
-					@include span(4);
+					@include span(5);
 					margin: base(4) base(8) base(4) 0;
 				}
 			}	
