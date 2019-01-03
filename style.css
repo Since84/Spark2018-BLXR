@@ -2229,20 +2229,19 @@ section.nav {
 /* line 1, style/sass/_page.scss */
 .page-container {
   min-height: calc(100vh - 230px);
-  background: #F4F5F9;
 }
 
-/* line 6, style/sass/_page.scss */
+/* line 5, style/sass/_page.scss */
 .page-intro {
   padding: 64px 0 16px;
   background: #F4F5F9;
 }
-/* line 10, style/sass/_page.scss */
+/* line 9, style/sass/_page.scss */
 .page-intro h2 {
   margin-bottom: 16px;
 }
 @media (min-width: 815px) {
-  /* line 14, style/sass/_page.scss */
+  /* line 13, style/sass/_page.scss */
   .page-intro .page-content {
     padding: 0 72px;
   }
