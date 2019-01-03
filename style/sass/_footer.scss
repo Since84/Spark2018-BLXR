@@ -1,6 +1,7 @@
 .spark-footer {
 	@extend .knockout;
 	background-color: $primary1;
+	box-shadow: -2px -1px 10px $secondary1;
 	padding: base(3) 0 0;
 
 	.spark-container {

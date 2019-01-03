@@ -1,9 +1,10 @@
 .spark-accordion {
 	background: $primary6;
 	padding: base(2);
+	min-height: calc(100% - 320px);
 	
 	@include breakpoint($medium-up){
-		padding: base(8);
+		padding: base(4) base(8);
 	}
 
 	.accordion-tabs {
@@ -64,7 +65,7 @@
 		position: relative;
 
 		@include breakpoint($medium-up){
-			padding: base() base(4) base() base(8);
+			padding: base() base(4) base() base(4) base(8);
 		}
 
 		.accordion-trigger {
