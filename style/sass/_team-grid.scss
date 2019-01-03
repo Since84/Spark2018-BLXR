@@ -41,7 +41,7 @@
 	&.advisors {
 
 		.spark-profile-position {
-			padding-bottom: 20px;
+			padding-bottom: base();
 		}
 
 		.spark-grid {
@@ -83,6 +83,12 @@
 
 		.spark-social-icons {
 			display: none;
+		}
+
+		.spark-info-text {
+			height: 2em;
+			margin-top: 0 !important;
+			padding: 0 !important;
 		}
 	}
 }
