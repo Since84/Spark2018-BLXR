@@ -58,6 +58,8 @@
 		}
 
 		&.right {
+			justify-content: center;
+
 			.spark-content {
 				order: 2;
 				padding: base(4) base(10) base(4) 0;
@@ -68,13 +70,11 @@
 				}
 
 				@include breakpoint($medium-up) {
-					@include span(6);
-					padding-right: base(8);
+					@include span(5);
 					margin-right: base(4);
 				}
 
 				@include breakpoint($large-up) {
-					@include span(6);
 					padding-right: base(18);
 				}
 			}
@@ -90,7 +90,7 @@
 				}
 
 				@include breakpoint($medium-up){
-					@include span(6);
+					@include span(4);
 					margin: base(4) base(8) base(4) 0;
 				}
 			}	
