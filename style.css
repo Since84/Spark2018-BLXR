@@ -2228,7 +2228,7 @@ section.nav {
 
 /* line 1, style/sass/_page.scss */
 .page-container {
-  min-height: calc(100vh - 400px);
+  min-height: calc(100vh - 230px);
   background: #F4F5F9;
 }
 
