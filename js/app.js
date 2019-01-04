@@ -123,19 +123,13 @@
 		})
 
 		$('.video-container').click(function(e){
-			// var video = $(this).find('video');
-			
-	  //  	   if (!$(this).hasClass('video-active')){
-			// video.get(0).play();
-			// $(this).find('.control-button').removeClass('fa-play')
-			// 						   	   .addClass('fa-pause');
-	  //  	   }
+			var video = $(this).find('video');
 			
 			$(this).addClass('video-active');
+			video.attr('controls', '');
+			video.get(0).play();
 		})
 
-		video.attr('controls', '');
-		video.get(0).play();
 
 
 		// $('.control-button').click(function(){
