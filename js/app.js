@@ -123,7 +123,7 @@
 		})
 
 		$('.video-container').click(function(e){
-			var video = $(this).find('video');
+			var video = $('#heroVideo');
 			
 			$(this).addClass('video-active');
 			video.attr('controls', '');
