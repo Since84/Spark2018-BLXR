@@ -123,29 +123,33 @@
 		})
 
 		$('.video-container').click(function(e){
-			var video = $(this).find('video');
+			// var video = $(this).find('video');
 			
-	   	   if (!$(this).hasClass('video-active')){
-			video.get(0).play();
-			$(this).find('.control-button').removeClass('fa-play')
-									   	   .addClass('fa-pause');
-	   	   }
+	  //  	   if (!$(this).hasClass('video-active')){
+			// video.get(0).play();
+			// $(this).find('.control-button').removeClass('fa-play')
+			// 						   	   .addClass('fa-pause');
+	  //  	   }
 			
 			$(this).addClass('video-active');
 		})
 
-		$('.control-button').click(function(){
-			var $container = $('.video-container');
-			var video = $container.find('video');
+		video.attr('controls', '');
+		video.get(0).play();
 
-			if ($(this).hasClass('fa-play')){
-				video.get(0).play();
-				$(this).removeClass('fa-play').addClass('fa-pause');
-			} else if (($(this).hasClass('fa-pause'))) {
-				video.get(0).pause();
-				$(this).removeClass('fa-pause').addClass('fa-play');
-			}
-		})
+
+		// $('.control-button').click(function(){
+		// 	var $container = $('.video-container');
+		// 	var video = $container.find('video');
+
+		// 	if ($(this).hasClass('fa-play')){
+		// 		video.get(0).play();
+		// 		$(this).removeClass('fa-play').addClass('fa-pause');
+		// 	} else if (($(this).hasClass('fa-pause'))) {
+		// 		video.get(0).pause();
+		// 		$(this).removeClass('fa-pause').addClass('fa-play');
+		// 	}
+		// })
 
 		$('.spark-profile').each(function(){
 			var name = $(this).attr('id');
