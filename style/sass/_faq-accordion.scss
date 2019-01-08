@@ -4,7 +4,7 @@
 	min-height: calc(100% - 320px);
 	
 	@include breakpoint($medium-up){
-		padding: base(4) base(8);
+		padding: base(4) base(8) base(10);
 	}
 
 	.accordion-tabs {
