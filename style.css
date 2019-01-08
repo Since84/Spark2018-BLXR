@@ -2234,7 +2234,7 @@ section.nav {
 /* line 71, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .accordion-trigger {
   cursor: pointer;
-  padding: 16px 0;
+  padding: 21px 0;
 }
 /* line 74, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item .accordion-trigger:before {
@@ -2245,7 +2245,7 @@ section.nav {
   height: 10px;
   left: 20px;
   position: absolute;
-  top: 21px;
+  top: 28px;
   bottom: auto;
   width: 10px;
 }
