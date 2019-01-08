@@ -30,6 +30,7 @@
 		border-radius: 2px;
 		box-shadow: 2px 2px 8px $secondary2;
 		background: $primary7;
+		position: relative;
 
 		h3,p {
 			padding: 0 base(3);
@@ -46,6 +47,14 @@
 
 		p + a.spark-position-link {
 			margin-top: 0; 
+		}
+
+		.spark-position-cover-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
 
 		.spark-position-link {
@@ -147,8 +156,25 @@
 	}
 }
 
+.spark-container.back-button{
+	justify-content: flex-start;
+	padding-top: base(5);
+
+	a {
+		@include span(8);
+		&:before {
+		    content: "\02FF";
+		    display: inline-block;
+		    vertical-align: middle;
+		    font-size: 28px;
+		    height: 49px;
+		    margin-right: 7px;
+		}
+	}
+}
+
 article.job-listing {
-	padding-top: base(10);
+	padding-top: base(5);
 	padding-bottom: base(10);
 
 	hgroup {

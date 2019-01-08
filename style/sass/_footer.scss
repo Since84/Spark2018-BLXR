@@ -2,7 +2,7 @@
 	@extend .knockout;
 	background-color: $primary1;
 	box-shadow: -2px -1px 10px $secondary1;
-	padding: base(3) 0 0;
+	padding: base(5) 0 0;
 
 	.spark-container {
 		flex-wrap: wrap;
@@ -64,6 +64,19 @@
 		}
 	}
 
+	.spark-nav-footer-container {
+		.spark-container {
+			justify-content: center;
+			text-align: center;
+		}
+
+		.ctct-inline-form {
+			margin: auto;
+			margin-bottom: base(3);
+			width: span(8);
+		}
+	}
+
 	.spark-nav-footer-menu {
 		@include span(12);
 		display: flex;
@@ -71,7 +84,7 @@
 		margin-bottom: base(2);
 
 		@include breakpoint($medium-up){
-			@include span(8);
+			@include span(10);
 		}
 
 		li {
@@ -116,7 +129,7 @@
 		@include span(12);
 
 		@include breakpoint($medium-up){
-			@include span(4);
+			@include span(6);
 		}
 
 		h3, p {

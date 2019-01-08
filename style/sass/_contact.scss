@@ -2,6 +2,9 @@
 	background: url('style/image/graphics/contact-background.jpg');
 	background-size: cover;
 	background-position: top right;
+	min-height: calc(100vh - 231px);
+    align-items: center;
+    display: flex;
 
 	@include breakpoint($medium-up){
 		padding: base(10);
