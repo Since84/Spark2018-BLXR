@@ -82,10 +82,6 @@
 				top: 21px;
 				bottom: auto;
 				width: 10px;
-
-				@include breakpoint($medium-up){
-					top: base(4);
-				}
 			}
 		}
 
