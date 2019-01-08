@@ -1,0 +1,21 @@
+<section>
+	<div class="spark-container back-button">
+		<a href="{{ site.url }}/careers/">Back to Careers</a>
+	</div>
+	<article class="job-listing spark-container">
+		<div class="post-container">
+			<hgroup>
+				<h2>{{ page.title }}</h2>
+				<h3><span class="location">{{ page.location }}</span> | {{ page.position_type }}</h3>
+				<p>*Please only apply if based in {{ page.location }} or willing to relocate.
+			</hgroup>
+			<div class="post-content">
+				{{ page.content|wpautop }}
+				{{ page.job_description|wpautop }}
+			</div>
+			<div class="apply">
+				<a class="apply-now" href="mailto:jobs@bloxroute.com">Apply Now</a>
+			</div>
+		</div>
+	</article>
+</section>
