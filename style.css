@@ -821,9 +821,7 @@ section.nav {
 /* line 1, style/sass/_hero.scss */
 .spark-vimeo-hero {
   background: #1A1A33;
-  overflow: hidden;
   padding: 64px 0;
-  position: relative;
   background: url("style/image/graphics/contact-background.jpg");
   background-size: cover;
   background-position: top right;
@@ -911,29 +909,67 @@ section.nav {
   font-size: 18px;
 }
 /* line 71, style/sass/_hero.scss */
+.spark-vimeo-hero .video-container .spark-close {
+  display: none;
+}
+/* line 75, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
-/* line 75, style/sass/_hero.scss */
+/* line 79, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active {
   background-image: none !important;
 }
-/* line 77, style/sass/_hero.scss */
+/* line 81, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active:after {
   content: none;
 }
-/* line 81, style/sass/_hero.scss */
+/* line 85, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active .control-button {
   display: block;
 }
-/* line 86, style/sass/_hero.scss */
+/* line 89, style/sass/_hero.scss */
+.spark-vimeo-hero .video-container.video-active .video-wrap {
+  background: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1001;
+}
+/* line 98, style/sass/_hero.scss */
+.spark-vimeo-hero .video-container.video-active .video-wrap video {
+  position: absolute;
+  width: 75%;
+  height: auto;
+  max-height: 448px;
+  max-width: 800px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 111, style/sass/_hero.scss */
+.spark-vimeo-hero .video-container.video-active .video-wrap .spark-close {
+  position: absolute;
+  top: 90px;
+  right: 8px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 28px;
+  color: #1D7CC5;
+}
+/* line 124, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container video {
   width: 100%;
   height: auto;
   box-shadow: 5px 5px 17px #1A1A3399;
   background-color: #1A1A33;
 }
-/* line 94, style/sass/_hero.scss */
+/* line 134, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   background: linear-gradient(to top, #234092, #2085c7);
   top: 50%;
@@ -944,7 +980,7 @@ section.nav {
   width: 200%;
 }
 @media (min-width: 815px) {
-  /* line 94, style/sass/_hero.scss */
+  /* line 134, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 175.4vw;
     height: 112vw;
@@ -954,7 +990,7 @@ section.nav {
   }
 }
 @media (min-width: 1200px) {
-  /* line 94, style/sass/_hero.scss */
+  /* line 134, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
     height: 151%;
@@ -1184,7 +1220,6 @@ section.nav {
 .spark-content-with-image.default .spark-container {
   align-items: center;
   position: relative;
-  z-index: 100;
 }
 @media (max-width: 815px) {
   /* line 98, style/sass/_content-with-image.scss */

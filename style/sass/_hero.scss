@@ -1,8 +1,8 @@
 .spark-vimeo-hero {
 	background: $primary1;
-	overflow: hidden;
+	// overflow: hidden;
 	padding: base(8) 0;
-	position: relative;
+	// position: relative;
 	background: url('style/image/graphics/contact-background.jpg');
 	background-size: cover;
 	background-position: top right;
@@ -68,6 +68,10 @@
 			font-size: 18px;
 		}
 
+		.spark-close {
+			display: none;
+		}
+
 		&:hover:after{
 			background-image: url(style/image/play-button/active.png);
 		}
@@ -81,6 +85,40 @@
 			.control-button {
 				display: block;
 			}
+
+			.video-wrap {
+				background: rgba($primary7, .75);
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				z-index: 1001; 
+
+				video {
+					position: absolute;
+					width: 75%;
+					height: auto;
+					max-height: 448px;
+					max-width: 800px;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+				}
+
+				.spark-close {
+				    position: absolute;
+				    top: 90px;
+				    right: 8px;
+				    display: block;
+				    width: 32px;
+				    height: 32px;
+				    font-size: 28px;
+				    color: $primary4;
+				}
+			}
 		}
 
 		video {
@@ -90,6 +128,8 @@
 		    background-color: #1A1A33;
 		}
 	}
+
+
 
 	.overlay {
 		@include subtle-gradient-tb;

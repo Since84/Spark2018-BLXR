@@ -98,7 +98,7 @@
 		.spark-container {
 			align-items: center; 
 			position: relative;
-			z-index: 100;
+			// z-index: 100;
 
 			@include breakpoint($small){
 				flex-direction: column;

@@ -125,9 +125,16 @@
 		$('.video-container').click(function(e){
 			var video = $('#heroVideo');
 			
-			$(this).addClass('video-active');
-			video.attr('controls', '');
-			video.get(0).play();
+			if ( !$(this).hasClass('video-active')){
+				$(this).addClass('video-active');
+				
+				video.attr('controls', '');
+				video.get(0).play();
+			} else {
+				video.removeAttr('controls');
+				video.get(0).pause();	
+				$(this).removeClass('video-active');
+			}
 		})
 
 
