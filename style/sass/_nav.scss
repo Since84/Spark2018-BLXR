@@ -17,7 +17,7 @@ section.nav {
 	.spark-nav-basic-container .spark-container {
 		align-items: center;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 
 		&:after {
 			content: none;
@@ -27,6 +27,7 @@ section.nav {
 	.spark-site-logo {
 		align-items: center;
 		display: inline-flex;
+		flex: 1;
 
 		a{
 			padding: 11px 0;
@@ -186,6 +187,19 @@ section.nav {
 						height: 100%;
 					}
 				}
+			}
+		}
+	}
+
+	.spark-header-socials{
+		a {
+			color: rgba($primary7, .7);
+			text-decoration: none;
+			margin-left: base(2);
+			font-size: 16px;
+
+			&:hover {
+				color: rgba($primary7, 1);
 			}
 		}
 	}

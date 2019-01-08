@@ -1,0 +1,44 @@
+<section class="nav">
+	<div class="spark-nav-basic">
+		<div class="spark-nav-basic-container">
+			<nav class="spark-container">
+				<span class="mobile-menu-button"></span>
+				<div class="spark-site-logo">
+					<a href="{{ site.url }}"><img src="{{ site_logo.url }}"/></a>
+				</div>
+				<ul class="spark-nav-basic-menu">
+					{% for item in menu.items %}
+						<li class="{{ item.classes | join(' ') }}">
+							<a href="{{item.link}}" target="{{ item.target }}">{{ item.name }}</a>
+							{% if item.children %}
+								<div class="spark-nav-basic-menu-sub-nav">
+									<ul class="sub-nav-container">
+										{% for child in item.get_children %}
+											<li class="{{ child.class }}"> 
+												<a href="{{ child.url }}" 
+													target="{{ child.target }}">
+													<span class="fab fa-{{ child.class }}"></span>
+													<p class="nav-item">{{ child.name }}<br>{{ child.description }}</p>
+												</a>
+											</li>
+										{% endfor %}
+									</ul>
+								</div>
+							{% endif %}
+						</li>
+					{% endfor %}
+						<li class="spark-close-button"></li>
+				</ul>
+				<div class="spark-header-socials">
+					{% for account in social %}
+						<a {% if account.social_site_url|length %} href="{{ account.social_site_url }}"{% endif %} 
+						class="{{ account.social_site_name }} fab fa-{{ account.social_site_name }}" target="blank"></a>
+					{% endfor %}
+				</div>
+				<div class="spark-menu-button">
+					<span class="button-bar"></span>
+				</div>
+			</nav>
+		</div>
+	</div>
+</section>
