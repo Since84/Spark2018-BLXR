@@ -1,6 +1,6 @@
 .spark-team-grid {
 	background: $primary6;
-	padding: base(8) 0 base(10);
+	padding: base(8) 0;
 
 	+ .spark-team-grid {
 		padding-top: 0;
@@ -86,7 +86,7 @@
 		}
 
 		.spark-info-text {
-			height: 2em;
+			display: none;
 			margin-top: 0 !important;
 			padding: 0 !important;
 			text-align: center;

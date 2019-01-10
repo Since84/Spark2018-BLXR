@@ -27,7 +27,7 @@
 		flex-direction: row;
 
 		> *, > * strong {
-			color: rgba($primary7, .75);
+			color: #8080A9;
 		}
 
 		@include breakpoint($small){
@@ -55,12 +55,12 @@
 				margin-right: base(2);
 			}
 
-			&:hover {
-				color: $primary6;
+			&[href]:hover{
+				color: #2267b0;
 			}
 
-			&[href]:hover {
-				background-color: #323049;
+			&:not([href]){
+				pointer-events: none;
 			}
 		}
 
@@ -80,7 +80,7 @@
 		}
 
 		.ctct-inline-form {
-			flex-basis: span(9);
+			flex-basis: 90%;
 		}
 	}
 
@@ -155,6 +155,7 @@
 			text-align: left;
 			text-transform: uppercase;
 			line-height: 1.6;
+			flex-basis: 200px;
 		}
 
 		.ctct-form-field, button {
@@ -170,11 +171,18 @@
 		.ctct-form-element {
 			border-radius: 0;
 			border:none;
-			background-color: rgba($primary4, .25) !important;
+			background-color: #303059 !important;
 			color: white !important;
+			font-family: $body_family;
+
+			&::placeholder {
+				font-family: $body_family;
+			}
 		}
 		.ctct-form-field {
 			flex: 1;
+			font-family: $body_family;
+
 
 			@include breakpoint($small){
 				@include span(12);

@@ -7,7 +7,7 @@
         </div>
         <div class="spark-container spark-tab-content-heading">
             {% for item in layout.tab_items %}
-             <div class="spark-tabs-content-item">
+             <div class="spark-tabs-content-item desktop">
                 <div class="tab-image">
                     {% include "/view/content/image.html.twig" with item.tab_image %}
                 </div>
@@ -18,7 +18,10 @@
     <div class="spark-tabs">
         <div class="spark-container tab-container">
             {% for item in layout.tab_items %}
-            <div class="spark-tabs-content-item">
+            <div class="spark-tabs-content-item mobile">
+                <div class="tab-image">
+                    {% include "/view/content/image.html.twig" with item.tab_image %}
+                </div>
                 <div class="tab-content">
                     <h4>{{ item.heading }}</h4>
                     {{ item.content }}

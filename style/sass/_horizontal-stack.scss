@@ -75,5 +75,16 @@
 		.tab-content {
 			padding: base(3);
 		}
+
+		&.mobile .tab-image{
+			@include breakpoint($medium-up){
+				display:none;
+			}
+		}
+		&.desktop .tab-image{
+			@include breakpoint($small){
+				display:none;
+			}
+		}
 	}	
 }
