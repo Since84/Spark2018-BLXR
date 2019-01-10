@@ -2648,6 +2648,7 @@ section.nav {
 .spark-footer .ctct-form-errormessage {
   bottom: -33px;
   position: absolute;
+  white-space: nowrap;
 }
 
 /* line 1, style/sass/_contact.scss */
