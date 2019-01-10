@@ -2609,16 +2609,17 @@ section.nav {
 /* line 239, style/sass/_footer.scss */
 .spark-footer div.ctct-form-field {
   margin-bottom: 0 !important;
+  position: relative;
 }
-/* line 244, style/sass/_footer.scss */
+/* line 245, style/sass/_footer.scss */
 .spark-footer .ctct-form-footer {
   display: none;
 }
-/* line 248, style/sass/_footer.scss */
+/* line 249, style/sass/_footer.scss */
 .spark-footer .ctct-form-defaults {
   padding: 0 !important;
 }
-/* line 252, style/sass/_footer.scss */
+/* line 253, style/sass/_footer.scss */
 .spark-footer .ctct-form-button {
   background: linear-gradient(to top, #234092, #2085c7) !important;
   transition: all .45s !important;
@@ -2632,16 +2633,21 @@ section.nav {
   color: #ffffff !important;
   border: none !important;
 }
-/* line 265, style/sass/_footer.scss */
+/* line 266, style/sass/_footer.scss */
 .spark-footer .ctct-form-button:hover {
   background: #234898 !important;
   transition: all .45s !important;
   color: #F4F5F9 !important;
 }
-/* line 272, style/sass/_footer.scss */
+/* line 273, style/sass/_footer.scss */
 .spark-footer .ctct-form-element {
   height: 44px !important;
   border: none !important;
+}
+/* line 278, style/sass/_footer.scss */
+.spark-footer .ctct-form-errormessage {
+  bottom: -33px;
+  position: absolute;
 }
 
 /* line 1, style/sass/_contact.scss */

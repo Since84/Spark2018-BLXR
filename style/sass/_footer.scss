@@ -238,6 +238,7 @@
 
 	div.ctct-form-field {
 		margin-bottom: 0 !important;
+		position: relative;
 
 	}
 
@@ -272,5 +273,10 @@
 	.ctct-form-element {
 		height: 44px !important;
 		border: none !important;
+	}
+
+	.ctct-form-errormessage {
+	    bottom: -33px;
+	    position: absolute;
 	}
 }
