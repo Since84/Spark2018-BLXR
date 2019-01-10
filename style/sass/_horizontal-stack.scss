@@ -48,11 +48,12 @@
 		}
 		.tab-image {
 			text-align: center;
-			padding: base(4) base(2);
+			background-color: #37355c;
 			background-image: url('style/image/graphics/card-background.png');
-			background-repeat: no-repeat;
 			background-position: top center;
+			background-repeat: no-repeat;
 			background-size: cover;
+			padding: base(4) base(2);
 
 			img {
 				height: auto;

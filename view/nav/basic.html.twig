@@ -27,14 +27,14 @@
 							{% endif %}
 						</li>
 					{% endfor %}
+					<li class="spark-header-socials">
+						{% for account in social %}
+							<a {% if account.social_site_url|length %} href="{{ account.social_site_url }}"{% endif %} 
+							class="{{ account.social_site_name }} fab fa-{{ account.social_site_name }}" target="blank"></a>
+						{% endfor %}
+					</li>
 						<li class="spark-close-button"></li>
 				</ul>
-				<div class="spark-header-socials">
-					{% for account in social %}
-						<a {% if account.social_site_url|length %} href="{{ account.social_site_url }}"{% endif %} 
-						class="{{ account.social_site_name }} fab fa-{{ account.social_site_name }}" target="blank"></a>
-					{% endfor %}
-				</div>
 				<div class="spark-menu-button">
 					<span class="button-bar"></span>
 				</div>

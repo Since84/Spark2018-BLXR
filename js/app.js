@@ -190,5 +190,16 @@
 				closeModal($('.spark-contact-modal-container.active'));
 			}
 		})
+
+		$(document).ready(function(){
+			setTimeout(function(){
+				$('.ctct-form-custom').find('.ctct-form-field').each(function(){
+					var label = $(this).find('label').text();
+
+					$(this).find('input').attr('placeholder', label);
+
+				})
+			}, 1000);
+		})
 	})
 })(jQuery);

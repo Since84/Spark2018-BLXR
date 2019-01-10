@@ -202,6 +202,22 @@ section.nav {
 				color: rgba($primary7, 1);
 			}
 		}
+
+		@include breakpoint($small){
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: base(2) 0;
+			text-align: center;
+			a.fab {
+				@include span(1);
+				border-bottom: none;
+				font-size: 30px;
+				padding: 0;
+				margin: 0 base(1.5);
+			}
+
+		}
 	}
 
 	.spark-nav-basic-menu-sub-nav {
