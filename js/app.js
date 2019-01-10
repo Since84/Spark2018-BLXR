@@ -199,7 +199,7 @@
 					$(this).find('input').attr('placeholder', label);
 
 				})
-			}, 1000);
+			}, 2000);
 		})
 	})
 })(jQuery);
