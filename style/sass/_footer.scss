@@ -134,6 +134,7 @@
 	}
 	.spark-nav-footer-subscribe {
 		@include span(12);
+		position: relative;
 
 		@include breakpoint($small){
 			padding: base(4) 0;
@@ -279,5 +280,42 @@
 	    bottom: -33px;
 	    position: absolute;
 	    white-space: nowrap;
+	}
+
+
+	.ctct-form-success {
+		background-color: $primary1;
+
+		width: 100%;
+		h2 { display: none;}
+		.ctct-form-text {
+			background-color: $primary1;
+		    background-image: url('style/image/icon/check-circle.png');
+		    background-position: left center;
+		    background-repeat: no-repeat;
+		    background-size: base(4) base(4);
+		    display: block;
+			font-size: 16px !important;
+			height: 100%;
+			line-height: 1;
+			left: 0;
+			padding: 36px;
+			padding-left: base(6);
+			position: absolute;
+			top: 0;
+			text-align: center;
+
+			@include breakpoint($small){
+				background-position: left 36px;
+			}
+
+
+			&:before {
+				content: "Success!";
+				font-weight: 600;
+				margin-right: base();
+				text-transform: uppercase;
+			}
+		}
 	}
 }
