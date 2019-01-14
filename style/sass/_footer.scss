@@ -1,6 +1,6 @@
 .spark-footer {
 	@extend .knockout;
-	background-color: $primary1;
+	background-color: #1D1D3C;
 	box-shadow: -2px -1px 10px $secondary1;
 
 	.spark-container {
@@ -56,7 +56,7 @@
 			}
 
 			&[href]:hover{
-				color: #2267b0;
+				color: #1587ff;
 			}
 
 			&:not([href]){

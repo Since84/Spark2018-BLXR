@@ -730,7 +730,7 @@ section.nav {
 }
 /* line 201, style/sass/_nav.scss */
 .spark-nav-basic .spark-header-socials a:hover {
-  color: #2267b0;
+  color: #1587ff;
 }
 @media (max-width: 815px) {
   /* line 194, style/sass/_nav.scss */
@@ -2340,7 +2340,7 @@ section.nav {
 
 /* line 1, style/sass/_footer.scss */
 .spark-footer {
-  background-color: #1A1A33;
+  background-color: #1D1D3C;
   box-shadow: -2px -1px 10px #0D0D2A;
 }
 /* line 6, style/sass/_footer.scss */
@@ -2401,7 +2401,7 @@ section.nav {
 }
 /* line 58, style/sass/_footer.scss */
 .spark-footer .spark-footer-socials a[href]:hover {
-  color: #2267b0;
+  color: #1587ff;
 }
 /* line 62, style/sass/_footer.scss */
 .spark-footer .spark-footer-socials a:not([href]) {
