@@ -3,7 +3,7 @@
 		<div class="spark-image-container">
 			<div class="cycle-slideshow">
 				{% for slide in layout.gallery %}
-					<img src="{{slide.image.url}}"/>
+					<img src="{{slide.image.url | resize(700)}}"/>
 				{% endfor %}
 				<div class="cycle-pager"></div>
 			</div>

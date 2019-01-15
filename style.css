@@ -3042,7 +3042,7 @@ section.nav {
 /* line 1, style/sass/_positions.scss */
 .spark-position-list {
   background: #F4F5F9;
-  padding: 40px 0 24px;
+  padding: 40px 0 80px;
 }
 /* line 5, style/sass/_positions.scss */
 .spark-position-list .spark-container {
