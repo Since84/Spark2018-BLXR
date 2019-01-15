@@ -3,6 +3,9 @@
 	&.center {
 		.spark-content {
 			@include span(12);
+			.cta-button {
+				margin-top: base(2); 
+			}
 		}
 	}
 }

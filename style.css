@@ -963,7 +963,7 @@ section.nav {
 }
 /* line 89, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active .video-wrap {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(26, 26, 51, 0.85);
   position: fixed;
   top: 0;
   left: 0;
@@ -1112,6 +1112,10 @@ section.nav {
   padding-left: 8px;
   flex: 1 1 calc(100%);
   max-width: calc(100%);
+}
+/* line 6, style/sass/_content-block.scss */
+.spark-content-block.center .spark-content .cta-button, .spark-content-block.center .spark-content .gray-cta-button, .spark-content-block.center .spark-content .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .spark-content-block.center .spark-content .collection-heading, .spark-content-block.center .spark-content article.job-listing .apply-now, article.job-listing .spark-content-block.center .spark-content .apply-now {
+  margin-top: 16px;
 }
 
 /* line 1, style/sass/_content-with-image.scss */
