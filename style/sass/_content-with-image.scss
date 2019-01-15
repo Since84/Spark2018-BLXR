@@ -109,35 +109,47 @@
 	&.staggered{
 		padding: base(8) 0;
 
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 50%;
+			background: #191933;
+			display: block;
+			top: 0;
+		}
+
 		.spark-container {
 			align-items: flex-start;
 			justify-content: center;
-			flex-wrap: wrap;		
+			flex-wrap: wrap;
+			flex-direction: row-reverse;	
+			padding: 0;
+			background-color: #282846;
+			box-shadow: 2px 2px 24px #000000;	
 		}
 
 		.spark-image-container {
 			position: relative;
-			@include span(12);
+			width: span(12);
 
 			@include breakpoint($medium-up){
-				@include span(6);
-				transform: translateX(#{base(8)});
-				margin-bottom: base(4);
-				&:before {
-					@include subtle-gradient;
-					border-radius: 4px;
-					content: "";
-					height: 234px;
-					position: absolute;
-					width: 234px;
-					bottom: base(-5);
-					left: base(-4);
-					z-index: -1;
-				}
+				width: span(7);
+				// transform: translateX(#{base(8)});
+				// &:before {
+				// 	@include subtle-gradient;
+				// 	border-radius: 4px;
+				// 	content: "";
+				// 	height: 234px;
+				// 	position: absolute;
+				// 	width: 234px;
+				// 	bottom: base(-5);
+				// 	left: base(-4);
+				// 	z-index: -1;
+				// }
 			}
 
 			.cycle-slideshow {
-				border-radius: 4px;
 				overflow: hidden;
 			}
 
@@ -167,33 +179,35 @@
 		}
 
 		.spark-content {
-			@include span(12);
-			margin-top: base(4);
+			width: span(12);
+			display: flex;
+			// margin-top: base(4);
+			background-color: #282846;
 
 			@include breakpoint($medium-up){
-				@include span(6);
-				margin-top: base(18);
+				width: span(5);
+				// margin-top: base(18);
 				position: relative;
 				z-index: 10;
-				transform: translateX(base(-5));
-				&:after {
-					@include gray-gradient;
-					border-radius: 4px;
-					background: #E9EBF0;
-					top: base(-5);
-					content: "";
-					height: 234px;
-					position: absolute;
-					right: base(-4);
-					width: 234px;
-					z-index: -1;
-				}
+				// transform: translateX(base(-5));
+				// &:after {
+				// 	@include gray-gradient;
+				// 	border-radius: 4px;
+				// 	background: #E9EBF0;
+				// 	top: base(-5);
+				// 	content: "";
+				// 	height: 234px;
+				// 	position: absolute;
+				// 	right: base(-4);
+				// 	width: 234px;
+				// 	z-index: -1;
+				// }
 			}
 
 			.spark-content-container {
-				background: $primary1;
-				border-radius: 4px;
 				padding: base(6) base(3) base(6) base(4);
+				display: flex;
+				flex-direction: column;
 			}
 
 			h3, p, a {
