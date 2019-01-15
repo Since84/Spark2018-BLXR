@@ -1909,12 +1909,13 @@ section.nav {
 /* line 43, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-profile-position {
   padding-bottom: 8px;
+  display: none;
 }
-/* line 47, style/sass/_team-grid.scss */
+/* line 48, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-grid {
   flex-wrap: wrap;
 }
-/* line 51, style/sass/_team-grid.scss */
+/* line 52, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-grid-item {
   padding-right: 8px;
   padding-left: 8px;
@@ -1922,7 +1923,7 @@ section.nav {
   max-width: calc(50%);
 }
 @media (min-width: 815px) {
-  /* line 51, style/sass/_team-grid.scss */
+  /* line 52, style/sass/_team-grid.scss */
   .spark-team-grid.advisors .spark-grid-item {
     padding-right: 8px;
     padding-left: 8px;
@@ -1930,12 +1931,12 @@ section.nav {
     max-width: calc(20%);
   }
 }
-/* line 60, style/sass/_team-grid.scss */
+/* line 61, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-profile {
   background: none;
   box-shadow: none;
 }
-/* line 65, style/sass/_team-grid.scss */
+/* line 66, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-profile .spark-profile-image {
   background-repeat: no-repeat;
   background-size: contain;
@@ -1946,7 +1947,7 @@ section.nav {
   width: 200px;
 }
 @media (min-width: 815px) {
-  /* line 65, style/sass/_team-grid.scss */
+  /* line 66, style/sass/_team-grid.scss */
   .spark-team-grid.advisors .spark-profile .spark-profile-image {
     width: 180px;
     height: 180px;
@@ -1954,13 +1955,12 @@ section.nav {
     max-height: 14vw;
   }
 }
-/* line 84, style/sass/_team-grid.scss */
+/* line 85, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-social-icons {
   display: none;
 }
-/* line 88, style/sass/_team-grid.scss */
+/* line 89, style/sass/_team-grid.scss */
 .spark-team-grid.advisors .spark-info-text {
-  display: none;
   margin-top: 0 !important;
   padding: 0 !important;
   text-align: center;
