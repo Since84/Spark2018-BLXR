@@ -27,15 +27,6 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-
-		&:before, &:after {
-			content: "";
-			height: 1px;
-			width: base(3);
-			display: block;
-			background: $primary7;
-			margin: 0 base(3);
-		}
 	}
 
 	&.advisors {
