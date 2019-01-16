@@ -269,9 +269,9 @@ section .spark-container:after {
 	Site Color Pallette
 */
 /* line 22, style/sass/_colors.scss */
-.knockout, .spark-content-with-image.default.left .spark-content, .horizontal-stack .content, .resources-page .resource-sidebar .whitepaper .module-content, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
+.knockout, .spark-content-with-image.default.left .spark-content, .spark-content-with-image.staggered .spark-content, .horizontal-stack .content, .resources-page .resource-sidebar .whitepaper .module-content, .spark-footer, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text,
-.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.default.left .spark-content *, .horizontal-stack .content *, .resources-page .resource-sidebar .whitepaper .module-content *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
+.spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a, .knockout *, .spark-content-with-image.default.left .spark-content *, .spark-content-with-image.staggered .spark-content *, .horizontal-stack .content *, .resources-page .resource-sidebar .whitepaper .module-content *, .spark-footer *, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text *,
 .spark-footer .ctct-form-embed.form_1 .ctct-form-defaults .ctct-gdpr-text a * {
   color: white;
@@ -1383,22 +1383,22 @@ section.nav {
     height: 525px;
   }
 }
-/* line 223, style/sass/_content-with-image.scss */
+/* line 224, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content .spark-content-container {
   padding: 48px 24px 48px 32px;
   display: flex;
   flex-direction: column;
 }
-/* line 229, style/sass/_content-with-image.scss */
+/* line 230, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content h3, .spark-content-with-image.staggered .spark-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-content-with-image.staggered .spark-content .ctct-form-label, .spark-content-with-image.staggered .spark-content p, .spark-content-with-image.staggered .spark-content a {
   color: #ffffff;
 }
 @media (max-width: 815px) {
-  /* line 237, style/sass/_content-with-image.scss */
+  /* line 238, style/sass/_content-with-image.scss */
   .spark-content-with-image .spark-container {
     flex-wrap: wrap;
   }
-  /* line 239, style/sass/_content-with-image.scss */
+  /* line 240, style/sass/_content-with-image.scss */
   .spark-content-with-image .spark-container img {
     max-width: 100%;
     height: auto;

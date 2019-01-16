@@ -205,6 +205,7 @@
 		}
 
 		.spark-content {
+			@extend .knockout;
 			display: flex;
 			// margin-top: base(4);
 			background-color: #282846;
