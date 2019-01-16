@@ -157,7 +157,7 @@ section.nav {
 					display: block;
 					height: 0px;
 					width: 100%;
-					transition: height .25s linear;	
+					transition: height .25s linear .5s;	
 					position: absolute;				
 				}
 
@@ -192,6 +192,10 @@ section.nav {
 	}
 
 	.spark-header-socials{
+		border-left: 1px solid rgba(255, 255, 255, 0.25);
+	    padding-left: 18px;
+	    margin-left: 18px;
+
 		a {
 			color: rgba($primary7, .7);
 			text-decoration: none;

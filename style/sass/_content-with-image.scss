@@ -122,19 +122,28 @@
 		.spark-container {
 			align-items: flex-start;
 			justify-content: center;
+			padding: base(9);
+		} 	
+
+		.content-container {
+			align-items: flex-start;
+			display: flex;
+			flex-basis: span(12);
+			justify-content: center;
 			flex-wrap: wrap;
 			flex-direction: row-reverse;	
-			padding: 0;
-			background-color: #282846;
 			box-shadow: 2px 2px 24px #000000;	
 		}
 
+
+
 		.spark-image-container {
 			position: relative;
-			width: span(12);
+			flex: 1 1 100%;
+			display: flex;
 
 			@include breakpoint($medium-up){
-				width: span(7);
+				flex-basis: 344px;
 				// transform: translateX(#{base(8)});
 				// &:before {
 				// 	@include subtle-gradient;
@@ -179,29 +188,19 @@
 		}
 
 		.spark-content {
-			width: span(12);
 			display: flex;
 			// margin-top: base(4);
 			background-color: #282846;
+			flex: 1;
 
 			@include breakpoint($medium-up){
-				width: span(5);
-				// margin-top: base(18);
+				width: span(12);
+			}
+			
+			@include breakpoint($medium-up){
 				position: relative;
 				z-index: 10;
-				// transform: translateX(base(-5));
-				// &:after {
-				// 	@include gray-gradient;
-				// 	border-radius: 4px;
-				// 	background: #E9EBF0;
-				// 	top: base(-5);
-				// 	content: "";
-				// 	height: 234px;
-				// 	position: absolute;
-				// 	right: base(-4);
-				// 	width: 234px;
-				// 	z-index: -1;
-				// }
+				height: 439px;
 			}
 
 			.spark-content-container {
