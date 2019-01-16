@@ -107,6 +107,7 @@
 	}
 
 	&.staggered{
+		background: $primary6;
 
 		@include breakpoint($medium-up){
 			padding: base(4) 0;
@@ -139,7 +140,7 @@
 		.content-container {
 			align-items: flex-start;
 			background: #191933;
-			box-shadow: 2px 2px 24px #000000;	
+			box-shadow: 2px 2px 24px rgba($primary1, .75);	
 			display: flex;
 			flex-basis: span(12);
 			justify-content: center;
@@ -222,9 +223,10 @@
 			}
 
 			.spark-content-container {
-				padding: base(9) base(3) base(6) base(4);
+				padding: base(9) base(6) base(6);
 				display: flex;
 				flex-direction: column;
+				line-height: 2;
 			}
 
 			h3, p, a {
