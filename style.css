@@ -2339,7 +2339,7 @@ section.nav {
 }
 /* line 119, style/sass/_faq-accordion.scss */
 .spark-accordion .accordion-item.open .spark-content {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 /* line 1, style/sass/_page.scss */
