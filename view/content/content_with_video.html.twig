@@ -1,0 +1,27 @@
+{# 
+	Content with Image Block
+	Description: renders a block with an image and a content element that can be positioned individually 
+
+	Vars:
+
+		style_class(string) : string of class names
+
+		content_position(string) : 'center', 'top-left', 'top-center', 'center-left', 'center-right', 'bottom-left', 'bottom-center', 'bottom-right'
+
+		layout : 
+			.content: html content object
+			.background-image: image object
+#}
+<section class="spark-content-with-image default {{ layout.template|lower }} {{ layout.content_position }}">
+	{% if layout.template == null or layout.template  == "default" %}
+	<div class="spark-container">
+		<video src="{{ layout.video_url }}" width="500" height="420" poster="{{ layout.placeholder_img.url }}" loop autoplay muted>
+		</video>
+		<div class="spark-content">
+			{{ layout.content }}
+		</div>
+	</div>
+	{% else %}
+		{% include 'view/content/' ~ layout.template ~ '-content-with-image.html.twig' %}
+	{% endif %}
+</section>

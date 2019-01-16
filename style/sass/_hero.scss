@@ -109,14 +109,16 @@
 				}
 
 				.spark-close {
-				    position: absolute;
-				    top: 90px;
-				    right: 8px;
-				    display: block;
-				    width: 32px;
-				    height: 32px;
-				    font-size: 28px;
+				    background: url(style/image/icon/close_button.png);
+				    background-size: cover;
 				    color: $primary4;
+				    display: block;
+				    font-size: 28px;
+				    height: 40px;
+				    position: absolute;
+					right: 30px;
+					top: 75px;
+				    width: 40px;
 				}
 			}
 		}

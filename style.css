@@ -992,23 +992,25 @@ section.nav {
 }
 /* line 111, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container.video-active .video-wrap .spark-close {
-  position: absolute;
-  top: 90px;
-  right: 8px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  font-size: 28px;
+  background: url(style/image/icon/close_button.png);
+  background-size: cover;
   color: #1D7CC5;
+  display: block;
+  font-size: 28px;
+  height: 40px;
+  position: absolute;
+  right: 30px;
+  top: 75px;
+  width: 40px;
 }
-/* line 124, style/sass/_hero.scss */
+/* line 126, style/sass/_hero.scss */
 .spark-vimeo-hero .video-container video {
   width: 100%;
   height: auto;
   box-shadow: 5px 5px 17px #1A1A3399;
   background-color: #1A1A33;
 }
-/* line 134, style/sass/_hero.scss */
+/* line 136, style/sass/_hero.scss */
 .spark-vimeo-hero .overlay {
   background: linear-gradient(to top, #234092, #2085c7);
   top: 50%;
@@ -1019,7 +1021,7 @@ section.nav {
   width: 200%;
 }
 @media (min-width: 815px) {
-  /* line 134, style/sass/_hero.scss */
+  /* line 136, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 175.4vw;
     height: 112vw;
@@ -1029,7 +1031,7 @@ section.nav {
   }
 }
 @media (min-width: 1200px) {
-  /* line 134, style/sass/_hero.scss */
+  /* line 136, style/sass/_hero.scss */
   .spark-vimeo-hero .overlay {
     width: 150%;
     height: 151%;
@@ -1190,14 +1192,14 @@ section.nav {
   }
 }
 /* line 48, style/sass/_content-with-image.scss */
-.spark-content-with-image.default.left img {
+.spark-content-with-image.default.left img, .spark-content-with-image.default.left video {
   margin: 32px 0 32px 32px;
   max-width: 100%;
   order: 2;
 }
 @media (max-width: 815px) {
   /* line 48, style/sass/_content-with-image.scss */
-  .spark-content-with-image.default.left img {
+  .spark-content-with-image.default.left img, .spark-content-with-image.default.left video {
     max-width: 100%;
     height: auto;
   }
@@ -1236,13 +1238,13 @@ section.nav {
   }
 }
 /* line 80, style/sass/_content-with-image.scss */
-.spark-content-with-image.default.right img {
+.spark-content-with-image.default.right img, .spark-content-with-image.default.right video {
   max-width: 100%;
   order: 1;
 }
 @media (max-width: 815px) {
   /* line 80, style/sass/_content-with-image.scss */
-  .spark-content-with-image.default.right img {
+  .spark-content-with-image.default.right img, .spark-content-with-image.default.right video {
     width: 83.33333%;
     margin: 32px;
     max-width: 100%;
@@ -1251,7 +1253,7 @@ section.nav {
 }
 @media (min-width: 815px) {
   /* line 80, style/sass/_content-with-image.scss */
-  .spark-content-with-image.default.right img {
+  .spark-content-with-image.default.right img, .spark-content-with-image.default.right video {
     padding-right: 8px;
     padding-left: 8px;
     flex: 1 1 calc(41.66667%);
@@ -1999,22 +2001,23 @@ section.nav {
   margin-top: 0 !important;
   padding: 0 !important;
   text-align: center;
+  height: auto !important;
 }
 
-/* line 88, style/sass/_team-grid.scss */
+/* line 89, style/sass/_team-grid.scss */
 .spark-profile {
   background: #ffffff;
   border-radius: 2px;
   box-shadow: 2px 2px 8px #DFE0E4;
 }
-/* line 92, style/sass/_team-grid.scss */
+/* line 93, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 24px 0 0;
 }
-/* line 98, style/sass/_team-grid.scss */
+/* line 99, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-image {
   width: 140px;
   height: 140px;
@@ -2023,11 +2026,11 @@ section.nav {
   background-size: cover;
   margin-bottom: 24px;
 }
-/* line 107, style/sass/_team-grid.scss */
+/* line 108, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .profile-image-container {
   position: relative;
 }
-/* line 109, style/sass/_team-grid.scss */
+/* line 110, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .profile-image-container .spark-profile-image-hover {
   position: absolute;
   top: 0;
@@ -2035,7 +2038,7 @@ section.nav {
   opacity: 0;
   transition: opacity .25s linear;
 }
-/* line 117, style/sass/_team-grid.scss */
+/* line 118, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .profile-image-container .dev-tag {
   background: #1A1A33;
   border-radius: 50%;
@@ -2052,25 +2055,25 @@ section.nav {
   font-weight: 600;
   box-shadow: 0px 0px 6px #1A1A3388;
 }
-/* line 135, style/sass/_team-grid.scss */
+/* line 136, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview h4 {
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: 8px;
 }
 @media (max-width: 815px) {
-  /* line 135, style/sass/_team-grid.scss */
+  /* line 136, style/sass/_team-grid.scss */
   .spark-profile .spark-profile-preview h4 {
     font-size: 16px;
     line-height: 18px;
   }
 }
-/* line 146, style/sass/_team-grid.scss */
+/* line 147, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-profile-position {
   line-height: 1.3;
   text-align: center;
 }
-/* line 151, style/sass/_team-grid.scss */
+/* line 152, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text {
   font-size: 12px;
   line-height: 1.6;
@@ -2081,12 +2084,12 @@ section.nav {
   position: relative;
 }
 @media (min-width: 815px) {
-  /* line 151, style/sass/_team-grid.scss */
+  /* line 152, style/sass/_team-grid.scss */
   .spark-profile .spark-profile-preview .spark-info-text {
     height: 120px;
   }
 }
-/* line 164, style/sass/_team-grid.scss */
+/* line 165, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y {
   position: absolute;
   top: 0;
@@ -2098,17 +2101,17 @@ section.nav {
   overflow: hidden;
   opacity: 1;
 }
-/* line 175, style/sass/_team-grid.scss */
+/* line 176, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y .ps__thumb-y {
   border-radius: 5px;
   background-color: #DFE0E4;
   right: 1px !important;
 }
-/* line 182, style/sass/_team-grid.scss */
+/* line 183, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-info-text .ps__rail-y:hover .ps__thumb-y {
   width: 8px;
 }
-/* line 189, style/sass/_team-grid.scss */
+/* line 190, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons {
   padding: 16px 0;
   position: relative;
@@ -2116,7 +2119,7 @@ section.nav {
   text-align: center;
   margin-top: 16px;
 }
-/* line 195, style/sass/_team-grid.scss */
+/* line 196, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons a {
   align-items: center;
   color: #234092;
@@ -2128,7 +2131,7 @@ section.nav {
   text-decoration: none;
   z-index: 1;
 }
-/* line 206, style/sass/_team-grid.scss */
+/* line 207, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:before {
   background-color: #DFE0E4;
   content: "";
@@ -2141,7 +2144,7 @@ section.nav {
   top: 0;
   width: calc(100% - 32px);
 }
-/* line 218, style/sass/_team-grid.scss */
+/* line 219, style/sass/_team-grid.scss */
 .spark-profile .spark-profile-preview .spark-social-icons:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -2154,22 +2157,22 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 234, style/sass/_team-grid.scss */
+/* line 235, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container {
   position: relative;
 }
-/* line 236, style/sass/_team-grid.scss */
+/* line 237, style/sass/_team-grid.scss */
 .spark-profile:hover .profile-image-container .spark-profile-image-hover {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 245, style/sass/_team-grid.scss */
+/* line 246, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons a {
   color: white;
 }
-/* line 249, style/sass/_team-grid.scss */
+/* line 250, style/sass/_team-grid.scss */
 .spark-profile:hover .spark-social-icons:after {
   height: 100%;
 }
