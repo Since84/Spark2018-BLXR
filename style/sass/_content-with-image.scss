@@ -117,7 +117,7 @@
 			position: absolute;
 			height: 61vw;
 			width: 100%;
-			background: #191933;
+			background: #282846;
 			display: block;
 			top: 0;
 
@@ -138,7 +138,7 @@
 
 		.content-container {
 			align-items: flex-start;
-			background: #282846;
+			background: #191933;
 			box-shadow: 2px 2px 24px #000000;	
 			display: flex;
 			flex-basis: span(12);
@@ -156,7 +156,7 @@
 			display: flex;
 
 			@include breakpoint($medium-up){
-				flex-basis: 344px;
+				flex-basis: 164px;
 				// transform: translateX(#{base(8)});
 				// &:before {
 				// 	@include subtle-gradient;
@@ -175,7 +175,7 @@
 				overflow: hidden;
 
 				@include breakpoint($medium-up){
-					min-width:	700px; 
+					min-width:	610px; 
 				}
 			}
 
@@ -208,7 +208,7 @@
 			@extend .knockout;
 			display: flex;
 			// margin-top: base(4);
-			background-color: #282846;
+			background-color: #191933;
 			flex: 1;
 
 			@include breakpoint($small){
@@ -218,7 +218,7 @@
 			@include breakpoint($medium-up){
 				position: relative;
 				z-index: 10;
-				height: 525px;
+				height: 454px;
 			}
 
 			.spark-content-container {

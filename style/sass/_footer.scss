@@ -74,11 +74,12 @@
 		}
 
 		h3 {
-			margin-right: base(2);
+			margin-right: base(5);
+			text-align: center;
 		}
 
 		.ctct-inline-form {
-			flex-basis: 90%;
+			flex-basis: 50%;
 		}
 	}
 
@@ -133,6 +134,7 @@
 	.spark-nav-footer-subscribe {
 		@include span(12);
 		position: relative;
+		padding-top: base(2);
 
 		@include breakpoint($small){
 			padding: base(4) 0;
@@ -142,7 +144,8 @@
 			@include span(10);
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: center;
+			flex-wrap: wrap;
 		}
 
 		h3, p {
@@ -150,10 +153,9 @@
 		}
 
 		h3 {
-			text-align: left;
+			text-align: center;
 			text-transform: uppercase;
 			line-height: 1.6;
-			flex: 1 1 300px;
 		}
 
 		.ctct-form-field, button {
