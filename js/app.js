@@ -201,5 +201,11 @@
 				})
 			}, 2000);
 		})
+
+		$(document).ready(function() {
+			setTimeout(function(){
+			    $('.spark-contact .contact-right *:input[type!=hidden]:first').focus();
+			}, 500)
+		});
 	})
 })(jQuery);
