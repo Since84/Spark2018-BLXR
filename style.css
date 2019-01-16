@@ -1369,7 +1369,7 @@ section.nav {
   background-color: #282846;
   flex: 1;
 }
-@media (min-width: 815px) {
+@media (max-width: 815px) {
   /* line 207, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-content {
     width: 100%;
@@ -1385,7 +1385,7 @@ section.nav {
 }
 /* line 224, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content .spark-content-container {
-  padding: 48px 24px 48px 32px;
+  padding: 72px 24px 48px 32px;
   display: flex;
   flex-direction: column;
 }
