@@ -138,12 +138,13 @@
 
 		.content-container {
 			align-items: flex-start;
+			background: #282846;
+			box-shadow: 2px 2px 24px #000000;	
 			display: flex;
 			flex-basis: span(12);
 			justify-content: center;
 			flex-wrap: wrap;
 			flex-direction: row-reverse;	
-			box-shadow: 2px 2px 24px #000000;	
 			z-index: 100;
 		}
 
@@ -216,7 +217,7 @@
 			@include breakpoint($medium-up){
 				position: relative;
 				z-index: 10;
-				height: 439px;
+				height: 525px;
 			}
 
 			.spark-content-container {

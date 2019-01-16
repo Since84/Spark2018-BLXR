@@ -1307,42 +1307,43 @@ section.nav {
 /* line 139, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .content-container {
   align-items: flex-start;
+  background: #282846;
+  box-shadow: 2px 2px 24px #000000;
   display: flex;
   flex-basis: 100%;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  box-shadow: 2px 2px 24px #000000;
   z-index: 100;
 }
-/* line 152, style/sass/_content-with-image.scss */
+/* line 153, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container {
   position: relative;
   flex: 1 1 100%;
   display: flex;
 }
 @media (min-width: 815px) {
-  /* line 152, style/sass/_content-with-image.scss */
+  /* line 153, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-image-container {
     flex-basis: 344px;
   }
 }
-/* line 173, style/sass/_content-with-image.scss */
+/* line 174, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-slideshow {
   overflow: hidden;
 }
 @media (min-width: 815px) {
-  /* line 173, style/sass/_content-with-image.scss */
+  /* line 174, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-image-container .cycle-slideshow {
     min-width: 700px;
   }
 }
-/* line 181, style/sass/_content-with-image.scss */
+/* line 182, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container img {
   width: 100%;
   display: block;
 }
-/* line 186, style/sass/_content-with-image.scss */
+/* line 187, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-pager {
   bottom: 0;
   display: block;
@@ -1353,51 +1354,51 @@ section.nav {
   text-align: center;
   z-index: 1000;
 }
-/* line 195, style/sass/_content-with-image.scss */
+/* line 196, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-pager span {
   font-size: 100px;
   color: #F4F5F9;
 }
-/* line 199, style/sass/_content-with-image.scss */
+/* line 200, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-image-container .cycle-pager span.cycle-pager-active {
   color: #2085C7;
 }
-/* line 206, style/sass/_content-with-image.scss */
+/* line 207, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content {
   display: flex;
   background-color: #282846;
   flex: 1;
 }
 @media (min-width: 815px) {
-  /* line 206, style/sass/_content-with-image.scss */
+  /* line 207, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-content {
     width: 100%;
   }
 }
 @media (min-width: 815px) {
-  /* line 206, style/sass/_content-with-image.scss */
+  /* line 207, style/sass/_content-with-image.scss */
   .spark-content-with-image.staggered .spark-content {
     position: relative;
     z-index: 10;
-    height: 439px;
+    height: 525px;
   }
 }
-/* line 222, style/sass/_content-with-image.scss */
+/* line 223, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content .spark-content-container {
   padding: 48px 24px 48px 32px;
   display: flex;
   flex-direction: column;
 }
-/* line 228, style/sass/_content-with-image.scss */
+/* line 229, style/sass/_content-with-image.scss */
 .spark-content-with-image.staggered .spark-content h3, .spark-content-with-image.staggered .spark-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-content-with-image.staggered .spark-content .ctct-form-label, .spark-content-with-image.staggered .spark-content p, .spark-content-with-image.staggered .spark-content a {
   color: #ffffff;
 }
 @media (max-width: 815px) {
-  /* line 236, style/sass/_content-with-image.scss */
+  /* line 237, style/sass/_content-with-image.scss */
   .spark-content-with-image .spark-container {
     flex-wrap: wrap;
   }
-  /* line 238, style/sass/_content-with-image.scss */
+  /* line 239, style/sass/_content-with-image.scss */
   .spark-content-with-image .spark-container img {
     max-width: 100%;
     height: auto;
