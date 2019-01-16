@@ -256,6 +256,10 @@
 				@include breakpoint($medium-up){
 					@include span(5);
 				}
+
+				.cta-button {
+					padding: 12px 14px;
+				}
 			}
 		}
 	}

@@ -1914,6 +1914,10 @@ section.nav {
     max-width: calc(41.66667%);
   }
 }
+/* line 260, style/sass/_resources.scss */
+.resources-page .resource-sidebar .whitepaper .spark-content .cta-button, .resources-page .resource-sidebar .whitepaper .spark-content .gray-cta-button, .resources-page .resource-sidebar .whitepaper .spark-content .spark-accordion .accordion-tabs .collection-heading, .spark-accordion .accordion-tabs .resources-page .resource-sidebar .whitepaper .spark-content .collection-heading, .resources-page .resource-sidebar .whitepaper .spark-content article.job-listing .apply-now, article.job-listing .resources-page .resource-sidebar .whitepaper .spark-content .apply-now {
+  padding: 12px 14px;
+}
 
 /* line 1, style/sass/_team-grid.scss */
 .spark-team-grid {
