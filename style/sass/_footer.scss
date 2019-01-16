@@ -199,8 +199,10 @@
 		    padding: 16px 0 !important;
 		    transition: none !important;
 
+
 		    @include breakpoint($small){
 		    	margin: 0 !important;
+		    	flex-basis: 100%;
 		    }
 		}
 	}
