@@ -114,15 +114,14 @@
 		}
 
 		&:before {
-			content: "";
-			position: absolute;
-			height: 61vw;
-			width: 100%;
-			background: #282846;
-			display: block;
-			top: 0;
-
 			@include breakpoint($medium-up){
+				content: "";
+				position: absolute;
+				height: 61vw;
+				width: 100%;
+				background: #282846;
+				display: block;
+				top: 0;
 				height: 50%;
 			}
 		}
@@ -130,7 +129,7 @@
 		.spark-container {
 			align-items: flex-start;
 			justify-content: center;
-			padding: base(5);
+			padding: 0;
 
 			@include breakpoint($medium-up){
 				padding: base(9) base(10) base(4);
@@ -140,13 +139,16 @@
 		.content-container {
 			align-items: flex-start;
 			background: #191933;
-			box-shadow: 2px 2px 24px rgba($primary1, .75);	
 			display: flex;
 			flex-basis: span(12);
 			justify-content: center;
 			flex-wrap: wrap;
 			flex-direction: row-reverse;	
 			z-index: 100;
+
+			@include breakpoint($medium-up){
+				box-shadow: 2px 2px 24px rgba($primary1, .75);	
+			}
 		}
 
 

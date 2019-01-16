@@ -1,6 +1,6 @@
 .spark-accordion {
 	background: $primary6;
-	padding: base(2);
+	padding: base(2) base(2) base(6);
 	min-height: calc(100% - 320px);
 	
 	@include breakpoint($medium-up){
