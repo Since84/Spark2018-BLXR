@@ -19,6 +19,10 @@
 
 		.content {
 			margin-top: base(2);
+			a, a:hover {
+				color: $primary1;
+				text-decoration: none;
+			}
 		}
 	}
 

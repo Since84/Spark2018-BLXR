@@ -132,7 +132,8 @@
 				video.get(0).play();
 			} else {
 				video.removeAttr('controls');
-				video.get(0).pause();	
+				video.get(0).pause();
+				video.get(0).load();	
 				$(this).removeClass('video-active');
 			}
 		})

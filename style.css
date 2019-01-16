@@ -571,7 +571,7 @@ section.nav {
 }
 /* line 36, style/sass/_nav.scss */
 .spark-nav-basic .spark-site-logo img {
-  width: 120px;
+  width: 160px;
 }
 @media (max-width: 1020px) {
   /* line 41, style/sass/_nav.scss */
@@ -707,7 +707,7 @@ section.nav {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 300;
-    padding: 16px;
+    padding: 21px 16px;
     position: relative;
     z-index: 1000;
   }
@@ -3127,7 +3127,12 @@ section.nav {
 .spark-position-list .spark-container .content {
   margin-top: 16px;
 }
-/* line 26, style/sass/_positions.scss */
+/* line 22, style/sass/_positions.scss */
+.spark-position-list .spark-container .content a, .spark-position-list .spark-container .content a:hover {
+  color: #1A1A33;
+  text-decoration: none;
+}
+/* line 30, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview-container {
   padding-right: 8px;
   padding-left: 8px;
@@ -3136,7 +3141,7 @@ section.nav {
   margin-bottom: 32px;
 }
 @media (min-width: 815px) {
-  /* line 26, style/sass/_positions.scss */
+  /* line 30, style/sass/_positions.scss */
   .spark-position-list .spark-position-preview-container {
     padding-right: 8px;
     padding-left: 8px;
@@ -3144,31 +3149,31 @@ section.nav {
     max-width: calc(33.33333%);
   }
 }
-/* line 38, style/sass/_positions.scss */
+/* line 42, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview {
   border-radius: 2px;
   box-shadow: 2px 2px 8px #DFE0E4;
   background: #ffffff;
   position: relative;
 }
-/* line 44, style/sass/_positions.scss */
+/* line 48, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview h3, .spark-position-list .spark-position-preview .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-position-list .spark-position-preview .ctct-form-label, .spark-position-list .spark-position-preview p {
   padding: 0 24px;
 }
-/* line 48, style/sass/_positions.scss */
+/* line 52, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview h3, .spark-position-list .spark-position-preview .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .spark-position-list .spark-position-preview .ctct-form-label {
   padding-top: 24px;
 }
-/* line 52, style/sass/_positions.scss */
+/* line 56, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview p {
   height: 5em;
   padding-bottom: 24px;
 }
-/* line 57, style/sass/_positions.scss */
+/* line 61, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview p + a.spark-position-link {
   margin-top: 0;
 }
-/* line 61, style/sass/_positions.scss */
+/* line 65, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-cover-link {
   position: absolute;
   top: 0;
@@ -3176,7 +3181,7 @@ section.nav {
   width: 100%;
   height: 100%;
 }
-/* line 69, style/sass/_positions.scss */
+/* line 73, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link {
   padding: 16px 0;
   display: block;
@@ -3185,7 +3190,7 @@ section.nav {
   text-align: center;
   text-decoration: none;
 }
-/* line 76, style/sass/_positions.scss */
+/* line 80, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:before {
   content: "";
   top: 0;
@@ -3197,12 +3202,12 @@ section.nav {
   right: 0;
   margin: auto;
 }
-/* line 88, style/sass/_positions.scss */
+/* line 92, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link span {
   font-weight: 600;
   transition: color .12s linear .25s;
 }
-/* line 93, style/sass/_positions.scss */
+/* line 97, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .spark-position-link:after {
   background: linear-gradient(to right, #234092, #2085c7);
   transition: all 0.45s;
@@ -3215,26 +3220,26 @@ section.nav {
   width: 100%;
   z-index: 0;
 }
-/* line 108, style/sass/_positions.scss */
+/* line 112, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview:hover .spark-position-link span {
   color: white;
   z-index: 1;
   position: relative;
 }
-/* line 114, style/sass/_positions.scss */
+/* line 118, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview:hover .spark-position-link:after {
   height: 100%;
 }
-/* line 120, style/sass/_positions.scss */
+/* line 124, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb {
   position: relative;
   cursor: pointer;
 }
-/* line 124, style/sass/_positions.scss */
+/* line 128, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb img {
   width: 100%;
 }
-/* line 127, style/sass/_positions.scss */
+/* line 131, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb:after {
   background-image: url(style/image/play-button/inactive.png);
   background-size: cover;
@@ -3249,47 +3254,47 @@ section.nav {
   top: 0;
   width: 100px;
 }
-/* line 142, style/sass/_positions.scss */
+/* line 146, style/sass/_positions.scss */
 .spark-position-list .spark-position-preview .video-thumb:hover:after {
   background-image: url(style/image/play-button/active.png);
 }
-/* line 148, style/sass/_positions.scss */
+/* line 152, style/sass/_positions.scss */
 .spark-position-list .position-meta {
   height: 6em;
 }
-/* line 152, style/sass/_positions.scss */
+/* line 156, style/sass/_positions.scss */
 .spark-position-list .see-more {
   justify-content: flex-end;
 }
-/* line 155, style/sass/_positions.scss */
+/* line 159, style/sass/_positions.scss */
 .spark-position-list .see-more span {
   display: inline-block;
 }
-/* line 156, style/sass/_positions.scss */
+/* line 160, style/sass/_positions.scss */
 .spark-position-list .see-more span l
 a {
   text-align: right;
 }
-/* line 159, style/sass/_positions.scss */
+/* line 163, style/sass/_positions.scss */
 .spark-position-list .see-more span l
 a:after {
   margin-right: 2em;
   content: " >";
 }
 
-/* line 168, style/sass/_positions.scss */
+/* line 172, style/sass/_positions.scss */
 .spark-container.back-button {
   justify-content: flex-start;
   padding-top: 40px;
 }
-/* line 172, style/sass/_positions.scss */
+/* line 176, style/sass/_positions.scss */
 .spark-container.back-button a {
   padding-right: 8px;
   padding-left: 8px;
   flex: 1 1 calc(66.66667%);
   max-width: calc(66.66667%);
 }
-/* line 174, style/sass/_positions.scss */
+/* line 178, style/sass/_positions.scss */
 .spark-container.back-button a:before {
   content: "\02FF";
   display: inline-block;
@@ -3299,53 +3304,53 @@ a:after {
   margin-right: 7px;
 }
 
-/* line 185, style/sass/_positions.scss */
+/* line 189, style/sass/_positions.scss */
 article.job-listing {
   padding-top: 40px;
   padding-bottom: 80px;
 }
-/* line 189, style/sass/_positions.scss */
+/* line 193, style/sass/_positions.scss */
 article.job-listing hgroup {
   margin-bottom: 32px;
 }
-/* line 192, style/sass/_positions.scss */
+/* line 196, style/sass/_positions.scss */
 article.job-listing hgroup h2, article.job-listing hgroup h3, article.job-listing hgroup .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing hgroup .ctct-form-label {
   line-height: 1.5em;
 }
-/* line 196, style/sass/_positions.scss */
+/* line 200, style/sass/_positions.scss */
 article.job-listing hgroup .location {
   color: #2085C7;
 }
-/* line 201, style/sass/_positions.scss */
+/* line 205, style/sass/_positions.scss */
 article.job-listing .post-content {
   max-width: 684px;
 }
-/* line 204, style/sass/_positions.scss */
+/* line 208, style/sass/_positions.scss */
 article.job-listing .post-content h1, article.job-listing .post-content h2, article.job-listing .post-content h3, article.job-listing .post-content .spark-footer .ctct-form-embed.form_1 .ctct-form-custom .ctct-form-label, .spark-footer .ctct-form-embed.form_1 .ctct-form-custom article.job-listing .post-content .ctct-form-label, article.job-listing .post-content h4, article.job-listing .post-content h5 {
   margin-top: 40px;
 }
-/* line 207, style/sass/_positions.scss */
+/* line 211, style/sass/_positions.scss */
 article.job-listing .post-content p, article.job-listing .post-content ul, article.job-listing .post-content ol {
   margin-top: 8px;
 }
-/* line 214, style/sass/_positions.scss */
+/* line 218, style/sass/_positions.scss */
 article.job-listing .post-content ul {
   list-style: disc outside;
   margin-left: 20px;
 }
-/* line 220, style/sass/_positions.scss */
+/* line 224, style/sass/_positions.scss */
 article.job-listing .apply {
   text-align: center;
   margin-top: 80px;
 }
-/* line 224, style/sass/_positions.scss */
+/* line 228, style/sass/_positions.scss */
 article.job-listing .apply-now {
   background: #dde1ea;
   color: #1A1A33;
   font-weight: 400;
   margin: auto;
 }
-/* line 231, style/sass/_positions.scss */
+/* line 235, style/sass/_positions.scss */
 article.job-listing .apply-now:hover {
   background: #c6cbd8 !important;
   color: #1A1A33;
