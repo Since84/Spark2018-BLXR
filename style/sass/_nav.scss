@@ -194,7 +194,6 @@ section.nav {
 	.spark-header-socials{
 		border-left: 1px solid rgba(255, 255, 255, 0.25);
 	    padding-left: 18px;
-	    margin-left: 18px;
 
 		a {
 			color: rgba($primary7, .7);
@@ -211,7 +210,7 @@ section.nav {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			padding: base(2) 0;
+			padding: base(4) 0;
 			text-align: center;
 			a.fab {
 				@include span(1);
@@ -221,6 +220,10 @@ section.nav {
 				margin: 0 base(1.5);
 			}
 
+		}
+
+		@include breakpoint($medium-up){
+		    margin-left: 18px;
 		}
 	}
 
