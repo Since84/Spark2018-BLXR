@@ -35,13 +35,12 @@
 				}
 
 				@include breakpoint($medium-up) {
-					@include span(5);
+					@include span(6);
 					padding-right: base(8);
 					margin-right: base(4);
 				}
 
 				@include breakpoint($large-up) {
-					@include span(5);
 					padding-right: base(18);
 				}
 			}
@@ -89,8 +88,8 @@
 				}
 
 				@include breakpoint($medium-up){
-					@include span(5);
-					margin: base(4) base(8) base(4) 0;
+					@include span(6);
+					margin: 0 base(8) 0 0;
 				}
 			}	
 		}
