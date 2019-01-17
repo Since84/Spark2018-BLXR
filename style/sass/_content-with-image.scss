@@ -108,12 +108,12 @@
 	&.staggered{
 		background: $primary6;
 
-		@include breakpoint($medium-up){
+		@include breakpoint(min-width 1100px){
 			padding: base(4) 0;
 		}
 
 		&:before {
-			@include breakpoint($medium-up){
+			@include breakpoint(min-width 1100px){
 				content: "";
 				position: absolute;
 				height: 61vw;
@@ -121,7 +121,7 @@
 				background: #282846;
 				display: block;
 				top: 0;
-				height: 50%;
+				height: 63%;
 			}
 		}
 
@@ -130,7 +130,7 @@
 			justify-content: center;
 			padding: 0;
 
-			@include breakpoint($medium-up){
+			@include breakpoint(min-width 1100px){
 				padding: base(9) base(10) base(4);
 			}
 		} 	
@@ -145,7 +145,7 @@
 			flex-direction: row-reverse;	
 			z-index: 100;
 
-			@include breakpoint($medium-up){
+			@include breakpoint(min-width 1100px){
 				box-shadow: 2px 2px 24px rgba($primary1, .75);	
 			}
 		}
@@ -157,7 +157,7 @@
 			flex: 1 1 100%;
 			display: flex;
 
-			@include breakpoint($medium-up){
+			@include breakpoint(min-width 1100px){
 				flex-basis: 164px;
 				// transform: translateX(#{base(8)});
 				// &:before {
@@ -175,8 +175,9 @@
 
 			.cycle-slideshow {
 				overflow: hidden;
+				width: 100%;
 
-				@include breakpoint($medium-up){
+				@include breakpoint(min-width 1100px){
 					min-width:	610px; 
 				}
 			}
@@ -213,11 +214,11 @@
 			background-color: #191933;
 			flex: 1;
 
-			@include breakpoint($small){
+			@include breakpoint(max-width 900px){
 				width: span(12);
 			}
 			
-			@include breakpoint($medium-up){
+			@include breakpoint(min-width 1100px){
 				position: relative;
 				z-index: 10;
 				height: 454px;
