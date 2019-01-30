@@ -48,13 +48,13 @@
 		</div>
 		<div class="resource-videos">
 			<div id="{{ layout.heading|lower|replace({" ": "-"}) }}" class="spark-video-list">
+				{% for layout in page.meta('resource_videos') %}
 				<div class="module-container">
 					<div class="spark-container module-heading">
-						<h5>Videos</h5>
-						<a class="read-more" href="{{ page.meta('resource_videos')[0].see_more_link }}" target="_blank">{{ page.meta('resource_videos')[0].see_more_text }}<span class="more-icon fab fa-youtube"></span></a>
+						<h5>{{ layout.heading }}</h5>
+						<a class="read-more" href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}<span class="more-icon fab fa-youtube"></span></a>
 					</div>
 					<div class="videos">
-						{% for layout in page.meta('resource_videos') %}
 							{% for post in layout.videos %}
 								<div class="spark-video-preview-container">
 									<div class="spark-video-preview youtube-item" data-id="{{ post.youtube_id }}">
@@ -68,7 +68,6 @@
 									</div>
 								</div>
 							{% endfor %}
-						{% endfor %}
 					</div>
 					<div class="youtube-modal">
 						<div class="spark-modal-close"></div>
@@ -85,6 +84,7 @@
 					</div>
 					{% endif %}
 				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
