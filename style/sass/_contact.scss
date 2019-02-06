@@ -212,7 +212,7 @@
 				border: 1px solid $primary5;
 				color: $primary1;
 				font-family: $body_family;
-				height: 190px;
+				height: 130px;
 				margin-bottom: base(3);
 				outline: none;
 				position: relative;
@@ -355,6 +355,7 @@
 			display: block;
 			font-size: 14px;
 			margin: auto;
+			margin-top: base(3);
 			padding: base(1.5) base(4);
 			border: none;
 		}

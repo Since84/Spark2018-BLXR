@@ -2950,7 +2950,7 @@ section.nav {
   border: 1px solid #DFE0E4;
   color: #1A1A33;
   font-family: "montserrat", sans-serif;
-  height: 190px;
+  height: 130px;
   margin-bottom: 24px;
   outline: none;
   position: relative;
@@ -3092,6 +3092,7 @@ section.nav {
   display: block;
   font-size: 14px;
   margin: auto;
+  margin-top: 24px;
   padding: 12px 32px;
   border: none;
 }
