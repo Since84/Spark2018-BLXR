@@ -15,7 +15,7 @@
 <section class="spark-content-with-image default {{ layout.template|lower }} {{ layout.content_position }}">
 	{% if layout.template == null or layout.template  == "default" %}
 	<div class="spark-container">
-		<video src="{{ layout.video_url }}" width="500" height="420" poster="{{ layout.placeholder_img.url }}" loop autoplay muted>
+		<video src="{{ layout.video_url }}" width="500" height="420" poster="{{ layout.placeholder_img.url }}" loop autoplay playsinline muted>
 		</video>
 		<div class="spark-content">
 			{{ layout.content }}
