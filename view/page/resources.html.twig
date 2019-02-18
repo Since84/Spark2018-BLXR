@@ -59,7 +59,7 @@
 								<div class="spark-video-preview-container">
 									<div class="spark-video-preview youtube-item" data-id="{{ post.youtube_id }}">
 										<div class="video-thumb trigger-youtube-modal">
-											<img src="https://img.youtube.com/vi/{{ post.youtube_id }}/maxresdefault.jpg"/>
+											<img src="https://img.youtube.com/vi/{{ post.youtube_id }}/0.jpg"/>
 										</div>
 										<div class="video-meta">
 											<h3>{{ post.title }}</h3>
@@ -76,13 +76,6 @@
 							<iframe width="720" height="405" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</div>
-					{% if layout.see_more_link %}
-					<div class="spark-container see-more">
-						<span>
-							<a href="{{ layout.see_more_link }}" target="_blank">{{ layout.see_more_text }}</a>
-						</span>
-					</div>
-					{% endif %}
 				</div>
 				{% endfor %}
 			</div>
